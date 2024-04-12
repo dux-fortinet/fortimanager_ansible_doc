@@ -7915,7 +7915,7 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><a class="reference external" href="docgen/fmgr_wanprof_system_sdwan_members.html">fmgr_wanprof_system_sdwan_members</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">wanprof</span></code></td>
-  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">seq-num</span></code></td>
   <td>/pm/config/adom/{adom}/wanprof/{wanprof}/system/sdwan/members<br>/pm/config/adom/{adom}/wanprof/{wanprof}/system/sdwan/members/{members}</td>
   </tr>
   <tr class="row-odd">
