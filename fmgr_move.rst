@@ -221,19 +221,19 @@ Parameters
           <span class="li-normal">v6.2.0->v6.2.12</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy</span> - available versions:
-          <span class="li-normal">v6.4.7->v6.4.14</span>
+          <span class="li-normal">v6.4.7->v6.4.14</span>,
           <span class="li-normal">v7.0.1->v7.2.0</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy46</span> - available versions:
-          <span class="li-normal">v6.4.7->v6.4.14</span>
+          <span class="li-normal">v6.4.7->v6.4.14</span>,
           <span class="li-normal">v7.0.1->v7.2.0</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy6</span> - available versions:
-          <span class="li-normal">v6.4.7->v6.4.14</span>
+          <span class="li-normal">v6.4.7->v6.4.14</span>,
           <span class="li-normal">v7.0.1->v7.2.0</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy64</span> - available versions:
-          <span class="li-normal">v6.4.7->v6.4.14</span>
+          <span class="li-normal">v6.4.7->v6.4.14</span>,
           <span class="li-normal">v7.0.1->v7.2.0</span>
         </li>
         <li><span class="li-required">pkg_firewall_interfacepolicy</span> - available versions:
@@ -321,7 +321,7 @@ Parameters
           <span class="li-normal">v7.0.2->latest</span>
         </li>
         <li><span class="li-required">system_sdnconnector_gcpprojectlist</span> - available versions:
-          <span class="li-normal">v6.4.7->v6.4.14</span>
+          <span class="li-normal">v6.4.7->v6.4.14</span>,
           <span class="li-normal">v7.0.2->latest</span>
         </li>
         <li><span class="li-required">system_sdnconnector_nic</span> - available versions:
@@ -361,7 +361,7 @@ Parameters
           <span class="li-normal">v7.2.0->latest</span>
         </li>
         <li><span class="li-required">vpn_ssl_settings_authenticationrule</span> - available versions:
-          <span class="li-normal">v6.2.6->v6.2.12</span>
+          <span class="li-normal">v6.2.6->v6.2.12</span>,
           <span class="li-normal">v6.4.2->latest</span>
         </li>
         <li><span class="li-required">vpnsslweb_portal_bookmarkgroup</span> - available versions:

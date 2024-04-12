@@ -200,41 +200,41 @@ Parameters
             <span class="li-normal">v7.0.4->v7.0.12</span>
         </li>
         <li><span class="li-required">devprof_log_syslogd_filter_freestyle</span> - available versions:
-            <span class="li-normal">v7.0.4->v7.0.12</span>
+            <span class="li-normal">v7.0.4->v7.0.12</span>,
             <span class="li-normal">v7.2.1->latest</span>
         </li>
         <li><span class="li-required">devprof_log_syslogd_setting_customfieldname</span> - available versions:
-            <span class="li-normal">v7.0.4->v7.0.12</span>
+            <span class="li-normal">v7.0.4->v7.0.12</span>,
             <span class="li-normal">v7.2.1->latest</span>
         </li>
         <li><span class="li-required">devprof_system_centralmanagement_serverlist</span> - available versions:
-            <span class="li-normal">v6.0.0->v6.2.5</span>
-            <span class="li-normal">v6.2.7->v6.4.1</span>
+            <span class="li-normal">v6.0.0->v6.2.5</span>,
+            <span class="li-normal">v6.2.7->v6.4.1</span>,
             <span class="li-normal">v6.4.3->latest</span>
         </li>
         <li><span class="li-required">devprof_system_ntp_ntpserver</span> - available versions:
-            <span class="li-normal">v6.0.0->v6.2.5</span>
-            <span class="li-normal">v6.2.7->v6.4.1</span>
+            <span class="li-normal">v6.0.0->v6.2.5</span>,
+            <span class="li-normal">v6.2.7->v6.4.1</span>,
             <span class="li-normal">v6.4.3->latest</span>
         </li>
         <li><span class="li-required">devprof_system_snmp_community</span> - available versions:
-            <span class="li-normal">v6.0.0->v6.2.5</span>
-            <span class="li-normal">v6.2.7->v6.4.1</span>
+            <span class="li-normal">v6.0.0->v6.2.5</span>,
+            <span class="li-normal">v6.2.7->v6.4.1</span>,
             <span class="li-normal">v6.4.3->latest</span>
         </li>
         <li><span class="li-required">devprof_system_snmp_community_hosts</span> - available versions:
-            <span class="li-normal">v6.0.0->v6.2.5</span>
-            <span class="li-normal">v6.2.7->v6.4.1</span>
+            <span class="li-normal">v6.0.0->v6.2.5</span>,
+            <span class="li-normal">v6.2.7->v6.4.1</span>,
             <span class="li-normal">v6.4.3->latest</span>
         </li>
         <li><span class="li-required">devprof_system_snmp_community_hosts6</span> - available versions:
-            <span class="li-normal">v6.0.0->v6.2.5</span>
-            <span class="li-normal">v6.2.7->v6.4.1</span>
+            <span class="li-normal">v6.0.0->v6.2.5</span>,
+            <span class="li-normal">v6.2.7->v6.4.1</span>,
             <span class="li-normal">v6.4.3->latest</span>
         </li>
         <li><span class="li-required">devprof_system_snmp_user</span> - available versions:
-            <span class="li-normal">v6.0.0->v6.2.5</span>
-            <span class="li-normal">v6.2.7->v6.4.1</span>
+            <span class="li-normal">v6.0.0->v6.2.5</span>,
+            <span class="li-normal">v6.2.7->v6.4.1</span>,
             <span class="li-normal">v6.4.3->latest</span>
         </li>
         <li><span class="li-required">diameterfilter_profile</span> - available versions:
@@ -667,7 +667,7 @@ Parameters
             <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">firewall_ippoolgrp</span> - available versions:
-            <span class="li-normal">v6.4.7->v6.4.14</span>
+            <span class="li-normal">v6.4.7->v6.4.14</span>,
             <span class="li-normal">v7.0.1->latest</span>
         </li>
         <li><span class="li-required">firewall_ldbmonitor</span> - available versions:
@@ -1061,7 +1061,7 @@ Parameters
             <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">log_npuserver_serverinfo</span> - available versions:
-            <span class="li-normal">v6.4.7->v6.4.14</span>
+            <span class="li-normal">v6.4.7->v6.4.14</span>,
             <span class="li-normal">v7.0.1->latest</span>
         </li>
         <li><span class="li-required">mpskprofile</span> - available versions:
@@ -1116,19 +1116,19 @@ Parameters
             <span class="li-normal">v6.2.0->v6.2.12</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy</span> - available versions:
-            <span class="li-normal">v6.4.7->v6.4.14</span>
+            <span class="li-normal">v6.4.7->v6.4.14</span>,
             <span class="li-normal">v7.0.1->v7.2.0</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy46</span> - available versions:
-            <span class="li-normal">v6.4.7->v6.4.14</span>
+            <span class="li-normal">v6.4.7->v6.4.14</span>,
             <span class="li-normal">v7.0.1->v7.2.0</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy6</span> - available versions:
-            <span class="li-normal">v6.4.7->v6.4.14</span>
+            <span class="li-normal">v6.4.7->v6.4.14</span>,
             <span class="li-normal">v7.0.1->v7.2.0</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy64</span> - available versions:
-            <span class="li-normal">v6.4.7->v6.4.14</span>
+            <span class="li-normal">v6.4.7->v6.4.14</span>,
             <span class="li-normal">v7.0.1->v7.2.0</span>
         </li>
         <li><span class="li-required">pkg_firewall_interfacepolicy</span> - available versions:
@@ -1225,7 +1225,7 @@ Parameters
             <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">region</span> - available versions:
-            <span class="li-normal">v6.2.8->v6.2.12</span>
+            <span class="li-normal">v6.2.8->v6.2.12</span>,
             <span class="li-normal">v6.4.6->latest</span>
         </li>
         <li><span class="li-required">router_accesslist</span> - available versions:
@@ -1271,11 +1271,11 @@ Parameters
             <span class="li-normal">v7.0.2->latest</span>
         </li>
         <li><span class="li-required">sctpfilter_profile</span> - available versions:
-            <span class="li-normal">v7.2.5->v7.2.5</span>
+            <span class="li-normal">v7.2.5->v7.2.5</span>,
             <span class="li-normal">v7.4.2->latest</span>
         </li>
         <li><span class="li-required">sctpfilter_profile_ppidfilters</span> - available versions:
-            <span class="li-normal">v7.2.5->v7.2.5</span>
+            <span class="li-normal">v7.2.5->v7.2.5</span>,
             <span class="li-normal">v7.4.2->latest</span>
         </li>
         <li><span class="li-required">spamfilter_bwl</span> - available versions:
@@ -1459,7 +1459,7 @@ Parameters
             <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">system_admin_user_restrictdevvdom</span> - available versions:
-            <span class="li-normal">v6.0.0->v6.2.3</span>
+            <span class="li-normal">v6.0.0->v6.2.3</span>,
             <span class="li-normal">v6.4.0->v6.4.0</span>
         </li>
         <li><span class="li-required">system_admin_user_webfilter</span> - available versions:
@@ -1568,38 +1568,38 @@ Parameters
             <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">system_npu_dswqueuedtsprofile</span> - available versions:
-            <span class="li-normal">v6.4.7->v6.4.14</span>
+            <span class="li-normal">v6.4.7->v6.4.14</span>,
             <span class="li-normal">v7.0.1->latest</span>
         </li>
         <li><span class="li-required">system_npu_npqueues_ethernettype</span> - available versions:
-            <span class="li-normal">v6.4.7->v6.4.14</span>
+            <span class="li-normal">v6.4.7->v6.4.14</span>,
             <span class="li-normal">v7.0.1->latest</span>
         </li>
         <li><span class="li-required">system_npu_npqueues_ipprotocol</span> - available versions:
-            <span class="li-normal">v6.4.7->v6.4.14</span>
+            <span class="li-normal">v6.4.7->v6.4.14</span>,
             <span class="li-normal">v7.0.1->latest</span>
         </li>
         <li><span class="li-required">system_npu_npqueues_ipservice</span> - available versions:
-            <span class="li-normal">v6.4.7->v6.4.14</span>
+            <span class="li-normal">v6.4.7->v6.4.14</span>,
             <span class="li-normal">v7.0.1->latest</span>
         </li>
         <li><span class="li-required">system_npu_npqueues_profile</span> - available versions:
-            <span class="li-normal">v6.4.7->v6.4.14</span>
+            <span class="li-normal">v6.4.7->v6.4.14</span>,
             <span class="li-normal">v7.0.1->latest</span>
         </li>
         <li><span class="li-required">system_npu_npqueues_scheduler</span> - available versions:
-            <span class="li-normal">v6.4.7->v6.4.14</span>
+            <span class="li-normal">v6.4.7->v6.4.14</span>,
             <span class="li-normal">v7.0.1->latest</span>
         </li>
         <li><span class="li-required">system_npu_nputcam</span> - available versions:
             <span class="li-normal">v7.4.2->latest</span>
         </li>
         <li><span class="li-required">system_npu_tcptimeoutprofile</span> - available versions:
-            <span class="li-normal">v6.4.7->v6.4.14</span>
+            <span class="li-normal">v6.4.7->v6.4.14</span>,
             <span class="li-normal">v7.0.1->latest</span>
         </li>
         <li><span class="li-required">system_npu_udptimeoutprofile</span> - available versions:
-            <span class="li-normal">v6.4.7->v6.4.14</span>
+            <span class="li-normal">v6.4.7->v6.4.14</span>,
             <span class="li-normal">v7.0.1->latest</span>
         </li>
         <li><span class="li-required">system_ntp_ntpserver</span> - available versions:
@@ -1708,7 +1708,7 @@ Parameters
             <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">system_sdnconnector_gcpprojectlist</span> - available versions:
-            <span class="li-normal">v6.4.7->v6.4.14</span>
+            <span class="li-normal">v6.4.7->v6.4.14</span>,
             <span class="li-normal">v7.0.2->latest</span>
         </li>
         <li><span class="li-required">system_sdnconnector_nic</span> - available versions:
@@ -1778,7 +1778,7 @@ Parameters
             <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">user_certificate</span> - available versions:
-            <span class="li-normal">v7.0.8->v7.0.12</span>
+            <span class="li-normal">v7.0.8->v7.0.12</span>,
             <span class="li-normal">v7.2.3->latest</span>
         </li>
         <li><span class="li-required">user_clearpass</span> - available versions:
@@ -1905,7 +1905,7 @@ Parameters
             <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">user_radius_dynamicmapping_accountingserver</span> - available versions:
-            <span class="li-normal">v6.2.6->v6.2.12</span>
+            <span class="li-normal">v6.2.6->v6.2.12</span>,
             <span class="li-normal">v6.4.2->v7.4.0</span>
         </li>
         <li><span class="li-required">user_saml</span> - available versions:
@@ -1999,7 +1999,7 @@ Parameters
             <span class="li-normal">v7.2.0->latest</span>
         </li>
         <li><span class="li-required">vpn_ssl_settings_authenticationrule</span> - available versions:
-            <span class="li-normal">v6.2.6->v6.2.12</span>
+            <span class="li-normal">v6.2.6->v6.2.12</span>,
             <span class="li-normal">v6.4.2->latest</span>
         </li>
         <li><span class="li-required">vpnmgr_node</span> - available versions:
