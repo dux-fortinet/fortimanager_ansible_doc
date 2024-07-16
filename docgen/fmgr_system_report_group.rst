@@ -75,7 +75,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">chart_alternative</span> <b>(Alias name: chart-alternative)</b>  Chart-alternative. <span class="li-normal">type: list</span>
+ <li><span class="li-head">chart_alternative</span> <b>(Alias name: chart-alternative)</b>  Chart alternative. <span class="li-normal">type: list</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -95,7 +95,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">group_by</span> <b>(Alias name: group-by)</b>  Group-by. <span class="li-normal">type: list</span>
+ <li><span class="li-head">group_by</span> <b>(Alias name: group-by)</b>  Group by. <span class="li-normal">type: list</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>

@@ -64,7 +64,7 @@ Parameters
  <li><span class="li-head">profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">system_admin_profile_datamaskcustomfields</span> - Customized datamask fields. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">field_category</span> <b>(Alias name: field-category)</b>  <span class="li-normal">type: list</span> <span class="li-normal">choices: [log, fortiview, alert, ueba, all]</span> 
+ <li><span class="li-head">field_category</span> <b>(Alias name: field-category)</b>  Field categories. <span class="li-normal">type: list</span> <span class="li-normal">choices: [log, fortiview, alert, ueba, all]</span> 
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>

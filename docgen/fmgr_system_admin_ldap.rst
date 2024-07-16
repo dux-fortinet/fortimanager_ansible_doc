@@ -104,7 +104,7 @@ Parameters
  <li><span class="li-head">connect_timeout</span> <b>(Alias name: connect-timeout)</b>  Ldap connection timeout (msec). <span class="li-normal">type: int</span> <span class="li-normal">default: 500</span> 
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">dn</span> Distinguished name. <span class="li-normal">type: str</span>

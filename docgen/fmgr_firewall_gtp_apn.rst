@@ -83,7 +83,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">selection_mode</span> <b>(Alias name: selection-mode)</b>  <span class="li-normal">type: list</span> <span class="li-normal">choices: [ms, net, vrf]</span> 
+ <li><span class="li-head">selection_mode</span> <b>(Alias name: selection-mode)</b>  Apn selection mode. <span class="li-normal">type: list</span> <span class="li-normal">choices: [ms, net, vrf]</span> 
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>

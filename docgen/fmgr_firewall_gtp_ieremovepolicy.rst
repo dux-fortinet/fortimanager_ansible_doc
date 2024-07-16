@@ -71,7 +71,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">remove_ies</span> <b>(Alias name: remove-ies)</b>  <span class="li-normal">type: list</span> <span class="li-normal">choices: [apn-restriction, rat-type, rai, uli, imei]</span> 
+ <li><span class="li-head">remove_ies</span> <b>(Alias name: remove-ies)</b>  Gtp ies to be removed. <span class="li-normal">type: list</span> <span class="li-normal">choices: [apn-restriction, rat-type, rai, uli, imei]</span> 
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>

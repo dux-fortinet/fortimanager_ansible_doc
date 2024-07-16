@@ -71,7 +71,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v6.2.3</code></p>
  </div>
  </li>
- <li><span class="li-head">auth_pwd</span> <b>(Alias name: auth-pwd)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">auth_pwd</span> <b>(Alias name: auth-pwd)</b>  Password for authentication protocol. <span class="li-normal">type: list</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v6.2.3</code></p>
@@ -89,7 +89,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v6.2.3</code></p>
  </div>
  </li>
- <li><span class="li-head">priv_pwd</span> <b>(Alias name: priv-pwd)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">priv_pwd</span> <b>(Alias name: priv-pwd)</b>  Password for privacy (encryption) protocol. <span class="li-normal">type: list</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v6.2.3</code></p>

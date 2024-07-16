@@ -417,6 +417,9 @@ Parameters
         <li><span class="li-required">extendercontroller_dataplan</span> - available versions:
             <span class="li-normal">v6.4.4->latest</span>
         </li>
+        <li><span class="li-required">extendercontroller_extender</span> - available versions:
+            <span class="li-normal">v7.4.3->latest</span>
+        </li>
         <li><span class="li-required">extendercontroller_extenderprofile</span> - available versions:
             <span class="li-normal">v7.0.2->latest</span>
         </li>
@@ -434,6 +437,9 @@ Parameters
         </li>
         <li><span class="li-required">extensioncontroller_dataplan</span> - available versions:
             <span class="li-normal">v7.2.1->latest</span>
+        </li>
+        <li><span class="li-required">extensioncontroller_extender</span> - available versions:
+            <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">extensioncontroller_extenderprofile</span> - available versions:
             <span class="li-normal">v7.2.1->latest</span>
@@ -751,6 +757,9 @@ Parameters
         <li><span class="li-required">firewall_sslsshprofile</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
         </li>
+        <li><span class="li-required">firewall_sslsshprofile_echoutersni</span> - available versions:
+            <span class="li-normal">v7.4.3->latest</span>
+        </li>
         <li><span class="li-required">firewall_sslsshprofile_sslexempt</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
         </li>
@@ -855,6 +864,12 @@ Parameters
         </li>
         <li><span class="li-required">fmupdate_webspam_fgdsetting_serveroverride_servlist</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
+        </li>
+        <li><span class="li-required">fsp_packetcapture</span> - available versions:
+            <span class="li-normal">v7.4.3->latest</span>
+        </li>
+        <li><span class="li-required">fsp_vdomsettings_interfacesettings</span> - available versions:
+            <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">fsp_vlan</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
@@ -1049,13 +1064,13 @@ Parameters
             <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">ips_sensor</span> - available versions:
-            <span class="li-normal">v7.0.3->latest</span>
+            <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">ips_sensor_entries</span> - available versions:
-            <span class="li-normal">v7.0.3->latest</span>
+            <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">ips_sensor_entries_exemptip</span> - available versions:
-            <span class="li-normal">v7.0.3->latest</span>
+            <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">log_customfield</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
@@ -1086,10 +1101,12 @@ Parameters
             <span class="li-normal">v6.4.2->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_acl</span> - available versions:
-            <span class="li-normal">v7.2.0->v7.2.0</span>
+            <span class="li-normal">v7.2.0->v7.2.0</span>,
+            <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_acl6</span> - available versions:
-            <span class="li-normal">v7.2.0->v7.2.0</span>
+            <span class="li-normal">v7.2.0->v7.2.0</span>,
+            <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_centralsnatmap</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
@@ -1117,25 +1134,31 @@ Parameters
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy</span> - available versions:
             <span class="li-normal">v6.4.7->v6.4.14</span>,
-            <span class="li-normal">v7.0.1->v7.2.0</span>
+            <span class="li-normal">v7.0.1->v7.2.0</span>,
+            <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy46</span> - available versions:
             <span class="li-normal">v6.4.7->v6.4.14</span>,
-            <span class="li-normal">v7.0.1->v7.2.0</span>
+            <span class="li-normal">v7.0.1->v7.2.0</span>,
+            <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy6</span> - available versions:
             <span class="li-normal">v6.4.7->v6.4.14</span>,
-            <span class="li-normal">v7.0.1->v7.2.0</span>
+            <span class="li-normal">v7.0.1->v7.2.0</span>,
+            <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy64</span> - available versions:
             <span class="li-normal">v6.4.7->v6.4.14</span>,
-            <span class="li-normal">v7.0.1->v7.2.0</span>
+            <span class="li-normal">v7.0.1->v7.2.0</span>,
+            <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_interfacepolicy</span> - available versions:
-            <span class="li-normal">v6.0.0->v7.2.2</span>
+            <span class="li-normal">v6.0.0->v7.2.2</span>,
+            <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_interfacepolicy6</span> - available versions:
-            <span class="li-normal">v6.0.0->v7.2.2</span>
+            <span class="li-normal">v6.0.0->v7.2.2</span>,
+            <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_localinpolicy</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
@@ -1788,13 +1811,13 @@ Parameters
             <span class="li-normal">v7.0.1->latest</span>
         </li>
         <li><span class="li-required">user_device</span> - available versions:
-            <span class="li-normal">v6.0.0->latest</span>
+            <span class="li-normal">v6.0.0->v7.4.2</span>
         </li>
         <li><span class="li-required">user_device_dynamicmapping</span> - available versions:
-            <span class="li-normal">v6.0.0->latest</span>
+            <span class="li-normal">v6.0.0->v7.4.2</span>
         </li>
         <li><span class="li-required">user_device_tagging</span> - available versions:
-            <span class="li-normal">v6.0.0->latest</span>
+            <span class="li-normal">v6.0.0->v7.4.2</span>
         </li>
         <li><span class="li-required">user_deviceaccesslist</span> - available versions:
             <span class="li-normal">v6.2.2->v7.2.1</span>
@@ -1822,6 +1845,9 @@ Parameters
         </li>
         <li><span class="li-required">user_exchange</span> - available versions:
             <span class="li-normal">v6.2.0->latest</span>
+        </li>
+        <li><span class="li-required">user_externalidentityprovider</span> - available versions:
+            <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">user_flexvm</span> - available versions:
             <span class="li-normal">v7.2.1->latest</span>
@@ -2202,6 +2228,15 @@ Parameters
         </li>
         <li><span class="li-required">wireless_syslogprofile</span> - available versions:
             <span class="li-normal">v7.2.1->latest</span>
+        </li>
+        <li><span class="li-required">wireless_wtp</span> - available versions:
+            <span class="li-normal">v7.4.3->latest</span>
+        </li>
+        <li><span class="li-required">wireless_wtp_splittunnelingacl</span> - available versions:
+            <span class="li-normal">v7.4.3->latest</span>
+        </li>
+        <li><span class="li-required">wireless_wtpgroup</span> - available versions:
+            <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">wtpprofile</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
@@ -2870,6 +2905,11 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">dataplan</span></li>
         </ul>
+        <li><span class="li-normal">params for extendercontroller_extender:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">extender</span></li>
+        </ul>
         <li><span class="li-normal">params for extendercontroller_extenderprofile:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -2901,6 +2941,11 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">dataplan</span></li>
+        </ul>
+        <li><span class="li-normal">params for extensioncontroller_extender:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">extender</span></li>
         </ul>
         <li><span class="li-normal">params for extensioncontroller_extenderprofile:</span></li>
         <ul class="ul-self">
@@ -3498,6 +3543,12 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">ssl-ssh-profile</span></li>
         </ul>
+        <li><span class="li-normal">params for firewall_sslsshprofile_echoutersni:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">ssl-ssh-profile</span></li>
+            <li><span class="li-normal">ech-outer-sni</span></li>
+        </ul>
         <li><span class="li-normal">params for firewall_sslsshprofile_sslexempt:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -3689,6 +3740,16 @@ Parameters
         <li><span class="li-normal">params for fmupdate_webspam_fgdsetting_serveroverride_servlist:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">servlist</span></li>
+        </ul>
+        <li><span class="li-normal">params for fsp_packetcapture:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">packet-capture</span></li>
+        </ul>
+        <li><span class="li-normal">params for fsp_vdomsettings_interfacesettings:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">interface-settings</span></li>
         </ul>
         <li><span class="li-normal">params for fsp_vlan:</span></li>
         <ul class="ul-self">
@@ -5404,6 +5465,11 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">exchange</span></li>
         </ul>
+        <li><span class="li-normal">params for user_externalidentityprovider:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">external-identity-provider</span></li>
+        </ul>
         <li><span class="li-normal">params for user_flexvm:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -6107,6 +6173,22 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">syslog-profile</span></li>
+        </ul>
+        <li><span class="li-normal">params for wireless_wtp:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">wtp</span></li>
+        </ul>
+        <li><span class="li-normal">params for wireless_wtp_splittunnelingacl:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">wtp</span></li>
+            <li><span class="li-normal">split-tunneling-acl</span></li>
+        </ul>
+        <li><span class="li-normal">params for wireless_wtpgroup:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">wtp-group</span></li>
         </ul>
         <li><span class="li-normal">params for wtpprofile:</span></li>
         <ul class="ul-self">
@@ -6833,6 +6915,12 @@ Parameters
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_extendercontroller_dataplan.html#parameters">fmgr_extendercontroller_dataplan</a> </span></li>
         </ul>
+        <li><span class="li-normal">params for extendercontroller_extender:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_extendercontroller_extender.html#parameters">fmgr_extendercontroller_extender</a> </span></li>
+        </ul>
         <li><span class="li-normal">params for extendercontroller_extenderprofile:</span></li>
         <ul class="ul-self">
             
@@ -6868,6 +6956,12 @@ Parameters
             
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_extensioncontroller_dataplan.html#parameters">fmgr_extensioncontroller_dataplan</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for extensioncontroller_extender:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_extensioncontroller_extender.html#parameters">fmgr_extensioncontroller_extender</a> </span></li>
         </ul>
         <li><span class="li-normal">params for extensioncontroller_extenderprofile:</span></li>
         <ul class="ul-self">
@@ -7499,6 +7593,12 @@ Parameters
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_firewall_sslsshprofile.html#parameters">fmgr_firewall_sslsshprofile</a> </span></li>
         </ul>
+        <li><span class="li-normal">params for firewall_sslsshprofile_echoutersni:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_firewall_sslsshprofile_echoutersni.html#parameters">fmgr_firewall_sslsshprofile_echoutersni</a> </span></li>
+        </ul>
         <li><span class="li-normal">params for firewall_sslsshprofile_sslexempt:</span></li>
         <ul class="ul-self">
             
@@ -7708,6 +7808,18 @@ Parameters
             
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_fmupdate_webspam_fgdsetting_serveroverride_servlist.html#parameters">fmgr_fmupdate_webspam_fgdsetting_serveroverride_servlist</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for fsp_packetcapture:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_fsp_packetcapture.html#parameters">fmgr_fsp_packetcapture</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for fsp_vdomsettings_interfacesettings:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_fsp_vdomsettings_interfacesettings.html#parameters">fmgr_fsp_vdomsettings_interfacesettings</a> </span></li>
         </ul>
         <li><span class="li-normal">params for fsp_vlan:</span></li>
         <ul class="ul-self">
@@ -8684,7 +8796,7 @@ Parameters
         <li><span class="li-normal">params for switchcontroller_managedswitch:</span></li>
         <ul class="ul-self">
             
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">required primary key: <b>switch-id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_switchcontroller_managedswitch.html#parameters">fmgr_switchcontroller_managedswitch</a> </span></li>
         </ul>
         <li><span class="li-normal">params for switchcontroller_managedswitch_dhcpsnoopingstaticclient:</span></li>
@@ -9605,6 +9717,12 @@ Parameters
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_user_exchange.html#parameters">fmgr_user_exchange</a> </span></li>
         </ul>
+        <li><span class="li-normal">params for user_externalidentityprovider:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_user_externalidentityprovider.html#parameters">fmgr_user_externalidentityprovider</a> </span></li>
+        </ul>
         <li><span class="li-normal">params for user_flexvm:</span></li>
         <ul class="ul-self">
             
@@ -10360,6 +10478,24 @@ Parameters
             
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_wireless_syslogprofile.html#parameters">fmgr_wireless_syslogprofile</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for wireless_wtp:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_wireless_wtp.html#parameters">fmgr_wireless_wtp</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for wireless_wtp_splittunnelingacl:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_wireless_wtp_splittunnelingacl.html#parameters">fmgr_wireless_wtp_splittunnelingacl</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for wireless_wtpgroup:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_wireless_wtpgroup.html#parameters">fmgr_wireless_wtpgroup</a> </span></li>
         </ul>
         <li><span class="li-normal">params for wtpprofile:</span></li>
         <ul class="ul-self">

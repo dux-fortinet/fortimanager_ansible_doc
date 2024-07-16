@@ -66,7 +66,7 @@ Parameters
  <li><span class="li-head">nai-list</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">hotspot20_anqpnairealm_nailist_eapmethod</span> - EAP Methods. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">auth_param</span> <b>(Alias name: auth-param)</b>  <span class="li-normal">type: list</span>
+ <li><span class="li-head">auth_param</span> <b>(Alias name: auth-param)</b>  Auth param. <span class="li-normal">type: list</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>

@@ -64,7 +64,7 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">user_fssopolling</span> - Configure FSSO active directory servers for polling mode. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">_gui_meta</span> _gui_meta. <span class="li-normal">type: str</span>
+ <li><span class="li-head">_gui_meta</span> Gui meta. <span class="li-normal">type: str</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>

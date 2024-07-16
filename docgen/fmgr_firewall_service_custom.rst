@@ -100,7 +100,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">comment</span> <span class="li-normal">type: dict or str</span> </li>
+ <li><span class="li-head">comment</span> Comment. <span class="li-normal">type: dict or str</span> </li>
  <li><span class="li-head">fqdn</span> Fully qualified domain name. <span class="li-normal">type: str</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">

@@ -82,7 +82,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
  </div>
  </li>
- <li><span class="li-head">tag_type</span> <b>(Alias name: tag-type)</b>  <span class="li-normal">type: list</span> <span class="li-normal">choices: [subject, header, spaminfo]</span> 
+ <li><span class="li-head">tag_type</span> <b>(Alias name: tag-type)</b>  Tag subject or header for spam email. <span class="li-normal">type: list</span> <span class="li-normal">choices: [subject, header, spaminfo]</span> 
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.2.1</code></p>
