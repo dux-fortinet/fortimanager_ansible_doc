@@ -19,7 +19,7 @@ Synopsis
 
 - This module is able to configure a FortiManager device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-- Tested with FortiManager v6.x and v7.x.
+- Tested with FortiManager v7.x.
 
 
 Requirements
@@ -174,9 +174,6 @@ Parameters
         </li>
         <li><span class="li-required">firewall_vip6</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
-        </li>
-        <li><span class="li-required">fsp_managedswitch</span> - available versions:
-          <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">ips_sensor_entries</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
@@ -423,9 +420,6 @@ Parameters
         <li><span class="li-required">wireless_accesscontrollist_layer3ipv6rules</span> - available versions:
           <span class="li-normal">v7.2.1->latest</span>
         </li>
-        <li><span class="li-required">wireless_wtp</span> - available versions:
-          <span class="li-normal">v7.4.3->latest</span>
-        </li>
     </ul>
     </div>
     </section>
@@ -664,11 +658,6 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">vip6</span></li>
-        </ul>
-        <li><span class="li-normal">params for fsp_managedswitch:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">managed-switch</span></li>
         </ul>
         <li><span class="li-normal">params for ips_sensor_entries:</span></li>
         <ul class="ul-self">
@@ -1136,11 +1125,6 @@ Parameters
             <li><span class="li-normal">access-control-list</span></li>
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">layer3-ipv6-rules</span></li>
-        </ul>
-        <li><span class="li-normal">params for wireless_wtp:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">wtp</span></li>
         </ul>
     </ul>
     </div>
