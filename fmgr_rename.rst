@@ -1367,6 +1367,10 @@ Parameters
         <li><span class="li-required">switchcontroller_managedswitch_dhcpsnoopingstaticclient</span> - available versions:
             <span class="li-normal">v7.2.2->latest</span>
         </li>
+        <li><span class="li-required">switchcontroller_managedswitch_mirror</span> - available versions:
+            <span class="li-normal">v6.0.0->v6.2.0</span>,
+            <span class="li-normal">v7.4.3->latest</span>
+        </li>
         <li><span class="li-required">switchcontroller_managedswitch_ports</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
         </li>
@@ -1381,6 +1385,14 @@ Parameters
         </li>
         <li><span class="li-required">switchcontroller_managedswitch_snmpuser</span> - available versions:
             <span class="li-normal">v6.2.1->v6.2.3</span>
+        </li>
+        <li><span class="li-required">switchcontroller_managedswitch_staticmac</span> - available versions:
+            <span class="li-normal">v6.2.0->v6.2.0</span>,
+            <span class="li-normal">v7.4.3->latest</span>
+        </li>
+        <li><span class="li-required">switchcontroller_managedswitch_stpinstance</span> - available versions:
+            <span class="li-normal">v6.2.0->v6.2.0</span>,
+            <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">switchcontroller_ptp_profile</span> - available versions:
             <span class="li-normal">v7.4.1->latest</span>
@@ -4648,6 +4660,13 @@ Parameters
             <li><span class="li-normal">managed-switch</span></li>
             <li><span class="li-normal">dhcp-snooping-static-client</span></li>
         </ul>
+        <li><span class="li-normal">params for switchcontroller_managedswitch_mirror:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">device</span></li>
+            <li><span class="li-normal">vdom</span></li>
+            <li><span class="li-normal">managed-switch</span></li>
+            <li><span class="li-normal">mirror</span></li>
+        </ul>
         <li><span class="li-normal">params for switchcontroller_managedswitch_ports:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -4678,6 +4697,20 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">managed-switch</span></li>
             <li><span class="li-normal">snmp-user</span></li>
+        </ul>
+        <li><span class="li-normal">params for switchcontroller_managedswitch_staticmac:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">device</span></li>
+            <li><span class="li-normal">vdom</span></li>
+            <li><span class="li-normal">managed-switch</span></li>
+            <li><span class="li-normal">static-mac</span></li>
+        </ul>
+        <li><span class="li-normal">params for switchcontroller_managedswitch_stpinstance:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">device</span></li>
+            <li><span class="li-normal">vdom</span></li>
+            <li><span class="li-normal">managed-switch</span></li>
+            <li><span class="li-normal">stp-instance</span></li>
         </ul>
         <li><span class="li-normal">params for switchcontroller_ptp_profile:</span></li>
         <ul class="ul-self">
@@ -8724,6 +8757,12 @@ Parameters
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_switchcontroller_managedswitch_dhcpsnoopingstaticclient.html#parameters">fmgr_switchcontroller_managedswitch_dhcpsnoopingstaticclient</a> </span></li>
         </ul>
+        <li><span class="li-normal">params for switchcontroller_managedswitch_mirror:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_switchcontroller_managedswitch_mirror.html#parameters">fmgr_switchcontroller_managedswitch_mirror</a> </span></li>
+        </ul>
         <li><span class="li-normal">params for switchcontroller_managedswitch_ports:</span></li>
         <ul class="ul-self">
             
@@ -8753,6 +8792,18 @@ Parameters
             
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_switchcontroller_managedswitch_snmpuser.html#parameters">fmgr_switchcontroller_managedswitch_snmpuser</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for switchcontroller_managedswitch_staticmac:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_switchcontroller_managedswitch_staticmac.html#parameters">fmgr_switchcontroller_managedswitch_staticmac</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for switchcontroller_managedswitch_stpinstance:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_switchcontroller_managedswitch_stpinstance.html#parameters">fmgr_switchcontroller_managedswitch_stpinstance</a> </span></li>
         </ul>
         <li><span class="li-normal">params for switchcontroller_ptp_profile:</span></li>
         <ul class="ul-self">

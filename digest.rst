@@ -5122,7 +5122,7 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_mirror.html">fmgr_switchcontroller_managedswitch_mirror</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">device</span></code><br><code class="docutils literal notranslate"><span class="pre">vdom</span></code><br><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
-  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
   <td>/pm/config/device/{device}/vdom/{vdom}/switch-controller/managed-switch/{managed-switch}/mirror<br>/pm/config/device/{device}/vdom/{vdom}/switch-controller/managed-switch/{managed-switch}/mirror/{mirror}</td>
   </tr>
   <tr class="row-even">
@@ -5192,7 +5192,7 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_staticmac.html">fmgr_switchcontroller_managedswitch_staticmac</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">device</span></code><br><code class="docutils literal notranslate"><span class="pre">vdom</span></code><br><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
-  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">id</span></code></td>
   <td>/pm/config/device/{device}/vdom/{vdom}/switch-controller/managed-switch/{managed-switch}/static-mac<br>/pm/config/device/{device}/vdom/{vdom}/switch-controller/managed-switch/{managed-switch}/static-mac/{static-mac}</td>
   </tr>
   <tr class="row-even">
@@ -5206,7 +5206,7 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><a class="reference external" href="docgen/fmgr_switchcontroller_managedswitch_stpinstance.html">fmgr_switchcontroller_managedswitch_stpinstance</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">device</span></code><br><code class="docutils literal notranslate"><span class="pre">vdom</span></code><br><code class="docutils literal notranslate"><span class="pre">managed-switch</span></code></td>
-  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">id</span></code></td>
   <td>/pm/config/device/{device}/vdom/{vdom}/switch-controller/managed-switch/{managed-switch}/stp-instance<br>/pm/config/device/{device}/vdom/{vdom}/switch-controller/managed-switch/{managed-switch}/stp-instance/{stp-instance}</td>
   </tr>
   <tr class="row-even">

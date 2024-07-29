@@ -9037,6 +9037,7 @@ Parameters
         <li><span class="li-normal">params for switchcontroller_managedswitch_mirror:</span></li>
         <ul class="ul-self">
             
+            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_switchcontroller_managedswitch_mirror.html#parameters">fmgr_switchcontroller_managedswitch_mirror</a> </span></li>
         </ul>
         <li><span class="li-normal">params for switchcontroller_managedswitch_ports:</span></li>
@@ -9082,11 +9083,13 @@ Parameters
         <li><span class="li-normal">params for switchcontroller_managedswitch_staticmac:</span></li>
         <ul class="ul-self">
             
+            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_switchcontroller_managedswitch_staticmac.html#parameters">fmgr_switchcontroller_managedswitch_staticmac</a> </span></li>
         </ul>
         <li><span class="li-normal">params for switchcontroller_managedswitch_stpinstance:</span></li>
         <ul class="ul-self">
             
+            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_switchcontroller_managedswitch_stpinstance.html#parameters">fmgr_switchcontroller_managedswitch_stpinstance</a> </span></li>
         </ul>
         <li><span class="li-normal">params for switchcontroller_managedswitch_vlan:</span></li>

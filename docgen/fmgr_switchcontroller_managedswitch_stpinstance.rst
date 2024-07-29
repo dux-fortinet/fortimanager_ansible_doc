@@ -64,6 +64,21 @@ Parameters
  <li><span class="li-head">device</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">vdom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">managed-switch</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
+ <li><span class="li-head">switchcontroller_managedswitch_stpinstance</span> - Configuration method to edit Spanning Tree Protocol <span class="li-normal">type: dict</span></li>
+ <ul class="ul-self">
+ <li><span class="li-head">id</span> Instance id. <span class="li-normal">type: str</span>
+ <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
+ <div id="label1" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">priority</span> Priority. <span class="li-normal">type: str</span> <span class="li-normal">choices: [0, 4096, 8192, 12288, 12328, 16384, 20480, 24576, 28672, 32768, 36864, 40960, 45056, 49152, 53248, 57344, 61440]</span> 
+ <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
+ <div id="label3" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ </ul>
  </ul>
 
 
@@ -100,6 +115,9 @@ Examples
           vdom: <your own value>
           managed_switch: <your own value>
           state: present # <value in [present, absent]>
+          switchcontroller_managedswitch_stpinstance:
+            id: <string>
+            priority: <value in [0, 4096, 8192, ...]>
 
 
 Return Values
