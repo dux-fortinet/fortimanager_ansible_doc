@@ -820,6 +820,9 @@ Parameters
       <li><span class="li-required">extensioncontroller_extenderprofile_lanextension_backhaul</span> - available versions:
           <span class="li-normal">v7.2.1->latest</span>
       </li>
+      <li><span class="li-required">extensioncontroller_extenderprofile_lanextension_downlinks</span> - available versions:
+          <span class="li-normal">v7.6.0->latest</span>
+      </li>
       <li><span class="li-required">extensioncontroller_extenderprofile_wifi</span> - available versions:
           <span class="li-normal">v7.4.3->latest</span>
       </li>
@@ -1382,6 +1385,12 @@ Parameters
       </li>
       <li><span class="li-required">fmg_fabric_authorization_template_platforms</span> - available versions:
           <span class="li-normal">v7.2.1->latest</span>
+      </li>
+      <li><span class="li-required">fmg_sasemanager_settings</span> - available versions:
+          <span class="li-normal">v7.6.0->latest</span>
+      </li>
+      <li><span class="li-required">fmg_sasemanager_status</span> - available versions:
+          <span class="li-normal">v7.6.0->latest</span>
       </li>
       <li><span class="li-required">fmg_variable</span> - available versions:
           <span class="li-normal">v7.2.0->latest</span>
@@ -2039,6 +2048,9 @@ Parameters
       <li><span class="li-required">pm_config_pblock_firewall_policy6</span> - available versions:
           <span class="li-normal">v7.0.3->latest</span>
       </li>
+      <li><span class="li-required">pm_config_pblock_firewall_proxypolicy</span> - available versions:
+          <span class="li-normal">v7.6.0->latest</span>
+      </li>
       <li><span class="li-required">pm_config_pblock_firewall_securitypolicy</span> - available versions:
           <span class="li-normal">v7.0.3->latest</span>
       </li>
@@ -2246,29 +2258,17 @@ Parameters
       <li><span class="li-required">switchcontroller_managedswitch</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
       </li>
-      <li><span class="li-required">switchcontroller_managedswitch_8021xsettings</span> - available versions:
-          <span class="li-normal">v6.0.0->v6.2.0</span>,
-          <span class="li-normal">v7.4.3->latest</span>
-      </li>
       <li><span class="li-required">switchcontroller_managedswitch_customcommand</span> - available versions:
           <span class="li-normal">v7.0.0->latest</span>
       </li>
       <li><span class="li-required">switchcontroller_managedswitch_dhcpsnoopingstaticclient</span> - available versions:
           <span class="li-normal">v7.2.2->latest</span>
       </li>
-      <li><span class="li-required">switchcontroller_managedswitch_igmpsnooping</span> - available versions:
-          <span class="li-normal">v6.0.0->v6.2.0</span>,
-          <span class="li-normal">v7.4.3->latest</span>
-      </li>
       <li><span class="li-required">switchcontroller_managedswitch_ipsourceguard</span> - available versions:
           <span class="li-normal">v6.4.0->v6.4.1</span>
       </li>
       <li><span class="li-required">switchcontroller_managedswitch_ipsourceguard_bindingentry</span> - available versions:
           <span class="li-normal">v6.4.0->v6.4.1</span>
-      </li>
-      <li><span class="li-required">switchcontroller_managedswitch_mirror</span> - available versions:
-          <span class="li-normal">v6.0.0->v6.2.0</span>,
-          <span class="li-normal">v7.4.3->latest</span>
       </li>
       <li><span class="li-required">switchcontroller_managedswitch_ports</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
@@ -2296,29 +2296,6 @@ Parameters
       </li>
       <li><span class="li-required">switchcontroller_managedswitch_snmpuser</span> - available versions:
           <span class="li-normal">v6.2.1->v6.2.3</span>
-      </li>
-      <li><span class="li-required">switchcontroller_managedswitch_staticmac</span> - available versions:
-          <span class="li-normal">v6.2.0->v6.2.0</span>,
-          <span class="li-normal">v7.4.3->latest</span>
-      </li>
-      <li><span class="li-required">switchcontroller_managedswitch_stormcontrol</span> - available versions:
-          <span class="li-normal">v6.0.0->v6.2.0</span>,
-          <span class="li-normal">v7.4.3->latest</span>
-      </li>
-      <li><span class="li-required">switchcontroller_managedswitch_stpinstance</span> - available versions:
-          <span class="li-normal">v6.2.0->v6.2.0</span>,
-          <span class="li-normal">v7.4.3->latest</span>
-      </li>
-      <li><span class="li-required">switchcontroller_managedswitch_stpsettings</span> - available versions:
-          <span class="li-normal">v6.0.0->v6.2.0</span>,
-          <span class="li-normal">v7.4.3->latest</span>
-      </li>
-      <li><span class="li-required">switchcontroller_managedswitch_switchlog</span> - available versions:
-          <span class="li-normal">v6.0.0->v6.2.0</span>,
-          <span class="li-normal">v7.4.3->latest</span>
-      </li>
-      <li><span class="li-required">switchcontroller_managedswitch_switchstpsettings</span> - available versions:
-          <span class="li-normal">v6.0.0->v6.2.0</span>
       </li>
       <li><span class="li-required">switchcontroller_managedswitch_vlan</span> - available versions:
           <span class="li-normal">v7.4.2->latest</span>
@@ -2422,6 +2399,9 @@ Parameters
       <li><span class="li-required">system_admin_user_metadata</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
       </li>
+      <li><span class="li-required">system_admin_user_policyblock</span> - available versions:
+          <span class="li-normal">v7.6.0->latest</span>
+      </li>
       <li><span class="li-required">system_admin_user_policypackage</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
       </li>
@@ -2524,6 +2504,12 @@ Parameters
       </li>
       <li><span class="li-required">system_fips</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
+      </li>
+      <li><span class="li-required">system_fmgcluster</span> - available versions:
+          <span class="li-normal">v7.6.0->latest</span>
+      </li>
+      <li><span class="li-required">system_fmgcluster_peer</span> - available versions:
+          <span class="li-normal">v7.6.0->latest</span>
       </li>
       <li><span class="li-required">system_fortiguard</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
@@ -2735,6 +2721,9 @@ Parameters
       <li><span class="li-required">system_npu_hpe</span> - available versions:
           <span class="li-normal">v6.4.7->v6.4.14</span>,
           <span class="li-normal">v7.0.1->latest</span>
+      </li>
+      <li><span class="li-required">system_npu_icmperrorratectrl</span> - available versions:
+          <span class="li-normal">v7.6.0->latest</span>
       </li>
       <li><span class="li-required">system_npu_icmpratectrl</span> - available versions:
           <span class="li-normal">v7.4.3->latest</span>
@@ -3515,6 +3504,12 @@ Parameters
       </li>
       <li><span class="li-required">wanprof_system_sdwan_healthcheck_sla</span> - available versions:
           <span class="li-normal">v6.4.1->latest</span>
+      </li>
+      <li><span class="li-required">wanprof_system_sdwan_healthcheckfortiguard</span> - available versions:
+          <span class="li-normal">v7.6.0->latest</span>
+      </li>
+      <li><span class="li-required">wanprof_system_sdwan_healthcheckfortiguard_sla</span> - available versions:
+          <span class="li-normal">v7.6.0->latest</span>
       </li>
       <li><span class="li-required">wanprof_system_sdwan_members</span> - available versions:
           <span class="li-normal">v6.4.1->latest</span>
@@ -4940,6 +4935,12 @@ Parameters
             <li><span class="li-normal">backhaul</span></li>
             <li><span class="li-normal">extender-profile</span></li>
         </ul>
+        <li><span class="li-normal">params for extensioncontroller_extenderprofile_lanextension_downlinks:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">downlinks</span></li>
+            <li><span class="li-normal">extender-profile</span></li>
+        </ul>
         <li><span class="li-normal">params for extensioncontroller_extenderprofile_wifi:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -5983,6 +5984,14 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">platforms</span></li>
             <li><span class="li-normal">template</span></li>
+        </ul>
+        <li><span class="li-normal">params for fmg_sasemanager_settings:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+        </ul>
+        <li><span class="li-normal">params for fmg_sasemanager_status:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
         </ul>
         <li><span class="li-normal">params for fmg_variable:</span></li>
         <ul class="ul-self">
@@ -7068,6 +7077,12 @@ Parameters
             <li><span class="li-normal">pblock</span></li>
             <li><span class="li-normal">policy6</span></li>
         </ul>
+        <li><span class="li-normal">params for pm_config_pblock_firewall_proxypolicy:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">pblock</span></li>
+            <li><span class="li-normal">proxy-policy</span></li>
+        </ul>
         <li><span class="li-normal">params for pm_config_pblock_firewall_securitypolicy:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -7421,12 +7436,6 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">managed-switch</span></li>
         </ul>
-        <li><span class="li-normal">params for switchcontroller_managedswitch_8021xsettings:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">device</span></li>
-            <li><span class="li-normal">managed-switch</span></li>
-            <li><span class="li-normal">vdom</span></li>
-        </ul>
         <li><span class="li-normal">params for switchcontroller_managedswitch_customcommand:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -7438,12 +7447,6 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">dhcp-snooping-static-client</span></li>
             <li><span class="li-normal">managed-switch</span></li>
-        </ul>
-        <li><span class="li-normal">params for switchcontroller_managedswitch_igmpsnooping:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">device</span></li>
-            <li><span class="li-normal">managed-switch</span></li>
-            <li><span class="li-normal">vdom</span></li>
         </ul>
         <li><span class="li-normal">params for switchcontroller_managedswitch_ipsourceguard:</span></li>
         <ul class="ul-self">
@@ -7457,13 +7460,6 @@ Parameters
             <li><span class="li-normal">binding-entry</span></li>
             <li><span class="li-normal">ip-source-guard</span></li>
             <li><span class="li-normal">managed-switch</span></li>
-        </ul>
-        <li><span class="li-normal">params for switchcontroller_managedswitch_mirror:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">device</span></li>
-            <li><span class="li-normal">managed-switch</span></li>
-            <li><span class="li-normal">mirror</span></li>
-            <li><span class="li-normal">vdom</span></li>
         </ul>
         <li><span class="li-normal">params for switchcontroller_managedswitch_ports:</span></li>
         <ul class="ul-self">
@@ -7518,44 +7514,6 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">managed-switch</span></li>
             <li><span class="li-normal">snmp-user</span></li>
-        </ul>
-        <li><span class="li-normal">params for switchcontroller_managedswitch_staticmac:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">device</span></li>
-            <li><span class="li-normal">managed-switch</span></li>
-            <li><span class="li-normal">static-mac</span></li>
-            <li><span class="li-normal">vdom</span></li>
-        </ul>
-        <li><span class="li-normal">params for switchcontroller_managedswitch_stormcontrol:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">device</span></li>
-            <li><span class="li-normal">managed-switch</span></li>
-            <li><span class="li-normal">vdom</span></li>
-        </ul>
-        <li><span class="li-normal">params for switchcontroller_managedswitch_stpinstance:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">device</span></li>
-            <li><span class="li-normal">managed-switch</span></li>
-            <li><span class="li-normal">stp-instance</span></li>
-            <li><span class="li-normal">vdom</span></li>
-        </ul>
-        <li><span class="li-normal">params for switchcontroller_managedswitch_stpsettings:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">device</span></li>
-            <li><span class="li-normal">managed-switch</span></li>
-            <li><span class="li-normal">vdom</span></li>
-        </ul>
-        <li><span class="li-normal">params for switchcontroller_managedswitch_switchlog:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">device</span></li>
-            <li><span class="li-normal">managed-switch</span></li>
-            <li><span class="li-normal">vdom</span></li>
-        </ul>
-        <li><span class="li-normal">params for switchcontroller_managedswitch_switchstpsettings:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">device</span></li>
-            <li><span class="li-normal">managed-switch</span></li>
-            <li><span class="li-normal">vdom</span></li>
         </ul>
         <li><span class="li-normal">params for switchcontroller_managedswitch_vlan:</span></li>
         <ul class="ul-self">
@@ -7718,6 +7676,11 @@ Parameters
             <li><span class="li-normal">meta-data</span></li>
             <li><span class="li-normal">user</span></li>
         </ul>
+        <li><span class="li-normal">params for system_admin_user_policyblock:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">policy-block</span></li>
+            <li><span class="li-normal">user</span></li>
+        </ul>
         <li><span class="li-normal">params for system_admin_user_policypackage:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">policy-package</span></li>
@@ -7853,6 +7816,13 @@ Parameters
         </ul>
         <li><span class="li-normal">params for system_fips:</span></li>
         <ul class="ul-self">
+        </ul>
+        <li><span class="li-normal">params for system_fmgcluster:</span></li>
+        <ul class="ul-self">
+        </ul>
+        <li><span class="li-normal">params for system_fmgcluster_peer:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">peer</span></li>
         </ul>
         <li><span class="li-normal">params for system_fortiguard:</span></li>
         <ul class="ul-self">
@@ -8098,6 +8068,10 @@ Parameters
             <li><span class="li-normal">adom</span></li>
         </ul>
         <li><span class="li-normal">params for system_npu_hpe:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+        </ul>
+        <li><span class="li-normal">params for system_npu_icmperrorratectrl:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
         </ul>
@@ -9409,6 +9383,19 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">health-check</span></li>
+            <li><span class="li-normal">sla</span></li>
+            <li><span class="li-normal">wanprof</span></li>
+        </ul>
+        <li><span class="li-normal">params for wanprof_system_sdwan_healthcheckfortiguard:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">health-check-fortiguard</span></li>
+            <li><span class="li-normal">wanprof</span></li>
+        </ul>
+        <li><span class="li-normal">params for wanprof_system_sdwan_healthcheckfortiguard_sla:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">health-check-fortiguard</span></li>
             <li><span class="li-normal">sla</span></li>
             <li><span class="li-normal">wanprof</span></li>
         </ul>

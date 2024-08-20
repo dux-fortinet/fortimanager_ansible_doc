@@ -1,13 +1,13 @@
-:source: fmgr_switchcontroller_managedswitch_stormcontrol.py
+:source: fmgr_pm_config_pblock_firewall_proxypolicy_sectionvalue.py
 
 :orphan:
 
-.. _fmgr_switchcontroller_managedswitch_stormcontrol:
+.. _fmgr_pm_config_pblock_firewall_proxypolicy_sectionvalue:
 
-fmgr_switchcontroller_managedswitch_stormcontrol -- Configuration method to edit FortiSwitch storm control for measuring traffic activity using data rates to prevent traffic disruption.
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fmgr_pm_config_pblock_firewall_proxypolicy_sectionvalue -- Configure proxy policies.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-.. versionadded:: 2.0.0
+.. versionadded:: 2.7.0
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
@@ -43,7 +43,7 @@ FortiManager Version Compatibility
 ----------------------------------
 .. raw:: html
 
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.2.0</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
 
 
 
@@ -58,41 +58,24 @@ Parameters
  <li><span class="li-head">proposed_method</span> - The overridden method for the underlying Json RPC request. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: set, update, add</span> </li>
  <li><span class="li-head">rc_succeeded</span> - The rc codes list with which the conditions to succeed will be overriden. <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden. <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
+ <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
- <li><span class="li-head">device</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">vdom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">managed-switch</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">switchcontroller_managedswitch_stormcontrol</span> - Configuration method to edit FortiSwitch storm control for measuring traffic activity using data rates to prevent traffic disruption. <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
+ <li><span class="li-head">pblock</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
+ <li><span class="li-head">proxy-policy</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
+ <li><span class="li-head">pm_config_pblock_firewall_proxypolicy_sectionvalue</span> - Configure proxy policies. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">broadcast</span> Enable/disable storm control to drop broadcast traffic. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">attr</span> Attr. <span class="li-normal">type: str</span> <span class="li-normal">choices: [label, global-label]</span> 
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">local_override</span> <b>(Alias name: local-override)</b>  Enable to override global fortiswitch storm control settings for this fortiswitch. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">name</span> Name. <span class="li-normal">type: str</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">rate</span> Rate in packets per second at which storm control drops excess traffic(0-10000000, default=500, drop-all=0). <span class="li-normal">type: int</span>
- <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
- <div id="label5" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">unknown_multicast</span> <b>(Alias name: unknown-multicast)</b>  Enable/disable storm control to drop unknown multicast traffic. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
- <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">unknown_unicast</span> <b>(Alias name: unknown-unicast)</b>  Enable/disable storm control to drop unknown unicast traffic. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
- <div id="label9" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -121,22 +104,20 @@ Examples
       ansible_httpapi_validate_certs: false
       ansible_httpapi_port: 443
     tasks:
-      - name: Configuration method to edit FortiSwitch storm control for measuring traffic activity using data rates to prevent traffic disruption.
-        fortinet.fortimanager.fmgr_switchcontroller_managedswitch_stormcontrol:
+      - name: Configure proxy policies.
+        fortinet.fortimanager.fmgr_pm_config_pblock_firewall_proxypolicy_sectionvalue:
           # bypass_validation: false
           workspace_locking_adom: <value in [global, custom adom including root]>
           workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
-          device: <your own value>
-          vdom: <your own value>
-          managed_switch: <your own value>
-          switchcontroller_managedswitch_stormcontrol:
-            broadcast: <value in [disable, enable]>
-            local_override: <value in [disable, enable]>
-            rate: <integer>
-            unknown_multicast: <value in [disable, enable]>
-            unknown_unicast: <value in [disable, enable]>
+          adom: <your own value>
+          pblock: <your own value>
+          proxy_policy: <your own value>
+          state: present # <value in [present, absent]>
+          pm_config_pblock_firewall_proxypolicy_sectionvalue:
+            attr: <value in [label, global-label]>
+            name: <string>
 
 
 Return Values

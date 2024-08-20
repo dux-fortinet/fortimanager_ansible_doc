@@ -1,13 +1,13 @@
-:source: fmgr_switchcontroller_managedswitch_igmpsnooping.py
+:source: fmgr_extensioncontroller_extenderprofile_lanextension_downlinks.py
 
 :orphan:
 
-.. _fmgr_switchcontroller_managedswitch_igmpsnooping:
+.. _fmgr_extensioncontroller_extenderprofile_lanextension_downlinks:
 
-fmgr_switchcontroller_managedswitch_igmpsnooping -- Configure FortiSwitch IGMP snooping global settings.
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fmgr_extensioncontroller_extenderprofile_lanextension_downlinks -- Config FortiExtender downlink interface for LAN extension.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-.. versionadded:: 2.0.0
+.. versionadded:: 2.7.0
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
@@ -43,7 +43,7 @@ FortiManager Version Compatibility
 ----------------------------------
 .. raw:: html
 
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.2.0</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
 
 
 
@@ -58,68 +58,42 @@ Parameters
  <li><span class="li-head">proposed_method</span> - The overridden method for the underlying Json RPC request. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: set, update, add</span> </li>
  <li><span class="li-head">rc_succeeded</span> - The rc codes list with which the conditions to succeed will be overriden. <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden. <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
+ <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
- <li><span class="li-head">device</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">vdom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">managed-switch</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">switchcontroller_managedswitch_igmpsnooping</span> - Configure FortiSwitch IGMP snooping global settings. <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
+ <li><span class="li-head">extender-profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
+ <li><span class="li-head">extensioncontroller_extenderprofile_lanextension_downlinks</span> - Config FortiExtender downlink interface for LAN extension. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">aging_time</span> <b>(Alias name: aging-time)</b>  Maximum time to retain a multicast snooping entry for which no packets have been seen (15 - 3600 sec, default = 300). <span class="li-normal">type: int</span>
+ <li><span class="li-head">name</span> Fortiextender lan extension downlink config entry name. <span class="li-normal">type: str</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">flood_unknown_multicast</span> <b>(Alias name: flood-unknown-multicast)</b>  Enable/disable unknown multicast flooding. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">port</span> Fortiextender lan extension downlink port. <span class="li-normal">type: str</span> <span class="li-normal">choices: [port1, port2, port3, port4, port5, lan1, lan2]</span> 
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">local_override</span> <b>(Alias name: local-override)</b>  Enable/disable overriding the global igmp snooping configuration. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">pvid</span> Fortiextender lan extension downlink pvid. <span class="li-normal">type: int</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">vlans</span> Vlans. <span class="li-normal">type: list</span>
+ <li><span class="li-head">type</span> Fortiextender lan extension downlink type [port/vap]. <span class="li-normal">type: str</span> <span class="li-normal">choices: [port, vap]</span> 
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
- <ul class="ul-self">
- <li><span class="li-head">proxy</span> Igmp snooping proxy for the vlan interface. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, global]</span> 
+ </li>
+ <li><span class="li-head">vap</span> Fortiextender lan extension downlink vap. <span class="li-normal">type: list</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">querier</span> Enable/disable igmp snooping querier for the vlan interface. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
- <div id="label11" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">querier_addr</span> <b>(Alias name: querier-addr)</b>  Igmp snooping querier address. <span class="li-normal">type: str</span>
- <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
- <div id="label13" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">version</span> Igmp snooping querying version. <span class="li-normal">type: int</span>
- <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
- <div id="label15" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">vlan_name</span> <b>(Alias name: vlan-name)</b>  List of fortiswitch vlans. <span class="li-normal">type: list</span>
- <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
- <div id="label17" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
- </div>
- </li>
- </ul>
  </li>
  </ul>
  </ul>
@@ -147,27 +121,22 @@ Examples
       ansible_httpapi_validate_certs: false
       ansible_httpapi_port: 443
     tasks:
-      - name: Configure FortiSwitch IGMP snooping global settings.
-        fortinet.fortimanager.fmgr_switchcontroller_managedswitch_igmpsnooping:
+      - name: Config FortiExtender downlink interface for LAN extension.
+        fortinet.fortimanager.fmgr_extensioncontroller_extenderprofile_lanextension_downlinks:
           # bypass_validation: false
           workspace_locking_adom: <value in [global, custom adom including root]>
           workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
-          device: <your own value>
-          vdom: <your own value>
-          managed_switch: <your own value>
-          switchcontroller_managedswitch_igmpsnooping:
-            aging_time: <integer>
-            flood_unknown_multicast: <value in [disable, enable]>
-            local_override: <value in [disable, enable]>
-            vlans:
-              -
-                proxy: <value in [disable, enable, global]>
-                querier: <value in [disable, enable]>
-                querier_addr: <string>
-                version: <integer>
-                vlan_name: <list or string>
+          adom: <your own value>
+          extender_profile: <your own value>
+          state: present # <value in [present, absent]>
+          extensioncontroller_extenderprofile_lanextension_downlinks:
+            name: <string>
+            port: <value in [port1, port2, port3, ...]>
+            pvid: <integer>
+            type: <value in [port, vap]>
+            vap: <list or string>
 
 
 Return Values

@@ -1,13 +1,13 @@
-:source: fmgr_switchcontroller_managedswitch_stpsettings.py
+:source: fmgr_system_admin_user_policyblock.py
 
 :orphan:
 
-.. _fmgr_switchcontroller_managedswitch_stpsettings:
+.. _fmgr_system_admin_user_policyblock:
 
-fmgr_switchcontroller_managedswitch_stpsettings -- Configuration method to edit Spanning Tree Protocol (STP) settings used to prevent bridge loops.
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fmgr_system_admin_user_policyblock -- Policy block write access.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-.. versionadded:: 2.0.0
+.. versionadded:: 2.7.0
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
@@ -43,7 +43,7 @@ FortiManager Version Compatibility
 ----------------------------------
 .. raw:: html
 
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.2.0</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
 
 
 
@@ -58,65 +58,16 @@ Parameters
  <li><span class="li-head">proposed_method</span> - The overridden method for the underlying Json RPC request. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: set, update, add</span> </li>
  <li><span class="li-head">rc_succeeded</span> - The rc codes list with which the conditions to succeed will be overriden. <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden. <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
+ <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
- <li><span class="li-head">device</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">vdom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">managed-switch</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">switchcontroller_managedswitch_stpsettings</span> - Configuration method to edit Spanning Tree Protocol <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">user</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
+ <li><span class="li-head">system_admin_user_policyblock</span> - Policy block write access. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">forward_time</span> <b>(Alias name: forward-time)</b>  Period of time a port is in listening and learning state (4 - 30 sec, default = 15). <span class="li-normal">type: int</span>
+ <li><span class="li-head">policy_block_name</span> <b>(Alias name: policy-block-name)</b>  Policy block names. <span class="li-normal">type: str</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">hello_time</span> <b>(Alias name: hello-time)</b>  Period of time between successive stp frame bridge protocol data units (bpdus) sent on a port (1 - 10 sec, default = 2). <span class="li-normal">type: int</span>
- <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
- <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">local_override</span> <b>(Alias name: local-override)</b>  Enable to configure local stp settings that override global stp settings. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
- <div id="label5" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">max_age</span> <b>(Alias name: max-age)</b>  Maximum time before a bridge port saves its configuration bpdu information (6 - 40 sec, default = 20). <span class="li-normal">type: int</span>
- <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
- <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">max_hops</span> <b>(Alias name: max-hops)</b>  Maximum number of hops between the root bridge and the furthest bridge (1- 40, default = 20). <span class="li-normal">type: int</span>
- <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
- <div id="label9" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">name</span> Name of local stp settings configuration. <span class="li-normal">type: str</span>
- <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
- <div id="label11" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">pending_timer</span> <b>(Alias name: pending-timer)</b>  Pending time (1 - 15 sec, default = 4). <span class="li-normal">type: int</span>
- <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
- <div id="label13" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">revision</span> Stp revision number (0 - 65535). <span class="li-normal">type: int</span>
- <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
- <div id="label15" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">status</span> Enable/disable stp. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
- <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
- <div id="label17" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -145,26 +96,17 @@ Examples
       ansible_httpapi_validate_certs: false
       ansible_httpapi_port: 443
     tasks:
-      - name: Configuration method to edit Spanning Tree Protocol
-        fortinet.fortimanager.fmgr_switchcontroller_managedswitch_stpsettings:
+      - name: Policy block write access.
+        fortinet.fortimanager.fmgr_system_admin_user_policyblock:
           # bypass_validation: false
           workspace_locking_adom: <value in [global, custom adom including root]>
           workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
-          device: <your own value>
-          vdom: <your own value>
-          managed_switch: <your own value>
-          switchcontroller_managedswitch_stpsettings:
-            forward_time: <integer>
-            hello_time: <integer>
-            local_override: <value in [disable, enable]>
-            max_age: <integer>
-            max_hops: <integer>
-            name: <string>
-            pending_timer: <integer>
-            revision: <integer>
-            status: <value in [disable, enable]>
+          user: <your own value>
+          state: present # <value in [present, absent]>
+          system_admin_user_policyblock:
+            policy_block_name: <string>
 
 
 Return Values

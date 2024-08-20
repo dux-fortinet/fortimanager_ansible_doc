@@ -2,6 +2,26 @@
 Release Notes
 ==============================
 
+Release Galaxy 2.7.0
+~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+----------------
+
+FortiManager version: ``v6.2.x``, ``v6.4.x``, ``v7.0.x``, ``v7.2.x`` and ``v7.4.x``
+
+
+Minor Changes
+-------------
+
+- Supported FortiManager 7.6.0. Added 11 new modules.
+
+Bugfixes
+--------
+
+- Fixed Bug in "fmgr_fact"
+- Improved documentation.
+
 Release Galaxy 2.6.0
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -15,6 +35,7 @@ Minor Changes
 -------------
 
 - Supported FortiManager 7.4.3. 7 new modules.
+- Deleted 9 fmgr_switchcontroller_managedswitch_* modules. Will support them in FortiManager Device Ansible.
 - Supported ansible-core 2.17.
 
 Bugfixes

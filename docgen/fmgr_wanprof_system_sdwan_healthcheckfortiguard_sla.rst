@@ -1,13 +1,13 @@
-:source: fmgr_switchcontroller_managedswitch_staticmac.py
+:source: fmgr_wanprof_system_sdwan_healthcheckfortiguard_sla.py
 
 :orphan:
 
-.. _fmgr_switchcontroller_managedswitch_staticmac:
+.. _fmgr_wanprof_system_sdwan_healthcheckfortiguard_sla:
 
-fmgr_switchcontroller_managedswitch_staticmac -- Configuration method to edit FortiSwitch Static and Sticky MAC.
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fmgr_wanprof_system_sdwan_healthcheckfortiguard_sla -- Service level agreement (SLA).
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-.. versionadded:: 2.2.0
+.. versionadded:: 2.7.0
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
@@ -43,7 +43,7 @@ FortiManager Version Compatibility
 ----------------------------------
 .. raw:: html
 
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.0 -> v6.2.0</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
 
 
 
@@ -61,45 +61,57 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
- <li><span class="li-head">device</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">vdom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">managed-switch</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">switchcontroller_managedswitch_staticmac</span> - Configuration method to edit FortiSwitch Static and Sticky MAC. <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
+ <li><span class="li-head">wanprof</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
+ <li><span class="li-head">health-check-fortiguard</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
+ <li><span class="li-head">wanprof_system_sdwan_healthcheckfortiguard_sla</span> - Service level agreement <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">description</span> Description. <span class="li-normal">type: str</span>
+ <li><span class="li-head">id</span> Sla id. <span class="li-normal">type: int</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">id</span> Id. <span class="li-normal">type: int</span>
+ <li><span class="li-head">jitter_threshold</span> <b>(Alias name: jitter-threshold)</b>  Jitter for sla to make decision in milliseconds. <span class="li-normal">type: int</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">interface</span> Interface name. <span class="li-normal">type: str</span>
+ <li><span class="li-head">latency_threshold</span> <b>(Alias name: latency-threshold)</b>  Latency for sla to make decision in milliseconds. <span class="li-normal">type: int</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">mac</span> Mac address. <span class="li-normal">type: str</span>
+ <li><span class="li-head">link_cost_factor</span> <b>(Alias name: link-cost-factor)</b>  Criteria on which to base link selection. <span class="li-normal">type: list</span> <span class="li-normal">choices: [latency, jitter, packet-loss, mos, remote]</span> 
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [static, sticky]</span> 
+ <li><span class="li-head">mos_threshold</span> <b>(Alias name: mos-threshold)</b>  Minimum mean opinion score for sla to be marked as pass. <span class="li-normal">type: str</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">vlan</span> Vlan. <span class="li-normal">type: list</span>
+ <li><span class="li-head">packetloss_threshold</span> <b>(Alias name: packetloss-threshold)</b>  Packet loss for sla to make decision in percentage. <span class="li-normal">type: int</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">priority_in_sla</span> <b>(Alias name: priority-in-sla)</b>  Value to be distributed into routing table when in-sla (0 - 65535, default = 0). <span class="li-normal">type: int</span>
+ <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
+ <div id="label13" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">priority_out_sla</span> <b>(Alias name: priority-out-sla)</b>  Value to be distributed into routing table when out-sla (0 - 65535, default = 0). <span class="li-normal">type: int</span>
+ <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
+ <div id="label15" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -128,24 +140,31 @@ Examples
       ansible_httpapi_validate_certs: false
       ansible_httpapi_port: 443
     tasks:
-      - name: Configuration method to edit FortiSwitch Static and Sticky MAC.
-        fortinet.fortimanager.fmgr_switchcontroller_managedswitch_staticmac:
+      - name: Service level agreement
+        fortinet.fortimanager.fmgr_wanprof_system_sdwan_healthcheckfortiguard_sla:
           # bypass_validation: false
           workspace_locking_adom: <value in [global, custom adom including root]>
           workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
-          device: <your own value>
-          vdom: <your own value>
-          managed_switch: <your own value>
+          adom: <your own value>
+          wanprof: <your own value>
+          health_check_fortiguard: <your own value>
           state: present # <value in [present, absent]>
-          switchcontroller_managedswitch_staticmac:
-            description: <string>
+          wanprof_system_sdwan_healthcheckfortiguard_sla:
             id: <integer>
-            interface: <string>
-            mac: <string>
-            type: <value in [static, sticky]>
-            vlan: <list or string>
+            jitter_threshold: <integer>
+            latency_threshold: <integer>
+            link_cost_factor:
+              - latency
+              - jitter
+              - packet-loss
+              - mos
+              - remote
+            mos_threshold: <string>
+            packetloss_threshold: <integer>
+            priority_in_sla: <integer>
+            priority_out_sla: <integer>
 
 
 Return Values

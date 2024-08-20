@@ -451,6 +451,9 @@ Parameters
         <li><span class="li-required">extensioncontroller_extenderprofile_lanextension_backhaul</span> - available versions:
         <span class="li-normal">v7.2.1->latest</span>
         </li>
+        <li><span class="li-required">extensioncontroller_extenderprofile_lanextension_downlinks</span> - available versions:
+        <span class="li-normal">v7.6.0->latest</span>
+        </li>
         <li><span class="li-required">filefilter_profile</span> - available versions:
         <span class="li-normal">v6.4.1->latest</span>
         </li>
@@ -1318,6 +1321,9 @@ Parameters
         <li><span class="li-required">pm_config_pblock_firewall_policy6</span> - available versions:
         <span class="li-normal">v7.0.3->latest</span>
         </li>
+        <li><span class="li-required">pm_config_pblock_firewall_proxypolicy</span> - available versions:
+        <span class="li-normal">v7.6.0->latest</span>
+        </li>
         <li><span class="li-required">pm_config_pblock_firewall_securitypolicy</span> - available versions:
         <span class="li-normal">v7.0.3->latest</span>
         </li>
@@ -1471,10 +1477,6 @@ Parameters
         <li><span class="li-required">switchcontroller_managedswitch_ipsourceguard_bindingentry</span> - available versions:
         <span class="li-normal">v6.4.0->v6.4.1</span>
         </li>
-        <li><span class="li-required">switchcontroller_managedswitch_mirror</span> - available versions:
-        <span class="li-normal">v6.0.0->v6.2.0</span>,
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
         <li><span class="li-required">switchcontroller_managedswitch_ports</span> - available versions:
         <span class="li-normal">v6.0.0->latest</span>
         </li>
@@ -1495,14 +1497,6 @@ Parameters
         </li>
         <li><span class="li-required">switchcontroller_managedswitch_snmpuser</span> - available versions:
         <span class="li-normal">v6.2.1->v6.2.3</span>
-        </li>
-        <li><span class="li-required">switchcontroller_managedswitch_staticmac</span> - available versions:
-        <span class="li-normal">v6.2.0->v6.2.0</span>,
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">switchcontroller_managedswitch_stpinstance</span> - available versions:
-        <span class="li-normal">v6.2.0->v6.2.0</span>,
-        <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">switchcontroller_managedswitch_vlan</span> - available versions:
         <span class="li-normal">v7.4.2->latest</span>
@@ -2104,6 +2098,12 @@ Parameters
         </li>
         <li><span class="li-required">wanprof_system_sdwan_healthcheck_sla</span> - available versions:
         <span class="li-normal">v6.4.1->latest</span>
+        </li>
+        <li><span class="li-required">wanprof_system_sdwan_healthcheckfortiguard</span> - available versions:
+        <span class="li-normal">v7.6.0->latest</span>
+        </li>
+        <li><span class="li-required">wanprof_system_sdwan_healthcheckfortiguard_sla</span> - available versions:
+        <span class="li-normal">v7.6.0->latest</span>
         </li>
         <li><span class="li-required">wanprof_system_sdwan_members</span> - available versions:
         <span class="li-normal">v6.4.1->latest</span>
@@ -2964,6 +2964,12 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">backhaul</span></li>
+            <li><span class="li-normal">extender-profile</span></li>
+        </ul>
+        <li><span class="li-normal">params for extensioncontroller_extenderprofile_lanextension_downlinks:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">downlinks</span></li>
             <li><span class="li-normal">extender-profile</span></li>
         </ul>
         <li><span class="li-normal">params for filefilter_profile:</span></li>
@@ -4617,6 +4623,12 @@ Parameters
             <li><span class="li-normal">pblock</span></li>
             <li><span class="li-normal">policy6</span></li>
         </ul>
+        <li><span class="li-normal">params for pm_config_pblock_firewall_proxypolicy:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">pblock</span></li>
+            <li><span class="li-normal">proxy-policy</span></li>
+        </ul>
         <li><span class="li-normal">params for pm_config_pblock_firewall_securitypolicy:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -4892,13 +4904,6 @@ Parameters
             <li><span class="li-normal">ip-source-guard</span></li>
             <li><span class="li-normal">managed-switch</span></li>
         </ul>
-        <li><span class="li-normal">params for switchcontroller_managedswitch_mirror:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">device</span></li>
-            <li><span class="li-normal">managed-switch</span></li>
-            <li><span class="li-normal">mirror</span></li>
-            <li><span class="li-normal">vdom</span></li>
-        </ul>
         <li><span class="li-normal">params for switchcontroller_managedswitch_ports:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -4942,20 +4947,6 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">managed-switch</span></li>
             <li><span class="li-normal">snmp-user</span></li>
-        </ul>
-        <li><span class="li-normal">params for switchcontroller_managedswitch_staticmac:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">device</span></li>
-            <li><span class="li-normal">managed-switch</span></li>
-            <li><span class="li-normal">static-mac</span></li>
-            <li><span class="li-normal">vdom</span></li>
-        </ul>
-        <li><span class="li-normal">params for switchcontroller_managedswitch_stpinstance:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">device</span></li>
-            <li><span class="li-normal">managed-switch</span></li>
-            <li><span class="li-normal">stp-instance</span></li>
-            <li><span class="li-normal">vdom</span></li>
         </ul>
         <li><span class="li-normal">params for switchcontroller_managedswitch_vlan:</span></li>
         <ul class="ul-self">
@@ -6041,6 +6032,19 @@ Parameters
             <li><span class="li-normal">sla</span></li>
             <li><span class="li-normal">wanprof</span></li>
         </ul>
+        <li><span class="li-normal">params for wanprof_system_sdwan_healthcheckfortiguard:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">health-check-fortiguard</span></li>
+            <li><span class="li-normal">wanprof</span></li>
+        </ul>
+        <li><span class="li-normal">params for wanprof_system_sdwan_healthcheckfortiguard_sla:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">health-check-fortiguard</span></li>
+            <li><span class="li-normal">sla</span></li>
+            <li><span class="li-normal">wanprof</span></li>
+        </ul>
         <li><span class="li-normal">params for wanprof_system_sdwan_members:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -7060,6 +7064,12 @@ Parameters
             
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_extensioncontroller_extenderprofile_lanextension_backhaul.html#parameters">fmgr_extensioncontroller_extenderprofile_lanextension_backhaul</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for extensioncontroller_extenderprofile_lanextension_downlinks:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_extensioncontroller_extenderprofile_lanextension_downlinks.html#parameters">fmgr_extensioncontroller_extenderprofile_lanextension_downlinks</a> </span></li>
         </ul>
         <li><span class="li-normal">params for filefilter_profile:</span></li>
         <ul class="ul-self">
@@ -8739,6 +8749,12 @@ Parameters
             <li><span class="li-normal">required primary key: <b>policyid</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_pm_config_pblock_firewall_policy6.html#parameters">fmgr_pm_config_pblock_firewall_policy6</a> </span></li>
         </ul>
+        <li><span class="li-normal">params for pm_config_pblock_firewall_proxypolicy:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>policyid</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_pm_config_pblock_firewall_proxypolicy.html#parameters">fmgr_pm_config_pblock_firewall_proxypolicy</a> </span></li>
+        </ul>
         <li><span class="li-normal">params for pm_config_pblock_firewall_securitypolicy:</span></li>
         <ul class="ul-self">
             
@@ -9034,12 +9050,6 @@ Parameters
             
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_switchcontroller_managedswitch_ipsourceguard_bindingentry.html#parameters">fmgr_switchcontroller_managedswitch_ipsourceguard_bindingentry</a> </span></li>
         </ul>
-        <li><span class="li-normal">params for switchcontroller_managedswitch_mirror:</span></li>
-        <ul class="ul-self">
-            
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_switchcontroller_managedswitch_mirror.html#parameters">fmgr_switchcontroller_managedswitch_mirror</a> </span></li>
-        </ul>
         <li><span class="li-normal">params for switchcontroller_managedswitch_ports:</span></li>
         <ul class="ul-self">
             
@@ -9079,18 +9089,6 @@ Parameters
             
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_switchcontroller_managedswitch_snmpuser.html#parameters">fmgr_switchcontroller_managedswitch_snmpuser</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for switchcontroller_managedswitch_staticmac:</span></li>
-        <ul class="ul-self">
-            
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_switchcontroller_managedswitch_staticmac.html#parameters">fmgr_switchcontroller_managedswitch_staticmac</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for switchcontroller_managedswitch_stpinstance:</span></li>
-        <ul class="ul-self">
-            
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_switchcontroller_managedswitch_stpinstance.html#parameters">fmgr_switchcontroller_managedswitch_stpinstance</a> </span></li>
         </ul>
         <li><span class="li-normal">params for switchcontroller_managedswitch_vlan:</span></li>
         <ul class="ul-self">
@@ -10249,6 +10247,17 @@ Parameters
             
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_wanprof_system_sdwan_healthcheck_sla.html#parameters">fmgr_wanprof_system_sdwan_healthcheck_sla</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for wanprof_system_sdwan_healthcheckfortiguard:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_wanprof_system_sdwan_healthcheckfortiguard.html#parameters">fmgr_wanprof_system_sdwan_healthcheckfortiguard</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for wanprof_system_sdwan_healthcheckfortiguard_sla:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_wanprof_system_sdwan_healthcheckfortiguard_sla.html#parameters">fmgr_wanprof_system_sdwan_healthcheckfortiguard_sla</a> </span></li>
         </ul>
         <li><span class="li-normal">params for wanprof_system_sdwan_members:</span></li>
         <ul class="ul-self">
