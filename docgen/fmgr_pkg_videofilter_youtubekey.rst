@@ -1,13 +1,13 @@
-:source: fmgr_extensioncontroller_extenderprofile_lanextension_downlinks.py
+:source: fmgr_pkg_videofilter_youtubekey.py
 
 :orphan:
 
-.. _fmgr_extensioncontroller_extenderprofile_lanextension_downlinks:
+.. _fmgr_pkg_videofilter_youtubekey:
 
-fmgr_extensioncontroller_extenderprofile_lanextension_downlinks -- Config FortiExtender downlink interface for LAN extension.
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fmgr_pkg_videofilter_youtubekey -- Configure YouTube API keys.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-.. versionadded:: 2.7.0
+.. versionadded:: 2.8.0
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
@@ -43,7 +43,7 @@ FortiManager Version Compatibility
 ----------------------------------
 .. raw:: html
 
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code></p>
 
 
 
@@ -62,37 +62,25 @@ Parameters
  <li><span class="li-head">workspace_locking_adom</span> - Acquire the workspace lock if FortiManager is running in workspace mode. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: global, custom adom including root</span> </li>
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">extender-profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">extensioncontroller_extenderprofile_lanextension_downlinks</span> - Config FortiExtender downlink interface for LAN extension. <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">pkg</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
+ <li><span class="li-head">pkg_videofilter_youtubekey</span> - Configure YouTube API keys. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">name</span> Fortiextender lan extension downlink config entry name. <span class="li-normal">type: str</span>
+ <li><span class="li-head">id</span> Id. <span class="li-normal">type: int</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code></p>
  </div>
  </li>
- <li><span class="li-head">port</span> Fortiextender lan extension downlink port. <span class="li-normal">type: str</span> <span class="li-normal">choices: [port1, port2, port3, port4, port5, lan1, lan2]</span> 
+ <li><span class="li-head">key</span> Key. <span class="li-normal">type: str</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code></p>
  </div>
  </li>
- <li><span class="li-head">pvid</span> Fortiextender lan extension downlink pvid. <span class="li-normal">type: int</span>
+ <li><span class="li-head">status</span> Status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">type</span> Fortiextender lan extension downlink type [port/vap]. <span class="li-normal">type: str</span> <span class="li-normal">choices: [port, vap]</span> 
- <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
- <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">vap</span> Fortiextender lan extension downlink vap. <span class="li-normal">type: list</span>
- <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
- <div id="label9" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code></p>
  </div>
  </li>
  </ul>
@@ -121,22 +109,20 @@ Examples
       ansible_httpapi_validate_certs: false
       ansible_httpapi_port: 443
     tasks:
-      - name: Config FortiExtender downlink interface for LAN extension.
-        fortinet.fortimanager.fmgr_extensioncontroller_extenderprofile_lanextension_downlinks:
+      - name: Configure YouTube API keys.
+        fortinet.fortimanager.fmgr_pkg_videofilter_youtubekey:
           # bypass_validation: false
           workspace_locking_adom: <value in [global, custom adom including root]>
           workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           adom: <your own value>
-          extender_profile: <your own value>
+          pkg: <your own value>
           state: present # <value in [present, absent]>
-          extensioncontroller_extenderprofile_lanextension_downlinks:
-            name: <string>
-            port: <value in [port1, port2, port3, ...]>
-            pvid: <integer>
-            type: <value in [port, vap]>
-            vap: <list or string>
+          pkg_videofilter_youtubekey:
+            id: <integer>
+            key: <string>
+            status: <value in [disable, enable]>
 
 
 Return Values
