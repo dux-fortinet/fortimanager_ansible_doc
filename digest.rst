@@ -5871,7 +5871,7 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/5-fortimanager/
   <td><a class="reference external" href="docgen/fmgr_system_interface_member.html">fmgr_system_interface_member</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">interface</span></code></td>
-  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">interface-name</span></code></td>
   <td>/cli/global/system/interface/{interface}/member<br>/cli/global/system/interface/{interface}/member/{member}</td>
   </tr>
   <tr class="row-odd">

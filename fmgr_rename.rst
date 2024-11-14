@@ -1565,6 +1565,9 @@ Parameters
         <li><span class="li-required">system_interface</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
         </li>
+        <li><span class="li-required">system_interface_member</span> - available versions:
+            <span class="li-normal">v7.2.0->latest</span>
+        </li>
         <li><span class="li-required">system_localinpolicy</span> - available versions:
             <span class="li-normal">v7.2.0->latest</span>
         </li>
@@ -4980,6 +4983,11 @@ Parameters
         <li><span class="li-normal">params for system_interface:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">interface</span></li>
+        </ul>
+        <li><span class="li-normal">params for system_interface_member:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">interface</span></li>
+            <li><span class="li-normal">member</span></li>
         </ul>
         <li><span class="li-normal">params for system_localinpolicy:</span></li>
         <ul class="ul-self">
@@ -9133,6 +9141,12 @@ Parameters
             
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_interface.html#parameters">fmgr_system_interface</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for system_interface_member:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>interface-name</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_interface_member.html#parameters">fmgr_system_interface_member</a> </span></li>
         </ul>
         <li><span class="li-normal">params for system_localinpolicy:</span></li>
         <ul class="ul-self">
