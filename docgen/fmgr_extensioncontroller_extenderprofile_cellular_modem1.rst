@@ -186,6 +186,36 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">multiple_PDN</span> <b>(Alias name: multiple-PDN)</b>  Multiple-pdn enable/disable. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
+ <div id="label41" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">pdn1_dataplan</span> <b>(Alias name: pdn1-dataplan)</b>  Pdn1-dataplan. <span class="li-normal">type: list</span>
+ <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
+ <div id="label43" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">pdn2_dataplan</span> <b>(Alias name: pdn2-dataplan)</b>  Pdn2-dataplan. <span class="li-normal">type: list</span>
+ <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
+ <div id="label45" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">pdn3_dataplan</span> <b>(Alias name: pdn3-dataplan)</b>  Pdn3-dataplan. <span class="li-normal">type: list</span>
+ <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
+ <div id="label47" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">pdn4_dataplan</span> <b>(Alias name: pdn4-dataplan)</b>  Pdn4-dataplan. <span class="li-normal">type: list</span>
+ <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
+ <div id="label49" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -244,6 +274,11 @@ Examples
             sim1_pin_code: <list or string>
             sim2_pin: <value in [disable, enable]>
             sim2_pin_code: <list or string>
+            multiple_PDN: <value in [disable, enable]>
+            pdn1_dataplan: <list or string>
+            pdn2_dataplan: <list or string>
+            pdn3_dataplan: <list or string>
+            pdn4_dataplan: <list or string>
 
 
 Return Values

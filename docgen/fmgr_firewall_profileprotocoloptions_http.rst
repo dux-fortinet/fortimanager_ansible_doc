@@ -268,6 +268,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">http_0_9</span> <b>(Alias name: http-0.9)</b>  Configure action to take upon receipt of http 0. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, allow]</span> 
+ <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
+ <div id="label69" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -364,6 +370,7 @@ Examples
             verify_dns_for_policy_matching: <value in [disable, enable]>
             unknown_content_encoding: <value in [block, inspect, bypass]>
             domain_fronting: <value in [block, monitor, allow]>
+            http_0_9: <value in [block, allow]>
 
 
 Return Values

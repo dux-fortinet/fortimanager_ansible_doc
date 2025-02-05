@@ -167,6 +167,18 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">bounce_port_duration</span> <b>(Alias name: bounce-port-duration)</b>  Bounce duration in seconds of a switch port where this policy is applied. <span class="li-normal">type: int</span>
+ <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
+ <div id="label35" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">poe_reset</span> <b>(Alias name: poe-reset)</b>  Enable/disable poe reset of a switch port where this policy is applied. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
+ <div id="label37" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -221,6 +233,8 @@ Examples
             vlan_policy: <string>
             match_period: <integer>
             match_type: <value in [dynamic, override]>
+            bounce_port_duration: <integer>
+            poe_reset: <value in [disable, enable]>
 
 
 Return Values

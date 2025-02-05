@@ -148,6 +148,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">udp_not_quic</span> <b>(Alias name: udp-not-quic)</b>  Action to be taken when matched udp packet is not quic. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, allow]</span> 
+ <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
+ <div id="label29" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -198,6 +204,7 @@ Examples
             unsupported_ssl_version: <value in [block, allow, inspect]>
             min_allowed_ssl_version: <value in [ssl-3.0, tls-1.0, tls-1.1, ...]>
             quic: <value in [disable, enable, bypass, ...]>
+            udp_not_quic: <value in [block, allow]>
 
 
 Return Values

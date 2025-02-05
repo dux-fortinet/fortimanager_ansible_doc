@@ -89,7 +89,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">direction</span> Casb operation direction. <span class="li-normal">type: str</span> <span class="li-normal">choices: [request]</span> 
+ <li><span class="li-head">direction</span> Casb operation direction. <span class="li-normal">type: str</span> <span class="li-normal">choices: [request, response]</span> 
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
@@ -119,7 +119,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">target</span> Casb operation target. <span class="li-normal">type: str</span> <span class="li-normal">choices: [header, path]</span> 
+ <li><span class="li-head">target</span> Casb operation target. <span class="li-normal">type: str</span> <span class="li-normal">choices: [header, path, body]</span> 
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
@@ -187,12 +187,12 @@ Examples
               -
                 action: <value in [append, prepend, replace, ...]>
                 case_sensitive: <value in [disable, enable]>
-                direction: <value in [request]>
+                direction: <value in [request, response]>
                 header_name: <string>
                 name: <string>
                 search_key: <string>
                 search_pattern: <value in [simple, substr, regexp]>
-                target: <value in [header, path]>
+                target: <value in [header, path, body]>
                 value_from_input: <value in [disable, enable]>
                 values: <list or string>
             status: <value in [disable, enable]>
