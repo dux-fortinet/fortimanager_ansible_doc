@@ -148,32 +148,14 @@ Parameters
         <li><span class="li-required">casb_profile_saasapplication_accessrule</span> - available versions:
             <span class="li-normal">v7.4.1->latest</span>
         </li>
-        <li><span class="li-required">casb_profile_saasapplication_accessrule_attributefilter</span> - available versions:
-            <span class="li-normal">v7.6.2->latest</span>
-        </li>
-        <li><span class="li-required">casb_profile_saasapplication_advancedtenantcontrol</span> - available versions:
-            <span class="li-normal">v7.6.2->latest</span>
-        </li>
-        <li><span class="li-required">casb_profile_saasapplication_advancedtenantcontrol_attribute</span> - available versions:
-            <span class="li-normal">v7.6.2->latest</span>
-        </li>
         <li><span class="li-required">casb_profile_saasapplication_customcontrol</span> - available versions:
             <span class="li-normal">v7.4.1->latest</span>
-        </li>
-        <li><span class="li-required">casb_profile_saasapplication_customcontrol_attributefilter</span> - available versions:
-            <span class="li-normal">v7.6.2->latest</span>
         </li>
         <li><span class="li-required">casb_profile_saasapplication_customcontrol_option</span> - available versions:
             <span class="li-normal">v7.4.1->latest</span>
         </li>
         <li><span class="li-required">casb_saasapplication</span> - available versions:
             <span class="li-normal">v7.4.1->latest</span>
-        </li>
-        <li><span class="li-required">casb_saasapplication_inputattributes</span> - available versions:
-            <span class="li-normal">v7.6.2->latest</span>
-        </li>
-        <li><span class="li-required">casb_saasapplication_outputattributes</span> - available versions:
-            <span class="li-normal">v7.6.2->latest</span>
         </li>
         <li><span class="li-required">casb_useractivity</span> - available versions:
             <span class="li-normal">v7.4.1->latest</span>
@@ -189,9 +171,6 @@ Parameters
         </li>
         <li><span class="li-required">casb_useractivity_match_rules</span> - available versions:
             <span class="li-normal">v7.4.1->latest</span>
-        </li>
-        <li><span class="li-required">casb_useractivity_match_tenantextraction_filters</span> - available versions:
-            <span class="li-normal">v7.6.2->latest</span>
         </li>
         <li><span class="li-required">certificate_template</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
@@ -464,9 +443,6 @@ Parameters
         </li>
         <li><span class="li-required">extensioncontroller_extenderprofile_lanextension_backhaul</span> - available versions:
             <span class="li-normal">v7.2.1->latest</span>
-        </li>
-        <li><span class="li-required">extensioncontroller_extenderprofile_lanextension_trafficsplitservices</span> - available versions:
-            <span class="li-normal">v7.6.2->latest</span>
         </li>
         <li><span class="li-required">filefilter_profile</span> - available versions:
             <span class="li-normal">v6.4.1->latest</span>
@@ -2245,9 +2221,6 @@ Parameters
         <li><span class="li-required">webfilter_profile_ftgdwf_quota</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
         </li>
-        <li><span class="li-required">webfilter_profile_ftgdwf_risk</span> - available versions:
-            <span class="li-normal">v7.6.2->latest</span>
-        </li>
         <li><span class="li-required">webfilter_profile_youtubechannelfilter</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
         </li>
@@ -2265,9 +2238,6 @@ Parameters
         </li>
         <li><span class="li-required">webproxy_forwardservergroup_serverlist</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
-        </li>
-        <li><span class="li-required">webproxy_isolatorserver</span> - available versions:
-            <span class="li-normal">v7.6.2->latest</span>
         </li>
         <li><span class="li-required">webproxy_profile</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
@@ -2493,43 +2463,12 @@ Parameters
             <li><span class="li-normal">saas-application</span></li>
             <li><span class="li-normal">access-rule</span></li>
         </ul>
-        <li><span class="li-normal">params for casb_profile_saasapplication_accessrule_attributefilter:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">profile</span></li>
-            <li><span class="li-normal">saas-application</span></li>
-            <li><span class="li-normal">access-rule</span></li>
-            <li><span class="li-normal">attribute-filter</span></li>
-        </ul>
-        <li><span class="li-normal">params for casb_profile_saasapplication_advancedtenantcontrol:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">profile</span></li>
-            <li><span class="li-normal">saas-application</span></li>
-            <li><span class="li-normal">advanced-tenant-control</span></li>
-        </ul>
-        <li><span class="li-normal">params for casb_profile_saasapplication_advancedtenantcontrol_attribute:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">profile</span></li>
-            <li><span class="li-normal">saas-application</span></li>
-            <li><span class="li-normal">advanced-tenant-control</span></li>
-            <li><span class="li-normal">attribute</span></li>
-        </ul>
         <li><span class="li-normal">params for casb_profile_saasapplication_customcontrol:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">profile</span></li>
             <li><span class="li-normal">saas-application</span></li>
             <li><span class="li-normal">custom-control</span></li>
-        </ul>
-        <li><span class="li-normal">params for casb_profile_saasapplication_customcontrol_attributefilter:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">profile</span></li>
-            <li><span class="li-normal">saas-application</span></li>
-            <li><span class="li-normal">custom-control</span></li>
-            <li><span class="li-normal">attribute-filter</span></li>
         </ul>
         <li><span class="li-normal">params for casb_profile_saasapplication_customcontrol_option:</span></li>
         <ul class="ul-self">
@@ -2543,18 +2482,6 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">saas-application</span></li>
-        </ul>
-        <li><span class="li-normal">params for casb_saasapplication_inputattributes:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">saas-application</span></li>
-            <li><span class="li-normal">input-attributes</span></li>
-        </ul>
-        <li><span class="li-normal">params for casb_saasapplication_outputattributes:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">saas-application</span></li>
-            <li><span class="li-normal">output-attributes</span></li>
         </ul>
         <li><span class="li-normal">params for casb_useractivity:</span></li>
         <ul class="ul-self">
@@ -2586,13 +2513,6 @@ Parameters
             <li><span class="li-normal">user-activity</span></li>
             <li><span class="li-normal">match</span></li>
             <li><span class="li-normal">rules</span></li>
-        </ul>
-        <li><span class="li-normal">params for casb_useractivity_match_tenantextraction_filters:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">user-activity</span></li>
-            <li><span class="li-normal">match</span></li>
-            <li><span class="li-normal">filters</span></li>
         </ul>
         <li><span class="li-normal">params for certificate_template:</span></li>
         <ul class="ul-self">
@@ -3061,12 +2981,6 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">extender-profile</span></li>
             <li><span class="li-normal">backhaul</span></li>
-        </ul>
-        <li><span class="li-normal">params for extensioncontroller_extenderprofile_lanextension_trafficsplitservices:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">extender-profile</span></li>
-            <li><span class="li-normal">traffic-split-services</span></li>
         </ul>
         <li><span class="li-normal">params for filefilter_profile:</span></li>
         <ul class="ul-self">
@@ -6226,12 +6140,6 @@ Parameters
             <li><span class="li-normal">profile</span></li>
             <li><span class="li-normal">quota</span></li>
         </ul>
-        <li><span class="li-normal">params for webfilter_profile_ftgdwf_risk:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">profile</span></li>
-            <li><span class="li-normal">risk</span></li>
-        </ul>
         <li><span class="li-normal">params for webfilter_profile_youtubechannelfilter:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -6264,11 +6172,6 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">forward-server-group</span></li>
             <li><span class="li-normal">server-list</span></li>
-        </ul>
-        <li><span class="li-normal">params for webproxy_isolatorserver:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">isolator-server</span></li>
         </ul>
         <li><span class="li-normal">params for webproxy_profile:</span></li>
         <ul class="ul-self">
@@ -6531,35 +6434,11 @@ Parameters
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_casb_profile_saasapplication_accessrule.html#parameters">fmgr_casb_profile_saasapplication_accessrule</a> </span></li>
         </ul>
-        <li><span class="li-normal">params for casb_profile_saasapplication_accessrule_attributefilter:</span></li>
-        <ul class="ul-self">
-            
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_casb_profile_saasapplication_accessrule_attributefilter.html#parameters">fmgr_casb_profile_saasapplication_accessrule_attributefilter</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for casb_profile_saasapplication_advancedtenantcontrol:</span></li>
-        <ul class="ul-self">
-            
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_casb_profile_saasapplication_advancedtenantcontrol.html#parameters">fmgr_casb_profile_saasapplication_advancedtenantcontrol</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for casb_profile_saasapplication_advancedtenantcontrol_attribute:</span></li>
-        <ul class="ul-self">
-            
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_casb_profile_saasapplication_advancedtenantcontrol_attribute.html#parameters">fmgr_casb_profile_saasapplication_advancedtenantcontrol_attribute</a> </span></li>
-        </ul>
         <li><span class="li-normal">params for casb_profile_saasapplication_customcontrol:</span></li>
         <ul class="ul-self">
             
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_casb_profile_saasapplication_customcontrol.html#parameters">fmgr_casb_profile_saasapplication_customcontrol</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for casb_profile_saasapplication_customcontrol_attributefilter:</span></li>
-        <ul class="ul-self">
-            
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_casb_profile_saasapplication_customcontrol_attributefilter.html#parameters">fmgr_casb_profile_saasapplication_customcontrol_attributefilter</a> </span></li>
         </ul>
         <li><span class="li-normal">params for casb_profile_saasapplication_customcontrol_option:</span></li>
         <ul class="ul-self">
@@ -6572,18 +6451,6 @@ Parameters
             
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_casb_saasapplication.html#parameters">fmgr_casb_saasapplication</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for casb_saasapplication_inputattributes:</span></li>
-        <ul class="ul-self">
-            
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_casb_saasapplication_inputattributes.html#parameters">fmgr_casb_saasapplication_inputattributes</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for casb_saasapplication_outputattributes:</span></li>
-        <ul class="ul-self">
-            
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_casb_saasapplication_outputattributes.html#parameters">fmgr_casb_saasapplication_outputattributes</a> </span></li>
         </ul>
         <li><span class="li-normal">params for casb_useractivity:</span></li>
         <ul class="ul-self">
@@ -6614,12 +6481,6 @@ Parameters
             
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_casb_useractivity_match_rules.html#parameters">fmgr_casb_useractivity_match_rules</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for casb_useractivity_match_tenantextraction_filters:</span></li>
-        <ul class="ul-self">
-            
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_casb_useractivity_match_tenantextraction_filters.html#parameters">fmgr_casb_useractivity_match_tenantextraction_filters</a> </span></li>
         </ul>
         <li><span class="li-normal">params for certificate_template:</span></li>
         <ul class="ul-self">
@@ -7136,12 +6997,6 @@ Parameters
             
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_extensioncontroller_extenderprofile_lanextension_backhaul.html#parameters">fmgr_extensioncontroller_extenderprofile_lanextension_backhaul</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for extensioncontroller_extenderprofile_lanextension_trafficsplitservices:</span></li>
-        <ul class="ul-self">
-            
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_extensioncontroller_extenderprofile_lanextension_trafficsplitservices.html#parameters">fmgr_extensioncontroller_extenderprofile_lanextension_trafficsplitservices</a> </span></li>
         </ul>
         <li><span class="li-normal">params for filefilter_profile:</span></li>
         <ul class="ul-self">
@@ -10581,12 +10436,6 @@ Parameters
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_webfilter_profile_ftgdwf_quota.html#parameters">fmgr_webfilter_profile_ftgdwf_quota</a> </span></li>
         </ul>
-        <li><span class="li-normal">params for webfilter_profile_ftgdwf_risk:</span></li>
-        <ul class="ul-self">
-            
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_webfilter_profile_ftgdwf_risk.html#parameters">fmgr_webfilter_profile_ftgdwf_risk</a> </span></li>
-        </ul>
         <li><span class="li-normal">params for webfilter_profile_youtubechannelfilter:</span></li>
         <ul class="ul-self">
             
@@ -10622,12 +10471,6 @@ Parameters
             
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_webproxy_forwardservergroup_serverlist.html#parameters">fmgr_webproxy_forwardservergroup_serverlist</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for webproxy_isolatorserver:</span></li>
-        <ul class="ul-self">
-            
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_webproxy_isolatorserver.html#parameters">fmgr_webproxy_isolatorserver</a> </span></li>
         </ul>
         <li><span class="li-normal">params for webproxy_profile:</span></li>
         <ul class="ul-self">

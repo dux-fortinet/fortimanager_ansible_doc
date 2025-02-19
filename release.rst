@@ -19,7 +19,7 @@ Release fortinet.fortimanager 2.9.0
 Minor Changes
 -------------
 
-- Supported FortiManager 7.2.9, 7.4.6, 7.6.2. Added 15 new module.
+- Supported FortiManager 7.2.9, 7.4.6, 7.6.2. Added 3 new modules.
 
 Bugfixes
 --------
@@ -46,6 +46,9 @@ New Modules
 - fortinet.fortimanager.fmgr_webproxy_isolatorserver - Configure forward-server addresses.
 
 
+|
+
+
 Release Galaxy 2.8.2
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -66,6 +69,9 @@ Bugfixes
 - Modified built-in document to support sanity tests in ansible-core 2.18.0. No functionality changed.
 
 
+|
+
+
 Release Galaxy 2.8.1
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -79,6 +85,9 @@ Bugfixes
 -------------
 
 - Fixed a bug where rc_failed and rc_succeeded did not work.
+
+
+|
 
 
 Release Galaxy 2.8.0
@@ -107,6 +116,9 @@ New Modules
 - fortinet.fortimanager.fmgr_pkg_videofilter_youtubekey - Configure YouTube API keys.
 
 
+|
+
+
 Release Galaxy 2.7.0
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -127,6 +139,9 @@ Bugfixes
 
 - Fixed Bug in "fmgr_fact"
 - Improved documentation.
+
+
+|
 
 Release Galaxy 2.6.0
 ~~~~~~~~~~~~~~~~~~~~
