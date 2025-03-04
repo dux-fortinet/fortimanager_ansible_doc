@@ -2,6 +2,26 @@
 Release Notes
 ==============================
 
+Release Galaxy 2.9.1
+~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+----------------
+
+FortiManager version: ``v6.2.x``, ``v6.4.x``, ``v7.0.x``, ``v7.2.x`` and ``v7.4.x``
+
+Release Summary
+---------------
+
+Release fortinet.fortimanager 2.9.1
+
+Bugfixes
+--------
+
+- Changed the default playbook examples for each module to pass ansible-lint.
+- Corrected mainkey of some modules.
+
+|
 
 Release Galaxy 2.9.0
 ~~~~~~~~~~~~~~~~~~~~
@@ -29,22 +49,9 @@ Bugfixes
 New Modules
 -----------
 
-- fortinet.fortimanager.fmgr_casb_profile_saasapplication_accessrule_attributefilter - CASB profile attribute filter.
-- fortinet.fortimanager.fmgr_casb_profile_saasapplication_advancedtenantcontrol - CASB profile advanced tenant control.
-- fortinet.fortimanager.fmgr_casb_profile_saasapplication_advancedtenantcontrol_attribute - CASB advanced tenant control attribute.
-- fortinet.fortimanager.fmgr_casb_profile_saasapplication_customcontrol_attributefilter - CASB attribute filter.
-- fortinet.fortimanager.fmgr_casb_saasapplication_inputattributes - SaaS application input attributes.
-- fortinet.fortimanager.fmgr_casb_saasapplication_outputattributes - SaaS application output attributes.
-- fortinet.fortimanager.fmgr_casb_useractivity_match_tenantextraction - CASB user activity tenant extraction.
-- fortinet.fortimanager.fmgr_casb_useractivity_match_tenantextraction_filters - CASB user activity tenant extraction filters.
-- fortinet.fortimanager.fmgr_extensioncontroller_extenderprofile_lanextension_trafficsplitservices - Config FortiExtender traffic split interface for LAN extension.
 - fortinet.fortimanager.fmgr_gtp_ieallowlist - IE allow list.
 - fortinet.fortimanager.fmgr_gtp_ieallowlist_entries - Entries of allow list for unknown or out-of-state IEs.
-- fortinet.fortimanager.fmgr_system_externalresource_dynamicmapping - System external resource dynamic mapping
 - fortinet.fortimanager.fmgr_ums_setting - Ums setting
-- fortinet.fortimanager.fmgr_webfilter_profile_ftgdwf_risk - FortiGuard risk level settings.
-- fortinet.fortimanager.fmgr_webproxy_isolatorserver - Configure forward-server addresses.
-
 
 |
 
