@@ -172,7 +172,7 @@ Examples
   
   - name: INSTALL PREVIEW - POLICY PACKAGE
     hosts: fortimanagers
-    gather_facts: falsemg
+    gather_facts: false
     connection: httpapi
     vars:
       adom: demo

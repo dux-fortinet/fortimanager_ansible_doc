@@ -319,8 +319,8 @@ Access token usually expires in hours, you should always renew one in case of fa
 Error: No fact modules available and we could not find a fact module for your network OS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Solution 1 (Recommended): Add vars "ansible_facts_modules: setup" to the host file to avoid this error.
-`What is host file?`_
+Solution 1 (Recommended): Add vars "ansible_facts_modules: setup" to the inventory file to avoid this error.
+`What is inventory file?`_
 
 ::
 
@@ -329,6 +329,7 @@ Solution 1 (Recommended): Add vars "ansible_facts_modules: setup" to the host fi
    fortimanager02 ansible_host=192.168.190.2 ansible_user="admin" ansible_password="password"
 
    [fortimanagers:vars]
+   ansible_connection=httpapi
    ansible_network_os=fortinet.fortimanager.fortimanager
    ansible_facts_modules=setup # add here
    ansible_httpapi_port=443
@@ -342,7 +343,6 @@ Solution 2: Add vars "ansible_facts_modules: setup" to your playbook.
 
   - name: Your task
     hosts: fortimanagers
-    connection: httpapi
     vars:
       ansible_facts_modules: setup # add here
     tasks:
@@ -357,7 +357,6 @@ Solution 3: Add "gather_facts: false" to your playbook.
 
   - name: Your task
     hosts: fortimanagers
-    connection: httpapi
     gather_facts: false # add here
     tasks:
       - name: Your task
@@ -376,4 +375,4 @@ Solution 3: Add "gather_facts: false" to your playbook.
 .. _When to Use Parameter bypass_validation?: #when-to-use-parameter-bypass-validation
 .. _How To Monitor FortiManager Task?: #how-to-monitor-fortimanager-task
 .. _How To Use FortiManager Ansible With FortiCloud?: #how-to-use-fortimanager-ansible-with-forticloud
-.. _What is host file?: https://docs.ansible.com/ansible/latest/inventory_guide/intro_inventory.html
+.. _What is inventory file?: https://docs.ansible.com/ansible/latest/inventory_guide/intro_inventory.html

@@ -892,9 +892,6 @@ Parameters
         <li><span class="li-required">fmupdate_fdssetting_serveroverride_servlist</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
         </li>
-        <li><span class="li-required">fmupdate_fgdsetting_serveroverride_servlist</span> - available versions:
-            <span class="li-normal">v7.6.3->latest</span>
-        </li>
         <li><span class="li-required">fmupdate_serveraccesspriorities_privateserver</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
         </li>
@@ -3881,10 +3878,6 @@ Parameters
             <li><span class="li-normal">announce-ip</span></li>
         </ul>
         <li><span class="li-normal">params for fmupdate_fdssetting_serveroverride_servlist:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">servlist</span></li>
-        </ul>
-        <li><span class="li-normal">params for fmupdate_fgdsetting_serveroverride_servlist:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">servlist</span></li>
         </ul>
@@ -8057,12 +8050,6 @@ Parameters
             
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_fmupdate_fdssetting_serveroverride_servlist.html#parameters">fmgr_fmupdate_fdssetting_serveroverride_servlist</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for fmupdate_fgdsetting_serveroverride_servlist:</span></li>
-        <ul class="ul-self">
-            
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_fmupdate_fgdsetting_serveroverride_servlist.html#parameters">fmgr_fmupdate_fgdsetting_serveroverride_servlist</a> </span></li>
         </ul>
         <li><span class="li-normal">params for fmupdate_serveraccesspriorities_privateserver:</span></li>
         <ul class="ul-self">

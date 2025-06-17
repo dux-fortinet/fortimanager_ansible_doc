@@ -23,6 +23,7 @@ in our case we create a file named ``hosts``:
    fortimanager02 ansible_host=192.168.190.2 ansible_user="admin" ansible_password="password"
 
    [fortimanagers:vars]
+   ansible_connection=httpapi
    ansible_network_os=fortinet.fortimanager.fortimanager
    ansible_facts_modules=setup
    ansible_httpapi_port=443
@@ -39,10 +40,11 @@ in the example: ``test.yml`` we are going to create a script on FortiManager:
 
 ::
 
-   - hosts: fortimanagers
-     connection: httpapi
+   - name: Example playbook
+     hosts: fortimanagers
      vars:
        # You don't need to specify the following vars if you specified them in the host file.
+       # ansible_connection: httpapi
        # ansible_network_os: fortinet.fortimanager.fortimanager
        # ansible_facts_modules: setup
        # ansible_httpapi_port: 443
