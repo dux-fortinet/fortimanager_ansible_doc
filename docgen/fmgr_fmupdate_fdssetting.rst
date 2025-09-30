@@ -341,7 +341,7 @@ Parameters
  <li><span class="li-head">system_support_faz</span> <b>(Alias name: system-support-faz)</b>  Supported fortianalyzer versions. <span class="li-normal">type: list</span> <span class="li-normal">choices: [6.x, 7.x]</span> 
  <a id='label88' href="javascript:ContentClick('label89', 'label88');" onmouseover="ContentPreview('label89');" onmouseout="ContentUnpreview('label89');" title="click to collapse or expand..."> more... </a>
  <div id="label89" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.7 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.7 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">system_support_fis</span> <b>(Alias name: system-support-fis)</b>  Supported fortiisolator versions. <span class="li-normal">type: list</span> <span class="li-normal">choices: [1.x, 2.x]</span> 

@@ -718,7 +718,7 @@ Parameters
  <li><span class="li-head">old_password</span> <b>(Alias name: old-password)</b>  Old password. <span class="li-normal">type: str</span>
  <a id='label210' href="javascript:ContentClick('label211', 'label210');" onmouseover="ContentPreview('label211');" onmouseout="ContentUnpreview('label211');" title="click to collapse or expand..."> more... </a>
  <div id="label211" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.11 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
  </ul>

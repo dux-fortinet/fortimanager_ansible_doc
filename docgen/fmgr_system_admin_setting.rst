@@ -329,7 +329,7 @@ Parameters
  <li><span class="li-head">fsw_ignore_platform_check</span> <b>(Alias name: fsw-ignore-platform-check)</b>  Enable/disable fortiswitch manager switch platform support check. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span> 
  <a id='label88' href="javascript:ContentClick('label89', 'label88');" onmouseover="ContentPreview('label89');" onmouseout="ContentUnpreview('label89');" title="click to collapse or expand..."> more... </a>
  <div id="label89" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.7 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.7 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">rtm_max_monitor_by_days</span> <b>(Alias name: rtm-max-monitor-by-days)</b>  Maximum rtm monitor (sdwan, traffic shaping, etc) history by days (1 - 180). <span class="li-normal">type: int</span> <span class="li-normal">default: 180</span> 
