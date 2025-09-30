@@ -111,63 +111,63 @@ By using "group/fortinet.fortimanager.adom", you can specify the adom value for 
 
 ::
 
-  - name: Your playbook.
-    hosts: fortimanagers
-    module_defaults:
-      group/fortinet.fortimanager.all:
-        enable_log: true
-        # access_token: "YOUR ACCESS TOKEN"
-        # forticloud_access_token: "YOUR CLOUD ACCESS TOKEN"
-        # rc_succeeded: [0, -2, -3]
-        # rc_failed: [-2, -3]
-        # workspace_locking_adom: "ADOM NAME"
-        # workspace_locking_timeout: 300
-      group/fortinet.fortimanager.adom:
-        adom: "root"
-    tasks:
-      - name: Your task
-        fortinet.fortimanager.fmgr_<module>:
-          <param>: <value>
+   - name: Your playbook.
+     hosts: fortimanagers
+     module_defaults:
+       group/fortinet.fortimanager.all:
+         enable_log: true
+         # access_token: "YOUR ACCESS TOKEN"
+         # forticloud_access_token: "YOUR CLOUD ACCESS TOKEN"
+         # rc_succeeded: [0, -2, -3]
+         # rc_failed: [-2, -3]
+         # workspace_locking_adom: "ADOM NAME"
+         # workspace_locking_timeout: 300
+       group/fortinet.fortimanager.adom:
+         adom: "root"
+     tasks:
+       - name: Your task
+         fortinet.fortimanager.fmgr_<module>:
+           <param>: <value>
 
 Here is an example:
 
 ::
 
-  - name: Set module defaults.
-    hosts: fortimanagers
-    module_defaults:
-      group/fortinet.fortimanager.all:
-        enable_log: true
-        # access_token: "YOUR ACCESS TOKEN"
-        # forticloud_access_token: "YOUR CLOUD ACCESS TOKEN"
-        # rc_succeeded: [0, -2, -3]
-        # rc_failed: [-2, -3]
-        # workspace_locking_adom: "ADOM NAME"
-        # workspace_locking_timeout: 300
-      group/fortinet.fortimanager.adom:
-        adom: "root"
-    tasks:
-      - name: Get fact.
-        fortinet.fortimanager.fmgr_fact:
-          enable_log: false # You can override module default settings
-          facts:
-            selector: "firewall_ippool"
-            params:
-              adom: "root"
-              ippool: ""
-      - name: Configure IPv4 policies.
-        fortinet.fortimanager.fmgr_firewall_address:
-          state: present
-          # adom: root        # Already set in module_defaults
-          # enable_log: true  # Already set in module_defaults
-          firewall_address:
-            name: Win11
-            comment: from Ansible.
-            organization: Fortinet
-            start_ip: 192.168.1.5
-            end_ip: 192.168.1.11
-            type: iprange
-            associated_interface: any
+   - name: Set module defaults.
+     hosts: fortimanagers
+     module_defaults:
+       group/fortinet.fortimanager.all:
+         enable_log: true
+         # access_token: "YOUR ACCESS TOKEN"
+         # forticloud_access_token: "YOUR CLOUD ACCESS TOKEN"
+         # rc_succeeded: [0, -2, -3]
+         # rc_failed: [-2, -3]
+         # workspace_locking_adom: "ADOM NAME"
+         # workspace_locking_timeout: 300
+       group/fortinet.fortimanager.adom:
+         adom: "root"
+     tasks:
+       - name: Get fact.
+         fortinet.fortimanager.fmgr_fact:
+           enable_log: false # You can override module default settings
+           facts:
+             selector: "firewall_ippool"
+             params:
+               adom: "root"
+               ippool: ""
+       - name: Configure IPv4 policies.
+         fortinet.fortimanager.fmgr_firewall_address:
+           state: present
+           # adom: root        # Already set in module_defaults
+           # enable_log: true  # Already set in module_defaults
+           firewall_address:
+             name: Win11
+             comment: from Ansible.
+             organization: Fortinet
+             start_ip: 192.168.1.5
+             end_ip: 192.168.1.11
+             type: iprange
+             associated_interface: any
 
 
 What You Need To Know About Logging. 
