@@ -199,12 +199,12 @@ Examples
           adom: ansible
           state: present
           certificate_template:
-            # digest-type: sha1
-            id-type: host-ip
-            key-size: 512
-            key-type: rsa
+            # digest_type: sha1
+            id_type: host-ip
+            key_size: 512
+            key_type: rsa
             name: "ansible-test"
-            scep-password: "fortinet1"
+            scep_password: "fortinet1"
             type: external
   
   - name: Gathering fortimanager facts

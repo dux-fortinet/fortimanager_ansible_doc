@@ -103,7 +103,7 @@ Examples
         fortinet.fortimanager.fmgr_user_fssopolling_adgrp:
           bypass_validation: false
           adom: ansible
-          fsso-polling: 1 # id
+          fsso_polling: 1 # id
           state: present
           user_fssopolling_adgrp:
             name: ansible-test
@@ -123,7 +123,7 @@ Examples
             selector: "user_fssopolling_adgrp"
             params:
               adom: "ansible"
-              fsso-polling: 1 # id
+              fsso_polling: 1 # id
               adgrp: "your_value"
 
 

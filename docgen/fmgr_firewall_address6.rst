@@ -598,7 +598,7 @@ Examples
           adom: ansible
           state: present
           firewall_address6:
-            host-type: any # <value in [any, specific]>
+            host_type: any # <value in [any, specific]>
             ip6: "::/55"
             name: "ansible-test"
             visibility: disable

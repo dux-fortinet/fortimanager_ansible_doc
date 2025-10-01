@@ -139,7 +139,7 @@ Examples
         fortinet.fortimanager.fmgr_firewall_sslsshprofile_sslexempt:
           bypass_validation: false
           adom: ansible
-          ssl-ssh-profile: "ansible-test" # name
+          ssl_ssh_profile: "ansible-test" # name
           state: present
           firewall_sslsshprofile_sslexempt:
             id: 1
@@ -160,8 +160,8 @@ Examples
             selector: "firewall_sslsshprofile_sslexempt"
             params:
               adom: "ansible"
-              ssl-ssh-profile: "ansible-test" # name
-              ssl-exempt: "your_value"
+              ssl_ssh_profile: "ansible-test" # name
+              ssl_exempt: "your_value"
 
 
 Return Values

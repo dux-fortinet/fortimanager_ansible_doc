@@ -191,18 +191,18 @@ Examples
           state: present
           firewall_gtp_policy:
             action: allow # <value in [allow, deny]>
-            apn-sel-mode:
+            apn_sel_mode:
               - ms
               - net
               - vrf
             id: 1
-            max-apn-restriction: public-1 # <value in [all, public-1, public-2, ...]>
+            max_apn_restriction: public-1 # <value in [all, public-1, public-2, ...]>
             messages:
               - create-req
               - create-res
               - update-req
               - update-res
-            rat-type:
+            rat_type:
               - any
               - utran
               - geran

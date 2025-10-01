@@ -298,7 +298,7 @@ Examples
           pkg: ansible # package name
           state: present
           pkg_firewall_interfacepolicy6:
-            address-type: ipv6 # <value in [ipv4, ipv6]>
+            address_type: ipv6 # <value in [ipv4, ipv6]>
             comments: ansible-comment
             interface: sslvpn_tun_intf
             policyid: 1

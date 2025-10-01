@@ -200,7 +200,7 @@ Examples
           adom: ansible
           state: present
           user_peer:
-            cn-type: email # <value in [string, email, FQDN, ...]>
+            cn_type: email # <value in [string, email, FQDN, ...]>
             name: ansible-test-peer
             passwd: fortinet
   

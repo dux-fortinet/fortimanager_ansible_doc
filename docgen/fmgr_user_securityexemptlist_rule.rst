@@ -127,7 +127,7 @@ Examples
         fortinet.fortimanager.fmgr_user_securityexemptlist_rule:
           bypass_validation: false
           adom: ansible
-          security-exempt-list: ansible-test-security # name
+          security_exempt_list: ansible-test-security # name
           state: present
           user_securityexemptlist_rule:
             id: 1
@@ -149,7 +149,7 @@ Examples
             selector: "user_securityexemptlist_rule"
             params:
               adom: "ansible"
-              security-exempt-list: "ansible-test-security" # name
+              security_exempt_list: "ansible-test-security" # name
               rule: "your_value"
 
 

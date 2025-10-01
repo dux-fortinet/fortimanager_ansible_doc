@@ -1633,7 +1633,7 @@ Examples
           adom: "root"
           state: "present"
           firewall_vip:
-            arp-reply: "disable"
+            arp_reply: "disable"
             comment: "The VIP is created via Ansible"
             name: "{{ initial_vip_object }}"
             protocol: "tcp"
@@ -1666,7 +1666,7 @@ Examples
           adom: ansible
           state: present
           firewall_vip:
-            arp-reply: disable # <value in [disable, enable]>
+            arp_reply: disable # <value in [disable, enable]>
             color: 1
             comment: "ansible-comment"
             id: 1

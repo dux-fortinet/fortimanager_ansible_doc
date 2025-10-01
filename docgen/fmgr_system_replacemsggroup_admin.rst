@@ -121,13 +121,13 @@ Examples
         fortinet.fortimanager.fmgr_system_replacemsggroup_admin:
           bypass_validation: false
           adom: ansible
-          replacemsg-group: ansible-test # name
+          replacemsg_group: ansible-test # name
           state: present
           system_replacemsggroup_admin:
             buffer: ansible-buffer
             format: none # <value in [none, text, html, ...]>
             header: http # <value in [none, http, 8bit]>
-            msg-type: ansible # required
+            msg_type: ansible # required
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers
@@ -144,7 +144,7 @@ Examples
             selector: "system_replacemsggroup_admin"
             params:
               adom: "ansible"
-              replacemsg-group: "ansible-test" # name
+              replacemsg_group: "ansible-test" # name
               admin: "your_value"
 
 

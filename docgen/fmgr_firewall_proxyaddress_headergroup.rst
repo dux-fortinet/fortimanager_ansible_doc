@@ -121,12 +121,12 @@ Examples
         fortinet.fortimanager.fmgr_firewall_proxyaddress_headergroup:
           bypass_validation: false
           adom: ansible
-          proxy-address: "ansible-test" # name
+          proxy_address: "ansible-test" # name
           state: present
           firewall_proxyaddress_headergroup: # available only when type is set to "Advanced(Source)" in prox-address
-            case-sensitivity: disable
+            case_sensitivity: disable
             header: ansible-test-header
-            header-name: ansible-test-header
+            header_name: ansible-test-header
             id: 1
   
   - name: Gathering fortimanager facts
@@ -144,8 +144,8 @@ Examples
             selector: "firewall_proxyaddress_headergroup" # available only when type is set to "Advanced(Source)" in prox-address
             params:
               adom: "ansible"
-              proxy-address: "ansible-test" # name
-              header-group: "your_value"
+              proxy_address: "ansible-test" # name
+              header_group: "your_value"
 
 
 Return Values

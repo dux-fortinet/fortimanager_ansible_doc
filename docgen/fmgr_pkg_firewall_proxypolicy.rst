@@ -690,7 +690,7 @@ Examples
             selector: "pkg_firewall_proxypolicy"
             params:
               adom: "ansible"
-              proxy-policy: "your_value"
+              proxy_policy: "your_value"
               pkg: "ansible" # package name
 
 

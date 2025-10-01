@@ -110,12 +110,12 @@ Examples
         fortinet.fortimanager.fmgr_system_sdnconnector_routetable_route:
           bypass_validation: false
           adom: ansible
-          sdn-connector: ansible-test-sdn # name
-          route-table: ansible-test-routetable # name
+          sdn_connector: ansible-test-sdn # name
+          route_table: ansible-test-routetable # name
           state: present
           system_sdnconnector_routetable_route:
             name: ansible-routetable-route
-            next-hop: ansible-test
+            next_hop: ansible-test
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers
@@ -132,8 +132,8 @@ Examples
             selector: "system_sdnconnector_routetable_route"
             params:
               adom: "ansible"
-              sdn-connector: "ansible-test-sdn" # name
-              route-table: "ansible-test-routetable" # name
+              sdn_connector: "ansible-test-sdn" # name
+              route_table: "ansible-test-routetable" # name
               route: "your_value"
 
 

@@ -404,11 +404,11 @@ Examples
           adom: ansible
           state: present
           firewall_vip46:
-            arp-reply: enable
+            arp_reply: enable
             color: 1
             comment: "ansible-comment"
             id: 1
-            ldb-method: static # <value in [static, round-robin, weighted, ...]>
+            ldb_method: static # <value in [static, round-robin, weighted, ...]>
             name: "ansible-test-vip46"
             protocol: tcp # <value in [tcp, udp]>
   

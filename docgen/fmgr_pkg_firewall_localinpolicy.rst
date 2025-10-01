@@ -257,7 +257,7 @@ Examples
             params:
               adom: "ansible"
               pkg: "ansible" # package name
-              local-in-policy: "your_value"
+              local_in_policy: "your_value"
 
 
 Return Values

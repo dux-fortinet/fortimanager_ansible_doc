@@ -163,7 +163,7 @@ Examples
             selector: "system_objecttagging"
             params:
               adom: "ansible"
-              object-tagging: "your_value"
+              object_tagging: "your_value"
 
 
 Return Values

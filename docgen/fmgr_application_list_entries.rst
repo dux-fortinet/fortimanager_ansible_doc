@@ -306,7 +306,7 @@ Examples
             category: "2"
             id: 1
             log: enable
-            log-packet: enable
+            log_packet: enable
             protocols: "all"
   
   - name: Gathering fortimanager facts

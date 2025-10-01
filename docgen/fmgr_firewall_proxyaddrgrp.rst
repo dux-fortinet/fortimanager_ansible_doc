@@ -198,7 +198,7 @@ Examples
             selector: "firewall_proxyaddrgrp"
             params:
               adom: "ansible"
-              proxy-addrgrp: "your_value"
+              proxy_addrgrp: "your_value"
 
 
 Return Values

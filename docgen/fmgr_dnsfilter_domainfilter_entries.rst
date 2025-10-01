@@ -127,7 +127,7 @@ Examples
         fortinet.fortimanager.fmgr_dnsfilter_domainfilter_entries:
           bypass_validation: false
           adom: ansible
-          domain-filter: "1" # id
+          domain_filter: "1" # id
           state: present
           dnsfilter_domainfilter_entries:
             action: allow
@@ -150,7 +150,7 @@ Examples
             selector: "dnsfilter_domainfilter_entries"
             params:
               adom: "ansible"
-              domain-filter: "1" # id
+              domain_filter: "1" # id
               entries: "your_value"
 
 

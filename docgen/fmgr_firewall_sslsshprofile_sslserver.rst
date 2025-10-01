@@ -181,13 +181,13 @@ Examples
         fortinet.fortimanager.fmgr_firewall_sslsshprofile_sslserver:
           bypass_validation: false
           adom: ansible
-          ssl-ssh-profile: "ansible-test" # name
+          ssl_ssh_profile: "ansible-test" # name
           state: present
           firewall_sslsshprofile_sslserver:
-            ftps-client-cert-request: block # <value in [bypass, inspect, block]>
-            https-client-cert-request: bypass # <value in [bypass, inspect, block]>
+            ftps_client_cert_request: block # <value in [bypass, inspect, block]>
+            https_client_cert_request: bypass # <value in [bypass, inspect, block]>
             id: 1
-            imaps-client-cert-request: bypass # <value in [bypass, inspect, block]>
+            imaps_client_cert_request: bypass # <value in [bypass, inspect, block]>
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers
@@ -204,8 +204,8 @@ Examples
             selector: "firewall_sslsshprofile_sslserver"
             params:
               adom: "ansible"
-              ssl-ssh-profile: "ansible-test" # name
-              ssl-server: "your_value"
+              ssl_ssh_profile: "ansible-test" # name
+              ssl_server: "your_value"
 
 
 Return Values

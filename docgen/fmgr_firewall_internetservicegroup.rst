@@ -141,7 +141,7 @@ Examples
             selector: "firewall_internetservicegroup"
             params:
               adom: "ansible"
-              internet-service-group: "your_value"
+              internet_service_group: "your_value"
 
 
 Return Values

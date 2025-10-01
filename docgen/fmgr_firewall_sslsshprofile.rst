@@ -1321,9 +1321,9 @@ Examples
           state: present
           firewall_sslsshprofile:
             comment: "ansible-comment1"
-            mapi-over-https: disable # <value in [disable, enable]>
+            mapi_over_https: disable # <value in [disable, enable]>
             name: "ansible-test"
-            use-ssl-server: disable # <value in [disable, enable]>
+            use_ssl_server: disable # <value in [disable, enable]>
             whitelist: enable # <value in [disable, enable]>
   
   - name: Gathering fortimanager facts
@@ -1341,7 +1341,7 @@ Examples
             selector: "firewall_sslsshprofile"
             params:
               adom: "ansible"
-              ssl-ssh-profile: "your_value"
+              ssl_ssh_profile: "your_value"
 
 
 Return Values

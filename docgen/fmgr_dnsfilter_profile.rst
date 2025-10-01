@@ -330,10 +330,10 @@ Examples
           adom: ansible
           state: present
           dnsfilter_profile:
-            block-action: redirect
-            block-botnet: disable
+            block_action: redirect
+            block_botnet: disable
             comment: "ansible-test-comment"
-            log-all-domain: disable
+            log_all_domain: disable
             name: "ansible-test"
   
   - name: Gathering fortimanager facts

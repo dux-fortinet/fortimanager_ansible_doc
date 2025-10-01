@@ -135,7 +135,7 @@ Examples
             selector: "system_customlanguage"
             params:
               adom: "ansible"
-              custom-language: "your_value"
+              custom_language: "your_value"
 
 
 Return Values

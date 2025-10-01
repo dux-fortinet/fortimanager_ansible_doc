@@ -127,18 +127,18 @@ Examples
         fortinet.fortimanager.fmgr_firewall_carrierendpointbwl_entries:
           bypass_validation: false
           adom: FortiCarrier # This is FOC-only object, need a FortiCarrier adom
-          carrier-endpoint-bwl: "1" # id
+          carrier_endpoint_bwl: "1" # id
           state: present
           firewall_carrierendpointbwl_entries:
             action:
               - block
               - exempt
               - exempt-mass-mms
-            carrier-endpoint: "string"
-            log-action:
+            carrier_endpoint: "string"
+            log_action:
               - archive
               - intercept
-            pattern-type: wildcard # <value in [wildcard, regexp, simple]>
+            pattern_type: wildcard # <value in [wildcard, regexp, simple]>
             status: enable
   
   - name: Gathering fortimanager facts
@@ -156,7 +156,7 @@ Examples
             selector: "firewall_carrierendpointbwl_entries"
             params:
               adom: "FortiCarrier" # This is FOC-only object, need a FortiCarrier adom
-              carrier-endpoint-bwl: "1" # id
+              carrier_endpoint_bwl: "1" # id
               entries: "your_value"
 
 

@@ -206,7 +206,7 @@ Examples
             selector: "firewall_multicastaddress"
             params:
               adom: "ansible"
-              multicast-address: "your_value"
+              multicast_address: "your_value"
 
 
 Return Values

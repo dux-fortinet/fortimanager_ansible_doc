@@ -288,7 +288,7 @@ Examples
           adom: ansible
           state: present
           firewall_proxyaddress:
-            case-sensitivity: disable
+            case_sensitivity: disable
             color: 1
             comment: "ansible-comment"
             name: "ansible-test"
@@ -308,7 +308,7 @@ Examples
             selector: "firewall_proxyaddress"
             params:
               adom: "ansible"
-              proxy-address: "your_value"
+              proxy_address: "your_value"
 
 
 Return Values

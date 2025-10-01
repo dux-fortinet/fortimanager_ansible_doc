@@ -163,12 +163,12 @@ Examples
         fortinet.fortimanager.fmgr_firewall_shapingprofile_shapingentries:
           bypass_validation: false
           adom: ansible
-          shaping-profile: "ansible-test" # profile-name
+          shaping_profile: "ansible-test" # profile-name
           state: present
           firewall_shapingprofile_shapingentries:
-            guaranteed-bandwidth-percentage: 50
+            guaranteed_bandwidth_percentage: 50
             id: 1
-            maximum-bandwidth-percentage: 70
+            maximum_bandwidth_percentage: 70
             priority: medium # <value in [low, medium, high]>
   
   - name: Gathering fortimanager facts
@@ -186,8 +186,8 @@ Examples
             selector: "firewall_shapingprofile_shapingentries"
             params:
               adom: "ansible"
-              shaping-profile: "ansible-test" # profile-name
-              shaping-entries: "your_value"
+              shaping_profile: "ansible-test" # profile-name
+              shaping_entries: "your_value"
 
 
 Return Values

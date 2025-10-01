@@ -271,7 +271,7 @@ Examples
             selector: "firewall_internetservicecustom"
             params:
               adom: "ansible"
-              internet-service-custom: "your_value"
+              internet_service_custom: "your_value"
 
 
 Return Values

@@ -219,7 +219,7 @@ Examples
             _scope:
               - name: FGT_AWS # need a valid device name
                 vdom: root # need a valid vdom name under the device
-            arp-reply: enable
+            arp_reply: enable
             color: 1
             comment: "ansible-comment1"
             id: 1

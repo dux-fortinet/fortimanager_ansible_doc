@@ -109,7 +109,7 @@ Examples
         fortinet.fortimanager.fmgr_firewall_mmsprofile_notifmsisdn:
           bypass_validation: false
           adom: FortiCarrier # This is FOC-only object, need a FortiCarrier adom
-          mms-profile: "ansible-test" # name
+          mms_profile: "ansible-test" # name
           state: present
           firewall_mmsprofile_notifmsisdn:
             msisdn: "ansible"
@@ -136,8 +136,8 @@ Examples
             selector: "firewall_mmsprofile_notifmsisdn"
             params:
               adom: "FortiCarrier" # This is FOC-only object, need a FortiCarrier adom
-              mms-profile: "ansible-test" # name
-              notif-msisdn: "your_value"
+              mms_profile: "ansible-test" # name
+              notif_msisdn: "your_value"
 
 
 Return Values

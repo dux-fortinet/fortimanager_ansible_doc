@@ -116,13 +116,13 @@ Examples
         fortinet.fortimanager.fmgr_firewall_internetservicecustom_disableentry_iprange:
           bypass_validation: false
           adom: ansible
-          internet-service-custom: "ansible-test" # name
-          disable-entry: "1" # id
+          internet_service_custom: "ansible-test" # name
+          disable_entry: "1" # id
           state: present
           firewall_internetservicecustom_disableentry_iprange:
-            end-ip: "0.0.0.20"
+            end_ip: "0.0.0.20"
             id: 1
-            start-ip: "0.0.0.0"
+            start_ip: "0.0.0.0"
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers
@@ -139,9 +139,9 @@ Examples
             selector: "firewall_internetservicecustom_disableentry_iprange"
             params:
               adom: "ansible"
-              internet-service-custom: "ansible-test" # name
-              disable-entry: "1" # id
-              ip-range: "your_value"
+              internet_service_custom: "ansible-test" # name
+              disable_entry: "1" # id
+              ip_range: "your_value"
 
 
 Return Values

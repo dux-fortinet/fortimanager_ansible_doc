@@ -148,9 +148,9 @@ Examples
           server: 1 # id
           state: present
           system_dhcp_server_iprange:
-            end-ip: 222.222.222.35
+            end_ip: 222.222.222.35
             id: 2
-            start-ip: 222.222.222.23
+            start_ip: 222.222.222.23
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers
@@ -168,7 +168,7 @@ Examples
             params:
               adom: "ansible"
               server: "1" # id
-              ip-range: "your_value"
+              ip_range: "your_value"
 
 
 Return Values

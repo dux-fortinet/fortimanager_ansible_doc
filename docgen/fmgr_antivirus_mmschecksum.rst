@@ -164,7 +164,7 @@ Examples
             selector: "antivirus_mmschecksum"
             params:
               adom: "FortiCarrier" # This is FOC-only object, data will only be returned under FortiCarrier adom
-              mms-checksum: ""
+              mms_checksum: ""
 
 
 Return Values

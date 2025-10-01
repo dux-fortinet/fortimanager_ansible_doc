@@ -141,7 +141,7 @@ Examples
         fortinet.fortimanager.fmgr_firewall_internetservicecustom_disableentry:
           bypass_validation: false
           adom: ansible
-          internet-service-custom: "ansible-test" # name
+          internet_service_custom: "ansible-test" # name
           state: present
           firewall_internetservicecustom_disableentry:
             id: 1
@@ -162,8 +162,8 @@ Examples
             selector: "firewall_internetservicecustom_disableentry"
             params:
               adom: "ansible"
-              internet-service-custom: "ansible-test" # name
-              disable-entry: "your_value"
+              internet_service_custom: "ansible-test" # name
+              disable_entry: "your_value"
 
 
 Return Values

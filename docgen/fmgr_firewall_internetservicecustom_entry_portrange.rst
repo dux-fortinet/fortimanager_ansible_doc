@@ -116,13 +116,13 @@ Examples
         fortinet.fortimanager.fmgr_firewall_internetservicecustom_entry_portrange:
           bypass_validation: false
           adom: ansible
-          internet-service-custom: "ansible-test" # name
+          internet_service_custom: "ansible-test" # name
           entry: "1" # id
           state: present
           firewall_internetservicecustom_entry_portrange:
-            end-port: 6
+            end_port: 6
             id: 1
-            start-port: 1
+            start_port: 1
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers
@@ -139,9 +139,9 @@ Examples
             selector: "firewall_internetservicecustom_entry_portrange"
             params:
               adom: "ansible"
-              internet-service-custom: "ansible-test" # name
+              internet_service_custom: "ansible-test" # name
               entry: "1" # id
-              port-range: "your_value"
+              port_range: "your_value"
 
 
 Return Values

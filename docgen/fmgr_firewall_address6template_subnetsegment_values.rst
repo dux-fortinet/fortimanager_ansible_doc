@@ -111,7 +111,7 @@ Examples
           bypass_validation: false
           adom: ansible
           address6-template: "ansible-name" # name
-          subnet-segment: "1" # id
+          subnet_segment: "1" # id
           state: present
           firewall_address6template_subnetsegment_values:
             name: "ansible-name-val"
@@ -133,7 +133,7 @@ Examples
             params:
               adom: "ansible"
               address6-template: "ansible-name" # name
-              subnet-segment: "1" #  id
+              subnet_segment: "1" #  id
               values: "your_value"
 
 

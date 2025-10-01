@@ -128,7 +128,7 @@ Examples
             selector: "system_geoipcountry"
             params:
               adom: "ansible"
-              geoip-country: "your_value"
+              geoip_country: "your_value"
 
 
 Return Values

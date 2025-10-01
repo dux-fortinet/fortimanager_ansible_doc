@@ -114,7 +114,7 @@ Examples
       - name: Modify this MMS content checksum list
         fortinet.fortimanager.fmgr_antivirus_mmschecksum_entries:
           adom: FortiCarrier
-          mms-checksum: "1" # id
+          mms_checksum: "1" # id
           state: present
           antivirus_mmschecksum_entries:
             checksum: "test_checksum"
@@ -137,7 +137,7 @@ Examples
             params:
               adom: "FortiCarrier" # This is FOC-only object, data will only be returned under FortiCarrier adom
               entries: ""
-              mms-checksum: "1" # id
+              mms_checksum: "1" # id
 
 
 Return Values

@@ -323,14 +323,14 @@ Examples
             _scope:
               - name: FGT_AWS # need a valid device name
                 vdom: root # need a valid vdom name under the device
-            cache-ttl: 0
+            cache_ttl: 0
             color: 22
             comment: "ansible-test-comment"
-            end-ip: "::100"
+            end_ip: "::100"
             host: "::"
-            host-type: any # <value in [any, specific]>
+            host_type: any # <value in [any, specific]>
             ip6: "::/128"
-            start-ip: "::"
+            start_ip: "::"
             type: iprange # <value in [ipprefix, iprange, nsx, ...]>
             visibility: enable
   

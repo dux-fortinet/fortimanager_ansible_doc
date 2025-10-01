@@ -435,15 +435,15 @@ Examples
           adom: ansible
           state: present
           application_list:
-            app-replacemsg: enable
+            app_replacemsg: enable
             comment: "ansible-test-comment"
-            deep-app-inspection: enable
-            extended-log: disable
+            deep_app_inspection: enable
+            extended_log: disable
             name: "ansible-test"
-            other-application-action: pass
-            other-application-log: disable
-            unknown-application-action: pass
-            unknown-application-log: disable
+            other_application_action: pass
+            other_application_log: disable
+            unknown_application_action: pass
+            unknown_application_log: disable
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers

@@ -237,7 +237,7 @@ Examples
           bypass_validation: false
           adom: ansible
           pkg: ansible # package name
-          DoS-policy: 1 # policyid
+          DoS_policy: 1 # policyid
           state: present
           pkg_firewall_dospolicy_anomaly:
             action: pass # <value in [pass, block, proxy]>
@@ -262,7 +262,7 @@ Examples
             params:
               adom: "ansible"
               pkg: "ansible" # package name
-              DoS-policy: "1" # policyid
+              DoS_policy: "1" # policyid
               anomaly: "your_value"
 
 

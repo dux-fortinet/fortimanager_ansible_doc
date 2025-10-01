@@ -1184,7 +1184,7 @@ Examples
             selector: "system_replacemsggroup"
             params:
               adom: "ansible"
-              replacemsg-group: "your_value"
+              replacemsg_group: "your_value"
 
 
 Return Values

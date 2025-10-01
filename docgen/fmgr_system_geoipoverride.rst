@@ -167,12 +167,12 @@ Examples
         fortinet.fortimanager.fmgr_system_geoipoverride_iprange:
           bypass_validation: false
           adom: ansible
-          geoip-override: ansible-test-geoipoverride # name
+          geoip_override: ansible-test-geoipoverride # name
           state: present
           system_geoipoverride_iprange:
-            end-ip: 222.222.222.25
+            end_ip: 222.222.222.25
             id: 1
-            start-ip: 222.222.222.2
+            start_ip: 222.222.222.2
 
 
 Return Values

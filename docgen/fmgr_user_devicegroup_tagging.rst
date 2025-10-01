@@ -115,7 +115,7 @@ Examples
         fortinet.fortimanager.fmgr_user_devicegroup_tagging:
           bypass_validation: false
           adom: ansible
-          device-group: ansible-test # name
+          device_group: ansible-test # name
           state: present
           user_devicegroup_tagging:
             category: ansible-category
@@ -137,7 +137,7 @@ Examples
             selector: "user_devicegroup_tagging"
             params:
               adom: "ansible"
-              device-group: "ansible-test" # name
+              device_group: "ansible-test" # name
               tagging: "your_value"
 
 

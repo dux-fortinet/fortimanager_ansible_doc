@@ -127,13 +127,13 @@ Examples
         fortinet.fortimanager.fmgr_system_replacemsggroup_nacquar:
           bypass_validation: false
           adom: ansible
-          replacemsg-group: ansible-test # name
+          replacemsg_group: ansible-test # name
           state: present
           system_replacemsggroup_nacquar:
             buffer: ansible-buffer
             format: text # <value in [none, text, html, ...]>
             header: none # <value in [none, http, 8bit]>
-            msg-type: ansible-msgtype # required
+            msg_type: ansible-msgtype # required
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers
@@ -150,8 +150,8 @@ Examples
             selector: "system_replacemsggroup_nacquar"
             params:
               adom: "ansible"
-              replacemsg-group: "ansible-test" # name
-              nac-quar: "your_value"
+              replacemsg_group: "ansible-test" # name
+              nac_quar: "your_value"
 
 
 Return Values

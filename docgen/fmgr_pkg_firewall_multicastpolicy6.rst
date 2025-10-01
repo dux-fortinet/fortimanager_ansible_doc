@@ -203,7 +203,7 @@ Examples
           state: present
           pkg_firewall_multicastpolicy6:
             action: accept # <value in [deny, accept]>
-            auto-asic-offload: enable
+            auto_asic_offload: enable
             dstaddr: all
             dstintf: any
             id: 1

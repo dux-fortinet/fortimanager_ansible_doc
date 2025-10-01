@@ -883,7 +883,7 @@ Examples
           state: present
           firewall_mmsprofile:
             comment: "ansible-comment"
-            # extended-utm-log: disable
+            # extended_utm_log: disable
             mm1:
               - avmonitor
               - block
@@ -969,7 +969,7 @@ Examples
             selector: "firewall_mmsprofile"
             params:
               adom: "FortiCarrier" # FortiCarrier only object, need a FortiCarrier adom
-              mms-profile: "your_value"
+              mms_profile: "your_value"
 
 
 Return Values

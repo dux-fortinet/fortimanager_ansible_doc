@@ -207,7 +207,7 @@ Examples
             _scope:
               - name: FGT_AWS # need a valid device name
                 vdom: root # need a valid vdom name under the device
-            allow-routing: disable
+            allow_routing: disable
             color: 1
             member: "ansible-test1"
             visibility: enable

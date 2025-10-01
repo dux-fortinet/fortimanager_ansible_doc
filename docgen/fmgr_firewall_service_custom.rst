@@ -284,7 +284,7 @@ Examples
           adom: ansible
           state: present
           firewall_service_custom:
-            app-service-type: disable # <value in [disable, app-id, app-category]>
+            app_service_type: disable # <value in [disable, app-id, app-category]>
             color: 1
             comment: "comment"
             helper: auto # <value in [disable, auto, ftp, ...]>

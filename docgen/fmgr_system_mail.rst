@@ -165,7 +165,7 @@ Examples
             id: 1
             passwd: fortinet
             port: 1
-            secure-option: none # <value in [default, none, smtps, ...]>
+            secure_option: none # <value in [default, none, smtps, ...]>
             server: ALL
             user: ansible
   

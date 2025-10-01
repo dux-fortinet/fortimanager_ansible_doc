@@ -188,7 +188,7 @@ Examples
           firewall_address6template:
             ip6: "::33/128"
             name: "ansible-name"
-            subnet-segment:
+            subnet_segment:
               - bits: 1
                 exclusive: enable
                 id: 1
@@ -196,7 +196,7 @@ Examples
                 values:
                   - name: "ansible-name-val"
                     value: "ansible"
-            subnet-segment-count: 2
+            subnet_segment_count: 2
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers

@@ -175,7 +175,7 @@ Examples
             params:
               adom: "ansible"
               radius: "ansible-test-radius" # name
-              accounting-server: "your_value"
+              accounting_server: "your_value"
 
 
 Return Values

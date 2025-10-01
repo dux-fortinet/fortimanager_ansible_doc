@@ -260,7 +260,7 @@ Examples
           adom: ansible
           state: present
           firewall_profilegroup:
-            application-list: "default" # need a valid profile name
+            application_list: "default" # need a valid profile name
             name: "ansible-test"
   
   - name: Gathering fortimanager facts
@@ -278,7 +278,7 @@ Examples
             selector: "firewall_profilegroup"
             params:
               adom: "ansible"
-              profile-group: "your_value"
+              profile_group: "your_value"
 
 
 Return Values

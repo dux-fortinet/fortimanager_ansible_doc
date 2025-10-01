@@ -392,7 +392,7 @@ Examples
           adom: ansible
           state: present
           firewall_vip64:
-            arp-reply: enable
+            arp_reply: enable
             color: 1
             comment: "anisble-comment"
             id: 1

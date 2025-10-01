@@ -1269,17 +1269,17 @@ Examples
           adom: ansible
           state: present
           antivirus_profile:
-            analytics-db: disable
-            analytics-max-upload: 20
-            av-block-log: disable
-            av-virus-log: disable
+            analytics_db: disable
+            analytics_max_upload: 20
+            av_block_log: disable
+            av_virus_log: disable
             comment: "test comment"
-            extended-log: disable
-            ftgd-analytics: disable
-            inspection-mode: proxy
-            mobile-malware-db: disable
+            extended_log: disable
+            ftgd_analytics: disable
+            inspection_mode: proxy
+            mobile_malware_db: disable
             name: "antivirus-profile"
-            scan-mode: quick
+            scan_mode: quick
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers

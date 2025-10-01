@@ -429,12 +429,12 @@ Examples
             _scope:
               - name: FGT_AWS # need a valid device name
                 vdom: root # need a valid vdom name under the device
-            allow-routing: disable # <value in [disable, enable]>
-            cache-ttl: 0
+            allow_routing: disable # <value in [disable, enable]>
+            cache_ttl: 0
             color: 1
             comment: "ansible-comment"
             subnet: "222.222.222.101/32"
-            subnet-name: "ansible-test"
+            subnet_name: "ansible-test"
             type: ipmask # <value in [ipmask, iprange, fqdn, ...]>
             visibility: enable
   

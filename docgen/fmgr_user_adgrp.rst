@@ -138,7 +138,7 @@ Examples
           state: present
           user_adgrp:
             name: ansible-test-adgrp
-            server-name: ansible-fsso # need a valid server name
+            server_name: ansible-fsso # need a valid server name
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers

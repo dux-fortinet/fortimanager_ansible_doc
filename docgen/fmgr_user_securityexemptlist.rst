@@ -166,7 +166,7 @@ Examples
             selector: "user_securityexemptlist"
             params:
               adom: "ansible"
-              security-exempt-list: "your_value"
+              security_exempt_list: "your_value"
 
 
 Return Values

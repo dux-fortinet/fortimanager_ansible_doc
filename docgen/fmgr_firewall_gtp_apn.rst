@@ -127,7 +127,7 @@ Examples
             action: allow # <value in [allow, deny]>
             apnmember: "ansible-test1" # need a valid APN member
             id: 3
-            selection-mode:
+            selection_mode:
               - ms
               - net
               - vrf

@@ -116,7 +116,7 @@ Examples
           adom: ansible
           state: present
           system_replacemsgimage:
-            image-type: jpg # <value in [gif, jpg, tiff, ...]>
+            image_type: jpg # <value in [gif, jpg, tiff, ...]>
             name: ansible-image
   
   - name: Gathering fortimanager facts
@@ -134,7 +134,7 @@ Examples
             selector: "system_replacemsgimage"
             params:
               adom: "ansible"
-              replacemsg-image: "your_value"
+              replacemsg_image: "your_value"
 
 
 Return Values

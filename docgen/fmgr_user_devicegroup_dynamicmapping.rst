@@ -142,7 +142,7 @@ Examples
         fortinet.fortimanager.fmgr_user_devicegroup_dynamicmapping:
           bypass_validation: false
           adom: ansible
-          device-group: ansible-test # name
+          device_group: ansible-test # name
           state: present
           user_devicegroup_dynamicmapping:
             _if_unmanaged: 10
@@ -167,7 +167,7 @@ Examples
             selector: "user_devicegroup_dynamicmapping"
             params:
               adom: "ansible"
-              device-group: "ansible-test" # name
+              device_group: "ansible-test" # name
               dynamic_mapping: "your_value"
 
 

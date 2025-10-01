@@ -492,7 +492,7 @@ Examples
           adom: ansible
           state: present
           ips_sensor:
-            block-malicious-url: disable
+            block_malicious_url: disable
             comment: "ansible-comment"
             name: "ansible-test-ipssensor"
   

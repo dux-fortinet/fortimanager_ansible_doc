@@ -121,7 +121,7 @@ Examples
         fortinet.fortimanager.fmgr_firewall_identitybasedroute_rule:
           bypass_validation: false
           adom: ansible
-          identity-based-route: "ansible-test" # name
+          identity_based_route: "ansible-test" # name
           state: present
           firewall_identitybasedroute_rule:
             id: 1
@@ -141,7 +141,7 @@ Examples
             selector: "firewall_identitybasedroute_rule"
             params:
               adom: "ansible"
-              identity-based-route: "your_value" # name
+              identity_based_route: "your_value" # name
 
 
 Return Values

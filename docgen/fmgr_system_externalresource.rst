@@ -279,7 +279,7 @@ Examples
             category: 0
             comments: string
             name: string
-            refresh-rate: 1
+            refresh_rate: 1
             resource: string
             status: disable
             type: category # <value in [category, address, domain, ...]>
@@ -299,7 +299,7 @@ Examples
             selector: "system_externalresource"
             params:
               adom: "ansible"
-              external-resource: "your_value"
+              external_resource: "your_value"
 
 
 Return Values

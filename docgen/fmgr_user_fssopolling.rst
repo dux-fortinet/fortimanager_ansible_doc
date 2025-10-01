@@ -211,7 +211,7 @@ Examples
             selector: "user_fssopolling"
             params:
               adom: "ansible"
-              fsso-polling: "your_value"
+              fsso_polling: "your_value"
 
 
 Return Values

@@ -181,7 +181,7 @@ Examples
             params:
               adom: "ansible"
               server: "1" # id
-              reserved-address: "your_value"
+              reserved_address: "your_value"
 
 
 Return Values

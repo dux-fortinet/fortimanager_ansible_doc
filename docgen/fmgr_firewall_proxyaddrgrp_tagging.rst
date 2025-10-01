@@ -115,7 +115,7 @@ Examples
         fortinet.fortimanager.fmgr_firewall_proxyaddrgrp_tagging:
           bypass_validation: false
           adom: ansible
-          proxy-addrgrp: "ansible-name" # name
+          proxy_addrgrp: "ansible-name" # name
           state: present
           firewall_proxyaddrgrp_tagging:
             category: "ansible-category" # need a valid category name
@@ -137,7 +137,7 @@ Examples
             selector: "firewall_proxyaddrgrp_tagging"
             params:
               adom: "ansible"
-              proxy-addrgrp: "ansible-test2" # name
+              proxy_addrgrp: "ansible-test2" # name
               tagging: "your_value"
 
 

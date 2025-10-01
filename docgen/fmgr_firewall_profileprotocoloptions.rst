@@ -1110,7 +1110,7 @@ Examples
             selector: "firewall_profileprotocoloptions"
             params:
               adom: "ansible"
-              profile-protocol-options: "your_value"
+              profile_protocol_options: "your_value"
 
 
 Return Values

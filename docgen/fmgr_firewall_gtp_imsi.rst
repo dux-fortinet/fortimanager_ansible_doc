@@ -139,8 +139,8 @@ Examples
             action: allow # <value in [allow, deny]>
             apnmember: "your_value"
             id: 1
-            msisdn-prefix: "ansible"
-            selection-mode:
+            msisdn_prefix: "ansible"
+            selection_mode:
               - ms
               - net
               - vrf

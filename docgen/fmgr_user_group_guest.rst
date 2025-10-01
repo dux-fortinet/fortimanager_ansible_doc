@@ -170,7 +170,7 @@ Examples
             email: test@fortinet.com
             name: ansible-test-guest
             password: fortinet
-            user-id: Email
+            user_id: Email
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers

@@ -125,7 +125,7 @@ Examples
           state: present
           firewall_gtp_perapnshaper:
             id: 1
-            rate-limit: 20
+            rate_limit: 20
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers
@@ -143,7 +143,7 @@ Examples
             params:
               adom: "FortiCarrier" # This is FOC-only object, need a FortiCarrier adom
               gtp: "ansible-test" # name
-              per-apn-shaper: "your_value"
+              per_apn_shaper: "your_value"
 
 
 Return Values

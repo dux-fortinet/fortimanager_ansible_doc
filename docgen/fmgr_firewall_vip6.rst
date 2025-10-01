@@ -1374,7 +1374,7 @@ Examples
           adom: ansible
           state: present
           firewall_vip6:
-            arp-reply: disable
+            arp_reply: disable
             color: 1
             comment: "ansible-comment"
             id: 1

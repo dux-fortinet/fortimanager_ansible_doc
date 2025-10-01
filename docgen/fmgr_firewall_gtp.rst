@@ -1686,7 +1686,7 @@ Examples
           adom: FortiCarrier # This is FOC-only object, need a FortiCarrier adom
           state: present
           firewall_gtp:
-            monitor-mode: disable # <value in [disable, enable, vdom]>
+            monitor_mode: disable # <value in [disable, enable, vdom]>
             name: "ansible-test"
   
   - name: Gathering fortimanager facts

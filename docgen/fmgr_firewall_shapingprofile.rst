@@ -203,7 +203,7 @@ Examples
           state: present
           firewall_shapingprofile:
             comment: "ansible-comment"
-            profile-name: "ansible-test"
+            profile_name: "ansible-test"
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers
@@ -220,7 +220,7 @@ Examples
             selector: "firewall_shapingprofile"
             params:
               adom: "ansible"
-              shaping-profile: "your_value"
+              shaping_profile: "your_value"
 
 
 Return Values

@@ -138,7 +138,7 @@ Examples
             params:
               adom: "ansible"
               address6: "ansible-test" # name
-              subnet-segment: "your_value"
+              subnet_segment: "your_value"
 
 
 Return Values

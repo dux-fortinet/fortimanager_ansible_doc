@@ -167,8 +167,8 @@ Examples
           bypass_validation: false
           state: present
           system_snmp_user:
-            auth-proto: md5 # <value in [md5, sha]>
-            auth-pwd: fortinet
+            auth_proto: md5 # <value in [md5, sha]>
+            auth_pwd: fortinet
             events:
               - disk_low
               - ha_switch
@@ -184,7 +184,7 @@ Examples
               - cpu-high-exclude-nice
             name: ansible-test-snmpuser
             queries: disable
-            security-level: no-auth-no-priv # <value in [no-auth-no-priv, auth-no-priv, auth-priv]>
+            security_level: no-auth-no-priv # <value in [no-auth-no-priv, auth-no-priv, auth-priv]>
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers

@@ -141,7 +141,7 @@ Examples
             params:
               adom: "ansible"
               vip6: "ansible-test-vip6" # name
-              ssl-server-cipher-suites: "your_value"
+              ssl_server_cipher_suites: "your_value"
 
 
 Return Values

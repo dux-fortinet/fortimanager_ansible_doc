@@ -121,13 +121,13 @@ Examples
         fortinet.fortimanager.fmgr_system_replacemsggroup_custommessage:
           bypass_validation: false
           adom: ansible
-          replacemsg-group: ansible-test # name
+          replacemsg_group: ansible-test # name
           state: present
           system_replacemsggroup_custommessage: # available only when group-type is set to 'utm' in replacemsg-group
             buffer: ansible-buffer
             format: none # <value in [none, text, html, ...]>
             header: http # <value in [none, http, 8bit]>
-            msg-type: ansible-msgtype
+            msg_type: ansible-msgtype
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers
@@ -144,8 +144,8 @@ Examples
             selector: "system_replacemsggroup_custommessage" # available only when group-type is set to 'utm' in replacemsg-group
             params:
               adom: "ansible"
-              replacemsg-group: "ansible-test" # name
-              custom-message: "your_value"
+              replacemsg_group: "ansible-test" # name
+              custom_message: "your_value"
 
 
 Return Values

@@ -379,7 +379,7 @@ Examples
             dstaddr: all
             dstintf: any
             id: 1
-            ip-version: 4 # <value in [4, 6]>
+            ip_version: 4 # <value in [4, 6]>
             schedule: always
             service: ALL
             srcaddr: all
@@ -401,7 +401,7 @@ Examples
             params:
               adom: "ansible"
               pkg: "ansible" # package name
-              shaping-policy: "your_value"
+              shaping_policy: "your_value"
 
 
 Return Values

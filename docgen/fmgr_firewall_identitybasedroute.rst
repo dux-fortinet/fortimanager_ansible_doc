@@ -160,7 +160,7 @@ Examples
             selector: "firewall_identitybasedroute"
             params:
               adom: "ansible"
-              identity-based-route: "your_value"
+              identity_based_route: "your_value"
 
 
 Return Values

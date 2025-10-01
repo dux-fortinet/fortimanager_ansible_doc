@@ -769,7 +769,7 @@ Examples
             id: 1
             name: ansible-test-group
             password: specify # <value in [auto-generate, specify, disable]>
-            user-id: email # <value in [email, auto-generate, specify]>
+            user_id: email # <value in [email, auto-generate, specify]>
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers

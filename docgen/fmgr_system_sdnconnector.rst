@@ -696,8 +696,8 @@ Examples
           adom: ansible
           state: present
           system_sdnconnector:
-            azure-region: global # <value in [global, china, germany, ...]>
-            # compartment-id: 1
+            azure_region: global # <value in [global, china, germany, ...]>
+            # compartment_id: 1
             name: ansible-test-sdn
             password: fortinet
             server: ALL
@@ -719,7 +719,7 @@ Examples
             selector: "system_sdnconnector"
             params:
               adom: "ansible"
-              sdn-connector: "your_value"
+              sdn_connector: "your_value"
 
 
 Return Values

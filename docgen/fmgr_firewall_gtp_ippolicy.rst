@@ -155,7 +155,7 @@ Examples
             params:
               adom: "FortiCarrier" # This is FOC-only object, need a FortiCarrier adom
               gtp: "ansible-test" # name
-              ip-policy: "your_value"
+              ip_policy: "your_value"
 
 
 Return Values

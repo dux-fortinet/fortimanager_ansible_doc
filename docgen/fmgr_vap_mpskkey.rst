@@ -126,8 +126,8 @@ Examples
       - name: Pre-shared keys that can be used to connect to this virtual access point.
         fortinet.fortimanager.fmgr_vap_mpskkey:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           adom: <your own value>

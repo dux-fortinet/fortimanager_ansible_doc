@@ -298,7 +298,7 @@ Examples
           pkg: ansible # package name
           state: present
           pkg_firewall_interfacepolicy:
-            address-type: ipv4 # <value in [ipv4, ipv6]>
+            address_type: ipv4 # <value in [ipv4, ipv6]>
             comments: "ansible-comment"
             interface: sslvpn_tun_intf
             policyid: 1
@@ -320,7 +320,7 @@ Examples
             params:
               adom: "ansible"
               pkg: "ansible" # package name
-              interface-policy: "your_value"
+              interface_policy: "your_value"
 
 
 Return Values

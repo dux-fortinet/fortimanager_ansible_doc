@@ -212,10 +212,10 @@ Examples
           adom: ansible
           state: present
           firewall_shaper_trafficshaper:
-            bandwidth-unit: mbps # <value in [kbps, mbps, gbps]>
+            bandwidth_unit: mbps # <value in [kbps, mbps, gbps]>
             diffserv: disable
             name: "ansible"
-            per-policy: disable
+            per_policy: disable
             priority: medium # <value in [high, medium, low]>
   
   - name: Gathering fortimanager facts
@@ -233,7 +233,7 @@ Examples
             selector: "firewall_shaper_trafficshaper"
             params:
               adom: "ansible"
-              traffic-shaper: "your_value"
+              traffic_shaper: "your_value"
 
 
 Return Values

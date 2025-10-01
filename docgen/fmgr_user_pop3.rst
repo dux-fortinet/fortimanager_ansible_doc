@@ -132,7 +132,7 @@ Examples
             # port: 8000
             # secure: none # <value in [none, starttls, pop3s]>
             # server: ansible
-            # ssl-min-proto-version: default # <value in [default, TLSv1, TLSv1-1, ...]>
+            # ssl_min_proto_version: default # <value in [default, TLSv1, TLSv1-1, ...]>
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers

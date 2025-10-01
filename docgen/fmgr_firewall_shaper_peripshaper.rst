@@ -158,9 +158,9 @@ Examples
           adom: ansible
           state: present
           firewall_shaper_peripshaper:
-            bandwidth-unit: mbps # <value in [kbps, mbps, gbps]>
-            diffserv-forward: enable
-            diffserv-reverse: disable
+            bandwidth_unit: mbps # <value in [kbps, mbps, gbps]>
+            diffserv_forward: enable
+            diffserv_reverse: disable
             name: "ansible-test"
   
   - name: Gathering fortimanager facts
@@ -178,7 +178,7 @@ Examples
             selector: "firewall_shaper_peripshaper"
             params:
               adom: "ansible"
-              per-ip-shaper: "your_value"
+              per_ip_shaper: "your_value"
 
 
 Return Values

@@ -178,7 +178,7 @@ Examples
             selector: "dnsfilter_domainfilter"
             params:
               adom: "ansible"
-              domain-filter: "your_value"
+              domain_filter: "your_value"
 
 
 Return Values

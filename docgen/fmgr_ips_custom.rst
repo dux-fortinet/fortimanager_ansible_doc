@@ -182,7 +182,7 @@ Examples
           adom: ansible
           state: present
           ips_custom:
-            rule-id: 1 # Required, no less than 1000;
+            rule_id: 1 # Required, no less than 1000;
             signature: "F-SBID(--name: [string]; --service: [string]; --flow: [string])" # Required; Need follow signature syntax,
             # check 'https://docs.fortinet.com/document/ipsengine/3.6.0/custom-ips-and-application-control-signature-syntax-guide/
             # 274110/creating-ips-and-application-control-signatures' for more information;

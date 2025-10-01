@@ -115,7 +115,7 @@ Examples
         fortinet.fortimanager.fmgr_firewall_proxyaddress_tagging:
           bypass_validation: false
           adom: ansible
-          proxy-address: "ansible-test" # name
+          proxy_address: "ansible-test" # name
           state: present
           firewall_proxyaddress_tagging:
             category: "ansible-category"
@@ -137,7 +137,7 @@ Examples
             selector: "firewall_proxyaddress_tagging"
             params:
               adom: "ansible"
-              proxy-address: "ansible-test" # name
+              proxy_address: "ansible-test" # name
               tagging: "your_value"
 
 

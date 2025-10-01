@@ -236,7 +236,7 @@ Examples
           state: present
           system_admin_ldap:
             adom:
-              - adom-name: ansible
+              - adom_name: ansible
             name: ansible-test-ldap
             password: Fortinet
             port: 390

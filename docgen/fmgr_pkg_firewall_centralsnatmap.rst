@@ -232,9 +232,9 @@ Examples
           pkg: ansible # package name
           state: present
           pkg_firewall_centralsnatmap:
-            dst-addr: "ansible-test1"
+            dst_addr: "ansible-test1"
             nat: enable
-            orig-addr: "ansible-test1"
+            orig_addr: "ansible-test1"
             policyid: 2
             status: disable
   
@@ -254,7 +254,7 @@ Examples
             params:
               adom: "ansible"
               pkg: "ansible" # package name
-              central-snat-map: "your_value"
+              central_snat_map: "your_value"
 
 
 Return Values

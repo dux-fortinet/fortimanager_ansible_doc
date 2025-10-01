@@ -122,12 +122,12 @@ Examples
         fortinet.fortimanager.fmgr_system_sdnconnector_nic_ip:
           bypass_validation: false
           adom: ansible
-          sdn-connector: ansible-test-sdn # name
+          sdn_connector: ansible-test-sdn # name
           nic: ansible-test-nic # name
           state: present
           system_sdnconnector_nic_ip:
             name: ansible-test-nicip
-            public-ip: 222.222.222.2
+            public_ip: 222.222.222.2
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers
@@ -144,7 +144,7 @@ Examples
             selector: "system_sdnconnector_nic_ip"
             params:
               adom: "ansible"
-              sdn-connector: "ansible-test-sdn" # name
+              sdn_connector: "ansible-test-sdn" # name
               nic: "ansible-test-nic" # name
               ip: "your_value"
 

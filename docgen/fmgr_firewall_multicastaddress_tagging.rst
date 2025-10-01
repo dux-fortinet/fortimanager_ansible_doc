@@ -115,7 +115,7 @@ Examples
         fortinet.fortimanager.fmgr_firewall_multicastaddress_tagging:
           bypass_validation: false
           adom: ansible
-          multicast-address: "ansible-test" # name
+          multicast_address: "ansible-test" # name
           state: present
           firewall_multicastaddress_tagging:
             category: "ansible-category"
@@ -137,7 +137,7 @@ Examples
             selector: "firewall_multicastaddress_tagging"
             params:
               adom: "ansible"
-              multicast-address: "ansible-test" # name
+              multicast_address: "ansible-test" # name
               tagging: "your_value"
 
 

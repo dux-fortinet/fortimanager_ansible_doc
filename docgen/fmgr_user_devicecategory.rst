@@ -134,7 +134,7 @@ Examples
             selector: "user_devicecategory"
             params:
               adom: "ansible"
-              device-category: "your_value"
+              device_category: "your_value"
 
 
 Return Values

@@ -125,13 +125,13 @@ Examples
           state: present
           firewall_gtp_ieremovepolicy:
             id: 1
-            remove-ies:
+            remove_ies:
               - apn-restriction
               - rat-type
               - rai
               - uli
               - imei
-            sgsn-addr: "your_value"
+            sgsn_addr: "your_value"
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers
@@ -149,7 +149,7 @@ Examples
             params:
               adom: "FortiCarrier" # This is FOC-only object, need a FortiCarrier adom
               gtp: "ansible-test" # name
-              ie-remove-policy: "your_value"
+              ie_remove_policy: "your_value"
 
 
 Return Values

@@ -823,7 +823,7 @@ Examples
             _scope: # Required
               - name: FGT_AWS # need a valid device name
                 vdom: root # need a valid vdom name under the device
-            arp-reply: enable
+            arp_reply: enable
             color: 2
             comment: "ansible-comment"
             id: 1

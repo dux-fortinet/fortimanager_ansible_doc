@@ -148,9 +148,9 @@ Examples
           server: 1 # id
           state: present
           system_dhcp_server_excluderange:
-            end-ip: 222.222.222.7
+            end_ip: 222.222.222.7
             id: 1
-            start-ip: 222.222.222.6
+            start_ip: 222.222.222.6
   
   - name: Gathering fortimanager facts
     hosts: fortimanagers
@@ -168,7 +168,7 @@ Examples
             params:
               adom: "ansible"
               server: "1" # id
-              exclude-range: "your_value"
+              exclude_range: "your_value"
 
 
 Return Values

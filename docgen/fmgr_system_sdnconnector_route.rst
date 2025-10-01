@@ -103,7 +103,7 @@ Examples
         fortinet.fortimanager.fmgr_system_sdnconnector_route:
           bypass_validation: false
           adom: ansible
-          sdn-connector: ansible-test-sdn # name
+          sdn_connector: ansible-test-sdn # name
           state: present
           system_sdnconnector_route: # available only when type is set to 'gcp' in sdn-connector
             name: ansible-test-route
@@ -123,7 +123,7 @@ Examples
             selector: "system_sdnconnector_route" # available only when type is set to 'gcp' in sdn-connector
             params:
               adom: "ansible"
-              sdn-connector: "ansible-test-sdn" # name
+              sdn_connector: "ansible-test-sdn" # name
               route: "your_value"
 
 

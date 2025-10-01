@@ -326,7 +326,7 @@ Examples
           adom: ansible
           state: present
           firewall_addrgrp:
-            allow-routing: disable
+            allow_routing: disable
             color: 0
             member: "ansible-test1" # IPv4 address name
             name: "ansible-addrgrp4" # could not the same with other group, adress name, including IPv6 group and address

@@ -195,7 +195,7 @@ Examples
             selector: "firewall_ldbmonitor"
             params:
               adom: "ansible"
-              ldb-monitor: "your_value"
+              ldb_monitor: "your_value"
 
 
 Return Values

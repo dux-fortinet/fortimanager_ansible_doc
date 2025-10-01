@@ -110,7 +110,7 @@ Examples
           adom: ansible
           state: present
           system_smsserver:
-            mail-server: ansible-test
+            mail_server: ansible-test
             name: ansible-test-smsserver
   
   - name: Gathering fortimanager facts
@@ -128,7 +128,7 @@ Examples
             selector: "system_smsserver"
             params:
               adom: "ansible"
-              sms-server: "your_value"
+              sms_server: "your_value"
 
 
 Return Values

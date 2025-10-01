@@ -173,7 +173,7 @@ Examples
             selector: "firewall_carrierendpointbwl"
             params:
               adom: "FortiCarrier" # This is FOC-only object, need a FortiCarrier adom
-              carrier-endpoint-bwl: "your_value"
+              carrier_endpoint_bwl: "your_value"
 
 
 Return Values

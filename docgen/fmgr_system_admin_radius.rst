@@ -167,7 +167,7 @@ Examples
           bypass_validation: false
           state: present
           system_admin_radius:
-            auth-type: pap # <value in [any, pap, chap, ...]>
+            auth_type: pap # <value in [any, pap, chap, ...]>
             name: ansible-test-radius
             port: 1812
             server: "ALL"
