@@ -228,7 +228,7 @@ Examples
             params:
               adom: "ansible"
               pkg: "ansible" # package name
-              multicast-policy6: "your_value"
+              multicast_policy6: "your_value"
 
 
 Return Values

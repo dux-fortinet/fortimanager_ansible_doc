@@ -320,7 +320,7 @@ Examples
             params:
               adom: "ansible"
               pkg: "ansible" # package name
-              interface-policy6: "your_value"
+              interface_policy6: "your_value"
 
 
 Return Values

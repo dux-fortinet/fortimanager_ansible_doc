@@ -6,7 +6,7 @@ Frequently Asked Questions (FAQ)
 
 **TABLE OF CONTENTS:**
  - `Modules For Policy Package.`_
- - `How To Specify Gereral Variables In One Place?`_
+ - `How To Specify General Variables In One Place?`_
  - `What You Need To Know About Logging.`_
  - `What Is Workspace Locking?`_
  - `How To Deal With Task Result?`_
@@ -101,7 +101,7 @@ Remove A Policy Package
         pm_pkg:
             name: 'global.package0'
 
-How To Specify Gereral Variables In One Place?
+How To Specify General Variables In One Place?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can specify general variables in one place by using module_defaults.

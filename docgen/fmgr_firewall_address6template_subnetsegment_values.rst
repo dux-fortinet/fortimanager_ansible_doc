@@ -110,7 +110,7 @@ Examples
         fortinet.fortimanager.fmgr_firewall_address6template_subnetsegment_values:
           bypass_validation: false
           adom: ansible
-          address6-template: "ansible-name" # name
+          address6_template: "ansible-name" # name
           subnet_segment: "1" # id
           state: present
           firewall_address6template_subnetsegment_values:
@@ -132,7 +132,7 @@ Examples
             selector: "firewall_address6template_subnetsegment_values"
             params:
               adom: "ansible"
-              address6-template: "ansible-name" # name
+              address6_template: "ansible-name" # name
               subnet_segment: "1" #  id
               values: "your_value"
 

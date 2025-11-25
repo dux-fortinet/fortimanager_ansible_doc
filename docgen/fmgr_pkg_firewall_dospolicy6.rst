@@ -321,7 +321,7 @@ Examples
             params:
               adom: "ansible"
               pkg: "ansible" # package name
-              DoS-policy6: "your_value"
+              DoS_policy6: "your_value"
 
 
 Return Values

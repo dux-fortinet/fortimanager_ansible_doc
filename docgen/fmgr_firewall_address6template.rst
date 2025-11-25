@@ -213,7 +213,7 @@ Examples
             selector: "firewall_address6template"
             params:
               adom: "ansible"
-              address6-template: "your_value"
+              address6_template: "your_value"
 
 
 Return Values
