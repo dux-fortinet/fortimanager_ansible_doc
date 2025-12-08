@@ -19,7 +19,7 @@ Minor Changes
 Bugfixes
 --------
 
-- Improved the send request logic in httpapi plugin.
+- Improved the request sending logic in httpapi plugin.
 
 |
 
