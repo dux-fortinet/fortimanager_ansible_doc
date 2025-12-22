@@ -311,14 +311,22 @@ Here is an example of how to use access token:
     collections:
       - fortinet.fortimanager
     vars:
-      ansible_httpapi_use_ssl: yes
-      ansible_httpapi_validate_certs: no
-      ansible_httpapi_port: 443
+      # You don't need to specify the following vars if you specified them in the host file.
+      # ansible_connection: httpapi
+      # ansible_network_os: fortinet.fortimanager.fortimanager
+      # ansible_facts_modules: setup
+      # ansible_httpapi_port: 443
+      # ansible_httpapi_use_ssl: true
+      #
+      #  Disabling TLS certificate verification is a bad idea on security point of view,
+      #  but if you use default certificates that are self-signed, you nedd to disable it.
+      #  Please use valid certificates for your production environments and keep certificate validation ON.
+      # ansible_httpapi_validate_certs: false
+      ansible_httpapi_session_key:
+        authorization: "bearer {{ access_token }}" # Specify access token here
     tasks:
       - name: get fact
-        fmgr_fact:
-          access_token: <your access_token>
-          enable_log: true
+        fortinet.fortimanager.fmgr_fact:
           facts:
             selector: "sys_status"
         register: result

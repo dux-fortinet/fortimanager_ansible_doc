@@ -699,15 +699,6 @@ Parameters
             <span class="li-normal">v7.4.7->v7.4.8</span>,
             <span class="li-normal">v7.6.4->latest</span>
         </li>
-        <li><span class="li-required">firewall_internetservicefortiguard</span> - available versions:
-            <span class="li-normal">v7.6.4->latest</span>
-        </li>
-        <li><span class="li-required">firewall_internetservicefortiguard_entry</span> - available versions:
-            <span class="li-normal">v7.6.4->latest</span>
-        </li>
-        <li><span class="li-required">firewall_internetservicefortiguard_entry_portrange</span> - available versions:
-            <span class="li-normal">v7.6.4->latest</span>
-        </li>
         <li><span class="li-required">firewall_internetservicegroup</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
         </li>
@@ -1134,10 +1125,6 @@ Parameters
         <li><span class="li-required">icap_profile_respmodforwardrules_headergroup</span> - available versions:
             <span class="li-normal">v6.4.0->latest</span>
         </li>
-        <li><span class="li-required">icap_remoteserver</span> - available versions:
-            <span class="li-normal">v7.4.8->v7.4.8</span>,
-            <span class="li-normal">v7.6.4->latest</span>
-        </li>
         <li><span class="li-required">icap_remoteservergroup</span> - available versions:
             <span class="li-normal">v7.4.8->v7.4.8</span>,
             <span class="li-normal">v7.6.4->latest</span>
@@ -1154,10 +1141,6 @@ Parameters
         </li>
         <li><span class="li-required">icap_servergroup_serverlist</span> - available versions:
             <span class="li-normal">v7.6.3->latest</span>
-        </li>
-        <li><span class="li-required">imageanalyzer_profile</span> - available versions:
-            <span class="li-normal">v7.4.8->v7.4.8</span>,
-            <span class="li-normal">v7.6.4->latest</span>
         </li>
         <li><span class="li-required">ips_baseline_sensor</span> - available versions:
             <span class="li-normal">v7.0.1->v7.0.2</span>
@@ -1358,10 +1341,6 @@ Parameters
             <span class="li-normal">v7.4.4->v7.4.8</span>,
             <span class="li-normal">v7.6.2->latest</span>
         </li>
-        <li><span class="li-required">pkg_webproxy_pacpolicy</span> - available versions:
-            <span class="li-normal">v7.4.8->v7.4.8</span>,
-            <span class="li-normal">v7.6.4->latest</span>
-        </li>
         <li><span class="li-required">pm_config_pblock_firewall_consolidated_policy</span> - available versions:
             <span class="li-normal">v7.0.3->v7.6.2</span>
         </li>
@@ -1559,9 +1538,6 @@ Parameters
         <li><span class="li-required">switchcontroller_managedswitch_systemdhcpserver</span> - available versions:
             <span class="li-normal">v7.6.4->latest</span>
         </li>
-        <li><span class="li-required">switchcontroller_managedswitch_systemdhcpserver_iprange</span> - available versions:
-            <span class="li-normal">v7.6.4->latest</span>
-        </li>
         <li><span class="li-required">switchcontroller_managedswitch_systemdhcpserver_options</span> - available versions:
             <span class="li-normal">v7.6.4->latest</span>
         </li>
@@ -1596,9 +1572,6 @@ Parameters
             <span class="li-normal">v6.0.0->v6.2.1</span>
         </li>
         <li><span class="li-required">switchcontroller_securitypolicy_localaccess</span> - available versions:
-            <span class="li-normal">v7.6.4->latest</span>
-        </li>
-        <li><span class="li-required">switchcontroller_switchgroup</span> - available versions:
             <span class="li-normal">v7.6.4->latest</span>
         </li>
         <li><span class="li-required">switchcontroller_switchinterfacetag</span> - available versions:
@@ -2271,9 +2244,6 @@ Parameters
             <span class="li-normal">v7.6.4->latest</span>
         </li>
         <li><span class="li-required">vpn_kmipserver_serverlist</span> - available versions:
-            <span class="li-normal">v7.6.4->latest</span>
-        </li>
-        <li><span class="li-required">vpn_qkd</span> - available versions:
             <span class="li-normal">v7.6.4->latest</span>
         </li>
         <li><span class="li-required">vpn_ssl_settings_authenticationrule</span> - available versions:
@@ -3722,24 +3692,6 @@ Parameters
             <li><span class="li-normal">entry</span></li>
             <li><span class="li-normal">port-range</span></li>
         </ul>
-        <li><span class="li-normal">params for firewall_internetservicefortiguard:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">internet-service-fortiguard</span></li>
-        </ul>
-        <li><span class="li-normal">params for firewall_internetservicefortiguard_entry:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">internet-service-fortiguard</span></li>
-            <li><span class="li-normal">entry</span></li>
-        </ul>
-        <li><span class="li-normal">params for firewall_internetservicefortiguard_entry_portrange:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">internet-service-fortiguard</span></li>
-            <li><span class="li-normal">entry</span></li>
-            <li><span class="li-normal">port-range</span></li>
-        </ul>
         <li><span class="li-normal">params for firewall_internetservicegroup:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -4503,11 +4455,6 @@ Parameters
             <li><span class="li-normal">respmod-forward-rules</span></li>
             <li><span class="li-normal">header-group</span></li>
         </ul>
-        <li><span class="li-normal">params for icap_remoteserver:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">remote-server</span></li>
-        </ul>
         <li><span class="li-normal">params for icap_remoteservergroup:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -4534,11 +4481,6 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">server-group</span></li>
             <li><span class="li-normal">server-list</span></li>
-        </ul>
-        <li><span class="li-normal">params for imageanalyzer_profile:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">profile</span></li>
         </ul>
         <li><span class="li-normal">params for ips_baseline_sensor:</span></li>
         <ul class="ul-self">
@@ -4883,12 +4825,6 @@ Parameters
             <li><span class="li-normal">pkg</span></li>
             <li><span class="li-normal">youtube-key</span></li>
         </ul>
-        <li><span class="li-normal">params for pkg_webproxy_pacpolicy:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">pkg</span></li>
-            <li><span class="li-normal">pac-policy</span></li>
-        </ul>
         <li><span class="li-normal">params for pm_config_pblock_firewall_consolidated_policy:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -5227,13 +5163,6 @@ Parameters
             <li><span class="li-normal">managed-switch</span></li>
             <li><span class="li-normal">system-dhcp-server</span></li>
         </ul>
-        <li><span class="li-normal">params for switchcontroller_managedswitch_systemdhcpserver_iprange:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">managed-switch</span></li>
-            <li><span class="li-normal">system-dhcp-server</span></li>
-            <li><span class="li-normal">ip-range</span></li>
-        </ul>
         <li><span class="li-normal">params for switchcontroller_managedswitch_systemdhcpserver_options:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -5298,11 +5227,6 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">local-access</span></li>
-        </ul>
-        <li><span class="li-normal">params for switchcontroller_switchgroup:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">switch-group</span></li>
         </ul>
         <li><span class="li-normal">params for switchcontroller_switchinterfacetag:</span></li>
         <ul class="ul-self">
@@ -6422,11 +6346,6 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">kmip-server</span></li>
             <li><span class="li-normal">server-list</span></li>
-        </ul>
-        <li><span class="li-normal">params for vpn_qkd:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">qkd</span></li>
         </ul>
         <li><span class="li-normal">params for vpn_ssl_settings_authenticationrule:</span></li>
         <ul class="ul-self">
@@ -8167,24 +8086,6 @@ Parameters
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_firewall_internetserviceextension_entry_portrange.html#parameters">fmgr_firewall_internetserviceextension_entry_portrange</a> </span></li>
         </ul>
-        <li><span class="li-normal">params for firewall_internetservicefortiguard:</span></li>
-        <ul class="ul-self">
-            
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_firewall_internetservicefortiguard.html#parameters">fmgr_firewall_internetservicefortiguard</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for firewall_internetservicefortiguard_entry:</span></li>
-        <ul class="ul-self">
-            
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_firewall_internetservicefortiguard_entry.html#parameters">fmgr_firewall_internetservicefortiguard_entry</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for firewall_internetservicefortiguard_entry_portrange:</span></li>
-        <ul class="ul-self">
-            
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_firewall_internetservicefortiguard_entry_portrange.html#parameters">fmgr_firewall_internetservicefortiguard_entry_portrange</a> </span></li>
-        </ul>
         <li><span class="li-normal">params for firewall_internetservicegroup:</span></li>
         <ul class="ul-self">
             
@@ -9007,12 +8908,6 @@ Parameters
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_icap_profile_respmodforwardrules_headergroup.html#parameters">fmgr_icap_profile_respmodforwardrules_headergroup</a> </span></li>
         </ul>
-        <li><span class="li-normal">params for icap_remoteserver:</span></li>
-        <ul class="ul-self">
-            
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_icap_remoteserver.html#parameters">fmgr_icap_remoteserver</a> </span></li>
-        </ul>
         <li><span class="li-normal">params for icap_remoteservergroup:</span></li>
         <ul class="ul-self">
             
@@ -9042,12 +8937,6 @@ Parameters
             
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_icap_servergroup_serverlist.html#parameters">fmgr_icap_servergroup_serverlist</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for imageanalyzer_profile:</span></li>
-        <ul class="ul-self">
-            
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_imageanalyzer_profile.html#parameters">fmgr_imageanalyzer_profile</a> </span></li>
         </ul>
         <li><span class="li-normal">params for ips_baseline_sensor:</span></li>
         <ul class="ul-self">
@@ -9396,12 +9285,6 @@ Parameters
             
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_pkg_videofilter_youtubekey.html#parameters">fmgr_pkg_videofilter_youtubekey</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for pkg_webproxy_pacpolicy:</span></li>
-        <ul class="ul-self">
-            
-            <li><span class="li-normal">required primary key: <b>policyid</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_pkg_webproxy_pacpolicy.html#parameters">fmgr_pkg_webproxy_pacpolicy</a> </span></li>
         </ul>
         <li><span class="li-normal">params for pm_config_pblock_firewall_consolidated_policy:</span></li>
         <ul class="ul-self">
@@ -9769,12 +9652,6 @@ Parameters
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_switchcontroller_managedswitch_systemdhcpserver.html#parameters">fmgr_switchcontroller_managedswitch_systemdhcpserver</a> </span></li>
         </ul>
-        <li><span class="li-normal">params for switchcontroller_managedswitch_systemdhcpserver_iprange:</span></li>
-        <ul class="ul-self">
-            
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_switchcontroller_managedswitch_systemdhcpserver_iprange.html#parameters">fmgr_switchcontroller_managedswitch_systemdhcpserver_iprange</a> </span></li>
-        </ul>
         <li><span class="li-normal">params for switchcontroller_managedswitch_systemdhcpserver_options:</span></li>
         <ul class="ul-self">
             
@@ -9846,12 +9723,6 @@ Parameters
             
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_switchcontroller_securitypolicy_localaccess.html#parameters">fmgr_switchcontroller_securitypolicy_localaccess</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for switchcontroller_switchgroup:</span></li>
-        <ul class="ul-self">
-            
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_switchcontroller_switchgroup.html#parameters">fmgr_switchcontroller_switchgroup</a> </span></li>
         </ul>
         <li><span class="li-normal">params for switchcontroller_switchinterfacetag:</span></li>
         <ul class="ul-self">
@@ -11148,12 +11019,6 @@ Parameters
             
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_vpn_kmipserver_serverlist.html#parameters">fmgr_vpn_kmipserver_serverlist</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for vpn_qkd:</span></li>
-        <ul class="ul-self">
-            
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_vpn_qkd.html#parameters">fmgr_vpn_qkd</a> </span></li>
         </ul>
         <li><span class="li-normal">params for vpn_ssl_settings_authenticationrule:</span></li>
         <ul class="ul-self">
