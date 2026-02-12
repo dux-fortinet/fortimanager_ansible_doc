@@ -478,7 +478,7 @@ Parameters
  <li><span class="li-head">fib_best_match_force</span> <b>(Alias name: fib-best-match-force)</b>  Enable/disable force using fib-best-match oif as outgoing interface. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label136' href="javascript:ContentClick('label137', 'label136');" onmouseover="ContentPreview('label137');" onmouseout="ContentUnpreview('label137');" title="click to collapse or expand..."> more... </a>
  <div id="label137" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.9 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">internet_service_fortiguard</span> <b>(Alias name: internet-service-fortiguard)</b>  Fortiguard internet service name list. <span class="li-normal">type: list</span>

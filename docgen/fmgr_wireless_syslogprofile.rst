@@ -119,6 +119,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">server</span> Syslog server cn domain name or ip address. <span class="li-normal">type: str</span>
+ <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
+ <div id="label19" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -165,6 +171,7 @@ Examples
             # server_port: <integer>
             # server_status: <value in [disable, enable]>
             # server_type: <value in [standard, fortianalyzer]>
+            # server: <string>
 
 
 Return Values

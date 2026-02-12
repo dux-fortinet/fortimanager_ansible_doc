@@ -320,7 +320,7 @@ Parameters
  <li><span class="li-head">read_passwd</span> <b>(Alias name: read-passwd)</b>  View password in clear text. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span> 
  <a id='label84' href="javascript:ContentClick('label85', 'label84');" onmouseover="ContentPreview('label85');" onmouseout="ContentUnpreview('label85');" title="click to collapse or expand..."> more... </a>
  <div id="label85" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.4.2</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v7.4.2</code>, <code class="docutils literal notranslate">v7.4.9 -> v7.4.10</code></p>
  </div>
  </li>
  <li><span class="li-head">realtime_monitor</span> <b>(Alias name: realtime-monitor)</b>  Realtime monitor. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span> 
@@ -578,7 +578,7 @@ Parameters
  <li><span class="li-head">device_fortiextender</span> <b>(Alias name: device-fortiextender)</b>  Manage fortiextender. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span> 
  <a id='label170' href="javascript:ContentClick('label171', 'label170');" onmouseover="ContentPreview('label171');" onmouseout="ContentUnpreview('label171');" title="click to collapse or expand..."> more... </a>
  <div id="label171" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ips_lock</span> <b>(Alias name: ips-lock)</b>  Ips locking <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span> 
@@ -642,7 +642,7 @@ Parameters
  <li><span class="li-head">device_fwm_profile</span> <b>(Alias name: device-fwm-profile)</b>  Device firmware profile permission. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span> 
  <a id='label190' href="javascript:ContentClick('label191', 'label190');" onmouseover="ContentPreview('label191');" onmouseout="ContentUnpreview('label191');" title="click to collapse or expand..."> more... </a>
  <div id="label191" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">device_assignment</span> <b>(Alias name: device-assignment)</b>  Device assignment. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span> 

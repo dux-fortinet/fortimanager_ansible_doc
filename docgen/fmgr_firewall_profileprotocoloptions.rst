@@ -408,7 +408,7 @@ Parameters
  <li><span class="li-head">explicit_ftp_tls</span> <b>(Alias name: explicit-ftp-tls)</b>  Enable/disable ftp redirection for explicit ftps. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label110' href="javascript:ContentClick('label111', 'label110');" onmouseover="ContentPreview('label111');" onmouseout="ContentUnpreview('label111');" title="click to collapse or expand..."> more... </a>
  <div id="label111" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -632,19 +632,19 @@ Parameters
  <li><span class="li-head">dns_protection</span> <b>(Alias name: dns-protection)</b>  Enable/disable dns protection for http/https traffic. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label184' href="javascript:ContentClick('label185', 'label184');" onmouseover="ContentPreview('label185');" onmouseout="ContentUnpreview('label185');" title="click to collapse or expand..."> more... </a>
  <div id="label185" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">encrypted_file</span> <b>(Alias name: encrypted-file)</b>  Encrypted file. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, pass, inspect]</span> 
  <a id='label186' href="javascript:ContentClick('label187', 'label186');" onmouseover="ContentPreview('label187');" onmouseout="ContentUnpreview('label187');" title="click to collapse or expand..."> more... </a>
  <div id="label187" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">encrypted_file_log</span> <b>(Alias name: encrypted-file-log)</b>  Encrypted file log. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label188' href="javascript:ContentClick('label189', 'label188');" onmouseover="ContentPreview('label189');" onmouseout="ContentUnpreview('label189');" title="click to collapse or expand..."> more... </a>
  <div id="label189" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -718,7 +718,7 @@ Parameters
  <li><span class="li-head">address_ip_rating</span> <b>(Alias name: address-ip-rating)</b>  Address ip rating. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label212' href="javascript:ContentClick('label213', 'label212');" onmouseover="ContentPreview('label213');" onmouseout="ContentUnpreview('label213');" title="click to collapse or expand..."> more... </a>
  <div id="label213" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -1084,7 +1084,7 @@ Parameters
  <li><span class="li-head">explicit_ftp_tls</span> <b>(Alias name: explicit-ftp-tls)</b>  Explicit ftp tls. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label330' href="javascript:ContentClick('label331', 'label330');" onmouseover="ContentPreview('label331');" onmouseout="ContentUnpreview('label331');" title="click to collapse or expand..."> more... </a>
  <div id="label331" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -1092,19 +1092,19 @@ Parameters
  <li><span class="li-head">proxy_redirect</span> <b>(Alias name: proxy-redirect)</b>  Proxy redirect. <span class="li-normal">type: dict</span>
  <a id='label332' href="javascript:ContentClick('label333', 'label332');" onmouseover="ContentPreview('label333');" onmouseout="ContentUnpreview('label333');" title="click to collapse or expand..."> more... </a>
  <div id="label333" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  <ul class="ul-self">
  <li><span class="li-head">ports</span> Ports. <span class="li-normal">type: list</span>
  <a id='label334' href="javascript:ContentClick('label335', 'label334');" onmouseover="ContentPreview('label335');" onmouseout="ContentUnpreview('label335');" title="click to collapse or expand..."> more... </a>
  <div id="label335" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">status</span> Status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label336' href="javascript:ContentClick('label337', 'label336');" onmouseover="ContentPreview('label337');" onmouseout="ContentUnpreview('label337');" title="click to collapse or expand..."> more... </a>
  <div id="label337" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -1112,31 +1112,31 @@ Parameters
  <li><span class="li-head">rtmp</span> Rtmp. <span class="li-normal">type: dict</span>
  <a id='label338' href="javascript:ContentClick('label339', 'label338');" onmouseover="ContentPreview('label339');" onmouseout="ContentUnpreview('label339');" title="click to collapse or expand..."> more... </a>
  <div id="label339" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
  </div>
  <ul class="ul-self">
  <li><span class="li-head">http_tunnel</span> <b>(Alias name: http-tunnel)</b>  Enable/disable rtmp http tunnel. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label340' href="javascript:ContentClick('label341', 'label340');" onmouseover="ContentPreview('label341');" onmouseout="ContentUnpreview('label341');" title="click to collapse or expand..."> more... </a>
  <div id="label341" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
  </div>
  </li>
  <li><span class="li-head">ports</span> Ports to scan for content (1 - 65535, default = 80). <span class="li-normal">type: list</span>
  <a id='label342' href="javascript:ContentClick('label343', 'label342');" onmouseover="ContentPreview('label343');" onmouseout="ContentUnpreview('label343');" title="click to collapse or expand..."> more... </a>
  <div id="label343" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
  </div>
  </li>
  <li><span class="li-head">rtmpt</span> Enable/disable rtmpt. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label344' href="javascript:ContentClick('label345', 'label344');" onmouseover="ContentPreview('label345');" onmouseout="ContentUnpreview('label345');" title="click to collapse or expand..."> more... </a>
  <div id="label345" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
  </div>
  </li>
  <li><span class="li-head">status</span> Enable/disable the active status of scanning for this protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label346' href="javascript:ContentClick('label347', 'label346');" onmouseover="ContentPreview('label347');" onmouseout="ContentUnpreview('label347');" title="click to collapse or expand..."> more... </a>
  <div id="label347" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
  </div>
  </li>
  </ul>

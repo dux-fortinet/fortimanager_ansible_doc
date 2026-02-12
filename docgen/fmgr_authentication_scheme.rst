@@ -170,13 +170,13 @@ Parameters
  <li><span class="li-head">search_all_ldap_databases</span> <b>(Alias name: search-all-ldap-databases)</b>  Search all ldap databases. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">saml_idp_portal</span> <b>(Alias name: saml-idp-portal)</b>  External saml-idp authentication portal url. <span class="li-normal">type: str</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
  </div>
  </li>
  <li><span class="li-head">oidc_server</span> <b>(Alias name: oidc-server)</b>  Oidc server. <span class="li-normal">type: list</span>
@@ -195,6 +195,42 @@ Parameters
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">auth_user_header</span> <b>(Alias name: auth-user-header)</b>  Auth user header. <span class="li-normal">type: str</span>
+ <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
+ <div id="label45" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.9 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">captcha</span> Captcha. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
+ <div id="label47" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">captcha_secret_key</span> <b>(Alias name: captcha-secret-key)</b>  Captcha secret key. <span class="li-normal">type: str</span>
+ <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
+ <div id="label49" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">captcha_site_key</span> <b>(Alias name: captcha-site-key)</b>  Captcha site key. <span class="li-normal">type: str</span>
+ <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
+ <div id="label51" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">captcha_vendor</span> <b>(Alias name: captcha-vendor)</b>  Captcha vendor. <span class="li-normal">type: str</span> <span class="li-normal">choices: [google-recaptcha-v2-checkbox, google-recaptcha-v2-invisible, google-recaptcha-v3, cloudflare-turnstile]</span> 
+ <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
+ <div id="label53" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">cert_http_header</span> <b>(Alias name: cert-http-header)</b>  Enable/disable authentication with user certificate in client-cert http header (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
+ <div id="label55" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -273,6 +309,12 @@ Examples
             # oidc_server: <list or string>
             # oidc_timeout: <integer>
             # digest_rfc2069: <value in [disable, enable]>
+            # auth_user_header: <string>
+            # captcha: <value in [disable, enable]>
+            # captcha_secret_key: <string>
+            # captcha_site_key: <string>
+            # captcha_vendor: <value in [google-recaptcha-v2-checkbox, google-recaptcha-v2-invisible, google-recaptcha-v3, ...]>
+            # cert_http_header: <value in [disable, enable]>
 
 
 Return Values

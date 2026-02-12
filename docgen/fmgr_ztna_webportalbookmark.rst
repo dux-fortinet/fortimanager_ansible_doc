@@ -229,6 +229,26 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">llm_secure_proxy</span> <b>(Alias name: llm-secure-proxy)</b>  Llm secure proxy. <span class="li-normal">type: dict</span>
+ <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
+ <div id="label55" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ <ul class="ul-self">
+ <li><span class="li-head">all_llm_servers</span> <b>(Alias name: all-llm-servers)</b>  All llm servers. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
+ <div id="label57" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">llm_servers</span> <b>(Alias name: llm-servers)</b>  Llm servers. <span class="li-normal">type: list</span>
+ <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
+ <div id="label59" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
+ </ul>
+ </li>
  </ul>
  </ul>
 
@@ -293,6 +313,9 @@ Examples
             # groups: <list or string>
             # type: <value in [user, ldap-dynamic, saml-dynamic]>
             # users: <list or string>
+            # llm_secure_proxy:
+            #   all_llm_servers: <value in [disable, enable]>
+            #   llm_servers: <list or string>
 
 
 Return Values

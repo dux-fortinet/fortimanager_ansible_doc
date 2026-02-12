@@ -110,7 +110,7 @@ Parameters
  <li><span class="li-head">fortilink</span> Fortilink interface for which this mac policy belongs to. <span class="li-normal">type: list</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">bounce_port_duration</span> <b>(Alias name: bounce-port-duration)</b>  Bounce duration in seconds of a switch port where this mac-policy is applied. <span class="li-normal">type: int</span>

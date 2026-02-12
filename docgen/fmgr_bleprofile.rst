@@ -137,7 +137,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">txpower</span> Transmit power level (default = 0). <span class="li-normal">type: str</span> <span class="li-normal">choices: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]</span> 
+ <li><span class="li-head">txpower</span> Transmit power level (default = 0). <span class="li-normal">type: str</span> <span class="li-normal">choices: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]</span> 
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>

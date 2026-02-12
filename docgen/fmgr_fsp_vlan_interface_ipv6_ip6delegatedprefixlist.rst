@@ -114,6 +114,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">dnssl_service</span> <b>(Alias name: dnssl-service)</b>  Enable/disable use of domain from delegated prefix for dnssl. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
+ <div id="label17" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -160,6 +166,7 @@ Examples
             # subnet: <string>
             # upstream_interface: <string>
             # delegated_prefix_iaid: <integer>
+            # dnssl_service: <value in [disable, enable]>
 
 
 Return Values

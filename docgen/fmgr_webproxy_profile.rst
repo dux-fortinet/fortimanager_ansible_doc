@@ -196,7 +196,13 @@ Parameters
  <li><span class="li-head">max_cache_object_size</span> <b>(Alias name: max-cache-object-size)</b>  Max cache object size. <span class="li-normal">type: int</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">header_client_cert</span> <b>(Alias name: header-client-cert)</b>  Action to take on the http client-cert/client-cert-chain headers in forwarded responses: forwards (pass), adds, or removes the http header. <span class="li-normal">type: str</span> <span class="li-normal">choices: [pass, add, remove]</span> 
+ <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
+ <div id="label45" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -260,6 +266,7 @@ Examples
             # strip_encoding: <value in [disable, enable]>
             # header_x_forwarded_client_cert: <value in [pass, add, remove]>
             # max_cache_object_size: <integer>
+            # header_client_cert: <value in [pass, add, remove]>
 
 
 Return Values

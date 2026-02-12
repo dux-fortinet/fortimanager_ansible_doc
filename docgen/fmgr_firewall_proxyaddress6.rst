@@ -213,7 +213,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">type</span> Type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [host-regex, url, category, method, ua, header, src-advanced, dst-advanced, url-list, saas, response-header]</span> 
+ <li><span class="li-head">type</span> Type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [host-regex, url, category, method, ua, header, src-advanced, dst-advanced, url-list, saas, response-header, llm-server]</span> 
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
@@ -247,6 +247,12 @@ Parameters
  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">llm_servers</span> <b>(Alias name: llm-servers)</b>  Llm servers. <span class="li-normal">type: list</span>
+ <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
+ <div id="label61" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -331,6 +337,7 @@ Examples
             # ua_min_ver: <string>
             # url_list: <list or string>
             # uuid: <string>
+            # llm_servers: <list or string>
 
 
 Return Values

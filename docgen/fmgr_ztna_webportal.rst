@@ -221,6 +221,18 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">llm_profile</span> <b>(Alias name: llm-profile)</b>  Llm profile. <span class="li-normal">type: list</span>
+ <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
+ <div id="label53" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">llm_proxy</span> <b>(Alias name: llm-proxy)</b>  Llm proxy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
+ <div id="label55" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -284,6 +296,8 @@ Examples
             # vip: <list or string>
             # windows_forticlient_download_url: <string>
             # vip6: <list or string>
+            # llm_profile: <list or string>
+            # llm_proxy: <value in [disable, enable]>
 
 
 Return Values

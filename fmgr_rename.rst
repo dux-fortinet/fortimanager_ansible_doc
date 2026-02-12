@@ -197,18 +197,18 @@ Parameters
             <span class="li-normal">v7.4.0->latest</span>
         </li>
         <li><span class="li-required">devprof_log_syslogd_filter_excludelist</span> - available versions:
-            <span class="li-normal">v7.0.4->v7.0.15</span>
+            <span class="li-normal">v7.0.4->v7.0.16</span>
         </li>
         <li><span class="li-required">devprof_log_syslogd_filter_freestyle</span> - available versions:
-            <span class="li-normal">v7.0.4->v7.0.15</span>,
+            <span class="li-normal">v7.0.4->v7.0.16</span>,
             <span class="li-normal">v7.2.1->latest</span>
         </li>
         <li><span class="li-required">devprof_log_syslogd_setting_customfieldname</span> - available versions:
-            <span class="li-normal">v7.0.4->v7.0.15</span>,
+            <span class="li-normal">v7.0.4->v7.0.16</span>,
             <span class="li-normal">v7.2.1->latest</span>
         </li>
         <li><span class="li-required">devprof_log_syslogd_setting_logtemplates</span> - available versions:
-            <span class="li-normal">v7.4.8->v7.4.8</span>,
+            <span class="li-normal">v7.4.8->v7.4.10</span>,
             <span class="li-normal">v7.6.4->latest</span>
         </li>
         <li><span class="li-required">devprof_system_centralmanagement_serverlist</span> - available versions:
@@ -241,6 +241,12 @@ Parameters
             <span class="li-normal">v6.2.7->v6.4.1</span>,
             <span class="li-normal">v6.4.3->latest</span>
         </li>
+        <li><span class="li-required">devprof_system_template_interface</span> - available versions:
+            <span class="li-normal">v7.6.5->latest</span>
+        </li>
+        <li><span class="li-required">devprof_system_template_interface_iprange</span> - available versions:
+            <span class="li-normal">v7.6.5->latest</span>
+        </li>
         <li><span class="li-required">diameterfilter_profile</span> - available versions:
             <span class="li-normal">v7.4.2->latest</span>
         </li>
@@ -254,7 +260,7 @@ Parameters
             <span class="li-normal">v7.2.0->latest</span>
         </li>
         <li><span class="li-required">dlp_exactdatamatch</span> - available versions:
-            <span class="li-normal">v7.4.7->v7.4.8</span>,
+            <span class="li-normal">v7.4.7->v7.4.10</span>,
             <span class="li-normal">v7.6.3->latest</span>
         </li>
         <li><span class="li-required">dlp_filepattern</span> - available versions:
@@ -262,7 +268,7 @@ Parameters
         </li>
         <li><span class="li-required">dlp_fpsensitivity</span> - available versions:
             <span class="li-normal">v6.0.0->v7.2.1</span>,
-            <span class="li-normal">v7.4.8->v7.4.8</span>
+            <span class="li-normal">v7.4.8->v7.4.10</span>
         </li>
         <li><span class="li-required">dlp_label</span> - available versions:
             <span class="li-normal">v7.6.3->latest</span>
@@ -460,7 +466,7 @@ Parameters
             <span class="li-normal">v7.2.1->latest</span>
         </li>
         <li><span class="li-required">extensioncontroller_extendervap</span> - available versions:
-            <span class="li-normal">v7.4.7->v7.4.8</span>,
+            <span class="li-normal">v7.4.7->v7.4.10</span>,
             <span class="li-normal">v7.6.3->latest</span>
         </li>
         <li><span class="li-required">filefilter_profile</span> - available versions:
@@ -640,7 +646,7 @@ Parameters
         </li>
         <li><span class="li-required">firewall_internetservice_entry</span> - available versions:
             <span class="li-normal">v6.0.0->v7.2.1</span>,
-            <span class="li-normal">v7.4.8->v7.4.8</span>
+            <span class="li-normal">v7.4.8->v7.4.10</span>
         </li>
         <li><span class="li-required">firewall_internetserviceaddition</span> - available versions:
             <span class="li-normal">v6.2.2->latest</span>
@@ -656,11 +662,11 @@ Parameters
         </li>
         <li><span class="li-required">firewall_internetservicecustom_disableentry</span> - available versions:
             <span class="li-normal">v6.0.0->v7.2.1</span>,
-            <span class="li-normal">v7.4.8->v7.4.8</span>
+            <span class="li-normal">v7.4.8->v7.4.10</span>
         </li>
         <li><span class="li-required">firewall_internetservicecustom_disableentry_iprange</span> - available versions:
             <span class="li-normal">v6.0.0->v7.2.1</span>,
-            <span class="li-normal">v7.4.8->v7.4.8</span>
+            <span class="li-normal">v7.4.8->v7.4.10</span>
         </li>
         <li><span class="li-required">firewall_internetservicecustom_entry</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
@@ -672,31 +678,31 @@ Parameters
             <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">firewall_internetserviceextension</span> - available versions:
-            <span class="li-normal">v7.4.7->v7.4.8</span>,
+            <span class="li-normal">v7.4.7->v7.4.10</span>,
             <span class="li-normal">v7.6.4->latest</span>
         </li>
         <li><span class="li-required">firewall_internetserviceextension_disableentry</span> - available versions:
-            <span class="li-normal">v7.4.7->v7.4.8</span>,
+            <span class="li-normal">v7.4.7->v7.4.10</span>,
             <span class="li-normal">v7.6.4->latest</span>
         </li>
         <li><span class="li-required">firewall_internetserviceextension_disableentry_ip6range</span> - available versions:
-            <span class="li-normal">v7.4.7->v7.4.8</span>,
+            <span class="li-normal">v7.4.7->v7.4.10</span>,
             <span class="li-normal">v7.6.4->latest</span>
         </li>
         <li><span class="li-required">firewall_internetserviceextension_disableentry_iprange</span> - available versions:
-            <span class="li-normal">v7.4.7->v7.4.8</span>,
+            <span class="li-normal">v7.4.7->v7.4.10</span>,
             <span class="li-normal">v7.6.4->latest</span>
         </li>
         <li><span class="li-required">firewall_internetserviceextension_disableentry_portrange</span> - available versions:
-            <span class="li-normal">v7.4.7->v7.4.8</span>,
+            <span class="li-normal">v7.4.7->v7.4.10</span>,
             <span class="li-normal">v7.6.4->latest</span>
         </li>
         <li><span class="li-required">firewall_internetserviceextension_entry</span> - available versions:
-            <span class="li-normal">v7.4.7->v7.4.8</span>,
+            <span class="li-normal">v7.4.7->v7.4.10</span>,
             <span class="li-normal">v7.6.4->latest</span>
         </li>
         <li><span class="li-required">firewall_internetserviceextension_entry_portrange</span> - available versions:
-            <span class="li-normal">v7.4.7->v7.4.8</span>,
+            <span class="li-normal">v7.4.7->v7.4.10</span>,
             <span class="li-normal">v7.6.4->latest</span>
         </li>
         <li><span class="li-required">firewall_internetservicegroup</span> - available versions:
@@ -812,7 +818,7 @@ Parameters
             <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">firewall_shapingprofile_classes</span> - available versions:
-            <span class="li-normal">v7.4.8->v7.4.8</span>,
+            <span class="li-normal">v7.4.8->v7.4.10</span>,
             <span class="li-normal">v7.6.4->latest</span>
         </li>
         <li><span class="li-required">firewall_shapingprofile_shapingentries</span> - available versions:
@@ -920,6 +926,9 @@ Parameters
         <li><span class="li-required">fmg_fabric_authorization_template</span> - available versions:
             <span class="li-normal">v7.2.1->latest</span>
         </li>
+        <li><span class="li-required">fmg_script</span> - available versions:
+            <span class="li-normal">v7.6.5->latest</span>
+        </li>
         <li><span class="li-required">fmg_variable</span> - available versions:
             <span class="li-normal">v7.2.0->latest</span>
         </li>
@@ -989,13 +998,13 @@ Parameters
             <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">gtp_ieallowlist</span> - available versions:
-            <span class="li-normal">v7.2.9->v7.2.11</span>,
-            <span class="li-normal">v7.4.7->v7.4.8</span>,
+            <span class="li-normal">v7.2.9->v7.2.12</span>,
+            <span class="li-normal">v7.4.7->v7.4.10</span>,
             <span class="li-normal">v7.6.2->latest</span>
         </li>
         <li><span class="li-required">gtp_ieallowlist_entries</span> - available versions:
-            <span class="li-normal">v7.2.9->v7.2.11</span>,
-            <span class="li-normal">v7.4.7->v7.4.8</span>,
+            <span class="li-normal">v7.2.9->v7.2.12</span>,
+            <span class="li-normal">v7.4.7->v7.4.10</span>,
             <span class="li-normal">v7.6.2->latest</span>
         </li>
         <li><span class="li-required">gtp_iewhitelist</span> - available versions:
@@ -1011,7 +1020,7 @@ Parameters
             <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">gtp_rattimeoutprofile</span> - available versions:
-            <span class="li-normal">v7.4.7->v7.4.8</span>,
+            <span class="li-normal">v7.4.7->v7.4.10</span>,
             <span class="li-normal">v7.6.4->latest</span>
         </li>
         <li><span class="li-required">gtp_tunnellimit</span> - available versions:
@@ -1126,11 +1135,11 @@ Parameters
             <span class="li-normal">v6.4.0->latest</span>
         </li>
         <li><span class="li-required">icap_remoteservergroup</span> - available versions:
-            <span class="li-normal">v7.4.8->v7.4.8</span>,
+            <span class="li-normal">v7.4.8->v7.4.10</span>,
             <span class="li-normal">v7.6.4->latest</span>
         </li>
         <li><span class="li-required">icap_remoteservergroup_serverlist</span> - available versions:
-            <span class="li-normal">v7.4.8->v7.4.8</span>,
+            <span class="li-normal">v7.4.8->v7.4.10</span>,
             <span class="li-normal">v7.6.4->latest</span>
         </li>
         <li><span class="li-required">icap_server</span> - available versions:
@@ -1182,7 +1191,7 @@ Parameters
             <span class="li-normal">v6.4.7->v6.4.15</span>,
             <span class="li-normal">v7.0.1->v7.0.14</span>,
             <span class="li-normal">v7.2.0->v7.4.7</span>,
-            <span class="li-normal">v7.6.0->latest</span>
+            <span class="li-normal">v7.6.0->v7.6.4</span>
         </li>
         <li><span class="li-required">mpskprofile</span> - available versions:
             <span class="li-normal">v6.4.2->latest</span>
@@ -1207,12 +1216,12 @@ Parameters
         </li>
         <li><span class="li-required">pkg_firewall_acl</span> - available versions:
             <span class="li-normal">v7.2.0->v7.2.0</span>,
-            <span class="li-normal">v7.2.6->v7.2.11</span>,
+            <span class="li-normal">v7.2.6->v7.2.12</span>,
             <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_acl6</span> - available versions:
             <span class="li-normal">v7.2.0->v7.2.0</span>,
-            <span class="li-normal">v7.2.6->v7.2.11</span>,
+            <span class="li-normal">v7.2.6->v7.2.12</span>,
             <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_centralsnatmap</span> - available versions:
@@ -1242,35 +1251,35 @@ Parameters
         <li><span class="li-required">pkg_firewall_hyperscalepolicy</span> - available versions:
             <span class="li-normal">v6.4.7->v6.4.15</span>,
             <span class="li-normal">v7.0.1->v7.2.0</span>,
-            <span class="li-normal">v7.2.6->v7.2.11</span>,
+            <span class="li-normal">v7.2.6->v7.2.12</span>,
             <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy46</span> - available versions:
             <span class="li-normal">v6.4.7->v6.4.15</span>,
             <span class="li-normal">v7.0.1->v7.2.0</span>,
-            <span class="li-normal">v7.2.6->v7.2.11</span>,
+            <span class="li-normal">v7.2.6->v7.2.12</span>,
             <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy6</span> - available versions:
             <span class="li-normal">v6.4.7->v6.4.15</span>,
             <span class="li-normal">v7.0.1->v7.2.0</span>,
-            <span class="li-normal">v7.2.6->v7.2.11</span>,
+            <span class="li-normal">v7.2.6->v7.2.12</span>,
             <span class="li-normal">v7.4.3->v7.6.2</span>
         </li>
         <li><span class="li-required">pkg_firewall_hyperscalepolicy64</span> - available versions:
             <span class="li-normal">v6.4.7->v6.4.15</span>,
             <span class="li-normal">v7.0.1->v7.2.0</span>,
-            <span class="li-normal">v7.2.6->v7.2.11</span>,
+            <span class="li-normal">v7.2.6->v7.2.12</span>,
             <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_interfacepolicy</span> - available versions:
             <span class="li-normal">v6.0.0->v7.2.2</span>,
-            <span class="li-normal">v7.2.6->v7.2.11</span>,
+            <span class="li-normal">v7.2.6->v7.2.12</span>,
             <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_interfacepolicy6</span> - available versions:
             <span class="li-normal">v6.0.0->v7.2.2</span>,
-            <span class="li-normal">v7.2.6->v7.2.11</span>,
+            <span class="li-normal">v7.2.6->v7.2.12</span>,
             <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_localinpolicy</span> - available versions:
@@ -1307,7 +1316,7 @@ Parameters
             <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_responseshapingpolicy</span> - available versions:
-            <span class="li-normal">v7.4.8->v7.4.8</span>,
+            <span class="li-normal">v7.4.8->v7.4.10</span>,
             <span class="li-normal">v7.6.4->latest</span>
         </li>
         <li><span class="li-required">pkg_firewall_securitypolicy</span> - available versions:
@@ -1338,7 +1347,7 @@ Parameters
             <span class="li-normal">v7.2.1->latest</span>
         </li>
         <li><span class="li-required">pkg_videofilter_youtubekey</span> - available versions:
-            <span class="li-normal">v7.4.4->v7.4.8</span>,
+            <span class="li-normal">v7.4.4->v7.4.10</span>,
             <span class="li-normal">v7.6.2->latest</span>
         </li>
         <li><span class="li-required">pm_config_pblock_firewall_consolidated_policy</span> - available versions:
@@ -1418,56 +1427,56 @@ Parameters
             <span class="li-normal">v7.0.2->latest</span>
         </li>
         <li><span class="li-required">sctpfilter_profile</span> - available versions:
-            <span class="li-normal">v7.2.5->v7.2.11</span>,
+            <span class="li-normal">v7.2.5->v7.2.12</span>,
             <span class="li-normal">v7.4.2->latest</span>
         </li>
         <li><span class="li-required">sctpfilter_profile_ppidfilters</span> - available versions:
-            <span class="li-normal">v7.2.5->v7.2.11</span>,
+            <span class="li-normal">v7.2.5->v7.2.12</span>,
             <span class="li-normal">v7.4.2->latest</span>
         </li>
         <li><span class="li-required">spamfilter_bwl</span> - available versions:
             <span class="li-normal">v6.0.0->v7.2.1</span>,
-            <span class="li-normal">v7.4.8->v7.4.8</span>
+            <span class="li-normal">v7.4.8->v7.4.10</span>
         </li>
         <li><span class="li-required">spamfilter_bwl_entries</span> - available versions:
             <span class="li-normal">v6.0.0->v7.2.1</span>,
-            <span class="li-normal">v7.4.8->v7.4.8</span>
+            <span class="li-normal">v7.4.8->v7.4.10</span>
         </li>
         <li><span class="li-required">spamfilter_bword</span> - available versions:
             <span class="li-normal">v6.0.0->v7.2.1</span>,
-            <span class="li-normal">v7.4.8->v7.4.8</span>
+            <span class="li-normal">v7.4.8->v7.4.10</span>
         </li>
         <li><span class="li-required">spamfilter_bword_entries</span> - available versions:
             <span class="li-normal">v6.0.0->v7.2.1</span>,
-            <span class="li-normal">v7.4.8->v7.4.8</span>
+            <span class="li-normal">v7.4.8->v7.4.10</span>
         </li>
         <li><span class="li-required">spamfilter_dnsbl</span> - available versions:
             <span class="li-normal">v6.0.0->v7.2.1</span>,
-            <span class="li-normal">v7.4.8->v7.4.8</span>
+            <span class="li-normal">v7.4.8->v7.4.10</span>
         </li>
         <li><span class="li-required">spamfilter_dnsbl_entries</span> - available versions:
             <span class="li-normal">v6.0.0->v7.2.1</span>,
-            <span class="li-normal">v7.4.8->v7.4.8</span>
+            <span class="li-normal">v7.4.8->v7.4.10</span>
         </li>
         <li><span class="li-required">spamfilter_iptrust</span> - available versions:
             <span class="li-normal">v6.0.0->v7.2.1</span>,
-            <span class="li-normal">v7.4.8->v7.4.8</span>
+            <span class="li-normal">v7.4.8->v7.4.10</span>
         </li>
         <li><span class="li-required">spamfilter_iptrust_entries</span> - available versions:
             <span class="li-normal">v6.0.0->v7.2.1</span>,
-            <span class="li-normal">v7.4.8->v7.4.8</span>
+            <span class="li-normal">v7.4.8->v7.4.10</span>
         </li>
         <li><span class="li-required">spamfilter_mheader</span> - available versions:
             <span class="li-normal">v6.0.0->v7.2.1</span>,
-            <span class="li-normal">v7.4.8->v7.4.8</span>
+            <span class="li-normal">v7.4.8->v7.4.10</span>
         </li>
         <li><span class="li-required">spamfilter_mheader_entries</span> - available versions:
             <span class="li-normal">v6.0.0->v7.2.1</span>,
-            <span class="li-normal">v7.4.8->v7.4.8</span>
+            <span class="li-normal">v7.4.8->v7.4.10</span>
         </li>
         <li><span class="li-required">spamfilter_profile</span> - available versions:
             <span class="li-normal">v6.0.0->v7.2.1</span>,
-            <span class="li-normal">v7.4.8->v7.4.8</span>
+            <span class="li-normal">v7.4.8->v7.4.10</span>
         </li>
         <li><span class="li-required">sshfilter_profile</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
@@ -1684,10 +1693,10 @@ Parameters
             <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">system_dnsdatabase</span> - available versions:
-            <span class="li-normal">v7.6.4->latest</span>
+            <span class="li-normal">v7.6.4->v7.6.4</span>
         </li>
         <li><span class="li-required">system_dnsdatabase_dnsentry</span> - available versions:
-            <span class="li-normal">v7.6.4->latest</span>
+            <span class="li-normal">v7.6.4->v7.6.4</span>
         </li>
         <li><span class="li-required">system_externalresource</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
@@ -1730,7 +1739,7 @@ Parameters
             <span class="li-normal">v7.6.0->v7.6.2</span>
         </li>
         <li><span class="li-required">system_log_deviceselector</span> - available versions:
-            <span class="li-normal">v7.4.7->v7.4.8</span>,
+            <span class="li-normal">v7.4.7->v7.4.10</span>,
             <span class="li-normal">v7.6.3->latest</span>
         </li>
         <li><span class="li-required">system_log_maildomain</span> - available versions:
@@ -1741,6 +1750,9 @@ Parameters
         </li>
         <li><span class="li-required">system_log_ratelimit_ratelimits</span> - available versions:
             <span class="li-normal">v7.0.3->latest</span>
+        </li>
+        <li><span class="li-required">system_log_settings_clientcertauth_trustedclient</span> - available versions:
+            <span class="li-normal">v7.6.5->latest</span>
         </li>
         <li><span class="li-required">system_logfetch_clientprofile</span> - available versions:
             <span class="li-normal">v6.0.0->v7.2.1</span>
@@ -1803,7 +1815,7 @@ Parameters
         </li>
         <li><span class="li-required">system_objecttag</span> - available versions:
             <span class="li-normal">v6.2.0->v6.4.15</span>,
-            <span class="li-normal">v7.4.8->v7.4.8</span>
+            <span class="li-normal">v7.4.8->v7.4.10</span>
         </li>
         <li><span class="li-required">system_objecttagging</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
@@ -1828,7 +1840,7 @@ Parameters
         </li>
         <li><span class="li-required">system_replacemsggroup_ec</span> - available versions:
             <span class="li-normal">v6.0.0->v7.2.1</span>,
-            <span class="li-normal">v7.4.8->v7.4.8</span>
+            <span class="li-normal">v7.4.8->v7.4.10</span>
         </li>
         <li><span class="li-required">system_replacemsggroup_fortiguardwf</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
@@ -1988,7 +2000,7 @@ Parameters
             <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">user_certificate</span> - available versions:
-            <span class="li-normal">v7.0.8->v7.0.15</span>,
+            <span class="li-normal">v7.0.8->v7.0.16</span>,
             <span class="li-normal">v7.2.3->latest</span>
         </li>
         <li><span class="li-required">user_clearpass</span> - available versions:
@@ -2037,7 +2049,7 @@ Parameters
             <span class="li-normal">v6.2.0->latest</span>
         </li>
         <li><span class="li-required">user_externalidentityprovider</span> - available versions:
-            <span class="li-normal">v7.2.6->v7.2.11</span>,
+            <span class="li-normal">v7.2.6->v7.2.12</span>,
             <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">user_flexvm</span> - available versions:
@@ -2422,11 +2434,11 @@ Parameters
             <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">webfilter_urllist</span> - available versions:
-            <span class="li-normal">v7.4.8->v7.4.8</span>,
+            <span class="li-normal">v7.4.8->v7.4.10</span>,
             <span class="li-normal">v7.6.4->latest</span>
         </li>
         <li><span class="li-required">webproxy_explicitproxy</span> - available versions:
-            <span class="li-normal">v7.4.8->v7.4.8</span>,
+            <span class="li-normal">v7.4.8->v7.4.10</span>,
             <span class="li-normal">v7.6.4->latest</span>
         </li>
         <li><span class="li-required">webproxy_forwardserver</span> - available versions:
@@ -2853,6 +2865,19 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">devprof</span></li>
             <li><span class="li-normal">user</span></li>
+        </ul>
+        <li><span class="li-normal">params for devprof_system_template_interface:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">devprof</span></li>
+            <li><span class="li-normal">interface</span></li>
+        </ul>
+        <li><span class="li-normal">params for devprof_system_template_interface_iprange:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">devprof</span></li>
+            <li><span class="li-normal">interface</span></li>
+            <li><span class="li-normal">ip-range</span></li>
         </ul>
         <li><span class="li-normal">params for diameterfilter_profile:</span></li>
         <ul class="ul-self">
@@ -4087,6 +4112,11 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">template</span></li>
+        </ul>
+        <li><span class="li-normal">params for fmg_script:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">script</span></li>
         </ul>
         <li><span class="li-normal">params for fmg_variable:</span></li>
         <ul class="ul-self">
@@ -5485,6 +5515,10 @@ Parameters
         <li><span class="li-normal">params for system_log_ratelimit_ratelimits:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">ratelimits</span></li>
+        </ul>
+        <li><span class="li-normal">params for system_log_settings_clientcertauth_trustedclient:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">trusted-client</span></li>
         </ul>
         <li><span class="li-normal">params for system_logfetch_clientprofile:</span></li>
         <ul class="ul-self">
@@ -7198,6 +7232,18 @@ Parameters
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_devprof_system_snmp_user.html#parameters">fmgr_devprof_system_snmp_user</a> </span></li>
         </ul>
+        <li><span class="li-normal">params for devprof_system_template_interface:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_devprof_system_template_interface.html#parameters">fmgr_devprof_system_template_interface</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for devprof_system_template_interface_iprange:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_devprof_system_template_interface_iprange.html#parameters">fmgr_devprof_system_template_interface_iprange</a> </span></li>
+        </ul>
         <li><span class="li-normal">params for diameterfilter_profile:</span></li>
         <ul class="ul-self">
             
@@ -8517,6 +8563,12 @@ Parameters
             
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_fmg_fabric_authorization_template.html#parameters">fmgr_fmg_fabric_authorization_template</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for fmg_script:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_fmg_script.html#parameters">fmgr_fmg_script</a> </span></li>
         </ul>
         <li><span class="li-normal">params for fmg_variable:</span></li>
         <ul class="ul-self">
@@ -10053,6 +10105,12 @@ Parameters
             
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_log_ratelimit_ratelimits.html#parameters">fmgr_system_log_ratelimit_ratelimits</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for system_log_settings_clientcertauth_trustedclient:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_log_settings_clientcertauth_trustedclient.html#parameters">fmgr_system_log_settings_clientcertauth_trustedclient</a> </span></li>
         </ul>
         <li><span class="li-normal">params for system_logfetch_clientprofile:</span></li>
         <ul class="ul-self">

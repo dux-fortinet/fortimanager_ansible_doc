@@ -71,7 +71,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">model</span> Model. <span class="li-normal">type: str</span> <span class="li-normal">choices: [FTL100G, WINDOWS]</span> 
+ <li><span class="li-head">model</span> Model. <span class="li-normal">type: str</span> <span class="li-normal">choices: [FTL100G, WINDOWS, ftl-100g, windows, macos]</span> 
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
@@ -122,7 +122,7 @@ Examples
           telemetrycontroller_agentprofile:
             name: "your value" # Required variable, string
             # comment: <string>
-            # model: <value in [FTL100G, WINDOWS]>
+            # model: <value in [FTL100G, WINDOWS, ftl-100g, ...]>
 
 
 Return Values

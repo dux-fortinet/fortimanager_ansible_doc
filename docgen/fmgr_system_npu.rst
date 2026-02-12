@@ -487,7 +487,7 @@ Parameters
  <li><span class="li-head">sctp_csum_err</span> <b>(Alias name: sctp-csum-err)</b>  Invalid ipv4 sctp checksum anomalies. <span class="li-normal">type: str</span> <span class="li-normal">choices: [allow, drop, trap-to-host]</span> 
  <a id='label140' href="javascript:ContentClick('label141', 'label140');" onmouseover="ContentPreview('label141');" onmouseout="ContentUnpreview('label141');" title="click to collapse or expand..."> more... </a>
  <div id="label141" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.5 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.5 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -1421,7 +1421,7 @@ Parameters
  <li><span class="li-head">custom_etype_lookup</span> <b>(Alias name: custom-etype-lookup)</b>  Enable/disable np-queue lookup for custom ethernet types. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label444' href="javascript:ContentClick('label445', 'label444');" onmouseover="ContentPreview('label445');" onmouseout="ContentUnpreview('label445');" title="click to collapse or expand..."> more... </a>
  <div id="label445" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -1757,31 +1757,31 @@ Parameters
  <li><span class="li-head">enable_queue_shaper</span> <b>(Alias name: enable-queue-shaper)</b>  Enable/disable npu host protection engine (hpe) queue shaper. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label552' href="javascript:ContentClick('label553', 'label552');" onmouseover="ContentPreview('label553');" onmouseout="ContentUnpreview('label553');" title="click to collapse or expand..."> more... </a>
  <div id="label553" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.9 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.9 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">exception_code</span> <b>(Alias name: exception-code)</b>  Maximum exception code rate of traffic(1k - 32m pps, default = 1m pps). <span class="li-normal">type: int</span>
  <a id='label554' href="javascript:ContentClick('label555', 'label554');" onmouseover="ContentPreview('label555');" onmouseout="ContentUnpreview('label555');" title="click to collapse or expand..."> more... </a>
  <div id="label555" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.9 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.9 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">fragment_with_sess</span> <b>(Alias name: fragment-with-sess)</b>  Maximum fragment with session rate of traffic(1k - 32m pps, default = 1m pps). <span class="li-normal">type: int</span>
  <a id='label556' href="javascript:ContentClick('label557', 'label556');" onmouseover="ContentPreview('label557');" onmouseout="ContentUnpreview('label557');" title="click to collapse or expand..."> more... </a>
  <div id="label557" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.9 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.9 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">fragment_without_session</span> <b>(Alias name: fragment-without-session)</b>  Maximum fragment without session rate of traffic(1k - 32m pps, default = 1m pps). <span class="li-normal">type: int</span>
  <a id='label558' href="javascript:ContentClick('label559', 'label558');" onmouseover="ContentPreview('label559');" onmouseout="ContentUnpreview('label559');" title="click to collapse or expand..."> more... </a>
  <div id="label559" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.9 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.9 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">queue_shaper_max</span> <b>(Alias name: queue-shaper-max)</b>  Maximum per queue byte rate of traffic(1k - 32m pps, default = 1m pps). <span class="li-normal">type: int</span>
  <a id='label560' href="javascript:ContentClick('label561', 'label560');" onmouseover="ContentPreview('label561');" onmouseout="ContentUnpreview('label561');" title="click to collapse or expand..."> more... </a>
  <div id="label561" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.9 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.9 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -1863,37 +1863,37 @@ Parameters
  <li><span class="li-head">scan_stale</span> <b>(Alias name: scan-stale)</b>  Configure scanning of active or stale sessions (default = 0 = active sessions). <span class="li-normal">type: int</span>
  <a id='label586' href="javascript:ContentClick('label587', 'label586');" onmouseover="ContentPreview('label587');" onmouseout="ContentUnpreview('label587');" title="click to collapse or expand..."> more... </a>
  <div id="label587" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.12 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.12 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">scan_vt</span> <b>(Alias name: scan-vt)</b>  Select version/type to scan: bit-0: 44; bit-1: 46; bit-2: 64; bit-3: 66 (default = 0xf). <span class="li-normal">type: int</span>
  <a id='label588' href="javascript:ContentClick('label589', 'label588');" onmouseover="ContentPreview('label589');" onmouseout="ContentUnpreview('label589');" title="click to collapse or expand..."> more... </a>
  <div id="label589" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.12 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.12 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">stats_qual_access</span> <b>(Alias name: stats-qual-access)</b>  Statistics update access qualification in seconds (0 - int_max, default = 180). <span class="li-normal">type: int</span>
  <a id='label590' href="javascript:ContentClick('label591', 'label590');" onmouseover="ContentPreview('label591');" onmouseout="ContentUnpreview('label591');" title="click to collapse or expand..."> more... </a>
  <div id="label591" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.12 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.12 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">stats_qual_duration</span> <b>(Alias name: stats-qual-duration)</b>  Statistics update duration qualification in seconds (0 - int_max, default = 300). <span class="li-normal">type: int</span>
  <a id='label592' href="javascript:ContentClick('label593', 'label592');" onmouseover="ContentPreview('label593');" onmouseout="ContentUnpreview('label593');" title="click to collapse or expand..."> more... </a>
  <div id="label593" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.12 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.12 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">udp_qual_access</span> <b>(Alias name: udp-qual-access)</b>  Udp keepalive access qualification in seconds (0 - int_max, default = 30). <span class="li-normal">type: int</span>
  <a id='label594' href="javascript:ContentClick('label595', 'label594');" onmouseover="ContentPreview('label595');" onmouseout="ContentUnpreview('label595');" title="click to collapse or expand..."> more... </a>
  <div id="label595" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.12 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.12 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">udp_qual_duration</span> <b>(Alias name: udp-qual-duration)</b>  Udp keepalive duration qualification in seconds (0 - int_max, default = 90). <span class="li-normal">type: int</span>
  <a id='label596' href="javascript:ContentClick('label597', 'label596');" onmouseover="ContentPreview('label597');" onmouseout="ContentUnpreview('label597');" title="click to collapse or expand..."> more... </a>
  <div id="label597" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.12 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.12 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -2041,31 +2041,31 @@ Parameters
  <li><span class="li-head">ull_port_mode</span> <b>(Alias name: ull-port-mode)</b>  Set ull ports speed to 10g/25g (default 10g). <span class="li-normal">type: str</span> <span class="li-normal">choices: [10G, 25G]</span> 
  <a id='label644' href="javascript:ContentClick('label645', 'label644');" onmouseover="ContentPreview('label645');" onmouseout="ContentUnpreview('label645');" title="click to collapse or expand..."> more... </a>
  <div id="label645" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.9 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.4 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.9 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.4 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">sse_ha_scan</span> <b>(Alias name: sse-ha-scan)</b>  Sse ha scan. <span class="li-normal">type: dict</span>
  <a id='label646' href="javascript:ContentClick('label647', 'label646');" onmouseover="ContentPreview('label647');" onmouseout="ContentUnpreview('label647');" title="click to collapse or expand..."> more... </a>
  <div id="label647" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.10 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.4 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.10 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.4 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  <ul class="ul-self">
  <li><span class="li-head">gap</span> Scanning message gap(0~32767, default 6000) <span class="li-normal">type: int</span>
  <a id='label648' href="javascript:ContentClick('label649', 'label648');" onmouseover="ContentPreview('label649');" onmouseout="ContentUnpreview('label649');" title="click to collapse or expand..."> more... </a>
  <div id="label649" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.10 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.4 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.10 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.4 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">max_session_cnt</span> <b>(Alias name: max-session-cnt)</b>  If the session count(in millions) is larger than this, ha scan will be skipped. <span class="li-normal">type: int</span>
  <a id='label650' href="javascript:ContentClick('label651', 'label650');" onmouseover="ContentPreview('label651');" onmouseout="ContentUnpreview('label651');" title="click to collapse or expand..."> more... </a>
  <div id="label651" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.10 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.4 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.10 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.4 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">min_duration</span> <b>(Alias name: min-duration)</b>  Scanning filter for minimum duration of the session. <span class="li-normal">type: int</span>
  <a id='label652' href="javascript:ContentClick('label653', 'label652');" onmouseover="ContentPreview('label653');" onmouseout="ContentUnpreview('label653');" title="click to collapse or expand..."> more... </a>
  <div id="label653" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.10 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.4 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.10 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.4 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -2073,67 +2073,67 @@ Parameters
  <li><span class="li-head">hash_ipv6_sel</span> <b>(Alias name: hash-ipv6-sel)</b>  Select which 4bytes of the ipv6 address are used for traffic hash(0~3). <span class="li-normal">type: int</span>
  <a id='label654' href="javascript:ContentClick('label655', 'label654');" onmouseover="ContentPreview('label655');" onmouseout="ContentUnpreview('label655');" title="click to collapse or expand..."> more... </a>
  <div id="label655" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ip_fragment_offload</span> <b>(Alias name: ip-fragment-offload)</b>  Enable/disable np7 npu ip fragment offload. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label656' href="javascript:ContentClick('label657', 'label656');" onmouseover="ContentPreview('label657');" onmouseout="ContentUnpreview('label657');" title="click to collapse or expand..."> more... </a>
  <div id="label657" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ple_non_syn_tcp_action</span> <b>(Alias name: ple-non-syn-tcp-action)</b>  Configure action for the ple to take on tcp packets that have the syn field unset. <span class="li-normal">type: str</span> <span class="li-normal">choices: [forward, drop]</span> 
  <a id='label658' href="javascript:ContentClick('label659', 'label658');" onmouseover="ContentPreview('label659');" onmouseout="ContentUnpreview('label659');" title="click to collapse or expand..."> more... </a>
  <div id="label659" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">npu_group_effective_scope</span> <b>(Alias name: npu-group-effective-scope)</b>  Npu-group-effective-scope defines under which npu-group cmds such as list/purge will be excecuted. <span class="li-normal">type: int</span>
  <a id='label660' href="javascript:ContentClick('label661', 'label660');" onmouseover="ContentPreview('label661');" onmouseout="ContentUnpreview('label661');" title="click to collapse or expand..."> more... </a>
  <div id="label661" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.6 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.6 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ipsec_STS_timeout</span> <b>(Alias name: ipsec-STS-timeout)</b>  Set np7lite ipsec sts msg timeout. <span class="li-normal">type: str</span> <span class="li-normal">choices: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</span> 
  <a id='label662' href="javascript:ContentClick('label663', 'label662');" onmouseover="ContentPreview('label663');" onmouseout="ContentUnpreview('label663');" title="click to collapse or expand..."> more... </a>
  <div id="label663" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.9 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.9 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ipsec_throughput_msg_frequency</span> <b>(Alias name: ipsec-throughput-msg-frequency)</b>  Set np7lite ipsec throughput msg frequency: 0--disable 1--32kb 3--64kb . <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, 32KB, 64KB, 128KB, 256KB, 512KB, 1MB, 2MB, 4MB, 8MB, 16MB, 32MB, 64MB, 128MB, 256MB, 512MB, 1GB]</span> 
  <a id='label664' href="javascript:ContentClick('label665', 'label664');" onmouseover="ContentPreview('label665');" onmouseout="ContentUnpreview('label665');" title="click to collapse or expand..."> more... </a>
  <div id="label665" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.9 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.9 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ipt_STS_timeout</span> <b>(Alias name: ipt-STS-timeout)</b>  Set np7lite ipt sts msg timeout. <span class="li-normal">type: str</span> <span class="li-normal">choices: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</span> 
  <a id='label666' href="javascript:ContentClick('label667', 'label666');" onmouseover="ContentPreview('label667');" onmouseout="ContentUnpreview('label667');" title="click to collapse or expand..."> more... </a>
  <div id="label667" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.9 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.9 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ipt_throughput_msg_frequency</span> <b>(Alias name: ipt-throughput-msg-frequency)</b>  Set np7lite ipt throughput msg frequency: 0--disable 1--32kb 3--64kb . <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, 32KB, 64KB, 128KB, 256KB, 512KB, 1MB, 2MB, 4MB, 8MB, 16MB, 32MB, 64MB, 128MB, 256MB, 512MB, 1GB]</span> 
  <a id='label668' href="javascript:ContentClick('label669', 'label668');" onmouseover="ContentPreview('label669');" onmouseout="ContentUnpreview('label669');" title="click to collapse or expand..."> more... </a>
  <div id="label669" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.9 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.9 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">default_tcp_refresh_dir</span> <b>(Alias name: default-tcp-refresh-dir)</b>  Default sse timeout tcp refresh direction. <span class="li-normal">type: str</span> <span class="li-normal">choices: [both, outgoing, incoming]</span> 
  <a id='label670' href="javascript:ContentClick('label671', 'label670');" onmouseover="ContentPreview('label671');" onmouseout="ContentUnpreview('label671');" title="click to collapse or expand..."> more... </a>
  <div id="label671" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.12 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.12 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">default_udp_refresh_dir</span> <b>(Alias name: default-udp-refresh-dir)</b>  Default sse timeout udp refresh direction. <span class="li-normal">type: str</span> <span class="li-normal">choices: [both, outgoing, incoming]</span> 
  <a id='label672' href="javascript:ContentClick('label673', 'label672');" onmouseover="ContentPreview('label673');" onmouseout="ContentUnpreview('label673');" title="click to collapse or expand..."> more... </a>
  <div id="label673" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.12 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.12 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">nss_threads_option</span> <b>(Alias name: nss-threads-option)</b>  Configure thread options for the np7s nss module. <span class="li-normal">type: str</span> <span class="li-normal">choices: [4t-eif, 4t-noeif, 2t]</span> 
  <a id='label674' href="javascript:ContentClick('label675', 'label674');" onmouseover="ContentPreview('label675');" onmouseout="ContentUnpreview('label675');" title="click to collapse or expand..."> more... </a>
  <div id="label675" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.12 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.12 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">prp_session_clear_mode</span> <b>(Alias name: prp-session-clear-mode)</b>  Prp session clear mode for excluded ip sessions. <span class="li-normal">type: str</span> <span class="li-normal">choices: [blocking, non-blocking, do-not-clear]</span> 
@@ -2171,25 +2171,25 @@ Parameters
  <li><span class="li-head">pba_port_select_mode</span> <b>(Alias name: pba-port-select-mode)</b>  Port selection mode for pba ip pool. <span class="li-normal">type: str</span> <span class="li-normal">choices: [random, direct]</span> 
  <a id='label686' href="javascript:ContentClick('label687', 'label686');" onmouseover="ContentPreview('label687');" onmouseout="ContentUnpreview('label687');" title="click to collapse or expand..."> more... </a>
  <div id="label687" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.5 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.5 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">spa_port_select_mode</span> <b>(Alias name: spa-port-select-mode)</b>  Port selection mode for spa ip pool. <span class="li-normal">type: str</span> <span class="li-normal">choices: [random, direct]</span> 
  <a id='label688' href="javascript:ContentClick('label689', 'label688');" onmouseover="ContentPreview('label689');" onmouseout="ContentUnpreview('label689');" title="click to collapse or expand..."> more... </a>
  <div id="label689" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.5 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.5 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">split_ipsec_engines</span> <b>(Alias name: split-ipsec-engines)</b>  Enable/disable split ipsec engines. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label690' href="javascript:ContentClick('label691', 'label690');" onmouseover="ContentPreview('label691');" onmouseout="ContentUnpreview('label691');" title="click to collapse or expand..."> more... </a>
  <div id="label691" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.5 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.5 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">tunnel_over_vlink</span> <b>(Alias name: tunnel-over-vlink)</b>  Enable/disable selection of which np6 chip the tunnel uses (default = enable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label692' href="javascript:ContentClick('label693', 'label692');" onmouseover="ContentPreview('label693');" onmouseout="ContentUnpreview('label693');" title="click to collapse or expand..."> more... </a>
  <div id="label693" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.5 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.5 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">max_receive_unit</span> <b>(Alias name: max-receive-unit)</b>  Set the maximum packet size for receive, larger packets will be silently dropped. <span class="li-normal">type: int</span>
@@ -3623,31 +3623,31 @@ Parameters
  <li><span class="li-head">dedicated_lacp_queue</span> <b>(Alias name: dedicated-lacp-queue)</b>  Enable to dedicate one hif queue for lacp. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label1164' href="javascript:ContentClick('label1165', 'label1164');" onmouseover="ContentPreview('label1165');" onmouseout="ContentUnpreview('label1165');" title="click to collapse or expand..."> more... </a>
  <div id="label1165" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.4 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.4 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ipsec_ordering</span> <b>(Alias name: ipsec-ordering)</b>  Enable/disable ipsec ordering. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label1166' href="javascript:ContentClick('label1167', 'label1166');" onmouseover="ContentPreview('label1167');" onmouseout="ContentUnpreview('label1167');" title="click to collapse or expand..."> more... </a>
  <div id="label1167" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">sw_np_pause</span> <b>(Alias name: sw-np-pause)</b>  Enable sp5 tx pause and marvell rx receive pause, for sw uplink only. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
  <a id='label1168' href="javascript:ContentClick('label1169', 'label1168');" onmouseover="ContentPreview('label1169');" onmouseout="ContentUnpreview('label1169');" title="click to collapse or expand..."> more... </a>
  <div id="label1169" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.11 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.11 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">sw_np_rate</span> <b>(Alias name: sw-np-rate)</b>  Bandwidth from switch to np, for sw uplink port. <span class="li-normal">type: int</span>
  <a id='label1170' href="javascript:ContentClick('label1171', 'label1170');" onmouseover="ContentPreview('label1171');" onmouseout="ContentUnpreview('label1171');" title="click to collapse or expand..."> more... </a>
  <div id="label1171" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.11 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.11 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">sw_np_rate_unit</span> <b>(Alias name: sw-np-rate-unit)</b>  Unit for bandwidth from switch to np, for sw uplink port. <span class="li-normal">type: str</span> <span class="li-normal">choices: [mbps, pps]</span> 
  <a id='label1172' href="javascript:ContentClick('label1173', 'label1172');" onmouseover="ContentPreview('label1173');" onmouseout="ContentUnpreview('label1173');" title="click to collapse or expand..."> more... </a>
  <div id="label1173" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.11 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.11 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">lag_hash_gre</span> <b>(Alias name: lag-hash-gre)</b>  Set lag hash for standard gre. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, gre_inner_l3, gre_inner_l4, gre_inner_l3l4]</span> 
@@ -3660,6 +3660,42 @@ Parameters
  <a id='label1176' href="javascript:ContentClick('label1177', 'label1176');" onmouseover="ContentPreview('label1177');" onmouseout="ContentUnpreview('label1177');" title="click to collapse or expand..."> more... </a>
  <div id="label1177" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">hif_queue_customize</span> <b>(Alias name: hif-queue-customize)</b>  Customize hif queue settings. <span class="li-normal">type: str</span> <span class="li-normal">choices: [numa-affinity, all-cpus]</span> 
+ <a id='label1178' href="javascript:ContentClick('label1179', 'label1178');" onmouseover="ContentPreview('label1179');" onmouseout="ContentUnpreview('label1179');" title="click to collapse or expand..."> more... </a>
+ <div id="label1179" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ike_port</span> <b>(Alias name: ike-port)</b>  Configure additional ipsec ports for offloading. <span class="li-normal">type: list</span>
+ <a id='label1180' href="javascript:ContentClick('label1181', 'label1180');" onmouseover="ContentPreview('label1181');" onmouseout="ContentUnpreview('label1181');" title="click to collapse or expand..."> more... </a>
+ <div id="label1181" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">mcast_denied_ses_offload</span> <b>(Alias name: mcast-denied-ses-offload)</b>  Enable/disable offloading of multicast denied sessions. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label1182' href="javascript:ContentClick('label1183', 'label1182');" onmouseover="ContentPreview('label1183');" onmouseout="ContentUnpreview('label1183');" title="click to collapse or expand..."> more... </a>
+ <div id="label1183" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">shadow_virtual_switch</span> <b>(Alias name: shadow-virtual-switch)</b>  Enable/disable shadow virtual switch. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label1184' href="javascript:ContentClick('label1185', 'label1184');" onmouseover="ContentPreview('label1185');" onmouseout="ContentUnpreview('label1185');" title="click to collapse or expand..."> more... </a>
+ <div id="label1185" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">use_ixgbe_tx</span> <b>(Alias name: use-ixgbe-tx)</b>  Enable/disable use of the ixgbe nic for transmitting packets (default = enable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label1186' href="javascript:ContentClick('label1187', 'label1186');" onmouseover="ContentPreview('label1187');" onmouseout="ContentUnpreview('label1187');" title="click to collapse or expand..."> more... </a>
+ <div id="label1187" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vxlan_mac_flapping_guard</span> <b>(Alias name: vxlan-mac-flapping-guard)</b>  Enable/disable vxlan mac flapping guard. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label1188' href="javascript:ContentClick('label1189', 'label1188');" onmouseover="ContentPreview('label1189');" onmouseout="ContentUnpreview('label1189');" title="click to collapse or expand..."> more... </a>
+ <div id="label1189" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -4287,6 +4323,12 @@ Examples
             # sw_np_rate_unit: <value in [mbps, pps]>
             # lag_hash_gre: <value in [disable, gre_inner_l3, gre_inner_l4, ...]>
             # use_mse_oft: <value in [disable, enable]>
+            # hif_queue_customize: <value in [numa-affinity, all-cpus]>
+            # ike_port: <list or integer>
+            # mcast_denied_ses_offload: <value in [disable, enable]>
+            # shadow_virtual_switch: <value in [disable, enable]>
+            # use_ixgbe_tx: <value in [disable, enable]>
+            # vxlan_mac_flapping_guard: <value in [disable, enable]>
 
 
 Return Values

@@ -266,7 +266,7 @@ Examples
           adom: ansible
           state: present
           dvmdb_script:
-            content: "ansiblt-test"
+            content: "ansible-test"
             name: "ansible-test"
             target: device_database
             type: cli
@@ -310,7 +310,7 @@ Examples
           state: present
           workspace_locking_adom: "root"
           dvmdb_script:
-            content: "ansiblt-test"
+            content: "ansible-test"
             name: "fooscript000"
             target: device_database
             type: cli

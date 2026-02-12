@@ -530,7 +530,7 @@ Parameters
  <li><span class="li-head">unknown_content_encoding</span> <b>(Alias name: unknown-content-encoding)</b>  Configure the action the fortigate unit will take on unknown content-encoding. <span class="li-normal">type: str</span> <span class="li-normal">choices: [block, inspect, bypass]</span> 
  <a id='label152' href="javascript:ContentClick('label153', 'label152');" onmouseover="ContentPreview('label153');" onmouseout="ContentUnpreview('label153');" title="click to collapse or expand..."> more... </a>
  <div id="label153" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.15</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">malware_stream</span> <b>(Alias name: malware-stream)</b>  Enable 0-day malware-stream scanning. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, monitor, block]</span> 
@@ -1235,6 +1235,12 @@ Parameters
  <a id='label380' href="javascript:ContentClick('label381', 'label380');" onmouseover="ContentPreview('label381');" onmouseout="ContentUnpreview('label381');" title="click to collapse or expand..."> more... </a>
  <div id="label381" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">fortisandbox_scan_timeout</span> <b>(Alias name: fortisandbox-scan-timeout)</b>  Fortisandbox inline scan timeout in seconds (30 - 180, default = 60). <span class="li-normal">type: int</span>
+ <a id='label382' href="javascript:ContentClick('label383', 'label382');" onmouseover="ContentPreview('label383');" onmouseout="ContentUnpreview('label383');" title="click to collapse or expand..."> more... </a>
+ <div id="label383" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
  </div>
  </li>
  </ul>

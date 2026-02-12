@@ -488,6 +488,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">negate</span> Negate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label138' href="javascript:ContentClick('label139', 'label138');" onmouseover="ContentPreview('label139');" onmouseout="ContentUnpreview('label139');" title="click to collapse or expand..."> more... </a>
+ <div id="label139" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.9 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -600,6 +606,7 @@ Examples
             # sso_attribute_value: <string>
             # user_id: <value in [email, auto-generate, specify]>
             # user_name: <value in [disable, enable]>
+            # negate: <value in [disable, enable]>
 
 
 Return Values

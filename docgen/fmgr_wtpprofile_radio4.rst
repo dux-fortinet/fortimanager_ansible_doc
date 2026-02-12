@@ -617,6 +617,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">ai_darrp_support</span> <b>(Alias name: ai-darrp-support)</b>  Enable/disable support for fortiaiops to retrieve distributed automatic radio resource provisioning (darrp) data through rest api calls (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label184' href="javascript:ContentClick('label185', 'label184');" onmouseover="ContentPreview('label185');" onmouseout="ContentUnpreview('label185');" title="click to collapse or expand..."> more... </a>
+ <div id="label185" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -756,6 +762,7 @@ Examples
             # channel_bonding_ext: <value in [320MHz-1, 320MHz-2]>
             # d80211mc: <value in [disable, enable]>
             # ap_sniffer_chan_width: <value in [320MHz, 240MHz, 160MHz, ...]>
+            # ai_darrp_support: <value in [disable, enable]>
 
 
 Return Values

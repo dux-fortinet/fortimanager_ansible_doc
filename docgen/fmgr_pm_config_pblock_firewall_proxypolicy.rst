@@ -623,6 +623,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">poolname6</span> Name of ipv6 pool object. <span class="li-normal">type: list</span>
+ <a id='label186' href="javascript:ContentClick('label187', 'label186');" onmouseover="ContentPreview('label187');" onmouseout="ContentUnpreview('label187');" title="click to collapse or expand..."> more... </a>
+ <div id="label187" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -754,6 +760,7 @@ Examples
             # telemetry_profile: <list or string>
             # internet_service_fortiguard: <list or string>
             # internet_service6_fortiguard: <list or string>
+            # poolname6: <list or string>
 
 
 Return Values

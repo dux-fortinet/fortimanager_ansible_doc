@@ -451,6 +451,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">update_bgp_route</span> <b>(Alias name: update-bgp-route)</b>  Enable/disable updating the bgp route. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label128' href="javascript:ContentClick('label129', 'label128');" onmouseover="ContentPreview('label129');" onmouseout="ContentUnpreview('label129');" title="click to collapse or expand..."> more... </a>
+ <div id="label129" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -559,6 +565,7 @@ Examples
             # jitter_weight: <integer>
             # latency_weight: <integer>
             # packet_loss_weight: <integer>
+            # update_bgp_route: <value in [disable, enable]>
 
 
 Return Values

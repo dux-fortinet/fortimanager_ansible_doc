@@ -366,6 +366,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">match_suppress</span> <b>(Alias name: match-suppress)</b>  Enable/disable matching of suppressed original neighbor. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <a id='label100' href="javascript:ContentClick('label101', 'label100');" onmouseover="ContentPreview('label101');" onmouseout="ContentUnpreview('label101');" title="click to collapse or expand..."> more... </a>
+ <div id="label101" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -454,6 +460,7 @@ Examples
             # set_vpnv4_nexthop: <string>
             # set_vpnv6_nexthop: <string>
             # set_vpnv6_nexthop_local: <string>
+            # match_suppress: <value in [disable, enable]>
 
 
 Return Values
