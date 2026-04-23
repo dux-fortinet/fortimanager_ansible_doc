@@ -25,7 +25,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible-core>=2.16.0
 
 
 
@@ -2983,9 +2983,6 @@ Parameters
         <li><span class="li-required">system_log_settings_clientcertauth</span> - available versions:
         <span class="li-normal">v7.6.5->latest</span>
         </li>
-        <li><span class="li-required">system_log_settings_clientcertauth_trustedclient</span> - available versions:
-        <span class="li-normal">v7.6.5->latest</span>
-        </li>
         <li><span class="li-required">system_log_settings_rollinganalyzer</span> - available versions:
         <span class="li-normal">v6.0.0->latest</span>
         </li>
@@ -4183,7 +4180,6 @@ Parameters
     <label for="handle3"><u>More details about parameter: <b>params</b>...</u></label>
     </h2>
     <div class="content">
-     
     <ul class="ul-self">
         <li><span class="li-normal">params for all:</span></li>
         <ul class="ul-self">
@@ -10942,11 +10938,6 @@ Parameters
         </ul>
         <li><span class="li-normal">params for system_log_settings_clientcertauth:</span></li>
         <ul class="ul-self">
-        </ul>
-        <li><span class="li-normal">params for system_log_settings_clientcertauth_trustedclient:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">trusted-client</span>
-            </li>
         </ul>
         <li><span class="li-normal">params for system_log_settings_rollinganalyzer:</span></li>
         <ul class="ul-self">

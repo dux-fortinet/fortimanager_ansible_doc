@@ -11,10 +11,10 @@ fmgr_log_npuserver -- Configure all the log servers and create the server groups
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -64,19 +64,19 @@ Parameters
  <li><span class="li-head">adom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">log_npuserver</span> - Configure all the log servers and create the server groups. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">log_processing</span> <b>(Alias name: log-processing)</b>  Configure log processed by host to drop or no drop. <span class="li-normal">type: str</span> <span class="li-normal">choices: [may-drop, no-drop]</span> 
+ <li><span class="li-head">log_processing</span> <b>(Alias name: log-processing)</b>  Configure log processed by host to drop or no drop. <span class="li-normal">type: str</span> <span class="li-normal">choices: [may-drop, no-drop]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.3 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.4</code></p>
  </div>
  </li>
- <li><span class="li-head">log_processor</span> <b>(Alias name: log-processor)</b>  Configure the log module. <span class="li-normal">type: str</span> <span class="li-normal">choices: [hardware, host]</span> 
+ <li><span class="li-head">log_processor</span> <b>(Alias name: log-processor)</b>  Configure the log module. <span class="li-normal">type: str</span> <span class="li-normal">choices: [hardware, host]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.4</code></p>
  </div>
  </li>
- <li><span class="li-head">netflow_ver</span> <b>(Alias name: netflow-ver)</b>  Configure the netfow verson. <span class="li-normal">type: str</span> <span class="li-normal">choices: [v9, v10]</span> 
+ <li><span class="li-head">netflow_ver</span> <b>(Alias name: netflow-ver)</b>  Configure the netfow verson. <span class="li-normal">type: str</span> <span class="li-normal">choices: [v9, v10]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.4</code></p>
@@ -94,19 +94,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.4</code></p>
  </div>
  </li>
- <li><span class="li-head">log_format</span> <b>(Alias name: log-format)</b>  Set the log format <span class="li-normal">type: str</span> <span class="li-normal">choices: [syslog, netflow]</span> 
+ <li><span class="li-head">log_format</span> <b>(Alias name: log-format)</b>  Set the log format <span class="li-normal">type: str</span> <span class="li-normal">choices: [syslog, netflow]</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.4</code></p>
  </div>
  </li>
- <li><span class="li-head">log_mode</span> <b>(Alias name: log-mode)</b>  Set the log mode <span class="li-normal">type: str</span> <span class="li-normal">choices: [per-session, per-nat-mapping, per-session-ending]</span> 
+ <li><span class="li-head">log_mode</span> <b>(Alias name: log-mode)</b>  Set the log mode <span class="li-normal">type: str</span> <span class="li-normal">choices: [per-session, per-nat-mapping, per-session-ending]</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.4</code></p>
  </div>
  </li>
- <li><span class="li-head">log_tx_mode</span> <b>(Alias name: log-tx-mode)</b>  Configure log transmit mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [multicast, roundrobin]</span> 
+ <li><span class="li-head">log_tx_mode</span> <b>(Alias name: log-tx-mode)</b>  Configure log transmit mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [multicast, roundrobin]</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.2 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.4</code></p>
@@ -124,19 +124,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.4</code></p>
  </div>
  </li>
- <li><span class="li-head">sw_log_flags</span> <b>(Alias name: sw-log-flags)</b>  Set flags for software logging via driver. <span class="li-normal">type: int or str</span> <span class="li-normal">choices: [tcp-udp-only, enable-all-log, disable-all-log]</span> 
+ <li><span class="li-head">sw_log_flags</span> <b>(Alias name: sw-log-flags)</b>  Set flags for software logging via driver. <span class="li-normal">type: int or str</span> <span class="li-normal">choices: [tcp-udp-only, enable-all-log, disable-all-log]</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.3 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.4</code></p>
  </div>
  </li>
- <li><span class="li-head">log_gen_event</span> <b>(Alias name: log-gen-event)</b>  Enable/disbale generating event for per-mapping log <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">log_gen_event</span> <b>(Alias name: log-gen-event)</b>  Enable/disbale generating event for per-mapping log <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.1 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.4</code></p>
  </div>
  </li>
- <li><span class="li-head">log_user_info</span> <b>(Alias name: log-user-info)</b>  Enable/disbale logging user information. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">log_user_info</span> <b>(Alias name: log-user-info)</b>  Enable/disbale logging user information. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.1 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.4</code></p>
@@ -162,7 +162,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.4</code></p>
  </div>
  </li>
- <li><span class="li-head">ip_family</span> <b>(Alias name: ip-family)</b>  Set the version the ip address <span class="li-normal">type: str</span> <span class="li-normal">choices: [v4, v6]</span> 
+ <li><span class="li-head">ip_family</span> <b>(Alias name: ip-family)</b>  Set the version the ip address <span class="li-normal">type: str</span> <span class="li-normal">choices: [v4, v6]</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.4</code></p>
@@ -198,7 +198,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.4</code></p>
  </div>
  </li>
- <li><span class="li-head">log_transport</span> <b>(Alias name: log-transport)</b>  Set transport protocol <span class="li-normal">type: str</span> <span class="li-normal">choices: [udp, tcp]</span> 
+ <li><span class="li-head">log_transport</span> <b>(Alias name: log-transport)</b>  Set transport protocol <span class="li-normal">type: str</span> <span class="li-normal">choices: [udp, tcp]</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.4</code></p>
@@ -224,7 +224,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.1 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.4</code></p>
  </div>
  </li>
- <li><span class="li-head">enforce_seq_order</span> <b>(Alias name: enforce-seq-order)</b>  Sw session netflow logs will be delivered in strict order if the option is enabled. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">enforce_seq_order</span> <b>(Alias name: enforce-seq-order)</b>  Sw session netflow logs will be delivered in strict order if the option is enabled. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.4</code></p>

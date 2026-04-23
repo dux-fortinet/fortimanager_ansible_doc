@@ -26,7 +26,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible-core>=2.16.0
 
 
 
@@ -53,7 +53,7 @@ Parameters
     <h2 class="handle">
         <label for="handle1"><u>Show full selector list...</u></label>
     </h2>
-    <div class="content"> 
+    <div class="content">
     <ul class="ul-self">
         <li><span class="li-required">apcfgprofile_commandlist</span> - available versions:
           <span class="li-normal">v6.4.6->latest</span>
@@ -1224,7 +1224,7 @@ Parameters
     </div>
     </section>
   <li><span class="li-head">target</span> - Key to the target entry. <span class="li-normal">type: str</span> <span class="li-required">required: true</span></li>
- 
+
  </ul>
  </ul>
  </ul>

@@ -11,10 +11,10 @@ fmgr_user_saml -- SAML server entry configuration.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -131,31 +131,31 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">adfs_claim</span> <b>(Alias name: adfs-claim)</b>  Enable/disable adfs claim for user/group attribute in assertion statement (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">adfs_claim</span> <b>(Alias name: adfs-claim)</b>  Enable/disable adfs claim for user/group attribute in assertion statement (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">digest_method</span> <b>(Alias name: digest-method)</b>  Digest method algorithm. <span class="li-normal">type: str</span> <span class="li-normal">choices: [sha1, sha256]</span> 
+ <li><span class="li-head">digest_method</span> <b>(Alias name: digest-method)</b>  Digest method algorithm. <span class="li-normal">type: str</span> <span class="li-normal">choices: [sha1, sha256]</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">group_claim_type</span> <b>(Alias name: group-claim-type)</b>  Group claim in assertion statement. <span class="li-normal">type: str</span> <span class="li-normal">choices: [email, given-name, name, upn, common-name, email-adfs-1x, group, upn-adfs-1x, role, sur-name, ppid, name-identifier, authentication-method, deny-only-group-sid, deny-only-primary-sid, deny-only-primary-group-sid, group-sid, primary-group-sid, primary-sid, windows-account-name]</span> 
+ <li><span class="li-head">group_claim_type</span> <b>(Alias name: group-claim-type)</b>  Group claim in assertion statement. <span class="li-normal">type: str</span> <span class="li-normal">choices: [email, given-name, name, upn, common-name, email-adfs-1x, group, upn-adfs-1x, role, sur-name, ppid, name-identifier, authentication-method, deny-only-group-sid, deny-only-primary-sid, deny-only-primary-group-sid, group-sid, primary-group-sid, primary-sid, windows-account-name]</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">limit_relaystate</span> <b>(Alias name: limit-relaystate)</b>  Enable/disable limiting of relay-state parameter when it exceeds saml 2. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">limit_relaystate</span> <b>(Alias name: limit-relaystate)</b>  Enable/disable limiting of relay-state parameter when it exceeds saml 2. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">user_claim_type</span> <b>(Alias name: user-claim-type)</b>  User name claim in assertion statement. <span class="li-normal">type: str</span> <span class="li-normal">choices: [email, given-name, name, upn, common-name, email-adfs-1x, group, upn-adfs-1x, role, sur-name, ppid, name-identifier, authentication-method, deny-only-group-sid, deny-only-primary-sid, deny-only-primary-group-sid, group-sid, primary-group-sid, primary-sid, windows-account-name]</span> 
+ <li><span class="li-head">user_claim_type</span> <b>(Alias name: user-claim-type)</b>  User name claim in assertion statement. <span class="li-normal">type: str</span> <span class="li-normal">choices: [email, given-name, name, upn, common-name, email-adfs-1x, group, upn-adfs-1x, role, sur-name, ppid, name-identifier, authentication-method, deny-only-group-sid, deny-only-primary-sid, deny-only-primary-group-sid, group-sid, primary-group-sid, primary-sid, windows-account-name]</span>
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
@@ -193,7 +193,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">adfs_claim</span> <b>(Alias name: adfs-claim)</b>  Enable/disable adfs claim for user/group attribute in assertion statement (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">adfs_claim</span> <b>(Alias name: adfs-claim)</b>  Enable/disable adfs claim for user/group attribute in assertion statement (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
@@ -211,7 +211,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">digest_method</span> <b>(Alias name: digest-method)</b>  Digest method algorithm (default = sha1). <span class="li-normal">type: str</span> <span class="li-normal">choices: [sha1, sha256]</span> 
+ <li><span class="li-head">digest_method</span> <b>(Alias name: digest-method)</b>  Digest method algorithm (default = sha1). <span class="li-normal">type: str</span> <span class="li-normal">choices: [sha1, sha256]</span>
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
@@ -223,7 +223,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">group_claim_type</span> <b>(Alias name: group-claim-type)</b>  Group claim in assertion statement. <span class="li-normal">type: str</span> <span class="li-normal">choices: [email, given-name, name, upn, common-name, email-adfs-1x, group, upn-adfs-1x, role, sur-name, ppid, name-identifier, authentication-method, deny-only-group-sid, deny-only-primary-sid, deny-only-primary-group-sid, group-sid, primary-group-sid, primary-sid, windows-account-name]</span> 
+ <li><span class="li-head">group_claim_type</span> <b>(Alias name: group-claim-type)</b>  Group claim in assertion statement. <span class="li-normal">type: str</span> <span class="li-normal">choices: [email, given-name, name, upn, common-name, email-adfs-1x, group, upn-adfs-1x, role, sur-name, ppid, name-identifier, authentication-method, deny-only-group-sid, deny-only-primary-sid, deny-only-primary-group-sid, group-sid, primary-group-sid, primary-sid, windows-account-name]</span>
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
@@ -259,7 +259,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">limit_relaystate</span> <b>(Alias name: limit-relaystate)</b>  Enable/disable limiting of relay-state parameter when it exceeds saml 2. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">limit_relaystate</span> <b>(Alias name: limit-relaystate)</b>  Enable/disable limiting of relay-state parameter when it exceeds saml 2. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
  <div id="label65" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
@@ -277,7 +277,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">user_claim_type</span> <b>(Alias name: user-claim-type)</b>  User name claim in assertion statement. <span class="li-normal">type: str</span> <span class="li-normal">choices: [email, given-name, name, upn, common-name, email-adfs-1x, group, upn-adfs-1x, role, sur-name, ppid, name-identifier, authentication-method, deny-only-group-sid, deny-only-primary-sid, deny-only-primary-group-sid, group-sid, primary-group-sid, primary-sid, windows-account-name]</span> 
+ <li><span class="li-head">user_claim_type</span> <b>(Alias name: user-claim-type)</b>  User name claim in assertion statement. <span class="li-normal">type: str</span> <span class="li-normal">choices: [email, given-name, name, upn, common-name, email-adfs-1x, group, upn-adfs-1x, role, sur-name, ppid, name-identifier, authentication-method, deny-only-group-sid, deny-only-primary-sid, deny-only-primary-group-sid, group-sid, primary-group-sid, primary-sid, windows-account-name]</span>
  <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
  <div id="label71" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.5 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
@@ -295,7 +295,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">reauth</span> Enable/disable signalling of idp to force user re-authentication (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">reauth</span> Enable/disable signalling of idp to force user re-authentication (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
  <div id="label77" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
@@ -307,19 +307,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">scim_group_attr_type</span> <b>(Alias name: scim-group-attr-type)</b>  Group attribute type used to match scim groups (default = display-name). <span class="li-normal">type: str</span> <span class="li-normal">choices: [display-name, external-id]</span> 
+ <li><span class="li-head">scim_group_attr_type</span> <b>(Alias name: scim-group-attr-type)</b>  Group attribute type used to match scim groups (default = display-name). <span class="li-normal">type: str</span> <span class="li-normal">choices: [display-name, external-id]</span>
  <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
  <div id="label81" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">require_signed_resp_and_asrt</span> <b>(Alias name: require-signed-resp-and-asrt)</b>  Require signed resp and asrt. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">require_signed_resp_and_asrt</span> <b>(Alias name: require-signed-resp-and-asrt)</b>  Require signed resp and asrt. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label82' href="javascript:ContentClick('label83', 'label82');" onmouseover="ContentPreview('label83');" onmouseout="ContentUnpreview('label83');" title="click to collapse or expand..."> more... </a>
  <div id="label83" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.15 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.4.9 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">scim_user_attr_type</span> <b>(Alias name: scim-user-attr-type)</b>  User attribute type used to match scim users (default = user-name). <span class="li-normal">type: str</span> <span class="li-normal">choices: [display-name, external-id, user-name, email]</span> 
+ <li><span class="li-head">scim_user_attr_type</span> <b>(Alias name: scim-user-attr-type)</b>  User attribute type used to match scim users (default = user-name). <span class="li-normal">type: str</span> <span class="li-normal">choices: [display-name, external-id, user-name, email]</span>
  <a id='label84' href="javascript:ContentClick('label85', 'label84');" onmouseover="ContentPreview('label85');" onmouseout="ContentUnpreview('label85');" title="click to collapse or expand..."> more... </a>
  <div id="label85" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
@@ -333,7 +333,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">reauth</span> Enable/disable signalling of idp to force user re-authentication (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">reauth</span> Enable/disable signalling of idp to force user re-authentication (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label88' href="javascript:ContentClick('label89', 'label88');" onmouseover="ContentPreview('label89');" onmouseout="ContentUnpreview('label89');" title="click to collapse or expand..."> more... </a>
  <div id="label89" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
@@ -345,19 +345,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">scim_group_attr_type</span> <b>(Alias name: scim-group-attr-type)</b>  Group attribute type used to match scim groups (default = display-name). <span class="li-normal">type: str</span> <span class="li-normal">choices: [display-name, external-id]</span> 
+ <li><span class="li-head">scim_group_attr_type</span> <b>(Alias name: scim-group-attr-type)</b>  Group attribute type used to match scim groups (default = display-name). <span class="li-normal">type: str</span> <span class="li-normal">choices: [display-name, external-id]</span>
  <a id='label92' href="javascript:ContentClick('label93', 'label92');" onmouseover="ContentPreview('label93');" onmouseout="ContentUnpreview('label93');" title="click to collapse or expand..."> more... </a>
  <div id="label93" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">require_signed_resp_and_asrt</span> <b>(Alias name: require-signed-resp-and-asrt)</b>  Require signed resp and asrt. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">require_signed_resp_and_asrt</span> <b>(Alias name: require-signed-resp-and-asrt)</b>  Require signed resp and asrt. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label94' href="javascript:ContentClick('label95', 'label94');" onmouseover="ContentPreview('label95');" onmouseout="ContentUnpreview('label95');" title="click to collapse or expand..."> more... </a>
  <div id="label95" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.15 -> v7.0.16</code>, <code class="docutils literal notranslate">v7.4.9 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">scim_user_attr_type</span> <b>(Alias name: scim-user-attr-type)</b>  User attribute type used to match scim users (default = user-name). <span class="li-normal">type: str</span> <span class="li-normal">choices: [display-name, external-id, user-name, email]</span> 
+ <li><span class="li-head">scim_user_attr_type</span> <b>(Alias name: scim-user-attr-type)</b>  User attribute type used to match scim users (default = user-name). <span class="li-normal">type: str</span> <span class="li-normal">choices: [display-name, external-id, user-name, email]</span>
  <a id='label96' href="javascript:ContentClick('label97', 'label96');" onmouseover="ContentPreview('label97');" onmouseout="ContentUnpreview('label97');" title="click to collapse or expand..."> more... </a>
  <div id="label97" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>

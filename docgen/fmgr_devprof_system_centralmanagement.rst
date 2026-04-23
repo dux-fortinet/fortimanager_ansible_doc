@@ -11,10 +11,10 @@ fmgr_devprof_system_centralmanagement -- Configure central management.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -64,7 +64,7 @@ Parameters
  <li><span class="li-head">devprof</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">devprof_system_centralmanagement</span> - Configure central management. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">include_default_servers</span> <b>(Alias name: include-default-servers)</b>  Enable/disable inclusion of public fortiguard servers in the override server list. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">include_default_servers</span> <b>(Alias name: include-default-servers)</b>  Enable/disable inclusion of public fortiguard servers in the override server list. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.2.5</code>, <code class="docutils literal notranslate">v6.2.7 -> v6.4.1</code>, <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
@@ -76,7 +76,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.2.5</code>, <code class="docutils literal notranslate">v6.2.7 -> v6.4.1</code>, <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">addr_type</span> <b>(Alias name: addr-type)</b>  Indicate whether the fortigate communicates with the override server using an ipv4 address, an ipv6 address or a fqdn. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fqdn, ipv4, ipv6]</span> 
+ <li><span class="li-head">addr_type</span> <b>(Alias name: addr-type)</b>  Indicate whether the fortigate communicates with the override server using an ipv4 address, an ipv6 address or a fqdn. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fqdn, ipv4, ipv6]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.2.5</code>, <code class="docutils literal notranslate">v6.2.7 -> v6.4.1</code>, <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
@@ -106,7 +106,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.2.5</code>, <code class="docutils literal notranslate">v6.2.7 -> v6.4.1</code>, <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">server_type</span> <b>(Alias name: server-type)</b>  Fortiguard service type. <span class="li-normal">type: list</span> <span class="li-normal">choices: [update, rating, iot-query, iot-collect, vpatch-query]</span> 
+ <li><span class="li-head">server_type</span> <b>(Alias name: server-type)</b>  Fortiguard service type. <span class="li-normal">type: list</span> <span class="li-normal">choices: [update, rating, iot-query, iot-collect, vpatch-query]</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> v6.2.5</code>, <code class="docutils literal notranslate">v6.2.7 -> v6.4.1</code>, <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
@@ -126,7 +126,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">allow_remote_firmware_upgrade</span> <b>(Alias name: allow-remote-firmware-upgrade)</b>  Enable/disable remotely upgrading the firmware on this fortigate from the central management server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">allow_remote_firmware_upgrade</span> <b>(Alias name: allow-remote-firmware-upgrade)</b>  Enable/disable remotely upgrading the firmware on this fortigate from the central management server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -138,19 +138,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">allow_push_firmware</span> <b>(Alias name: allow-push-firmware)</b>  Enable/disable allowing the central management server to push firmware updates to this fortigate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">allow_push_firmware</span> <b>(Alias name: allow-push-firmware)</b>  Enable/disable allowing the central management server to push firmware updates to this fortigate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ltefw_upgrade_frequency</span> <b>(Alias name: ltefw-upgrade-frequency)</b>  Set lte firmware auto pushdown frequency. <span class="li-normal">type: str</span> <span class="li-normal">choices: [everyHour, every12hour, everyDay, everyWeek]</span> 
+ <li><span class="li-head">ltefw_upgrade_frequency</span> <b>(Alias name: ltefw-upgrade-frequency)</b>  Set lte firmware auto pushdown frequency. <span class="li-normal">type: str</span> <span class="li-normal">choices: [everyHour, every12hour, everyDay, everyWeek]</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">mode</span> Central management mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [normal, backup]</span> 
+ <li><span class="li-head">mode</span> Central management mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [normal, backup]</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -168,13 +168,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">allow_monitor</span> <b>(Alias name: allow-monitor)</b>  Enable/disable allowing the central management server to remotely monitor this fortigate unit. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">allow_monitor</span> <b>(Alias name: allow-monitor)</b>  Enable/disable allowing the central management server to remotely monitor this fortigate unit. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">allow_push_configuration</span> <b>(Alias name: allow-push-configuration)</b>  Enable/disable allowing the central management server to push configuration changes to this fortigate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">allow_push_configuration</span> <b>(Alias name: allow-push-configuration)</b>  Enable/disable allowing the central management server to push configuration changes to this fortigate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -186,19 +186,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">fmg_update_port</span> <b>(Alias name: fmg-update-port)</b>  Port used to communicate with fortimanager that is acting as a fortiguard update server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [443, 8890]</span> 
+ <li><span class="li-head">fmg_update_port</span> <b>(Alias name: fmg-update-port)</b>  Port used to communicate with fortimanager that is acting as a fortiguard update server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [443, 8890]</span>
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">use_elbc_vdom</span> <b>(Alias name: use-elbc-vdom)</b>  Enable/disable use of special elbc config sync vdom to connect to fortimanager. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">use_elbc_vdom</span> <b>(Alias name: use-elbc-vdom)</b>  Enable/disable use of special elbc config sync vdom to connect to fortimanager. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">allow_remote_lte_firmware_upgrade</span> <b>(Alias name: allow-remote-lte-firmware-upgrade)</b>  Enable/disable remotely upgrading the lte firmware on this fortigate from the central management server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">allow_remote_lte_firmware_upgrade</span> <b>(Alias name: allow-remote-lte-firmware-upgrade)</b>  Enable/disable remotely upgrading the lte firmware on this fortigate from the central management server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -210,25 +210,25 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">schedule_script_restore</span> <b>(Alias name: schedule-script-restore)</b>  Enable/disable allowing the central management server to restore the scripts stored on this fortigate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">schedule_script_restore</span> <b>(Alias name: schedule-script-restore)</b>  Enable/disable allowing the central management server to restore the scripts stored on this fortigate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">schedule_config_restore</span> <b>(Alias name: schedule-config-restore)</b>  Enable/disable allowing the central management server to restore the configuration of this fortigate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">schedule_config_restore</span> <b>(Alias name: schedule-config-restore)</b>  Enable/disable allowing the central management server to restore the configuration of this fortigate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">interface_select_method</span> <b>(Alias name: interface-select-method)</b>  Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, sdwan, specify]</span> 
+ <li><span class="li-head">interface_select_method</span> <b>(Alias name: interface-select-method)</b>  Specify how to select outgoing interface to reach server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, sdwan, specify]</span>
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Central management type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fortimanager, fortiguard, none]</span> 
+ <li><span class="li-head">type</span> Central management type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fortimanager, fortiguard, none]</span>
  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -252,19 +252,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">enc_algorithm</span> <b>(Alias name: enc-algorithm)</b>  Encryption strength for communications between the fortigate and central management. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, high, low]</span> 
+ <li><span class="li-head">enc_algorithm</span> <b>(Alias name: enc-algorithm)</b>  Encryption strength for communications between the fortigate and central management. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, high, low]</span>
  <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
  <div id="label63" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">allow_remote_modem_firmware_upgrade</span> <b>(Alias name: allow-remote-modem-firmware-upgrade)</b>  Enable/disable remotely upgrading the internal cellular modem firmware on this fortigate from the central management server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">allow_remote_modem_firmware_upgrade</span> <b>(Alias name: allow-remote-modem-firmware-upgrade)</b>  Enable/disable remotely upgrading the internal cellular modem firmware on this fortigate from the central management server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
  <div id="label65" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">modem_upgrade_frequency</span> <b>(Alias name: modem-upgrade-frequency)</b>  Set internal cellular modem firmware auto pushdown frequency. <span class="li-normal">type: str</span> <span class="li-normal">choices: [everyHour, every12hour, everyDay, everyWeek]</span> 
+ <li><span class="li-head">modem_upgrade_frequency</span> <b>(Alias name: modem-upgrade-frequency)</b>  Set internal cellular modem firmware auto pushdown frequency. <span class="li-normal">type: str</span> <span class="li-normal">choices: [everyHour, every12hour, everyDay, everyWeek]</span>
  <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
  <div id="label67" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -282,7 +282,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">fmg_update_http_header</span> <b>(Alias name: fmg-update-http-header)</b>  Enable/disable inclusion of http header in update request. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">fmg_update_http_header</span> <b>(Alias name: fmg-update-http-header)</b>  Enable/disable inclusion of http header in update request. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
  <div id="label73" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>

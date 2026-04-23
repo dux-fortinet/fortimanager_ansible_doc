@@ -11,10 +11,10 @@ fmgr_firewall_shapingprofile -- Configure shaping profiles.
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -113,7 +113,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">priority</span> Priority. <span class="li-normal">type: str</span> <span class="li-normal">choices: [low, medium, high, critical, top]</span> 
+ <li><span class="li-head">priority</span> Priority. <span class="li-normal">type: str</span> <span class="li-normal">choices: [low, medium, high, critical, top]</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.0.0 -> latest</code></p>
@@ -157,13 +157,13 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">type</span> Select shaping profile type: policing / queuing. <span class="li-normal">type: str</span> <span class="li-normal">choices: [policing, queuing]</span> 
+ <li><span class="li-head">type</span> Select shaping profile type: policing / queuing. <span class="li-normal">type: str</span> <span class="li-normal">choices: [policing, queuing]</span>
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">npu_offloading</span> <b>(Alias name: npu-offloading)</b>  Enable/disable npu offloading. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">npu_offloading</span> <b>(Alias name: npu-offloading)</b>  Enable/disable npu offloading. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.4 -> latest</code></p>
@@ -199,7 +199,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">priority</span> Priority. <span class="li-normal">type: str</span> <span class="li-normal">choices: [top, critical, high, medium, low]</span> 
+ <li><span class="li-head">priority</span> Priority. <span class="li-normal">type: str</span> <span class="li-normal">choices: [top, critical, high, medium, low]</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
@@ -248,7 +248,7 @@ Examples
           firewall_shapingprofile:
             comment: "ansible-comment"
             profile_name: "ansible-test"
-  
+
   - name: Gathering fortimanager facts
     hosts: fortimanagers
     gather_facts: false

@@ -11,10 +11,10 @@ fmgr_system_log_deviceselector -- Accept/reject devices matching specified filte
 
 .. warning::
    Starting in version 3.0.0, all input arguments will be named using the underscore naming convention (snake_case).
-  
+
    - Argument name before 3.0.0: ``var-name``, ``var name``, ``var.name``
    - New argument name starting in 3.0.0: ``var_name``
-  
+
    FortiManager Ansible v2.4+ supports both previous argument name and new underscore name.
    You will receive deprecation warnings if you keep using the previous argument name.
    You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
@@ -36,7 +36,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -63,7 +63,7 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">system_log_deviceselector</span> - Accept/reject devices matching specified filter types. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">action</span> Include or exclude the matching devices. <span class="li-normal">type: str</span> <span class="li-normal">choices: [include, exclude]</span>  <span class="li-normal">default: include</span> 
+ <li><span class="li-head">action</span> Include or exclude the matching devices. <span class="li-normal">type: str</span> <span class="li-normal">choices: [include, exclude]</span> <span class="li-normal">default: include</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
@@ -87,7 +87,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">id</span> Id of device selector entry. <span class="li-normal">type: int</span> <span class="li-normal">default: 0</span> 
+ <li><span class="li-head">id</span> Id of device selector entry. <span class="li-normal">type: int</span> <span class="li-normal">default: 0</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
@@ -99,13 +99,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">srcip_mode</span> <b>(Alias name: srcip-mode)</b>  Apply the selector to udp/514, tcp/514 or any mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [UDP514, TCP514, any]</span>  <span class="li-normal">default: UDP514</span> 
+ <li><span class="li-head">srcip_mode</span> <b>(Alias name: srcip-mode)</b>  Apply the selector to udp/514, tcp/514 or any mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [UDP514, TCP514, any]</span> <span class="li-normal">default: UDP514</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Type of the selector. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unspecified, devid, srcip]</span>  <span class="li-normal">default: unspecified</span> 
+ <li><span class="li-head">type</span> Type of the selector. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unspecified, devid, srcip]</span> <span class="li-normal">default: unspecified</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
