@@ -103,30 +103,15 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: IPv6 of interface.
         fortinet.fortimanager.fmgr_system_interface_ipv6:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           interface: <your own value>
           system_interface_ipv6:
             # ip6_address: <string>
-            # ip6_allowaccess:
-            #   - "ping"
-            #   - "https"
-            #   - "ssh"
-            #   - "snmp"
-            #   - "http"
-            #   - "webservice"
-            #   - "https-logging"
-            #   - "fabric"
+            # ip6_allowaccess: ["ping", "https", "ssh", "snmp", "http", "webservice",
+            #                   "https-logging", "fabric"]
             # ip6_autoconf: <value in [disable, enable]>
 
 

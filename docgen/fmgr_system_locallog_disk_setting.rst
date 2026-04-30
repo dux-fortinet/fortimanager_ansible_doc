@@ -216,30 +216,16 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Settings for local disk logging.
         fortinet.fortimanager.fmgr_system_locallog_disk_setting:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           system_locallog_disk_setting:
             # diskfull: <value in [overwrite, nolog]>
             # log_disk_full_percentage: <integer>
             # max_log_file_size: <integer>
-            # roll_day:
-            #   - "sunday"
-            #   - "monday"
-            #   - "tuesday"
-            #   - "wednesday"
-            #   - "thursday"
-            #   - "friday"
-            #   - "saturday"
+            # roll_day: ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday",
+            #            "saturday"]
             # roll_schedule: <value in [none, daily, weekly]>
             # roll_time: <list or string>
             # server_type: <value in [FTP, SFTP, SCP]>
@@ -253,8 +239,7 @@ Examples
             # uploadpass: <list or string>
             # uploadport: <integer>
             # uploadsched: <value in [disable, enable]>
-            # uploadtype:
-            #   - "event"
+            # uploadtype: ["event"]
             # uploaduser: <string>
             # uploadzip: <value in [disable, enable]>
             # log_disk_quota: <integer>

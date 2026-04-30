@@ -121,24 +121,12 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Assign or unassign global policy package to ADOM packages.
         fortinet.fortimanager.fmgr_securityconsole_assign_package:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           securityconsole_assign_package:
-            # flags:
-            #   - "none"
-            #   - "cp_all_objs"
-            #   - "copy_assigned_pkg"
-            #   - "unassign"
+            # flags: ["none", "cp_all_objs", "copy_assigned_pkg", "unassign"]
             # pkg: <string>
             # target:
             #   - adom: <string>

@@ -288,18 +288,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: SQL settings.
         fortinet.fortimanager.fmgr_system_sql:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           system_sql:
             # background_rebuild: <value in [disable, enable]>
             # custom_index:
@@ -313,35 +305,10 @@ Examples
             # device_count_high: <value in [disable, enable]>
             # event_table_partition_time: <integer>
             # fct_table_partition_time: <integer>
-            # logtype:
-            #   - "none"
-            #   - "app-ctrl"
-            #   - "attack"
-            #   - "content"
-            #   - "dlp"
-            #   - "emailfilter"
-            #   - "event"
-            #   - "generic"
-            #   - "history"
-            #   - "traffic"
-            #   - "virus"
-            #   - "voip"
-            #   - "webfilter"
-            #   - "netscan"
-            #   - "fct-event"
-            #   - "fct-traffic"
-            #   - "fct-netscan"
-            #   - "waf"
-            #   - "gtp"
-            #   - "dns"
-            #   - "ssh"
-            #   - "ssl"
-            #   - "file-filter"
-            #   - "asset"
-            #   - "protocol"
-            #   - "siem"
-            #   - "ztna"
-            #   - "security"
+            # logtype: ["none", "app-ctrl", "attack", "content", "dlp", "emailfilter", "event",
+            #           "generic", "history", "traffic", "virus", "voip", "webfilter", "netscan",
+            #           "fct-event", "fct-traffic", "fct-netscan", "waf", "gtp", "dns", "ssh",
+            #           "ssl", "file-filter", "asset", "protocol", "siem", "ztna", "security"]
             # password: <list or string>
             # prompt_sql_upgrade: <value in [disable, enable]>
             # rebuild_event: <value in [disable, enable]>

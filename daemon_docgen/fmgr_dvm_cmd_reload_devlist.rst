@@ -127,25 +127,13 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Retrieve a list of devices.
         fortinet.fortimanager.fmgr_dvm_cmd_reload_devlist:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           dvm_cmd_reload_devlist:
             # adom: <string>
-            # flags:
-            #   - "none"
-            #   - "create_task"
-            #   - "nonblocking"
-            #   - "log_dev"
+            # flags: ["none", "create_task", "nonblocking", "log_dev"]
             # from: <value in [um, fgfm, apache, ...]>
             # reload_dev_member_list:
             #   - name: <string>

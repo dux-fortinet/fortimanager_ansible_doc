@@ -108,18 +108,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure the schedule when built-in FortiGuard retrieves antivirus and IPS updates.
         fortinet.fortimanager.fmgr_fmupdate_fdssetting_updateschedule:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           fmupdate_fdssetting_updateschedule:
             # day: <value in [Sunday, Monday, Tuesday, ...]>
             # frequency: <value in [every, daily, weekly]>

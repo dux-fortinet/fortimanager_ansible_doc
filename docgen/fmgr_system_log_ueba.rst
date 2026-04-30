@@ -102,18 +102,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: UEBAsettings.
         fortinet.fortimanager.fmgr_system_log_ueba:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           system_log_ueba:
             # ip_only_ep: <value in [disable, enable]>
             # ip_unique_scope: <value in [adom, vdom]>

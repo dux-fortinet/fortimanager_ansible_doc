@@ -1430,18 +1430,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure Virtual Access Points
         fortinet.fortimanager.fmgr_vap_dynamicmapping:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           vap: <your own value>
           state: present # <value in [present, absent]>
@@ -1451,22 +1443,9 @@ Examples
                 vdom: <string>
             # _centmgmt: <value in [disable, enable]>
             # _dhcp_svr_id: <string>
-            # _intf_allowaccess:
-            #   - "https"
-            #   - "ping"
-            #   - "ssh"
-            #   - "snmp"
-            #   - "http"
-            #   - "telnet"
-            #   - "fgfm"
-            #   - "auto-ipsec"
-            #   - "radius-acct"
-            #   - "probe-response"
-            #   - "capwap"
-            #   - "dnp"
-            #   - "ftm"
-            #   - "fabric"
-            #   - "speed-test"
+            # _intf_allowaccess: ["https", "ping", "ssh", "snmp", "http", "telnet", "fgfm",
+            #                     "auto-ipsec", "radius-acct", "probe-response", "capwap", "dnp",
+            #                     "ftm", "fabric", "speed-test"]
             # _intf_device_identification: <value in [disable, enable]>
             # _intf_device_netscan: <value in [disable, enable]>
             # _intf_dhcp_relay_ip: <list or string>
@@ -1477,16 +1456,8 @@ Examples
             # _intf_dhcp6_relay_type: <value in [regular]>
             # _intf_ip: <string>
             # _intf_ip6_address: <string>
-            # _intf_ip6_allowaccess:
-            #   - "https"
-            #   - "ping"
-            #   - "ssh"
-            #   - "snmp"
-            #   - "http"
-            #   - "telnet"
-            #   - "any"
-            #   - "fgfm"
-            #   - "capwap"
+            # _intf_ip6_allowaccess: ["https", "ping", "ssh", "snmp", "http", "telnet", "any",
+            #                         "fgfm", "capwap"]
             # _intf_listen_forticlient_connection: <value in [disable, enable]>
             # acct_interim_interval: <integer>
             # address_group: <string>
@@ -1494,26 +1465,10 @@ Examples
             # atf_weight: <integer>
             # auth: <value in [PSK, psk, RADIUS, ...]>
             # broadcast_ssid: <value in [disable, enable]>
-            # broadcast_suppression:
-            #   - "dhcp"
-            #   - "arp"
-            #   - "dhcp2"
-            #   - "arp2"
-            #   - "netbios-ns"
-            #   - "netbios-ds"
-            #   - "arp3"
-            #   - "dhcp-up"
-            #   - "dhcp-down"
-            #   - "arp-known"
-            #   - "arp-unknown"
-            #   - "arp-reply"
-            #   - "ipv6"
-            #   - "dhcp-starvation"
-            #   - "arp-poison"
-            #   - "all-other-mc"
-            #   - "all-other-bc"
-            #   - "arp-proxy"
-            #   - "dhcp-ucast"
+            # broadcast_suppression: ["dhcp", "arp", "dhcp2", "arp2", "netbios-ns", "netbios-ds",
+            #                         "arp3", "dhcp-up", "dhcp-down", "arp-known", "arp-unknown",
+            #                         "arp-reply", "ipv6", "dhcp-starvation", "arp-poison",
+            #                         "all-other-mc", "all-other-bc", "arp-proxy", "dhcp-ucast"]
             # captive_portal_ac_name: <string>
             # captive_portal_macauth_radius_secret: <list or string>
             # captive_portal_macauth_radius_server: <string>
@@ -1564,10 +1519,7 @@ Examples
             # multicast_enhance: <value in [disable, enable]>
             # multicast_rate: <value in [0, 6000, 12000, ...]>
             # okc: <value in [disable, enable]>
-            # owe_groups:
-            #   - "19"
-            #   - "20"
-            #   - "21"
+            # owe_groups: ["19", "20", "21"]
             # owe_transition: <value in [disable, enable]>
             # owe_transition_ssid: <string>
             # passphrase: <list or string>
@@ -1589,157 +1541,28 @@ Examples
             # radius_mac_auth_server: <string>
             # radius_mac_auth_usergroups: <list or string>
             # radius_server: <string>
-            # rates_11a:
-            #   - "1"
-            #   - "1-basic"
-            #   - "2"
-            #   - "2-basic"
-            #   - "5.5"
-            #   - "5.5-basic"
-            #   - "6"
-            #   - "6-basic"
-            #   - "9"
-            #   - "9-basic"
-            #   - "12"
-            #   - "12-basic"
-            #   - "18"
-            #   - "18-basic"
-            #   - "24"
-            #   - "24-basic"
-            #   - "36"
-            #   - "36-basic"
-            #   - "48"
-            #   - "48-basic"
-            #   - "54"
-            #   - "54-basic"
-            #   - "11"
-            #   - "11-basic"
-            # rates_11ac_ss12:
-            #   - "mcs0/1"
-            #   - "mcs1/1"
-            #   - "mcs2/1"
-            #   - "mcs3/1"
-            #   - "mcs4/1"
-            #   - "mcs5/1"
-            #   - "mcs6/1"
-            #   - "mcs7/1"
-            #   - "mcs8/1"
-            #   - "mcs9/1"
-            #   - "mcs0/2"
-            #   - "mcs1/2"
-            #   - "mcs2/2"
-            #   - "mcs3/2"
-            #   - "mcs4/2"
-            #   - "mcs5/2"
-            #   - "mcs6/2"
-            #   - "mcs7/2"
-            #   - "mcs8/2"
-            #   - "mcs9/2"
-            #   - "mcs10/1"
-            #   - "mcs11/1"
-            #   - "mcs10/2"
-            #   - "mcs11/2"
-            # rates_11ac_ss34:
-            #   - "mcs0/3"
-            #   - "mcs1/3"
-            #   - "mcs2/3"
-            #   - "mcs3/3"
-            #   - "mcs4/3"
-            #   - "mcs5/3"
-            #   - "mcs6/3"
-            #   - "mcs7/3"
-            #   - "mcs8/3"
-            #   - "mcs9/3"
-            #   - "mcs0/4"
-            #   - "mcs1/4"
-            #   - "mcs2/4"
-            #   - "mcs3/4"
-            #   - "mcs4/4"
-            #   - "mcs5/4"
-            #   - "mcs6/4"
-            #   - "mcs7/4"
-            #   - "mcs8/4"
-            #   - "mcs9/4"
-            #   - "mcs10/3"
-            #   - "mcs11/3"
-            #   - "mcs10/4"
-            #   - "mcs11/4"
-            # rates_11bg:
-            #   - "1"
-            #   - "1-basic"
-            #   - "2"
-            #   - "2-basic"
-            #   - "5.5"
-            #   - "5.5-basic"
-            #   - "6"
-            #   - "6-basic"
-            #   - "9"
-            #   - "9-basic"
-            #   - "12"
-            #   - "12-basic"
-            #   - "18"
-            #   - "18-basic"
-            #   - "24"
-            #   - "24-basic"
-            #   - "36"
-            #   - "36-basic"
-            #   - "48"
-            #   - "48-basic"
-            #   - "54"
-            #   - "54-basic"
-            #   - "11"
-            #   - "11-basic"
-            # rates_11n_ss12:
-            #   - "mcs0/1"
-            #   - "mcs1/1"
-            #   - "mcs2/1"
-            #   - "mcs3/1"
-            #   - "mcs4/1"
-            #   - "mcs5/1"
-            #   - "mcs6/1"
-            #   - "mcs7/1"
-            #   - "mcs8/2"
-            #   - "mcs9/2"
-            #   - "mcs10/2"
-            #   - "mcs11/2"
-            #   - "mcs12/2"
-            #   - "mcs13/2"
-            #   - "mcs14/2"
-            #   - "mcs15/2"
-            # rates_11n_ss34:
-            #   - "mcs16/3"
-            #   - "mcs17/3"
-            #   - "mcs18/3"
-            #   - "mcs19/3"
-            #   - "mcs20/3"
-            #   - "mcs21/3"
-            #   - "mcs22/3"
-            #   - "mcs23/3"
-            #   - "mcs24/4"
-            #   - "mcs25/4"
-            #   - "mcs26/4"
-            #   - "mcs27/4"
-            #   - "mcs28/4"
-            #   - "mcs29/4"
-            #   - "mcs30/4"
-            #   - "mcs31/4"
-            # sae_groups:
-            #   - "1"
-            #   - "2"
-            #   - "5"
-            #   - "14"
-            #   - "15"
-            #   - "16"
-            #   - "17"
-            #   - "18"
-            #   - "19"
-            #   - "20"
-            #   - "21"
-            #   - "27"
-            #   - "28"
-            #   - "29"
-            #   - "30"
-            #   - "31"
+            # rates_11a: ["1", "1-basic", "2", "2-basic", "5.5", "5.5-basic", "6", "6-basic", "9",
+            #             "9-basic", "12", "12-basic", "18", "18-basic", "24", "24-basic", "36",
+            #             "36-basic", "48", "48-basic", "54", "54-basic", "11", "11-basic"]
+            # rates_11ac_ss12: ["mcs0/1", "mcs1/1", "mcs2/1", "mcs3/1", "mcs4/1", "mcs5/1",
+            #                   "mcs6/1", "mcs7/1", "mcs8/1", "mcs9/1", "mcs0/2", "mcs1/2",
+            #                   "mcs2/2", "mcs3/2", "mcs4/2", "mcs5/2", "mcs6/2", "mcs7/2",
+            #                   "mcs8/2", "mcs9/2", "mcs10/1", "mcs11/1", "mcs10/2", "mcs11/2"]
+            # rates_11ac_ss34: ["mcs0/3", "mcs1/3", "mcs2/3", "mcs3/3", "mcs4/3", "mcs5/3",
+            #                   "mcs6/3", "mcs7/3", "mcs8/3", "mcs9/3", "mcs0/4", "mcs1/4",
+            #                   "mcs2/4", "mcs3/4", "mcs4/4", "mcs5/4", "mcs6/4", "mcs7/4",
+            #                   "mcs8/4", "mcs9/4", "mcs10/3", "mcs11/3", "mcs10/4", "mcs11/4"]
+            # rates_11bg: ["1", "1-basic", "2", "2-basic", "5.5", "5.5-basic", "6", "6-basic", "9",
+            #              "9-basic", "12", "12-basic", "18", "18-basic", "24", "24-basic", "36",
+            #              "36-basic", "48", "48-basic", "54", "54-basic", "11", "11-basic"]
+            # rates_11n_ss12: ["mcs0/1", "mcs1/1", "mcs2/1", "mcs3/1", "mcs4/1", "mcs5/1", "mcs6/1",
+            #                  "mcs7/1", "mcs8/2", "mcs9/2", "mcs10/2", "mcs11/2", "mcs12/2",
+            #                  "mcs13/2", "mcs14/2", "mcs15/2"]
+            # rates_11n_ss34: ["mcs16/3", "mcs17/3", "mcs18/3", "mcs19/3", "mcs20/3", "mcs21/3",
+            #                  "mcs22/3", "mcs23/3", "mcs24/4", "mcs25/4", "mcs26/4", "mcs27/4",
+            #                  "mcs28/4", "mcs29/4", "mcs30/4", "mcs31/4"]
+            # sae_groups: ["1", "2", "5", "14", "15", "16", "17", "18", "19", "20", "21", "27",
+            #              "28", "29", "30", "31"]
             # sae_password: <list or string>
             # schedule: <list or string>
             # security: <value in [None, WEP64, wep64, ...]>
@@ -1768,16 +1591,9 @@ Examples
             # tunnel_fallback_interval: <integer>
             # access_control_list: <string>
             # captive_portal_auth_timeout: <integer>
-            # ipv6_rules:
-            #   - "drop-icmp6ra"
-            #   - "drop-icmp6rs"
-            #   - "drop-llmnr6"
-            #   - "drop-icmp6mld2"
-            #   - "drop-dhcp6s"
-            #   - "drop-dhcp6c"
-            #   - "ndp-proxy"
-            #   - "drop-ns-dad"
-            #   - "drop-ns-nondad"
+            # ipv6_rules: ["drop-icmp6ra", "drop-icmp6rs", "drop-llmnr6", "drop-icmp6mld2",
+            #              "drop-dhcp6s", "drop-dhcp6c", "ndp-proxy", "drop-ns-dad",
+            #              "drop-ns-nondad"]
             # sticky_client_remove: <value in [disable, enable]>
             # sticky_client_threshold_2g: <string>
             # sticky_client_threshold_5g: <string>
@@ -1788,9 +1604,7 @@ Examples
             # port_macauth: <value in [disable, radius, address-group]>
             # port_macauth_reauth_timeout: <integer>
             # port_macauth_timeout: <integer>
-            # additional_akms:
-            #   - "akm6"
-            #   - "akm24"
+            # additional_akms: ["akm6", "akm24"]
             # bstm_disassociation_imminent: <value in [disable, enable]>
             # bstm_load_balancing_disassoc_timer: <integer>
             # bstm_rssi_disassoc_timer: <integer>
@@ -1814,10 +1628,7 @@ Examples
             # application_report_intv: <integer>
             # auth_cert: <string>
             # auth_portal_addr: <string>
-            # beacon_advertising:
-            #   - "name"
-            #   - "model"
-            #   - "serial-number"
+            # beacon_advertising: ["name", "model", "serial-number"]
             # ips_sensor: <string>
             # l3_roaming: <value in [disable, enable]>
             # local_standalone_dns: <value in [disable, enable]>
@@ -1825,56 +1636,14 @@ Examples
             # osen: <value in [disable, enable]>
             # radius_mac_mpsk_auth: <value in [disable, enable]>
             # radius_mac_mpsk_timeout: <integer>
-            # rates_11ax_ss12:
-            #   - "mcs0/1"
-            #   - "mcs1/1"
-            #   - "mcs2/1"
-            #   - "mcs3/1"
-            #   - "mcs4/1"
-            #   - "mcs5/1"
-            #   - "mcs6/1"
-            #   - "mcs7/1"
-            #   - "mcs8/1"
-            #   - "mcs9/1"
-            #   - "mcs10/1"
-            #   - "mcs11/1"
-            #   - "mcs0/2"
-            #   - "mcs1/2"
-            #   - "mcs2/2"
-            #   - "mcs3/2"
-            #   - "mcs4/2"
-            #   - "mcs5/2"
-            #   - "mcs6/2"
-            #   - "mcs7/2"
-            #   - "mcs8/2"
-            #   - "mcs9/2"
-            #   - "mcs10/2"
-            #   - "mcs11/2"
-            # rates_11ax_ss34:
-            #   - "mcs0/3"
-            #   - "mcs1/3"
-            #   - "mcs2/3"
-            #   - "mcs3/3"
-            #   - "mcs4/3"
-            #   - "mcs5/3"
-            #   - "mcs6/3"
-            #   - "mcs7/3"
-            #   - "mcs8/3"
-            #   - "mcs9/3"
-            #   - "mcs10/3"
-            #   - "mcs11/3"
-            #   - "mcs0/4"
-            #   - "mcs1/4"
-            #   - "mcs2/4"
-            #   - "mcs3/4"
-            #   - "mcs4/4"
-            #   - "mcs5/4"
-            #   - "mcs6/4"
-            #   - "mcs7/4"
-            #   - "mcs8/4"
-            #   - "mcs9/4"
-            #   - "mcs10/4"
-            #   - "mcs11/4"
+            # rates_11ax_ss12: ["mcs0/1", "mcs1/1", "mcs2/1", "mcs3/1", "mcs4/1", "mcs5/1",
+            #                   "mcs6/1", "mcs7/1", "mcs8/1", "mcs9/1", "mcs10/1", "mcs11/1",
+            #                   "mcs0/2", "mcs1/2", "mcs2/2", "mcs3/2", "mcs4/2", "mcs5/2",
+            #                   "mcs6/2", "mcs7/2", "mcs8/2", "mcs9/2", "mcs10/2", "mcs11/2"]
+            # rates_11ax_ss34: ["mcs0/3", "mcs1/3", "mcs2/3", "mcs3/3", "mcs4/3", "mcs5/3",
+            #                   "mcs6/3", "mcs7/3", "mcs8/3", "mcs9/3", "mcs10/3", "mcs11/3",
+            #                   "mcs0/4", "mcs1/4", "mcs2/4", "mcs3/4", "mcs4/4", "mcs5/4",
+            #                   "mcs6/4", "mcs7/4", "mcs8/4", "mcs9/4", "mcs10/4", "mcs11/4"]
             # scan_botnet_connections: <value in [disable, block, monitor]>
             # utm_log: <value in [disable, enable]>
             # utm_status: <value in [disable, enable]>

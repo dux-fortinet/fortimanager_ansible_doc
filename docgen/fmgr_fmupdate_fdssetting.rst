@@ -378,18 +378,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure FortiGuard settings.
         fortinet.fortimanager.fmgr_fmupdate_fdssetting:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           fmupdate_fdssetting:
             # User_Agent: <string>
             # fds_clt_ssl_protocol: <value in [sslv3, tlsv1.0, tlsv1.1, ...]>
@@ -416,61 +408,14 @@ Examples
             #       ip: <string>
             #       ip6: <string>
             #       port: <integer>
-            #       service_type: # <list or string>
-            #         - "fds"
-            #         - "fct"
-            #         - "fai"
+            #       service_type: ["fds", "fct", "fai"]
             #   status: <value in [disable, enable]>
-            # system_support_fct:
-            #   - "4.x"
-            #   - "5.0"
-            #   - "5.2"
-            #   - "5.4"
-            #   - "5.6"
-            #   - "6.0"
-            #   - "6.2"
-            #   - "6.4"
-            #   - "7.0"
-            #   - "7.2"
-            #   - "7.4"
-            # system_support_fgt:
-            #   - "5.4"
-            #   - "5.6"
-            #   - "6.0"
-            #   - "6.2"
-            #   - "6.4"
-            #   - "7.0"
-            #   - "7.2"
-            #   - "7.4"
-            #   - "7.6"
-            # system_support_fml:
-            #   - "4.x"
-            #   - "5.x"
-            #   - "6.x"
-            #   - "6.0"
-            #   - "6.2"
-            #   - "6.4"
-            #   - "7.0"
-            #   - "7.2"
-            #   - "7.x"
-            # system_support_fsa:
-            #   - "1.x"
-            #   - "2.x"
-            #   - "3.x"
-            #   - "4.x"
-            #   - "3.0"
-            #   - "3.1"
-            #   - "3.2"
-            #   - "5.x"
-            # system_support_fsw:
-            #   - "5.4"
-            #   - "5.6"
-            #   - "6.0"
-            #   - "6.2"
-            #   - "4.x"
-            #   - "5.0"
-            #   - "5.2"
-            #   - "6.4"
+            # system_support_fct: ["4.x", "5.0", "5.2", "5.4", "5.6", "6.0", "6.2", "6.4", "7.0",
+            #                      "7.2", "7.4"]
+            # system_support_fgt: ["5.4", "5.6", "6.0", "6.2", "6.4", "7.0", "7.2", "7.4", "7.6"]
+            # system_support_fml: ["4.x", "5.x", "6.x", "6.0", "6.2", "6.4", "7.0", "7.2", "7.x"]
+            # system_support_fsa: ["1.x", "2.x", "3.x", "4.x", "3.0", "3.1", "3.2", "5.x"]
+            # system_support_fsw: ["5.4", "5.6", "6.0", "6.2", "4.x", "5.0", "5.2", "6.4"]
             # umsvc_log: <value in [emergency, alert, critical, ...]>
             # unreg_dev_option: <value in [ignore, svc-only, add-service]>
             # update_schedule:
@@ -481,23 +426,11 @@ Examples
             # wanip_query_mode: <value in [disable, ipify]>
             # fortiguard_anycast: <value in [disable, enable]>
             # fortiguard_anycast_source: <value in [fortinet, aws]>
-            # system_support_fdc:
-            #   - "3.x"
-            #   - "4.x"
-            #   - "5.x"
-            #   - "6.x"
-            # system_support_fts:
-            #   - "3.x"
-            #   - "4.x"
-            #   - "7.x"
-            # system_support_faz:
-            #   - "6.x"
-            #   - "7.x"
-            # system_support_fis:
-            #   - "1.x"
-            #   - "2.x"
-            # system_support_fai:
-            #   - "7.x"
+            # system_support_fdc: ["3.x", "4.x", "5.x", "6.x"]
+            # system_support_fts: ["3.x", "4.x", "7.x"]
+            # system_support_faz: ["6.x", "7.x"]
+            # system_support_fis: ["1.x", "2.x"]
+            # system_support_fai: ["7.x"]
 
 
 Return Values

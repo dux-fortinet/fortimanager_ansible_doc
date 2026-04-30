@@ -134,32 +134,18 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: System template device profile fortiguard
         fortinet.fortimanager.fmgr_devprof_device_profile_fortiguard:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           devprof: <your own value>
           devprof_device_profile_fortiguard:
             # target: <value in [none, direct, this-fmg]>
             # target_ip: <string>
             # auto_firmware_upgrade: <value in [disable, enable]>
-            # auto_firmware_upgrade_day:
-            #   - "sunday"
-            #   - "monday"
-            #   - "tuesday"
-            #   - "wednesday"
-            #   - "thursday"
-            #   - "friday"
-            #   - "saturday"
+            # auto_firmware_upgrade_day: ["sunday", "monday", "tuesday", "wednesday", "thursday",
+            #                             "friday", "saturday"]
             # auto_firmware_upgrade_delay: <integer>
             # auto_firmware_upgrade_end_hour: <integer>
             # auto_firmware_upgrade_start_hour: <integer>

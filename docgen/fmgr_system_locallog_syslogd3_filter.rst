@@ -342,18 +342,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Filter for syslog logging.
         fortinet.fortimanager.fmgr_system_locallog_syslogd3_filter:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           system_locallog_syslogd3_filter:
             # devcfg: <value in [disable, enable]>
             # devops: <value in [disable, enable]>

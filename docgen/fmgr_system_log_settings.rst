@@ -880,18 +880,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Log settings.
         fortinet.fortimanager.fmgr_system_log_settings:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           system_log_settings:
             # FAC_custom_field1: <string>
             # FAZ_custom_field1: <string>
@@ -911,14 +903,7 @@ Examples
             # import_max_logfiles: <integer>
             # log_file_archive_name: <value in [basic, extended]>
             # rolling_analyzer:
-            #   days:
-            #     - "sun"
-            #     - "mon"
-            #     - "tue"
-            #     - "wed"
-            #     - "thu"
-            #     - "fri"
-            #     - "sat"
+            #   days: ["sun", "mon", "tue", "wed", "thu", "fri", "sat"]
             #   del_files: <value in [disable, enable]>
             #   directory: <string>
             #   file_size: <integer>
@@ -949,14 +934,7 @@ Examples
             #   server2: <string>
             #   server3: <string>
             # rolling_local:
-            #   days:
-            #     - "sun"
-            #     - "mon"
-            #     - "tue"
-            #     - "wed"
-            #     - "thu"
-            #     - "fri"
-            #     - "sat"
+            #   days: ["sun", "mon", "tue", "wed", "thu", "fri", "sat"]
             #   del_files: <value in [disable, enable]>
             #   directory: <string>
             #   file_size: <integer>
@@ -987,14 +965,7 @@ Examples
             #   server2: <string>
             #   server3: <string>
             # rolling_regular:
-            #   days:
-            #     - "sun"
-            #     - "mon"
-            #     - "tue"
-            #     - "wed"
-            #     - "thu"
-            #     - "fri"
-            #     - "sat"
+            #   days: ["sun", "mon", "tue", "wed", "thu", "fri", "sat"]
             #   del_files: <value in [disable, enable]>
             #   directory: <string>
             #   file_size: <integer>

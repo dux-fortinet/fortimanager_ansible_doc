@@ -116,18 +116,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Enable/disable push updates, and override the default IP address and port used by FortiGuard to send antivirus and IPS push messages...
         fortinet.fortimanager.fmgr_fmupdate_fdssetting_pushoverridetoclient:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           fmupdate_fdssetting_pushoverridetoclient:
             # announce_ip:
             #   - id: <integer>

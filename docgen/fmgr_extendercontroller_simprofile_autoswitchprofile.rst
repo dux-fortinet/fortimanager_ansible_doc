@@ -141,18 +141,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Extender controller sim profile auto switch profile
         fortinet.fortimanager.fmgr_extendercontroller_simprofile_autoswitchprofile:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           sim_profile: <your own value>
           extendercontroller_simprofile_autoswitchprofile:
@@ -162,9 +154,7 @@ Examples
             # disconnect_threshold: <integer>
             # signal: <value in [disable, enable]>
             # status: <value in [disable, enable]>
-            # switch_back:
-            #   - "time"
-            #   - "timer"
+            # switch_back: ["time", "timer"]
             # switch_back_time: <string>
             # switch_back_timer: <integer>
 

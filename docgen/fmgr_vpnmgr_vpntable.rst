@@ -333,18 +333,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Vpnmgr vpntable
         fortinet.fortimanager.fmgr_vpnmgr_vpntable:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           adom: <your own value>
           state: present # <value in [present, absent]>
           vpnmgr_vpntable:
@@ -359,24 +351,8 @@ Examples
             # fcc_enforcement: <value in [disable, enable]>
             # hub2spoke_zone: <list or string>
             # ike_version: <value in [1, 2]>
-            # ike1dhgroup:
-            #   - "1"
-            #   - "2"
-            #   - "5"
-            #   - "14"
-            #   - "15"
-            #   - "16"
-            #   - "17"
-            #   - "18"
-            #   - "19"
-            #   - "20"
-            #   - "21"
-            #   - "27"
-            #   - "28"
-            #   - "29"
-            #   - "30"
-            #   - "31"
-            #   - "32"
+            # ike1dhgroup: ["1", "2", "5", "14", "15", "16", "17", "18", "19", "20", "21", "27",
+            #               "28", "29", "30", "31", "32"]
             # ike1dpd: <value in [disable, enable]>
             # ike1keylifesec: <integer>
             # ike1localid: <string>
@@ -385,24 +361,8 @@ Examples
             # ike1nattraversal: <value in [disable, enable, forced]>
             # ike1proposal: <value in [des-md5, des-sha1, 3des-md5, ...]>
             # ike2autonego: <value in [disable, enable]>
-            # ike2dhgroup:
-            #   - "1"
-            #   - "2"
-            #   - "5"
-            #   - "14"
-            #   - "15"
-            #   - "16"
-            #   - "17"
-            #   - "18"
-            #   - "19"
-            #   - "20"
-            #   - "21"
-            #   - "27"
-            #   - "28"
-            #   - "29"
-            #   - "30"
-            #   - "31"
-            #   - "32"
+            # ike2dhgroup: ["1", "2", "5", "14", "15", "16", "17", "18", "19", "20", "21", "27",
+            #               "28", "29", "30", "31", "32"]
             # ike2keepalive: <value in [disable, enable]>
             # ike2keylifekbs: <integer>
             # ike2keylifesec: <integer>

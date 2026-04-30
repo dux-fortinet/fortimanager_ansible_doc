@@ -128,31 +128,17 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Server override configure.
         fortinet.fortimanager.fmgr_fmupdate_webspam_fgdsetting_serveroverride:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           fmupdate_webspam_fgdsetting_serveroverride:
             # servlist:
             #   - id: <integer>
             #     ip: <string>
             #     ip6: <string>
             #     port: <integer>
-            #     service_type: # <list or string>
-            #       - "fgd"
-            #       - "fgc"
-            #       - "fsa"
-            #       - "fgfq"
-            #       - "geoip"
-            #       - "iot-collect"
+            #     service_type: ["fgd", "fgc", "fsa", "fgfq", "geoip", "iot-collect"]
             # status: <value in [disable, enable]>
 
 

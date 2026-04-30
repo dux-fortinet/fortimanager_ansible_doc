@@ -271,36 +271,18 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: ADOM table, most attributes are read-only and can only be changed internally.
         fortinet.fortimanager.fmgr_dvmdb_adom:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           state: present # <value in [present, absent]>
           dvmdb_adom:
             name: "your value" # Required variable, string
             # desc: <string>
-            # flags:
-            #   - "migration"
-            #   - "db_export"
-            #   - "no_vpn_console"
-            #   - "backup"
-            #   - "other_devices"
-            #   - "central_sdwan"
-            #   - "is_autosync"
-            #   - "per_device_wtp"
-            #   - "policy_check_on_install"
-            #   - "install_on_policy_check_fail"
-            #   - "auto_push_cfg"
-            #   - "per_device_fsw"
-            #   - "install_deselect_all"
+            # flags: ["migration", "db_export", "no_vpn_console", "backup", "other_devices",
+            #         "central_sdwan", "is_autosync", "per_device_wtp", "policy_check_on_install",
+            #         "install_on_policy_check_fail", "auto_push_cfg", "per_device_fsw",
+            #         "install_deselect_all"]
             # log_db_retention_hours: <integer>
             # log_disk_quota: <integer>
             # log_disk_quota_alert_thres: <integer>
@@ -312,40 +294,10 @@ Examples
             # mode: <value in [ems, gms, provider]>
             # mr: <integer>
             # os_ver: <value in [unknown, 0.0, 1.0, ...]>
-            # restricted_prds: # <list or string>
-            #   - "fos"
-            #   - "foc"
-            #   - "fml"
-            #   - "fch"
-            #   - "fwb"
-            #   - "log"
-            #   - "fct"
-            #   - "faz"
-            #   - "fsa"
-            #   - "fsw"
-            #   - "fmg"
-            #   - "fdd"
-            #   - "fac"
-            #   - "fpx"
-            #   - "fna"
-            #   - "fdc"
-            #   - "ffw"
-            #   - "fsr"
-            #   - "fad"
-            #   - "fap"
-            #   - "fxt"
-            #   - "fts"
-            #   - "fai"
-            #   - "fwc"
-            #   - "fis"
-            #   - "fed"
-            #   - "fabric"
-            #   - "fpa"
-            #   - "fca"
-            #   - "ftc"
-            #   - "fss"
-            #   - "sim"
-            #   - "fra"
+            # restricted_prds: ["fos", "foc", "fml", "fch", "fwb", "log", "fct", "faz", "fsa",
+            #                   "fsw", "fmg", "fdd", "fac", "fpx", "fna", "fdc", "ffw", "fsr",
+            #                   "fad", "fap", "fxt", "fts", "fai", "fwc", "fis", "fed", "fabric",
+            #                   "fpa", "fca", "ftc", "fss", "sim", "fra"]
             # state: <integer>
             # uuid: <string>
             # create_time: <integer>

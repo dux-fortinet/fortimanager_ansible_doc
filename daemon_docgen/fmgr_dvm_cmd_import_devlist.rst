@@ -989,45 +989,23 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Import a list of ADOMs and devices.
         fortinet.fortimanager.fmgr_dvm_cmd_import_devlist:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           dvm_cmd_import_devlist:
             # adom: <string>
-            # flags:
-            #   - "none"
-            #   - "create_task"
-            #   - "nonblocking"
-            #   - "log_dev"
+            # flags: ["none", "create_task", "nonblocking", "log_dev"]
             # import_adom_members:
             #   - adom: <string>
             #     dev: <string>
             #     vdom: <string>
             # import_adoms:
             #   - desc: <string>
-            #     flags:
-            #       - "migration"
-            #       - "db_export"
-            #       - "no_vpn_console"
-            #       - "backup"
-            #       - "other_devices"
-            #       - "central_sdwan"
-            #       - "is_autosync"
-            #       - "per_device_wtp"
-            #       - "policy_check_on_install"
-            #       - "install_on_policy_check_fail"
-            #       - "auto_push_cfg"
-            #       - "per_device_fsw"
-            #       - "install_deselect_all"
+            #     flags: ["migration", "db_export", "no_vpn_console", "backup", "other_devices",
+            #             "central_sdwan", "is_autosync", "per_device_wtp",
+            #             "policy_check_on_install", "install_on_policy_check_fail",
+            #             "auto_push_cfg", "per_device_fsw", "install_deselect_all"]
             #     log_db_retention_hours: <integer>
             #     log_disk_quota: <integer>
             #     log_disk_quota_alert_thres: <integer>
@@ -1040,40 +1018,10 @@ Examples
             #     mr: <integer>
             #     name: <string>
             #     os_ver: <value in [unknown, 0.0, 1.0, ...]>
-            #     restricted_prds: # <list or string>
-            #       - "fos"
-            #       - "foc"
-            #       - "fml"
-            #       - "fch"
-            #       - "fwb"
-            #       - "log"
-            #       - "fct"
-            #       - "faz"
-            #       - "fsa"
-            #       - "fsw"
-            #       - "fmg"
-            #       - "fdd"
-            #       - "fac"
-            #       - "fpx"
-            #       - "fna"
-            #       - "fdc"
-            #       - "ffw"
-            #       - "fsr"
-            #       - "fad"
-            #       - "fap"
-            #       - "fxt"
-            #       - "fts"
-            #       - "fai"
-            #       - "fwc"
-            #       - "fis"
-            #       - "fed"
-            #       - "fabric"
-            #       - "fpa"
-            #       - "fca"
-            #       - "ftc"
-            #       - "fss"
-            #       - "sim"
-            #       - "fra"
+            #     restricted_prds: ["fos", "foc", "fml", "fch", "fwb", "log", "fct", "faz", "fsa",
+            #                       "fsw", "fmg", "fdd", "fac", "fpx", "fna", "fdc", "ffw", "fsr",
+            #                       "fad", "fap", "fxt", "fts", "fai", "fwc", "fis", "fed",
+            #                       "fabric", "fpa", "fca", "ftc", "fss", "sim", "fra"]
             #     state: <integer>
             #     uuid: <string>
             #     create_time: <integer>
@@ -1111,41 +1059,18 @@ Examples
             #     faz_quota: <integer>
             #     faz_used: <integer>
             #     fex_cnt: <integer>
-            #     flags:
-            #       - "has_hdd"
-            #       - "vdom_enabled"
-            #       - "discover"
-            #       - "reload"
-            #       - "interim_build"
-            #       - "offline_mode"
-            #       - "is_model"
-            #       - "fips_mode"
-            #       - "linked_to_model"
-            #       - "ip-conflict"
-            #       - "faz-autosync"
-            #       - "need_reset"
-            #       - "backup_mode"
-            #       - "azure_vwan_nva"
-            #       - "fgsp_configured"
-            #       - "cnf_mode"
-            #       - "sase_managed"
-            #       - "override_management_intf"
-            #       - "sdwan_management"
-            #       - "deny_api_access"
+            #     flags: ["has_hdd", "vdom_enabled", "discover", "reload", "interim_build",
+            #             "offline_mode", "is_model", "fips_mode", "linked_to_model", "ip-conflict",
+            #             "faz-autosync", "need_reset", "backup_mode", "azure_vwan_nva",
+            #             "fgsp_configured", "cnf_mode", "sase_managed", "override_management_intf",
+            #             "sdwan_management", "deny_api_access"]
             #     foslic_cpu: <integer>
             #     foslic_dr_site: <value in [disable, enable]>
             #     foslic_inst_time: <integer>
             #     foslic_last_sync: <integer>
             #     foslic_ram: <integer>
             #     foslic_type: <value in [temporary, trial, regular, ...]>
-            #     foslic_utm:
-            #       - "fw"
-            #       - "av"
-            #       - "ips"
-            #       - "app"
-            #       - "url"
-            #       - "utm"
-            #       - "fwb"
+            #     foslic_utm: ["fw", "av", "ips", "app", "url", "utm", "fwb"]
             #     fsw_cnt: <integer>
             #     ha_group_id: <integer>
             #     ha_group_name: <string>
