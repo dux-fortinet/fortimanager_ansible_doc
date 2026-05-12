@@ -148,9 +148,6 @@ Parameters
         <li><span class="li-required">casb_profile_saasapplication_accessrule</span> - available versions:
             <span class="li-normal">v7.4.1->latest</span>
         </li>
-        <li><span class="li-required">casb_profile_saasapplication_accessrule_attributefilter</span> - available versions:
-            <span class="li-normal">v7.6.2->latest</span>
-        </li>
         <li><span class="li-required">casb_profile_saasapplication_advancedtenantcontrol</span> - available versions:
             <span class="li-normal">v7.6.2->latest</span>
         </li>
@@ -159,9 +156,6 @@ Parameters
         </li>
         <li><span class="li-required">casb_profile_saasapplication_customcontrol</span> - available versions:
             <span class="li-normal">v7.4.1->latest</span>
-        </li>
-        <li><span class="li-required">casb_profile_saasapplication_customcontrol_attributefilter</span> - available versions:
-            <span class="li-normal">v7.6.2->latest</span>
         </li>
         <li><span class="li-required">casb_profile_saasapplication_customcontrol_option</span> - available versions:
             <span class="li-normal">v7.4.1->latest</span>
@@ -459,10 +453,6 @@ Parameters
         <li><span class="li-required">extendercontroller_dataplan</span> - available versions:
             <span class="li-normal">v6.4.4->latest</span>
         </li>
-        <li><span class="li-required">extendercontroller_extender</span> - available versions:
-            <span class="li-normal">v7.2.6->v7.2.12</span>,
-            <span class="li-normal">v7.4.3->latest</span>
-        </li>
         <li><span class="li-required">extendercontroller_extenderprofile</span> - available versions:
             <span class="li-normal">v7.0.2->latest</span>
         </li>
@@ -480,10 +470,6 @@ Parameters
         </li>
         <li><span class="li-required">extensioncontroller_dataplan</span> - available versions:
             <span class="li-normal">v7.2.1->latest</span>
-        </li>
-        <li><span class="li-required">extensioncontroller_extender</span> - available versions:
-            <span class="li-normal">v7.2.6->v7.2.12</span>,
-            <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">extensioncontroller_extenderprofile</span> - available versions:
             <span class="li-normal">v7.2.1->latest</span>
@@ -740,15 +726,6 @@ Parameters
             <span class="li-normal">v7.4.7->v7.4.10</span>,
             <span class="li-normal">v7.6.4->latest</span>
         </li>
-        <li><span class="li-required">firewall_internetservicefortiguard</span> - available versions:
-            <span class="li-normal">v7.6.4->latest</span>
-        </li>
-        <li><span class="li-required">firewall_internetservicefortiguard_entry</span> - available versions:
-            <span class="li-normal">v7.6.4->latest</span>
-        </li>
-        <li><span class="li-required">firewall_internetservicefortiguard_entry_portrange</span> - available versions:
-            <span class="li-normal">v7.6.4->latest</span>
-        </li>
         <li><span class="li-required">firewall_internetservicegroup</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
         </li>
@@ -982,20 +959,11 @@ Parameters
         <li><span class="li-required">fmupdate_fdssetting_serveroverride_servlist</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
         </li>
-        <li><span class="li-required">fmupdate_fgdsetting_serveroverride_servlist</span> - available versions:
-            <span class="li-normal">v7.6.3->latest</span>
-        </li>
         <li><span class="li-required">fmupdate_serveraccesspriorities_privateserver</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">fmupdate_webspam_fgdsetting_serveroverride_servlist</span> - available versions:
             <span class="li-normal">v6.0.0->v7.6.2</span>
-        </li>
-        <li><span class="li-required">fsp_packetcapture</span> - available versions:
-            <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">fsp_vdomsettings_interfacesettings</span> - available versions:
-            <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">fsp_vlan</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
@@ -1187,10 +1155,6 @@ Parameters
         <li><span class="li-required">icap_profile_respmodforwardrules_headergroup</span> - available versions:
             <span class="li-normal">v6.4.0->latest</span>
         </li>
-        <li><span class="li-required">icap_remoteserver</span> - available versions:
-            <span class="li-normal">v7.4.8->v7.4.10</span>,
-            <span class="li-normal">v7.6.4->latest</span>
-        </li>
         <li><span class="li-required">icap_remoteservergroup</span> - available versions:
             <span class="li-normal">v7.4.8->v7.4.10</span>,
             <span class="li-normal">v7.6.4->latest</span>
@@ -1207,10 +1171,6 @@ Parameters
         </li>
         <li><span class="li-required">icap_servergroup_serverlist</span> - available versions:
             <span class="li-normal">v7.6.3->latest</span>
-        </li>
-        <li><span class="li-required">imageanalyzer_profile</span> - available versions:
-            <span class="li-normal">v7.4.8->v7.4.10</span>,
-            <span class="li-normal">v7.6.4->latest</span>
         </li>
         <li><span class="li-required">ips_baseline_sensor</span> - available versions:
             <span class="li-normal">v7.0.1->v7.0.2</span>
@@ -1238,15 +1198,6 @@ Parameters
         </li>
         <li><span class="li-required">ips_sensor_entries_exemptip</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
-        </li>
-        <li><span class="li-required">ips_sensor_filter</span> - available versions:
-            <span class="li-normal">v6.0.0->v6.2.0</span>
-        </li>
-        <li><span class="li-required">ips_sensor_override</span> - available versions:
-            <span class="li-normal">v6.0.0->v6.2.0</span>
-        </li>
-        <li><span class="li-required">ips_sensor_override_exemptip</span> - available versions:
-            <span class="li-normal">v6.0.0->v6.2.0</span>
         </li>
         <li><span class="li-required">isolator_profile</span> - available versions:
             <span class="li-normal">v7.6.4->latest</span>
@@ -1395,38 +1346,20 @@ Parameters
         <li><span class="li-required">pkg_firewall_shapingpolicy</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
         </li>
-        <li><span class="li-required">pkg_footer_consolidated_policy</span> - available versions:
-            <span class="li-normal">v6.0.0->v7.6.2</span>
-        </li>
         <li><span class="li-required">pkg_footer_policy</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">pkg_footer_policy6</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
         </li>
-        <li><span class="li-required">pkg_footer_policy6_identitybasedpolicy6</span> - available versions:
-            <span class="li-normal">v6.0.0->v6.2.0</span>
-        </li>
-        <li><span class="li-required">pkg_footer_policy_identitybasedpolicy</span> - available versions:
-            <span class="li-normal">v6.0.0->v6.2.0</span>
-        </li>
         <li><span class="li-required">pkg_footer_shapingpolicy</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
-        </li>
-        <li><span class="li-required">pkg_header_consolidated_policy</span> - available versions:
-            <span class="li-normal">v6.0.0->v7.6.2</span>
         </li>
         <li><span class="li-required">pkg_header_policy</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">pkg_header_policy6</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
-        </li>
-        <li><span class="li-required">pkg_header_policy6_identitybasedpolicy6</span> - available versions:
-            <span class="li-normal">v6.0.0->v6.2.0</span>
-        </li>
-        <li><span class="li-required">pkg_header_policy_identitybasedpolicy</span> - available versions:
-            <span class="li-normal">v6.0.0->v6.2.0</span>
         </li>
         <li><span class="li-required">pkg_header_shapingpolicy</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
@@ -1437,10 +1370,6 @@ Parameters
         <li><span class="li-required">pkg_videofilter_youtubekey</span> - available versions:
             <span class="li-normal">v7.4.4->v7.4.10</span>,
             <span class="li-normal">v7.6.2->latest</span>
-        </li>
-        <li><span class="li-required">pkg_webproxy_pacpolicy</span> - available versions:
-            <span class="li-normal">v7.4.8->v7.4.10</span>,
-            <span class="li-normal">v7.6.4->latest</span>
         </li>
         <li><span class="li-required">pm_config_pblock_firewall_consolidated_policy</span> - available versions:
             <span class="li-normal">v7.0.3->v7.6.2</span>
@@ -1676,9 +1605,6 @@ Parameters
             <span class="li-normal">v6.0.0->v6.2.1</span>
         </li>
         <li><span class="li-required">switchcontroller_securitypolicy_localaccess</span> - available versions:
-            <span class="li-normal">v7.6.4->latest</span>
-        </li>
-        <li><span class="li-required">switchcontroller_switchgroup</span> - available versions:
             <span class="li-normal">v7.6.4->latest</span>
         </li>
         <li><span class="li-required">switchcontroller_switchinterfacetag</span> - available versions:
@@ -2004,9 +1930,6 @@ Parameters
             <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">system_route6</span> - available versions:
-            <span class="li-normal">v6.0.0->latest</span>
-        </li>
-        <li><span class="li-required">system_saml_serviceproviders</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
         </li>
         <li><span class="li-required">system_sdnconnector</span> - available versions:
@@ -2595,18 +2518,6 @@ Parameters
         <li><span class="li-required">wireless_syslogprofile</span> - available versions:
             <span class="li-normal">v7.2.1->latest</span>
         </li>
-        <li><span class="li-required">wireless_wtp</span> - available versions:
-            <span class="li-normal">v7.2.6->v7.2.12</span>,
-            <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">wireless_wtp_splittunnelingacl</span> - available versions:
-            <span class="li-normal">v7.2.6->v7.2.12</span>,
-            <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">wireless_wtpgroup</span> - available versions:
-            <span class="li-normal">v7.2.6->v7.2.12</span>,
-            <span class="li-normal">v7.4.3->latest</span>
-        </li>
         <li><span class="li-required">wtpprofile</span> - available versions:
             <span class="li-normal">v6.0.0->latest</span>
         </li>
@@ -2837,14 +2748,6 @@ Parameters
             <li><span class="li-normal">saas-application</span></li>
             <li><span class="li-normal">access-rule</span></li>
         </ul>
-        <li><span class="li-normal">params for casb_profile_saasapplication_accessrule_attributefilter:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">profile</span></li>
-            <li><span class="li-normal">saas-application</span></li>
-            <li><span class="li-normal">access-rule</span></li>
-            <li><span class="li-normal">attribute-filter</span></li>
-        </ul>
         <li><span class="li-normal">params for casb_profile_saasapplication_advancedtenantcontrol:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -2866,14 +2769,6 @@ Parameters
             <li><span class="li-normal">profile</span></li>
             <li><span class="li-normal">saas-application</span></li>
             <li><span class="li-normal">custom-control</span></li>
-        </ul>
-        <li><span class="li-normal">params for casb_profile_saasapplication_customcontrol_attributefilter:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">profile</span></li>
-            <li><span class="li-normal">saas-application</span></li>
-            <li><span class="li-normal">custom-control</span></li>
-            <li><span class="li-normal">attribute-filter</span></li>
         </ul>
         <li><span class="li-normal">params for casb_profile_saasapplication_customcontrol_option:</span></li>
         <ul class="ul-self">
@@ -3392,11 +3287,6 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">dataplan</span></li>
         </ul>
-        <li><span class="li-normal">params for extendercontroller_extender:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">extender</span></li>
-        </ul>
         <li><span class="li-normal">params for extendercontroller_extenderprofile:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -3428,11 +3318,6 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">dataplan</span></li>
-        </ul>
-        <li><span class="li-normal">params for extensioncontroller_extender:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">extender</span></li>
         </ul>
         <li><span class="li-normal">params for extensioncontroller_extenderprofile:</span></li>
         <ul class="ul-self">
@@ -3913,24 +3798,6 @@ Parameters
             <li><span class="li-normal">entry</span></li>
             <li><span class="li-normal">port-range</span></li>
         </ul>
-        <li><span class="li-normal">params for firewall_internetservicefortiguard:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">internet-service-fortiguard</span></li>
-        </ul>
-        <li><span class="li-normal">params for firewall_internetservicefortiguard_entry:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">internet-service-fortiguard</span></li>
-            <li><span class="li-normal">entry</span></li>
-        </ul>
-        <li><span class="li-normal">params for firewall_internetservicefortiguard_entry_portrange:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">internet-service-fortiguard</span></li>
-            <li><span class="li-normal">entry</span></li>
-            <li><span class="li-normal">port-range</span></li>
-        </ul>
         <li><span class="li-normal">params for firewall_internetservicegroup:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -4345,10 +4212,6 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">servlist</span></li>
         </ul>
-        <li><span class="li-normal">params for fmupdate_fgdsetting_serveroverride_servlist:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">servlist</span></li>
-        </ul>
         <li><span class="li-normal">params for fmupdate_serveraccesspriorities_privateserver:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">private-server</span></li>
@@ -4356,16 +4219,6 @@ Parameters
         <li><span class="li-normal">params for fmupdate_webspam_fgdsetting_serveroverride_servlist:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">servlist</span></li>
-        </ul>
-        <li><span class="li-normal">params for fsp_packetcapture:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">packet-capture</span></li>
-        </ul>
-        <li><span class="li-normal">params for fsp_vdomsettings_interfacesettings:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">interface-settings</span></li>
         </ul>
         <li><span class="li-normal">params for fsp_vlan:</span></li>
         <ul class="ul-self">
@@ -4713,11 +4566,6 @@ Parameters
             <li><span class="li-normal">respmod-forward-rules</span></li>
             <li><span class="li-normal">header-group</span></li>
         </ul>
-        <li><span class="li-normal">params for icap_remoteserver:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">remote-server</span></li>
-        </ul>
         <li><span class="li-normal">params for icap_remoteservergroup:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -4744,11 +4592,6 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">server-group</span></li>
             <li><span class="li-normal">server-list</span></li>
-        </ul>
-        <li><span class="li-normal">params for imageanalyzer_profile:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">profile</span></li>
         </ul>
         <li><span class="li-normal">params for ips_baseline_sensor:</span></li>
         <ul class="ul-self">
@@ -4802,25 +4645,6 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">sensor</span></li>
             <li><span class="li-normal">entries</span></li>
-            <li><span class="li-normal">exempt-ip</span></li>
-        </ul>
-        <li><span class="li-normal">params for ips_sensor_filter:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">sensor</span></li>
-            <li><span class="li-normal">filter</span></li>
-        </ul>
-        <li><span class="li-normal">params for ips_sensor_override:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">sensor</span></li>
-            <li><span class="li-normal">override</span></li>
-        </ul>
-        <li><span class="li-normal">params for ips_sensor_override_exemptip:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">sensor</span></li>
-            <li><span class="li-normal">override</span></li>
             <li><span class="li-normal">exempt-ip</span></li>
         </ul>
         <li><span class="li-normal">params for isolator_profile:</span></li>
@@ -5070,11 +4894,6 @@ Parameters
             <li><span class="li-normal">pkg</span></li>
             <li><span class="li-normal">shaping-policy</span></li>
         </ul>
-        <li><span class="li-normal">params for pkg_footer_consolidated_policy:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">pkg</span></li>
-            <li><span class="li-normal">policy</span></li>
-        </ul>
         <li><span class="li-normal">params for pkg_footer_policy:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">pkg</span></li>
@@ -5085,27 +4904,10 @@ Parameters
             <li><span class="li-normal">pkg</span></li>
             <li><span class="li-normal">policy6</span></li>
         </ul>
-        <li><span class="li-normal">params for pkg_footer_policy6_identitybasedpolicy6:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">pkg</span></li>
-            <li><span class="li-normal">policy6</span></li>
-            <li><span class="li-normal">identity-based-policy6</span></li>
-        </ul>
-        <li><span class="li-normal">params for pkg_footer_policy_identitybasedpolicy:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">pkg</span></li>
-            <li><span class="li-normal">policy</span></li>
-            <li><span class="li-normal">identity-based-policy</span></li>
-        </ul>
         <li><span class="li-normal">params for pkg_footer_shapingpolicy:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">pkg</span></li>
             <li><span class="li-normal">shaping-policy</span></li>
-        </ul>
-        <li><span class="li-normal">params for pkg_header_consolidated_policy:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">pkg</span></li>
-            <li><span class="li-normal">policy</span></li>
         </ul>
         <li><span class="li-normal">params for pkg_header_policy:</span></li>
         <ul class="ul-self">
@@ -5116,18 +4918,6 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">pkg</span></li>
             <li><span class="li-normal">policy6</span></li>
-        </ul>
-        <li><span class="li-normal">params for pkg_header_policy6_identitybasedpolicy6:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">pkg</span></li>
-            <li><span class="li-normal">policy6</span></li>
-            <li><span class="li-normal">identity-based-policy6</span></li>
-        </ul>
-        <li><span class="li-normal">params for pkg_header_policy_identitybasedpolicy:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">pkg</span></li>
-            <li><span class="li-normal">policy</span></li>
-            <li><span class="li-normal">identity-based-policy</span></li>
         </ul>
         <li><span class="li-normal">params for pkg_header_shapingpolicy:</span></li>
         <ul class="ul-self">
@@ -5145,12 +4935,6 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">pkg</span></li>
             <li><span class="li-normal">youtube-key</span></li>
-        </ul>
-        <li><span class="li-normal">params for pkg_webproxy_pacpolicy:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">pkg</span></li>
-            <li><span class="li-normal">pac-policy</span></li>
         </ul>
         <li><span class="li-normal">params for pm_config_pblock_firewall_consolidated_policy:</span></li>
         <ul class="ul-self">
@@ -5561,11 +5345,6 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">local-access</span></li>
-        </ul>
-        <li><span class="li-normal">params for switchcontroller_switchgroup:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">switch-group</span></li>
         </ul>
         <li><span class="li-normal">params for switchcontroller_switchinterfacetag:</span></li>
         <ul class="ul-self">
@@ -6086,10 +5865,6 @@ Parameters
         <li><span class="li-normal">params for system_route6:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">route6</span></li>
-        </ul>
-        <li><span class="li-normal">params for system_saml_serviceproviders:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">service-providers</span></li>
         </ul>
         <li><span class="li-normal">params for system_sdnconnector:</span></li>
         <ul class="ul-self">
@@ -7130,22 +6905,6 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">syslog-profile</span></li>
         </ul>
-        <li><span class="li-normal">params for wireless_wtp:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">wtp</span></li>
-        </ul>
-        <li><span class="li-normal">params for wireless_wtp_splittunnelingacl:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">wtp</span></li>
-            <li><span class="li-normal">split-tunneling-acl</span></li>
-        </ul>
-        <li><span class="li-normal">params for wireless_wtpgroup:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">wtp-group</span></li>
-        </ul>
         <li><span class="li-normal">params for wtpprofile:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -7393,11 +7152,6 @@ Parameters
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_casb_profile_saasapplication_accessrule.html#parameters">fmgr_casb_profile_saasapplication_accessrule</a> </span></li>
         </ul>
-        <li><span class="li-normal">params for casb_profile_saasapplication_accessrule_attributefilter:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_casb_profile_saasapplication_accessrule_attributefilter.html#parameters">fmgr_casb_profile_saasapplication_accessrule_attributefilter</a> </span></li>
-        </ul>
         <li><span class="li-normal">params for casb_profile_saasapplication_advancedtenantcontrol:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
@@ -7412,11 +7166,6 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_casb_profile_saasapplication_customcontrol.html#parameters">fmgr_casb_profile_saasapplication_customcontrol</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for casb_profile_saasapplication_customcontrol_attributefilter:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_casb_profile_saasapplication_customcontrol_attributefilter.html#parameters">fmgr_casb_profile_saasapplication_customcontrol_attributefilter</a> </span></li>
         </ul>
         <li><span class="li-normal">params for casb_profile_saasapplication_customcontrol_option:</span></li>
         <ul class="ul-self">
@@ -7883,11 +7632,6 @@ Parameters
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_extendercontroller_dataplan.html#parameters">fmgr_extendercontroller_dataplan</a> </span></li>
         </ul>
-        <li><span class="li-normal">params for extendercontroller_extender:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_extendercontroller_extender.html#parameters">fmgr_extendercontroller_extender</a> </span></li>
-        </ul>
         <li><span class="li-normal">params for extendercontroller_extenderprofile:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
@@ -7917,11 +7661,6 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_extensioncontroller_dataplan.html#parameters">fmgr_extensioncontroller_dataplan</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for extensioncontroller_extender:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_extensioncontroller_extender.html#parameters">fmgr_extensioncontroller_extender</a> </span></li>
         </ul>
         <li><span class="li-normal">params for extensioncontroller_extenderprofile:</span></li>
         <ul class="ul-self">
@@ -8328,21 +8067,6 @@ Parameters
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_firewall_internetserviceextension_entry_portrange.html#parameters">fmgr_firewall_internetserviceextension_entry_portrange</a> </span></li>
         </ul>
-        <li><span class="li-normal">params for firewall_internetservicefortiguard:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_firewall_internetservicefortiguard.html#parameters">fmgr_firewall_internetservicefortiguard</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for firewall_internetservicefortiguard_entry:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_firewall_internetservicefortiguard_entry.html#parameters">fmgr_firewall_internetservicefortiguard_entry</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for firewall_internetservicefortiguard_entry_portrange:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_firewall_internetservicefortiguard_entry_portrange.html#parameters">fmgr_firewall_internetservicefortiguard_entry_portrange</a> </span></li>
-        </ul>
         <li><span class="li-normal">params for firewall_internetservicegroup:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
@@ -8723,11 +8447,6 @@ Parameters
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_fmupdate_fdssetting_serveroverride_servlist.html#parameters">fmgr_fmupdate_fdssetting_serveroverride_servlist</a> </span></li>
         </ul>
-        <li><span class="li-normal">params for fmupdate_fgdsetting_serveroverride_servlist:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_fmupdate_fgdsetting_serveroverride_servlist.html#parameters">fmgr_fmupdate_fgdsetting_serveroverride_servlist</a> </span></li>
-        </ul>
         <li><span class="li-normal">params for fmupdate_serveraccesspriorities_privateserver:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
@@ -8737,16 +8456,6 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_fmupdate_webspam_fgdsetting_serveroverride_servlist.html#parameters">fmgr_fmupdate_webspam_fgdsetting_serveroverride_servlist</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for fsp_packetcapture:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_fsp_packetcapture.html#parameters">fmgr_fsp_packetcapture</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for fsp_vdomsettings_interfacesettings:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_fsp_vdomsettings_interfacesettings.html#parameters">fmgr_fsp_vdomsettings_interfacesettings</a> </span></li>
         </ul>
         <li><span class="li-normal">params for fsp_vlan:</span></li>
         <ul class="ul-self">
@@ -9048,11 +8757,6 @@ Parameters
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_icap_profile_respmodforwardrules_headergroup.html#parameters">fmgr_icap_profile_respmodforwardrules_headergroup</a> </span></li>
         </ul>
-        <li><span class="li-normal">params for icap_remoteserver:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_icap_remoteserver.html#parameters">fmgr_icap_remoteserver</a> </span></li>
-        </ul>
         <li><span class="li-normal">params for icap_remoteservergroup:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
@@ -9077,11 +8781,6 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_icap_servergroup_serverlist.html#parameters">fmgr_icap_servergroup_serverlist</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for imageanalyzer_profile:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_imageanalyzer_profile.html#parameters">fmgr_imageanalyzer_profile</a> </span></li>
         </ul>
         <li><span class="li-normal">params for ips_baseline_sensor:</span></li>
         <ul class="ul-self">
@@ -9127,21 +8826,6 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_ips_sensor_entries_exemptip.html#parameters">fmgr_ips_sensor_entries_exemptip</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for ips_sensor_filter:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_ips_sensor_filter.html#parameters">fmgr_ips_sensor_filter</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for ips_sensor_override:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>rule-id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_ips_sensor_override.html#parameters">fmgr_ips_sensor_override</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for ips_sensor_override_exemptip:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_ips_sensor_override_exemptip.html#parameters">fmgr_ips_sensor_override_exemptip</a> </span></li>
         </ul>
         <li><span class="li-normal">params for isolator_profile:</span></li>
         <ul class="ul-self">
@@ -9348,11 +9032,6 @@ Parameters
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_pkg_firewall_shapingpolicy.html#parameters">fmgr_pkg_firewall_shapingpolicy</a> </span></li>
         </ul>
-        <li><span class="li-normal">params for pkg_footer_consolidated_policy:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>policyid</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_pkg_footer_consolidated_policy.html#parameters">fmgr_pkg_footer_consolidated_policy</a> </span></li>
-        </ul>
         <li><span class="li-normal">params for pkg_footer_policy:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">required primary key: <b>policyid</b> </span></li>
@@ -9363,25 +9042,10 @@ Parameters
             <li><span class="li-normal">required primary key: <b>policyid</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_pkg_footer_policy6.html#parameters">fmgr_pkg_footer_policy6</a> </span></li>
         </ul>
-        <li><span class="li-normal">params for pkg_footer_policy6_identitybasedpolicy6:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_pkg_footer_policy6_identitybasedpolicy6.html#parameters">fmgr_pkg_footer_policy6_identitybasedpolicy6</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for pkg_footer_policy_identitybasedpolicy:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_pkg_footer_policy_identitybasedpolicy.html#parameters">fmgr_pkg_footer_policy_identitybasedpolicy</a> </span></li>
-        </ul>
         <li><span class="li-normal">params for pkg_footer_shapingpolicy:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_pkg_footer_shapingpolicy.html#parameters">fmgr_pkg_footer_shapingpolicy</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for pkg_header_consolidated_policy:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>policyid</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_pkg_header_consolidated_policy.html#parameters">fmgr_pkg_header_consolidated_policy</a> </span></li>
         </ul>
         <li><span class="li-normal">params for pkg_header_policy:</span></li>
         <ul class="ul-self">
@@ -9392,16 +9056,6 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">required primary key: <b>policyid</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_pkg_header_policy6.html#parameters">fmgr_pkg_header_policy6</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for pkg_header_policy6_identitybasedpolicy6:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_pkg_header_policy6_identitybasedpolicy6.html#parameters">fmgr_pkg_header_policy6_identitybasedpolicy6</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for pkg_header_policy_identitybasedpolicy:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_pkg_header_policy_identitybasedpolicy.html#parameters">fmgr_pkg_header_policy_identitybasedpolicy</a> </span></li>
         </ul>
         <li><span class="li-normal">params for pkg_header_shapingpolicy:</span></li>
         <ul class="ul-self">
@@ -9417,11 +9071,6 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_pkg_videofilter_youtubekey.html#parameters">fmgr_pkg_videofilter_youtubekey</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for pkg_webproxy_pacpolicy:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>policyid</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_pkg_webproxy_pacpolicy.html#parameters">fmgr_pkg_webproxy_pacpolicy</a> </span></li>
         </ul>
         <li><span class="li-normal">params for pm_config_pblock_firewall_consolidated_policy:</span></li>
         <ul class="ul-self">
@@ -9792,11 +9441,6 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_switchcontroller_securitypolicy_localaccess.html#parameters">fmgr_switchcontroller_securitypolicy_localaccess</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for switchcontroller_switchgroup:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_switchcontroller_switchgroup.html#parameters">fmgr_switchcontroller_switchgroup</a> </span></li>
         </ul>
         <li><span class="li-normal">params for switchcontroller_switchinterfacetag:</span></li>
         <ul class="ul-self">
@@ -10317,11 +9961,6 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">required primary key: <b>prio</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_route6.html#parameters">fmgr_system_route6</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for system_saml_serviceproviders:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_system_saml_serviceproviders.html#parameters">fmgr_system_saml_serviceproviders</a> </span></li>
         </ul>
         <li><span class="li-normal">params for system_sdnconnector:</span></li>
         <ul class="ul-self">
@@ -11272,21 +10911,6 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_wireless_syslogprofile.html#parameters">fmgr_wireless_syslogprofile</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for wireless_wtp:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_wireless_wtp.html#parameters">fmgr_wireless_wtp</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for wireless_wtp_splittunnelingacl:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_wireless_wtp_splittunnelingacl.html#parameters">fmgr_wireless_wtp_splittunnelingacl</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for wireless_wtpgroup:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_wireless_wtpgroup.html#parameters">fmgr_wireless_wtpgroup</a> </span></li>
         </ul>
         <li><span class="li-normal">params for wtpprofile:</span></li>
         <ul class="ul-self">

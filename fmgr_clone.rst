@@ -482,10 +482,6 @@ Parameters
         <li><span class="li-required">extendercontroller_dataplan</span> - available versions:
         <span class="li-normal">v6.4.4->latest</span>
         </li>
-        <li><span class="li-required">extendercontroller_extender</span> - available versions:
-        <span class="li-normal">v7.2.6->v7.2.12</span>,
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
         <li><span class="li-required">extendercontroller_extenderprofile</span> - available versions:
         <span class="li-normal">v7.0.2->latest</span>
         </li>
@@ -503,10 +499,6 @@ Parameters
         </li>
         <li><span class="li-required">extensioncontroller_dataplan</span> - available versions:
         <span class="li-normal">v7.2.1->latest</span>
-        </li>
-        <li><span class="li-required">extensioncontroller_extender</span> - available versions:
-        <span class="li-normal">v7.2.6->v7.2.12</span>,
-        <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">extensioncontroller_extenderprofile</span> - available versions:
         <span class="li-normal">v7.2.1->latest</span>
@@ -1052,24 +1044,6 @@ Parameters
         <li><span class="li-required">fmg_variable_dynamicmapping</span> - available versions:
         <span class="li-normal">v7.2.0->v7.2.5</span>,
         <span class="li-normal">v7.4.0->v7.4.0</span>
-        </li>
-        <li><span class="li-required">fsp_managedswitch</span> - available versions:
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">fsp_packetcapture</span> - available versions:
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">fsp_packetcapture_targetip</span> - available versions:
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">fsp_packetcapture_targetmac</span> - available versions:
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">fsp_packetcapture_targetport</span> - available versions:
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">fsp_vdomsettings_interfacesettings</span> - available versions:
-        <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">fsp_vlan</span> - available versions:
         <span class="li-normal">v6.0.0->latest</span>
@@ -1809,9 +1783,6 @@ Parameters
         <span class="li-normal">v6.0.0->v6.2.1</span>
         </li>
         <li><span class="li-required">switchcontroller_securitypolicy_localaccess</span> - available versions:
-        <span class="li-normal">v7.6.4->latest</span>
-        </li>
-        <li><span class="li-required">switchcontroller_switchgroup</span> - available versions:
         <span class="li-normal">v7.6.4->latest</span>
         </li>
         <li><span class="li-required">switchcontroller_switchinterfacetag</span> - available versions:
@@ -2627,18 +2598,6 @@ Parameters
         <span class="li-normal">v7.2.10->v7.2.12</span>,
         <span class="li-normal">v7.4.7->v7.4.10</span>,
         <span class="li-normal">v7.6.3->latest</span>
-        </li>
-        <li><span class="li-required">wireless_wtp</span> - available versions:
-        <span class="li-normal">v7.2.6->v7.2.12</span>,
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">wireless_wtp_splittunnelingacl</span> - available versions:
-        <span class="li-normal">v7.2.6->v7.2.12</span>,
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">wireless_wtpgroup</span> - available versions:
-        <span class="li-normal">v7.2.6->v7.2.12</span>,
-        <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">wtpprofile</span> - available versions:
         <span class="li-normal">v6.0.0->latest</span>
@@ -3476,11 +3435,6 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">dataplan</span></li>
         </ul>
-        <li><span class="li-normal">params for extendercontroller_extender:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">extender</span></li>
-        </ul>
         <li><span class="li-normal">params for extendercontroller_extenderprofile:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -3512,11 +3466,6 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">dataplan</span></li>
-        </ul>
-        <li><span class="li-normal">params for extensioncontroller_extender:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">extender</span></li>
         </ul>
         <li><span class="li-normal">params for extensioncontroller_extenderprofile:</span></li>
         <ul class="ul-self">
@@ -4508,39 +4457,6 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">dynamic_mapping</span></li>
             <li><span class="li-normal">variable</span></li>
-        </ul>
-        <li><span class="li-normal">params for fsp_managedswitch:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">managed-switch</span></li>
-        </ul>
-        <li><span class="li-normal">params for fsp_packetcapture:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">packet-capture</span></li>
-        </ul>
-        <li><span class="li-normal">params for fsp_packetcapture_targetip:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">packet-capture</span></li>
-            <li><span class="li-normal">target-ip</span></li>
-        </ul>
-        <li><span class="li-normal">params for fsp_packetcapture_targetmac:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">packet-capture</span></li>
-            <li><span class="li-normal">target-mac</span></li>
-        </ul>
-        <li><span class="li-normal">params for fsp_packetcapture_targetport:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">packet-capture</span></li>
-            <li><span class="li-normal">target-port</span></li>
-        </ul>
-        <li><span class="li-normal">params for fsp_vdomsettings_interfacesettings:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">interface-settings</span></li>
         </ul>
         <li><span class="li-normal">params for fsp_vlan:</span></li>
         <ul class="ul-self">
@@ -5847,11 +5763,6 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">local-access</span></li>
-        </ul>
-        <li><span class="li-normal">params for switchcontroller_switchgroup:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">switch-group</span></li>
         </ul>
         <li><span class="li-normal">params for switchcontroller_switchinterfacetag:</span></li>
         <ul class="ul-self">
@@ -7289,22 +7200,6 @@ Parameters
             <li><span class="li-normal">ip6-prefix-list</span></li>
             <li><span class="li-normal">vap</span></li>
         </ul>
-        <li><span class="li-normal">params for wireless_wtp:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">wtp</span></li>
-        </ul>
-        <li><span class="li-normal">params for wireless_wtp_splittunnelingacl:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">split-tunneling-acl</span></li>
-            <li><span class="li-normal">wtp</span></li>
-        </ul>
-        <li><span class="li-normal">params for wireless_wtpgroup:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">wtp-group</span></li>
-        </ul>
         <li><span class="li-normal">params for wtpprofile:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -8086,11 +7981,6 @@ Parameters
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_extendercontroller_dataplan.html#parameters">fmgr_extendercontroller_dataplan</a> </span></li>
         </ul>
-        <li><span class="li-normal">params for extendercontroller_extender:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_extendercontroller_extender.html#parameters">fmgr_extendercontroller_extender</a> </span></li>
-        </ul>
         <li><span class="li-normal">params for extendercontroller_extenderprofile:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">required primary key: <b>id</b> </span></li>
@@ -8120,11 +8010,6 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_extensioncontroller_dataplan.html#parameters">fmgr_extensioncontroller_dataplan</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for extensioncontroller_extender:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_extensioncontroller_extender.html#parameters">fmgr_extensioncontroller_extender</a> </span></li>
         </ul>
         <li><span class="li-normal">params for extensioncontroller_extenderprofile:</span></li>
         <ul class="ul-self">
@@ -8971,32 +8856,6 @@ Parameters
         <li><span class="li-normal">params for fmg_variable_dynamicmapping:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_fmg_variable_dynamicmapping.html#parameters">fmgr_fmg_variable_dynamicmapping</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for fsp_managedswitch:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_fsp_managedswitch.html#parameters">fmgr_fsp_managedswitch</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for fsp_packetcapture:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_fsp_packetcapture.html#parameters">fmgr_fsp_packetcapture</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for fsp_packetcapture_targetip:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_fsp_packetcapture_targetip.html#parameters">fmgr_fsp_packetcapture_targetip</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for fsp_packetcapture_targetmac:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_fsp_packetcapture_targetmac.html#parameters">fmgr_fsp_packetcapture_targetmac</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for fsp_packetcapture_targetport:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_fsp_packetcapture_targetport.html#parameters">fmgr_fsp_packetcapture_targetport</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for fsp_vdomsettings_interfacesettings:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_fsp_vdomsettings_interfacesettings.html#parameters">fmgr_fsp_vdomsettings_interfacesettings</a> </span></li>
         </ul>
         <li><span class="li-normal">params for fsp_vlan:</span></li>
         <ul class="ul-self">
@@ -10106,11 +9965,6 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_switchcontroller_securitypolicy_localaccess.html#parameters">fmgr_switchcontroller_securitypolicy_localaccess</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for switchcontroller_switchgroup:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_switchcontroller_switchgroup.html#parameters">fmgr_switchcontroller_switchgroup</a> </span></li>
         </ul>
         <li><span class="li-normal">params for switchcontroller_switchinterfacetag:</span></li>
         <ul class="ul-self">
@@ -11377,21 +11231,6 @@ Parameters
         <li><span class="li-normal">params for wireless_vap_ip6prefixlist:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_wireless_vap_ip6prefixlist.html#parameters">fmgr_wireless_vap_ip6prefixlist</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for wireless_wtp:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_wireless_wtp.html#parameters">fmgr_wireless_wtp</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for wireless_wtp_splittunnelingacl:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_wireless_wtp_splittunnelingacl.html#parameters">fmgr_wireless_wtp_splittunnelingacl</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for wireless_wtpgroup:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_wireless_wtpgroup.html#parameters">fmgr_wireless_wtpgroup</a> </span></li>
         </ul>
         <li><span class="li-normal">params for wtpprofile:</span></li>
         <ul class="ul-self">

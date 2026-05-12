@@ -795,34 +795,6 @@ Parameters
         <li><span class="li-required">extendercontroller_dataplan</span> - available versions:
         <span class="li-normal">v6.4.4->latest</span>
         </li>
-        <li><span class="li-required">extendercontroller_extender</span> - available versions:
-        <span class="li-normal">v7.2.6->v7.2.12</span>,
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">extendercontroller_extender_controllerreport</span> - available versions:
-        <span class="li-normal">v7.2.6->v7.2.12</span>,
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">extendercontroller_extender_modem1</span> - available versions:
-        <span class="li-normal">v7.2.6->v7.2.12</span>,
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">extendercontroller_extender_modem1_autoswitch</span> - available versions:
-        <span class="li-normal">v7.2.6->v7.2.12</span>,
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">extendercontroller_extender_modem2</span> - available versions:
-        <span class="li-normal">v7.2.6->v7.2.12</span>,
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">extendercontroller_extender_modem2_autoswitch</span> - available versions:
-        <span class="li-normal">v7.2.6->v7.2.12</span>,
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">extendercontroller_extender_wanextension</span> - available versions:
-        <span class="li-normal">v7.2.6->v7.2.12</span>,
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
         <li><span class="li-required">extendercontroller_extenderprofile</span> - available versions:
         <span class="li-normal">v7.0.2->latest</span>
         </li>
@@ -870,14 +842,6 @@ Parameters
         </li>
         <li><span class="li-required">extensioncontroller_dataplan</span> - available versions:
         <span class="li-normal">v7.2.1->latest</span>
-        </li>
-        <li><span class="li-required">extensioncontroller_extender</span> - available versions:
-        <span class="li-normal">v7.2.6->v7.2.12</span>,
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">extensioncontroller_extender_wanextension</span> - available versions:
-        <span class="li-normal">v7.2.6->v7.2.12</span>,
-        <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">extensioncontroller_extenderprofile</span> - available versions:
         <span class="li-normal">v7.2.1->latest</span>
@@ -1689,30 +1653,6 @@ Parameters
         <li><span class="li-required">footer_shapingpolicy</span> - available versions:
         <span class="li-normal">v6.0.0->v7.0.4</span>,
         <span class="li-normal">v7.2.0->v7.2.1</span>
-        </li>
-        <li><span class="li-required">fsp_managedswitch</span> - available versions:
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">fsp_packetcapture</span> - available versions:
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">fsp_packetcapture_firewallsniffer</span> - available versions:
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">fsp_packetcapture_targetip</span> - available versions:
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">fsp_packetcapture_targetmac</span> - available versions:
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">fsp_packetcapture_targetport</span> - available versions:
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">fsp_vdomsettings</span> - available versions:
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">fsp_vdomsettings_interfacesettings</span> - available versions:
-        <span class="li-normal">v7.4.3->latest</span>
         </li>
         <li><span class="li-required">fsp_vlan</span> - available versions:
         <span class="li-normal">v6.0.0->latest</span>
@@ -2661,9 +2601,6 @@ Parameters
         <span class="li-normal">v6.0.0->v6.2.1</span>
         </li>
         <li><span class="li-required">switchcontroller_securitypolicy_localaccess</span> - available versions:
-        <span class="li-normal">v7.6.4->latest</span>
-        </li>
-        <li><span class="li-required">switchcontroller_switchgroup</span> - available versions:
         <span class="li-normal">v7.6.4->latest</span>
         </li>
         <li><span class="li-required">switchcontroller_switchinterfacetag</span> - available versions:
@@ -4152,38 +4089,6 @@ Parameters
         <span class="li-normal">v7.4.7->v7.4.10</span>,
         <span class="li-normal">v7.6.3->latest</span>
         </li>
-        <li><span class="li-required">wireless_wtp</span> - available versions:
-        <span class="li-normal">v7.2.6->v7.2.12</span>,
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">wireless_wtp_lan</span> - available versions:
-        <span class="li-normal">v7.2.6->v7.2.12</span>,
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">wireless_wtp_radio1</span> - available versions:
-        <span class="li-normal">v7.2.6->v7.2.12</span>,
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">wireless_wtp_radio2</span> - available versions:
-        <span class="li-normal">v7.2.6->v7.2.12</span>,
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">wireless_wtp_radio3</span> - available versions:
-        <span class="li-normal">v7.2.6->v7.2.12</span>,
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">wireless_wtp_radio4</span> - available versions:
-        <span class="li-normal">v7.2.6->v7.2.12</span>,
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">wireless_wtp_splittunnelingacl</span> - available versions:
-        <span class="li-normal">v7.2.6->v7.2.12</span>,
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
-        <li><span class="li-required">wireless_wtpgroup</span> - available versions:
-        <span class="li-normal">v7.2.6->v7.2.12</span>,
-        <span class="li-normal">v7.4.3->latest</span>
-        </li>
         <li><span class="li-required">wtpprofile</span> - available versions:
         <span class="li-normal">v6.0.0->latest</span>
         </li>
@@ -4243,9 +4148,6 @@ Parameters
         </li>
         <li><span class="li-required">ztna_webportalbookmark_bookmarks</span> - available versions:
         <span class="li-normal">v7.6.4->latest</span>
-        </li>
-        <li><span class="li-required">ztna_webportalbookmark_llmsecureproxy</span> - available versions:
-        <span class="li-normal">v7.6.5->latest</span>
         </li>
         <li><span class="li-required">ztna_webproxy</span> - available versions:
         <span class="li-normal">v7.6.4->latest</span>
@@ -6013,55 +5915,6 @@ Parameters
             <li><span class="li-normal">dataplan</span>
             </li>
         </ul>
-        <li><span class="li-normal">params for extendercontroller_extender:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span>
-            </li>
-            <li><span class="li-normal">extender</span>
-            </li>
-        </ul>
-        <li><span class="li-normal">params for extendercontroller_extender_controllerreport:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span>
-            </li>
-            <li><span class="li-normal">extender</span>
-            </li>
-        </ul>
-        <li><span class="li-normal">params for extendercontroller_extender_modem1:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span>
-            </li>
-            <li><span class="li-normal">extender</span>
-            </li>
-        </ul>
-        <li><span class="li-normal">params for extendercontroller_extender_modem1_autoswitch:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span>
-            </li>
-            <li><span class="li-normal">extender</span>
-            </li>
-        </ul>
-        <li><span class="li-normal">params for extendercontroller_extender_modem2:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span>
-            </li>
-            <li><span class="li-normal">extender</span>
-            </li>
-        </ul>
-        <li><span class="li-normal">params for extendercontroller_extender_modem2_autoswitch:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span>
-            </li>
-            <li><span class="li-normal">extender</span>
-            </li>
-        </ul>
-        <li><span class="li-normal">params for extendercontroller_extender_wanextension:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span>
-            </li>
-            <li><span class="li-normal">extender</span>
-            </li>
-        </ul>
         <li><span class="li-normal">params for extendercontroller_extenderprofile:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span>
@@ -6176,20 +6029,6 @@ Parameters
             <li><span class="li-normal">adom</span>
             </li>
             <li><span class="li-normal">dataplan</span>
-            </li>
-        </ul>
-        <li><span class="li-normal">params for extensioncontroller_extender:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span>
-            </li>
-            <li><span class="li-normal">extender</span>
-            </li>
-        </ul>
-        <li><span class="li-normal">params for extensioncontroller_extender_wanextension:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span>
-            </li>
-            <li><span class="li-normal">extender</span>
             </li>
         </ul>
         <li><span class="li-normal">params for extensioncontroller_extenderprofile:</span></li>
@@ -8188,66 +8027,6 @@ Parameters
             <li><span class="li-normal">adom</span>
             </li>
             <li><span class="li-normal">shaping-policy</span>
-            </li>
-        </ul>
-        <li><span class="li-normal">params for fsp_managedswitch:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span>
-            </li>
-            <li><span class="li-normal">managed-switch</span>
-            </li>
-        </ul>
-        <li><span class="li-normal">params for fsp_packetcapture:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span>
-            </li>
-            <li><span class="li-normal">packet-capture</span>
-            </li>
-        </ul>
-        <li><span class="li-normal">params for fsp_packetcapture_firewallsniffer:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span>
-            </li>
-            <li><span class="li-normal">packet-capture</span>
-            </li>
-        </ul>
-        <li><span class="li-normal">params for fsp_packetcapture_targetip:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span>
-            </li>
-            <li><span class="li-normal">packet-capture</span>
-            </li>
-            <li><span class="li-normal">target-ip</span>
-            </li>
-        </ul>
-        <li><span class="li-normal">params for fsp_packetcapture_targetmac:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span>
-            </li>
-            <li><span class="li-normal">packet-capture</span>
-            </li>
-            <li><span class="li-normal">target-mac</span>
-            </li>
-        </ul>
-        <li><span class="li-normal">params for fsp_packetcapture_targetport:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span>
-            </li>
-            <li><span class="li-normal">packet-capture</span>
-            </li>
-            <li><span class="li-normal">target-port</span>
-            </li>
-        </ul>
-        <li><span class="li-normal">params for fsp_vdomsettings:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span>
-            </li>
-        </ul>
-        <li><span class="li-normal">params for fsp_vdomsettings_interfacesettings:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span>
-            </li>
-            <li><span class="li-normal">interface-settings</span>
             </li>
         </ul>
         <li><span class="li-normal">params for fsp_vlan:</span></li>
@@ -10548,13 +10327,6 @@ Parameters
             <li><span class="li-normal">adom</span>
             </li>
             <li><span class="li-normal">local-access</span>
-            </li>
-        </ul>
-        <li><span class="li-normal">params for switchcontroller_switchgroup:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span>
-            </li>
-            <li><span class="li-normal">switch-group</span>
             </li>
         </ul>
         <li><span class="li-normal">params for switchcontroller_switchinterfacetag:</span></li>
@@ -13779,64 +13551,6 @@ Parameters
             <li><span class="li-normal">vap</span>
             </li>
         </ul>
-        <li><span class="li-normal">params for wireless_wtp:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span>
-            </li>
-            <li><span class="li-normal">wtp</span>
-            </li>
-        </ul>
-        <li><span class="li-normal">params for wireless_wtp_lan:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span>
-            </li>
-            <li><span class="li-normal">wtp</span>
-            </li>
-        </ul>
-        <li><span class="li-normal">params for wireless_wtp_radio1:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span>
-            </li>
-            <li><span class="li-normal">wtp</span>
-            </li>
-        </ul>
-        <li><span class="li-normal">params for wireless_wtp_radio2:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span>
-            </li>
-            <li><span class="li-normal">wtp</span>
-            </li>
-        </ul>
-        <li><span class="li-normal">params for wireless_wtp_radio3:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span>
-            </li>
-            <li><span class="li-normal">wtp</span>
-            </li>
-        </ul>
-        <li><span class="li-normal">params for wireless_wtp_radio4:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span>
-            </li>
-            <li><span class="li-normal">wtp</span>
-            </li>
-        </ul>
-        <li><span class="li-normal">params for wireless_wtp_splittunnelingacl:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span>
-            </li>
-            <li><span class="li-normal">split-tunneling-acl</span>
-            </li>
-            <li><span class="li-normal">wtp</span>
-            </li>
-        </ul>
-        <li><span class="li-normal">params for wireless_wtpgroup:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span>
-            </li>
-            <li><span class="li-normal">wtp-group</span>
-            </li>
-        </ul>
         <li><span class="li-normal">params for wtpprofile:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span>
@@ -13985,13 +13699,6 @@ Parameters
             <li><span class="li-normal">adom</span>
             </li>
             <li><span class="li-normal">bookmarks</span>
-            </li>
-            <li><span class="li-normal">web-portal-bookmark</span>
-            </li>
-        </ul>
-        <li><span class="li-normal">params for ztna_webportalbookmark_llmsecureproxy:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span>
             </li>
             <li><span class="li-normal">web-portal-bookmark</span>
             </li>

@@ -186,9 +186,6 @@ Parameters
         <li><span class="li-required">firewall_vip6</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
         </li>
-        <li><span class="li-required">fsp_managedswitch</span> - available versions:
-          <span class="li-normal">v7.4.3->latest</span>
-        </li>
         <li><span class="li-required">ips_sensor_entries</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
         </li>
@@ -460,10 +457,6 @@ Parameters
         <li><span class="li-required">wireless_accesscontrollist_layer3ipv6rules</span> - available versions:
           <span class="li-normal">v7.2.1->latest</span>
         </li>
-        <li><span class="li-required">wireless_wtp</span> - available versions:
-          <span class="li-normal">v7.2.6->v7.2.12</span>,
-          <span class="li-normal">v7.4.3->latest</span>
-        </li>
         <li><span class="li-required">ztna_webportalbookmark_bookmarks</span> - available versions:
           <span class="li-normal">v7.6.4->latest</span>
         </li>
@@ -723,11 +716,6 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">vip6</span></li>
-        </ul>
-        <li><span class="li-normal">params for fsp_managedswitch:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">managed-switch</span></li>
         </ul>
         <li><span class="li-normal">params for ips_sensor_entries:</span></li>
         <ul class="ul-self">
@@ -1225,11 +1213,6 @@ Parameters
             <li><span class="li-normal">access-control-list</span></li>
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">layer3-ipv6-rules</span></li>
-        </ul>
-        <li><span class="li-normal">params for wireless_wtp:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">wtp</span></li>
         </ul>
         <li><span class="li-normal">params for ztna_webportalbookmark_bookmarks:</span></li>
         <ul class="ul-self">

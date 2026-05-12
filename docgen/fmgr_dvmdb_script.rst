@@ -204,7 +204,7 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - name: Apply a script to device
+  - name: Apply a script to device (For FMG <= 7.6.4)
     hosts: fortimanagers
     gather_facts: false
     connection: httpapi
@@ -217,6 +217,8 @@ Examples
       device_name: "CustomHostName"
       device_vdom: "root"
     tasks:
+      # For FMG 7.6.4 and earlier, use fmgr_dvmdb_script.
+      # For FMG 7.6.5 and later, use fmgr_fmg_script.
       - name: Create a Script to later execute
         fortinet.fortimanager.fmgr_dvmdb_script:
           adom: "{{ device_adom }}"
