@@ -224,10 +224,10 @@ Examples
     tasks:
       # For FMG 7.6.4 and earlier, use fmgr_dvmdb_script.
       # For FMG 7.6.5 and later, use fmgr_fmg_script.
-      - name: create a script (For FMG 7.6.5+)
+      - name: Create a script (For FMG 7.6.5+)
         fortinet.fortimanager.fmgr_fmg_script:
-          state: "{{state}}"
-          adom: "{{fmg_adom}}"
+          state: "{{ state }}"
+          adom: "{{ fmg_adom }}"
           fmg_script:
             name: "{{ script_name }}"
             content: |
