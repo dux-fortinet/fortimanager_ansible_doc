@@ -137,26 +137,18 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - name: Example playbook (generated based on argument schema)
+  - name: Test LoRaWAN profiles
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: Configure LoRaWAN profile.
+      - name: Create a LoRaWAN profile
         fortinet.fortimanager.fmgr_wireless_lwprofile:
-          # workspace_locking_adom: <global or your adom name>
-          adom: <your own value>
-          state: present # <value in [present, absent]>
+          enable_log: true
+          adom: root
+          state: present
           wireless_lwprofile:
-            name: "your value" # Required variable, string
-            # comment: <string>
-            # cups_api_key: <list or string>
-            # cups_server: <string>
-            # cups_server_port: <integer>
-            # lw_protocol: <value in [basics-station, packet-forwarder]>
-            # tc_api_key: <list or string>
-            # tc_server: <string>
-            # tc_server_port: <integer>
+            name: test_lw_profile
 
 
 Return Values

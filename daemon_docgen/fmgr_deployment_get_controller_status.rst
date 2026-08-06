@@ -97,18 +97,23 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - name: Example playbook (generated based on argument schema)
+  - name: Test deployment controller status retrieval
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: Refresh status of AP/Switch/Extender controller.
+      - name: Get controller status
         fortinet.fortimanager.fmgr_deployment_get_controller_status:
-          # workspace_locking_adom: <global or your adom name>
+          enable_log: true
           deployment_get_controller_status:
-            # adom: <list or string>
-            # ctype: ["wtp", "fext", "fsw"]
-            # device: <list or string>
+            adom:
+              - root
+            ctype:
+              - wtp
+              - fext
+              - fsw
+            device:
+              - test_device
 
 
 Return Values

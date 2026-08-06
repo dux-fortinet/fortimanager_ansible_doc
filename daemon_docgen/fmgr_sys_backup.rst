@@ -121,22 +121,20 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - name: Example playbook (generated based on argument schema)
+  - name: Test FortiManager configuration backup
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: Backup FortiManager configuration.
+      - name: Back up the FortiManager configuration
         fortinet.fortimanager.fmgr_sys_backup:
-          # workspace_locking_adom: <global or your adom name>
+          enable_log: true
+          bypass_validation: true
           sys_backup:
-            # filename: <string>
-            # passwd: <list or string>
-            # port: <integer>
-            # server: <string>
-            # service: <value in [ftp, scp, sftp, ...]>
-            # username: <string>
-            # userpasswd: <list or string>
+            filename: test_backup.dat
+            passwd: test_backup_password
+            server: 192.0.2.1
+            service: tftp
 
 
 Return Values

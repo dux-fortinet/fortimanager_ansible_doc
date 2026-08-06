@@ -131,25 +131,18 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - name: Example playbook (generated based on argument schema)
+  - name: Test firewall custom tags
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: Define custom tag table.
+      - name: Create a firewall custom tag
         fortinet.fortimanager.fmgr_firewall_customtag:
-          # workspace_locking_adom: <global or your adom name>
-          adom: <your own value>
-          state: present # <value in [present, absent]>
+          enable_log: true
+          adom: root
+          state: present
           firewall_customtag:
-            name: "your value" # Required variable, string
-            # abbreviation: <string>
-            # color: <integer>
-            # comment: <string>
-            # fabric_force_sync: <value in [disable, enable]>
-            # fabric_object: <value in [disable, enable]>
-            # fabric_object_source: <value in [member, local, root]>
-            # uuid: <string>
+            name: test_custom_tag
 
 
 Return Values

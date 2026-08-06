@@ -421,73 +421,29 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - name: Example playbook (generated based on argument schema)
+  - name: Test local user dynamic mappings
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: Configure local users.
+      - name: Create the parent local user
+        fortinet.fortimanager.fmgr_user_local:
+          enable_log: true
+          adom: root
+          state: present
+          user_local:
+            name: test_local_user
+            status: disable
+
+      - name: Configure a local user dynamic mapping
         fortinet.fortimanager.fmgr_user_local_dynamicmapping:
-          # workspace_locking_adom: <global or your adom name>
-          adom: <your own value>
-          local: <your own value>
+          enable_log: true
+          adom: root
+          local: test_local_user
           user_local_dynamicmapping:
-            # _scope:
-            #   - name: <string>
-            #     vdom: <string>
-            # auth_concurrent_override: <value in [disable, enable]>
-            # auth_concurrent_value: <integer>
-            # authtimeout: <integer>
-            # email_to: <string>
-            # fabric_force_sync: <value in [disable, enable]>
-            # fabric_object: <value in [disable, enable]>
-            # fabric_object_source: <value in [member, local, root]>
-            # fortitoken: <list or string>
-            # history0: <list or string>
-            # history1: <list or string>
-            # history10: <list or string>
-            # history11: <list or string>
-            # history12: <list or string>
-            # history13: <list or string>
-            # history14: <list or string>
-            # history15: <list or string>
-            # history16: <list or string>
-            # history17: <list or string>
-            # history18: <list or string>
-            # history19: <list or string>
-            # history2: <list or string>
-            # history3: <list or string>
-            # history4: <list or string>
-            # history5: <list or string>
-            # history6: <list or string>
-            # history7: <list or string>
-            # history8: <list or string>
-            # history9: <list or string>
-            # id: <integer>
-            # ldap_server: <list or string>
-            # passwd: <list or string>
-            # passwd_policy: <list or string>
-            # passwd_time: <string>
-            # ppk_identity: <string>
-            # ppk_secret: <list or string>
-            # qkd_profile: <list or string>
-            # radius_server: <list or string>
-            # saml_server: <list or string>
-            # sms_custom_server: <list or string>
-            # sms_phone: <string>
-            # sms_provider: <list or string>
-            # sms_server: <value in [fortiguard, custom]>
-            # status: <value in [disable, enable]>
-            # tacacs__server: <list or string>
-            # two_factor: <value in [disable, fortitoken, email, ...]>
-            # two_factor_authentication: <value in [fortitoken, email, sms]>
-            # two_factor_notification: <value in [email, sms]>
-            # type: <value in [password, radius, tacacs+, ...]>
-            # username_case_insensitivity: <value in [disable, enable]>
-            # username_case_sensitivity: <value in [disable, enable]>
-            # username_sensitivity: <value in [disable, enable]>
-            # uuid: <string>
-            # workstation: <string>
+            _scope:
+              - name: test_device
+                vdom: root
 
 
 Return Values

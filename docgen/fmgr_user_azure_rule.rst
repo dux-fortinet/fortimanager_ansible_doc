@@ -96,20 +96,27 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - name: Example playbook (generated based on argument schema)
+  - name: Test Azure user rules
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: User azure rule
+      - name: Create the parent Azure user connector
+        fortinet.fortimanager.fmgr_user_azure:
+          enable_log: true
+          adom: root
+          state: present
+          user_azure:
+            name: test_azure
+
+      - name: Create an Azure user rule
         fortinet.fortimanager.fmgr_user_azure_rule:
-          # workspace_locking_adom: <global or your adom name>
-          adom: <your own value>
-          azure: <your own value>
-          state: present # <value in [present, absent]>
+          enable_log: true
+          adom: root
+          azure: test_azure
+          state: present
           user_azure_rule:
-            name: "your value" # Required variable, string
-            # rule: <string>
+            name: test_rule
 
 
 Return Values

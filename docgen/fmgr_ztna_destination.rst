@@ -167,31 +167,18 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - name: Example playbook (generated based on argument schema)
+  - name: Test ZTNA destinations
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: Configure ZTNA destination.
+      - name: Create a ZTNA destination
         fortinet.fortimanager.fmgr_ztna_destination:
-          # workspace_locking_adom: <global or your adom name>
-          adom: <your own value>
-          state: present # <value in [present, absent]>
+          enable_log: true
+          adom: root
+          state: present
           ztna_destination:
-            name: "your value" # Required variable, string
-            # address: <list or string>
-            # conn_type: <value in [traffic-forwarding, ssh]>
-            # domain: <string>
-            # external_auth: <value in [disable, enable]>
-            # mappedport: <string>
-            # protocol: <value in [TCP, UDP, ALL]>
-            # saas_application: <list or string>
-            # ssh_client_cert: <list or string>
-            # ssh_host_key: <list or string>
-            # ssh_host_key_validation: <value in [disable, enable]>
-            # tunnel_encryption: <value in [disable, enable]>
-            # type: <value in [on-premise, saas]>
-            # uuid: <string>
+            name: test_destination
 
 
 Return Values

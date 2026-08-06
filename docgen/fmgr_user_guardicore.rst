@@ -143,27 +143,18 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - name: Example playbook (generated based on argument schema)
+  - name: Test Guardicore users
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: User guardicore
+      - name: Create a Guardicore user connector
         fortinet.fortimanager.fmgr_user_guardicore:
-          # workspace_locking_adom: <global or your adom name>
-          adom: <your own value>
-          state: present # <value in [present, absent]>
+          enable_log: true
+          adom: root
+          state: present
           user_guardicore:
-            name: "your value" # Required variable, string
-            # alias: <string>
-            # filters: <list or string>
-            # page_size: <integer>
-            # password: <list or string>
-            # scheme: <string>
-            # server: <string>
-            # status: <value in [disable, enable]>
-            # upd_interval: <integer>
-            # user: <string>
+            name: test_guardicore
 
 
 Return Values

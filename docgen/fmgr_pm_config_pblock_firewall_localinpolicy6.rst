@@ -227,42 +227,39 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - name: Example playbook (generated based on argument schema)
+  - name: Test policy block IPv6 local-in policies
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: Configure user defined IPv6 local-in policies.
+      - name: Create the parent policy block
+        fortinet.fortimanager.fmgr_pm_pblock_adom:
+          enable_log: true
+          adom: root
+          pm_pblock_adom:
+            name: test_policy_block
+            type: pblock
+
+      - name: Create a policy block IPv6 local-in policy
         fortinet.fortimanager.fmgr_pm_config_pblock_firewall_localinpolicy6:
-          # workspace_locking_adom: <global or your adom name>
-          adom: <your own value>
-          pblock: <your own value>
-          state: present # <value in [present, absent]>
+          enable_log: true
+          adom: root
+          pblock: test_policy_block
+          state: present
           pm_config_pblock_firewall_localinpolicy6:
-            policyid: 0 # Required variable, integer
-            # _policy_block: <integer>
-            # action: <value in [deny, accept]>
-            # comments: <string>
-            # custom_tags: <list or string>
-            # dstaddr: <list or string>
-            # dstaddr_negate: <value in [disable, enable]>
-            # internet_service6_src: <value in [disable, enable]>
-            # internet_service6_src_custom: <list or string>
-            # internet_service6_src_custom_group: <list or string>
-            # internet_service6_src_fortiguard: <list or string>
-            # internet_service6_src_group: <list or string>
-            # internet_service6_src_name: <list or string>
-            # internet_service6_src_negate: <value in [disable, enable]>
-            # intf: <list or string>
-            # logtraffic: <value in [disable, enable]>
-            # schedule: <list or string>
-            # service: <list or string>
-            # service_negate: <value in [disable, enable]>
-            # srcaddr: <list or string>
-            # srcaddr_negate: <value in [disable, enable]>
-            # status: <value in [disable, enable]>
-            # uuid: <string>
-            # virtual_patch: <value in [disable, enable]>
+            action: accept
+            dstaddr:
+              - all
+            intf:
+              - any
+            policyid: 0
+            schedule:
+              - always
+            service:
+              - ALL
+            srcaddr:
+              - all
+            status: disable
 
 
 Return Values

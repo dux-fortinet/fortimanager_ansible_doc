@@ -152,29 +152,77 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - name: Example playbook (generated based on argument schema)
+  - name: Test CASB tenant session extraction
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: CASB user activity tenant session extraction.
+      - name: Create the parent CASB user activity
+        fortinet.fortimanager.fmgr_casb_useractivity:
+          enable_log: true
+          adom: root
+          state: present
+          casb_useractivity:
+            name: test_user_activity
+
+      - name: Create the parent CASB user activity match
+        fortinet.fortimanager.fmgr_casb_useractivity_match:
+          enable_log: true
+          adom: root
+          user_activity: test_user_activity
+          state: present
+          casb_useractivity_match:
+            id: 1
+
+      - name: Configure CASB tenant session extraction
         fortinet.fortimanager.fmgr_casb_useractivity_match_tenantsessionextraction:
-          # workspace_locking_adom: <global or your adom name>
-          adom: <your own value>
-          user_activity: <your own value>
-          match: <your own value>
+          enable_log: true
+          adom: root
+          user_activity: test_user_activity
+          match: "1"
           casb_useractivity_match_tenantsessionextraction:
-            # filters:
-            #   - body_type: <value in [json, form]>
-            #     cookie_name: <string>
-            #     direction: <value in [request, response]>
-            #     header_name: <string>
-            #     id: <integer>
-            #     place: <value in [header, path, body, ...]>
-            # jq: <string>
-            # session_match: <string>
-            # session_source: <value in [disable, enable]>
-            # status: <value in [disable, enable]>
+            status: disable
+
+  - name: Test CASB tenant session extraction filters
+    hosts: fortimanagers
+    connection: httpapi
+    gather_facts: false
+    tasks:
+      - name: Create the parent CASB user activity
+        fortinet.fortimanager.fmgr_casb_useractivity:
+          enable_log: true
+          adom: root
+          state: present
+          casb_useractivity:
+            name: test_user_activity
+
+      - name: Create the parent CASB user activity match
+        fortinet.fortimanager.fmgr_casb_useractivity_match:
+          enable_log: true
+          adom: root
+          user_activity: test_user_activity
+          state: present
+          casb_useractivity_match:
+            id: 1
+
+      - name: Configure the parent CASB tenant session extraction
+        fortinet.fortimanager.fmgr_casb_useractivity_match_tenantsessionextraction:
+          enable_log: true
+          adom: root
+          user_activity: test_user_activity
+          match: "1"
+          casb_useractivity_match_tenantsessionextraction:
+            status: enable
+
+      - name: Configure a CASB tenant session extraction filter
+        fortinet.fortimanager.fmgr_casb_useractivity_match_tenantsessionextraction_filters:
+          enable_log: true
+          adom: root
+          user_activity: test_user_activity
+          match: "1"
+          state: present
+          casb_useractivity_match_tenantsessionextraction_filters:
+            id: 1
 
 
 Return Values

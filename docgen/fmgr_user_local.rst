@@ -741,6 +741,30 @@ Examples
 
 .. code-block:: yaml+jinja
 
+  - name: Test local user dynamic mappings
+    hosts: fortimanagers
+    connection: httpapi
+    gather_facts: false
+    tasks:
+      - name: Create the parent local user
+        fortinet.fortimanager.fmgr_user_local:
+          enable_log: true
+          adom: root
+          state: present
+          user_local:
+            name: test_local_user
+            status: disable
+
+      - name: Configure a local user dynamic mapping
+        fortinet.fortimanager.fmgr_user_local_dynamicmapping:
+          enable_log: true
+          adom: root
+          local: test_local_user
+          user_local_dynamicmapping:
+            _scope:
+              - name: test_device
+                vdom: root
+
   - name: Example playbook
     hosts: fortimanagers
     gather_facts: false

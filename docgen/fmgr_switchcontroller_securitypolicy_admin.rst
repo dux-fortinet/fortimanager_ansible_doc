@@ -215,39 +215,18 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - name: Example playbook (generated based on argument schema)
+  - name: Test FortiSwitch admin security policies
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: Configure fortiswitchs admin security-policy.
+      - name: Create a FortiSwitch admin security policy
         fortinet.fortimanager.fmgr_switchcontroller_securitypolicy_admin:
-          # workspace_locking_adom: <global or your adom name>
-          adom: <your own value>
-          state: present # <value in [present, absent]>
+          enable_log: true
+          adom: root
+          state: present
           switchcontroller_securitypolicy_admin:
-            name: "your value" # Required variable, string
-            # auto: <value in [disable, enable]>
-            # ip6_trusthost1: <string>
-            # ip6_trusthost10: <string>
-            # ip6_trusthost2: <string>
-            # ip6_trusthost3: <string>
-            # ip6_trusthost4: <string>
-            # ip6_trusthost5: <string>
-            # ip6_trusthost6: <string>
-            # ip6_trusthost7: <string>
-            # ip6_trusthost8: <string>
-            # ip6_trusthost9: <string>
-            # trusthost1: <list or string>
-            # trusthost10: <list or string>
-            # trusthost2: <list or string>
-            # trusthost3: <list or string>
-            # trusthost4: <list or string>
-            # trusthost5: <list or string>
-            # trusthost6: <list or string>
-            # trusthost7: <list or string>
-            # trusthost8: <list or string>
-            # trusthost9: <list or string>
+            name: test_admin_policy
 
 
 Return Values

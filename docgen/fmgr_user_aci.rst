@@ -149,28 +149,18 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - name: Example playbook (generated based on argument schema)
+  - name: Test ACI users
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: User aci
+      - name: Create an ACI user connector
         fortinet.fortimanager.fmgr_user_aci:
-          # workspace_locking_adom: <global or your adom name>
-          adom: <your own value>
-          state: present # <value in [present, absent]>
+          enable_log: true
+          adom: root
+          state: present
           user_aci:
-            name: "your value" # Required variable, string
-            # alias: <string>
-            # filters: <list or string>
-            # password: <list or string>
-            # port: <integer>
-            # scheme: <string>
-            # server: <string>
-            # status: <value in [disable, enable]>
-            # upd_interval: <integer>
-            # user: <string>
-            # verifycert: <value in [disable, enable]>
+            name: test_aci
 
 
 Return Values

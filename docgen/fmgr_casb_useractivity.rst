@@ -465,78 +465,77 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - name: Example playbook (generated based on argument schema)
+  - name: Test CASB tenant session extraction
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: Configure CASB user activity.
+      - name: Create the parent CASB user activity
         fortinet.fortimanager.fmgr_casb_useractivity:
-          # workspace_locking_adom: <global or your adom name>
-          adom: <your own value>
-          state: present # <value in [present, absent]>
+          enable_log: true
+          adom: root
+          state: present
           casb_useractivity:
-            name: "your value" # Required variable, string
-            # application: <string>
-            # casb_name: <string>
-            # category: <value in [activity-control, tenant-control, domain-control, ...]>
-            # control_options:
-            #   - name: <string>
-            #     operations:
-            #       - action: <value in [append, prepend, replace, ...]>
-            #         case_sensitive: <value in [disable, enable]>
-            #         direction: <value in [request, response]>
-            #         header_name: <string>
-            #         name: <string>
-            #         search_key: <string>
-            #         search_pattern: <value in [simple, substr, regexp]>
-            #         target: <value in [header, path, body]>
-            #         value_from_input: <value in [disable, enable]>
-            #         values: <list or string>
-            #         value_name_from_input: <string>
-            #     status: <value in [disable, enable]>
-            # description: <string>
-            # match:
-            #   - id: <integer>
-            #     rules:
-            #       - case_sensitive: <value in [disable, enable]>
-            #         domains: <list or string>
-            #         header_name: <string>
-            #         id: <integer>
-            #         match_pattern: <value in [simple, substr, regexp]>
-            #         match_value: <string>
-            #         methods: <list or string>
-            #         negate: <value in [disable, enable]>
-            #         type: <value in [domains, host, path, ...]>
-            #         body_type: <value in [json, form]>
-            #         jq: <string>
-            #     strategy: <value in [or, and]>
-            #     tenant_extraction:
-            #       filters:
-            #         - body_type: <value in [json, form]>
-            #           direction: <value in [request, response]>
-            #           header_name: <string>
-            #           id: <integer>
-            #           place: <value in [path, header, body]>
-            #       jq: <string>
-            #       status: <value in [disable, enable]>
-            #       type: <value in [json-query]>
-            #     tenant_session_extraction:
-            #       filters:
-            #         - body_type: <value in [json, form]>
-            #           cookie_name: <string>
-            #           direction: <value in [request, response]>
-            #           header_name: <string>
-            #           id: <integer>
-            #           place: <value in [header, path, body, ...]>
-            #       jq: <string>
-            #       session_match: <string>
-            #       session_source: <value in [disable, enable]>
-            #       status: <value in [disable, enable]>
-            # match_strategy: <value in [or, and]>
-            # type: <value in [built-in, customized]>
-            # uuid: <string>
-            # status: <value in [disable, enable]>
+            name: test_user_activity
+
+      - name: Create the parent CASB user activity match
+        fortinet.fortimanager.fmgr_casb_useractivity_match:
+          enable_log: true
+          adom: root
+          user_activity: test_user_activity
+          state: present
+          casb_useractivity_match:
+            id: 1
+
+      - name: Configure CASB tenant session extraction
+        fortinet.fortimanager.fmgr_casb_useractivity_match_tenantsessionextraction:
+          enable_log: true
+          adom: root
+          user_activity: test_user_activity
+          match: "1"
+          casb_useractivity_match_tenantsessionextraction:
+            status: disable
+
+  - name: Test CASB tenant session extraction filters
+    hosts: fortimanagers
+    connection: httpapi
+    gather_facts: false
+    tasks:
+      - name: Create the parent CASB user activity
+        fortinet.fortimanager.fmgr_casb_useractivity:
+          enable_log: true
+          adom: root
+          state: present
+          casb_useractivity:
+            name: test_user_activity
+
+      - name: Create the parent CASB user activity match
+        fortinet.fortimanager.fmgr_casb_useractivity_match:
+          enable_log: true
+          adom: root
+          user_activity: test_user_activity
+          state: present
+          casb_useractivity_match:
+            id: 1
+
+      - name: Configure the parent CASB tenant session extraction
+        fortinet.fortimanager.fmgr_casb_useractivity_match_tenantsessionextraction:
+          enable_log: true
+          adom: root
+          user_activity: test_user_activity
+          match: "1"
+          casb_useractivity_match_tenantsessionextraction:
+            status: enable
+
+      - name: Configure a CASB tenant session extraction filter
+        fortinet.fortimanager.fmgr_casb_useractivity_match_tenantsessionextraction_filters:
+          enable_log: true
+          adom: root
+          user_activity: test_user_activity
+          match: "1"
+          state: present
+          casb_useractivity_match_tenantsessionextraction_filters:
+            id: 1
 
 
 Return Values

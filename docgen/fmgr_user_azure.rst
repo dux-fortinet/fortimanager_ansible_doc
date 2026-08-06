@@ -217,39 +217,40 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - name: Example playbook (generated based on argument schema)
+  - name: Test Azure users
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: User azure
+      - name: Create an Azure user connector
         fortinet.fortimanager.fmgr_user_azure:
-          # workspace_locking_adom: <global or your adom name>
-          adom: <your own value>
-          state: present # <value in [present, absent]>
+          enable_log: true
+          adom: root
+          state: present
           user_azure:
-            name: "your value" # Required variable, string
-            # SPN: <string>
-            # alias: <string>
-            # kbconfig: <string>
-            # page_size: <integer>
-            # password: <list or string>
-            # proxy_enable: <value in [disable, enable]>
-            # proxy_host: <string>
-            # proxy_passwd: <list or string>
-            # proxy_scheme: <value in [http, https]>
-            # proxy_user: <string>
-            # realm: <string>
-            # region: <value in [global, china, germany, ...]>
-            # rule:
-            #   - name: <string>
-            #     rule: <string>
-            # select_proxy: <value in [basic, kerberos]>
-            # status: <value in [disable, enable]>
-            # tenantid: <string>
-            # upd_interval: <integer>
-            # user: <string>
-            # verifycert: <value in [disable, enable]>
+            name: test_azure
+
+  - name: Test Azure user rules
+    hosts: fortimanagers
+    connection: httpapi
+    gather_facts: false
+    tasks:
+      - name: Create the parent Azure user connector
+        fortinet.fortimanager.fmgr_user_azure:
+          enable_log: true
+          adom: root
+          state: present
+          user_azure:
+            name: test_azure
+
+      - name: Create an Azure user rule
+        fortinet.fortimanager.fmgr_user_azure_rule:
+          enable_log: true
+          adom: root
+          azure: test_azure
+          state: present
+          user_azure_rule:
+            name: test_rule
 
 
 Return Values

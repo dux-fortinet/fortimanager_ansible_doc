@@ -1671,12 +1671,6 @@ Parameters
           <span class="li-normal">v6.0.0->v7.0.4</span>,
           <span class="li-normal">v7.2.0->v7.2.1</span>
       </li>
-      <li><span class="li-required">fsp_override</span> - available versions:
-          <span class="li-normal">v8.0.0->latest</span>
-      </li>
-      <li><span class="li-required">fsp_override_attrs</span> - available versions:
-          <span class="li-normal">v8.0.0->latest</span>
-      </li>
       <li><span class="li-required">fsp_vlan</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
       </li>
@@ -2053,9 +2047,6 @@ Parameters
       <li><span class="li-required">nacprofile</span> - available versions:
           <span class="li-normal">v7.0.3->latest</span>
       </li>
-      <li><span class="li-required">pfcp_messagefilter</span> - available versions:
-          <span class="li-normal">v8.0.0->latest</span>
-      </li>
       <li><span class="li-required">pkg_authentication_rule</span> - available versions:
           <span class="li-normal">v6.2.1->latest</span>
       </li>
@@ -2160,9 +2151,6 @@ Parameters
       <li><span class="li-required">pkg_firewall_policy64</span> - available versions:
           <span class="li-normal">v6.0.0->latest</span>
       </li>
-      <li><span class="li-required">pkg_firewall_policy_fabricpolicy</span> - available versions:
-          <span class="li-normal">v8.0.0->latest</span>
-      </li>
       <li><span class="li-required">pkg_firewall_policy_vpndstnode</span> - available versions:
           <span class="li-normal">v6.0.0->v7.0.2</span>
       </li>
@@ -2186,12 +2174,6 @@ Parameters
           <span class="li-normal">v7.0.5->v7.0.16</span>,
           <span class="li-normal">v7.2.2->v7.6.2</span>
       </li>
-      <li><span class="li-required">pkg_footer_localinpolicy</span> - available versions:
-          <span class="li-normal">v8.0.0->latest</span>
-      </li>
-      <li><span class="li-required">pkg_footer_localinpolicy6</span> - available versions:
-          <span class="li-normal">v8.0.0->latest</span>
-      </li>
       <li><span class="li-required">pkg_footer_policy</span> - available versions:
           <span class="li-normal">v7.0.5->v7.0.16</span>,
           <span class="li-normal">v7.2.2->latest</span>
@@ -2213,12 +2195,6 @@ Parameters
       <li><span class="li-required">pkg_header_consolidated_policy</span> - available versions:
           <span class="li-normal">v7.0.5->v7.0.16</span>,
           <span class="li-normal">v7.2.2->v7.6.2</span>
-      </li>
-      <li><span class="li-required">pkg_header_localinpolicy</span> - available versions:
-          <span class="li-normal">v8.0.0->latest</span>
-      </li>
-      <li><span class="li-required">pkg_header_localinpolicy6</span> - available versions:
-          <span class="li-normal">v8.0.0->latest</span>
       </li>
       <li><span class="li-required">pkg_header_policy</span> - available versions:
           <span class="li-normal">v7.0.5->v7.0.16</span>,
@@ -6970,17 +6946,6 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">shaping-policy</span></li>
         </ul>
-        <li><span class="li-normal">params for fsp_override:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">override</span></li>
-        </ul>
-        <li><span class="li-normal">params for fsp_override_attrs:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">attrs</span></li>
-            <li><span class="li-normal">override</span></li>
-        </ul>
         <li><span class="li-normal">params for fsp_vlan:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -7635,11 +7600,6 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">nac-profile</span></li>
         </ul>
-        <li><span class="li-normal">params for pfcp_messagefilter:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">message-filter</span></li>
-        </ul>
         <li><span class="li-normal">params for pkg_authentication_rule:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -7810,12 +7770,6 @@ Parameters
             <li><span class="li-normal">pkg</span></li>
             <li><span class="li-normal">policy64</span></li>
         </ul>
-        <li><span class="li-normal">params for pkg_firewall_policy_fabricpolicy:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">pkg</span></li>
-            <li><span class="li-normal">policy</span></li>
-        </ul>
         <li><span class="li-normal">params for pkg_firewall_policy_vpndstnode:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -7860,18 +7814,6 @@ Parameters
             <li><span class="li-normal">pkg</span></li>
             <li><span class="li-normal">policy</span></li>
         </ul>
-        <li><span class="li-normal">params for pkg_footer_localinpolicy:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">local-in-policy</span></li>
-            <li><span class="li-normal">pkg</span></li>
-        </ul>
-        <li><span class="li-normal">params for pkg_footer_localinpolicy6:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">local-in-policy6</span></li>
-            <li><span class="li-normal">pkg</span></li>
-        </ul>
         <li><span class="li-normal">params for pkg_footer_policy:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -7907,18 +7849,6 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">pkg</span></li>
             <li><span class="li-normal">policy</span></li>
-        </ul>
-        <li><span class="li-normal">params for pkg_header_localinpolicy:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">local-in-policy</span></li>
-            <li><span class="li-normal">pkg</span></li>
-        </ul>
-        <li><span class="li-normal">params for pkg_header_localinpolicy6:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">local-in-policy6</span></li>
-            <li><span class="li-normal">pkg</span></li>
         </ul>
         <li><span class="li-normal">params for pkg_header_policy:</span></li>
         <ul class="ul-self">

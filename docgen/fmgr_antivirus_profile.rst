@@ -1377,6 +1377,27 @@ Examples
 
 .. code-block:: yaml+jinja
 
+  - name: Test antivirus profile WebSocket settings
+    hosts: fortimanagers
+    connection: httpapi
+    gather_facts: false
+    tasks:
+      - name: Create the parent antivirus profile
+        fortinet.fortimanager.fmgr_antivirus_profile:
+          enable_log: true
+          adom: root
+          state: present
+          antivirus_profile:
+            name: test_profile
+
+      - name: Configure antivirus profile WebSocket settings
+        fortinet.fortimanager.fmgr_antivirus_profile_websocket:
+          enable_log: true
+          adom: root
+          profile: test_profile
+          antivirus_profile_websocket:
+            av_scan: disable
+
   - name: Example playbook
     hosts: fortimanagers
     gather_facts: false

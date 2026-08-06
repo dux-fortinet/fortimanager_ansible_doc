@@ -1281,6 +1281,27 @@ Examples
 
 .. code-block:: yaml+jinja
 
+  - name: Test firewall WebSocket protocol options
+    hosts: fortimanagers
+    connection: httpapi
+    gather_facts: false
+    tasks:
+      - name: Create the parent protocol options profile
+        fortinet.fortimanager.fmgr_firewall_profileprotocoloptions:
+          enable_log: true
+          adom: root
+          state: present
+          firewall_profileprotocoloptions:
+            name: test_profile
+
+      - name: Configure firewall WebSocket protocol options
+        fortinet.fortimanager.fmgr_firewall_profileprotocoloptions_websocket:
+          enable_log: true
+          adom: root
+          profile_protocol_options: test_profile
+          firewall_profileprotocoloptions_websocket:
+            status: disable
+
   - name: Example playbook
     hosts: fortimanagers
     gather_facts: false

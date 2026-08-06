@@ -115,24 +115,43 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - name: Example playbook (generated based on argument schema)
+  - name: Test IPsec FEC type-of-service mappings
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: FEC redundancy mapping table for specific type of service
+      - name: Create the parent IPsec FEC profile
+        fortinet.fortimanager.fmgr_vpn_ipsec_fec:
+          enable_log: true
+          adom: root
+          state: present
+          vpn_ipsec_fec:
+            name: test_fec
+
+      - name: Create the parent IPsec FEC mapping
+        fortinet.fortimanager.fmgr_vpn_ipsec_fec_mappings:
+          enable_log: true
+          adom: root
+          fec: test_fec
+          state: present
+          vpn_ipsec_fec_mappings:
+            base: 10
+            redundant: 2
+            seqno: 1
+
+      - name: Configure an IPsec FEC type-of-service mapping
         fortinet.fortimanager.fmgr_vpn_ipsec_fec_mappings_tos:
-          # workspace_locking_adom: <global or your adom name>
-          adom: <your own value>
-          fec: <your own value>
-          mappings: <your own value>
-          state: present # <value in [present, absent]>
+          enable_log: true
+          adom: root
+          fec: test_fec
+          mappings: "1"
+          state: present
           vpn_ipsec_fec_mappings_tos:
-            # base: <integer>
-            # redundant: <integer>
-            # seqno: <integer>
-            # tos: <string>
-            # tos_mask: <string>
+            base: 10
+            redundant: 2
+            seqno: 1
+            tos: "0x00"
+            tos_mask: "0xff"
 
 
 Return Values

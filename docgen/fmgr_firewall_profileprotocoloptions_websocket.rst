@@ -167,31 +167,26 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - name: Example playbook (generated based on argument schema)
+  - name: Test firewall WebSocket protocol options
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: Configure WebSocket protocol options.
+      - name: Create the parent protocol options profile
+        fortinet.fortimanager.fmgr_firewall_profileprotocoloptions:
+          enable_log: true
+          adom: root
+          state: present
+          firewall_profileprotocoloptions:
+            name: test_profile
+
+      - name: Configure firewall WebSocket protocol options
         fortinet.fortimanager.fmgr_firewall_profileprotocoloptions_websocket:
-          # workspace_locking_adom: <global or your adom name>
-          adom: <your own value>
-          profile_protocol_options: <your own value>
+          enable_log: true
+          adom: root
+          profile_protocol_options: test_profile
           firewall_profileprotocoloptions_websocket:
-            # comfort_amount: <integer>
-            # comfort_interval: <integer>
-            # options: ["oversize", "clientcomfort", "servercomfort"]
-            # oversize_limit: <integer>
-            # scan_bzip2: <value in [disable, enable]>
-            # status: <value in [disable, enable]>
-            # stream_based_uncompressed_limit: <integer>
-            # tcp_window_maximum: <integer>
-            # tcp_window_minimum: <integer>
-            # tcp_window_size: <integer>
-            # tcp_window_type: <value in [system, static, dynamic, ...]>
-            # tunnel_non_websocket: <value in [disable, enable]>
-            # uncompressed_nest_limit: <integer>
-            # uncompressed_oversize_limit: <integer>
+            status: disable
 
 
 Return Values

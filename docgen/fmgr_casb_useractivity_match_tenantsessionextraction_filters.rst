@@ -121,25 +121,46 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - name: Example playbook (generated based on argument schema)
+  - name: Test CASB tenant session extraction filters
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: CASB user activity session extraction filters.
+      - name: Create the parent CASB user activity
+        fortinet.fortimanager.fmgr_casb_useractivity:
+          enable_log: true
+          adom: root
+          state: present
+          casb_useractivity:
+            name: test_user_activity
+
+      - name: Create the parent CASB user activity match
+        fortinet.fortimanager.fmgr_casb_useractivity_match:
+          enable_log: true
+          adom: root
+          user_activity: test_user_activity
+          state: present
+          casb_useractivity_match:
+            id: 1
+
+      - name: Configure the parent CASB tenant session extraction
+        fortinet.fortimanager.fmgr_casb_useractivity_match_tenantsessionextraction:
+          enable_log: true
+          adom: root
+          user_activity: test_user_activity
+          match: "1"
+          casb_useractivity_match_tenantsessionextraction:
+            status: enable
+
+      - name: Configure a CASB tenant session extraction filter
         fortinet.fortimanager.fmgr_casb_useractivity_match_tenantsessionextraction_filters:
-          # workspace_locking_adom: <global or your adom name>
-          adom: <your own value>
-          user_activity: <your own value>
-          match: <your own value>
-          state: present # <value in [present, absent]>
+          enable_log: true
+          adom: root
+          user_activity: test_user_activity
+          match: "1"
+          state: present
           casb_useractivity_match_tenantsessionextraction_filters:
-            id: 0 # Required variable, integer
-            # body_type: <value in [json, form]>
-            # cookie_name: <string>
-            # direction: <value in [request, response]>
-            # header_name: <string>
-            # place: <value in [header, path, body, ...]>
+            id: 1
 
 
 Return Values

@@ -1051,12 +1051,6 @@ Parameters
         <span class="li-normal">v7.2.0->v7.2.5</span>,
         <span class="li-normal">v7.4.0->v7.4.0</span>
         </li>
-        <li><span class="li-required">fsp_override</span> - available versions:
-        <span class="li-normal">v8.0.0->latest</span>
-        </li>
-        <li><span class="li-required">fsp_override_attrs</span> - available versions:
-        <span class="li-normal">v8.0.0->latest</span>
-        </li>
         <li><span class="li-required">fsp_vlan</span> - available versions:
         <span class="li-normal">v6.0.0->latest</span>
         </li>
@@ -1382,9 +1376,6 @@ Parameters
         <li><span class="li-required">nacprofile</span> - available versions:
         <span class="li-normal">v7.0.3->latest</span>
         </li>
-        <li><span class="li-required">pfcp_messagefilter</span> - available versions:
-        <span class="li-normal">v8.0.0->latest</span>
-        </li>
         <li><span class="li-required">pkg_authentication_rule</span> - available versions:
         <span class="li-normal">v6.2.1->latest</span>
         </li>
@@ -1508,12 +1499,6 @@ Parameters
         <li><span class="li-required">pkg_footer_consolidated_policy</span> - available versions:
         <span class="li-normal">v6.0.0->v7.6.2</span>
         </li>
-        <li><span class="li-required">pkg_footer_localinpolicy</span> - available versions:
-        <span class="li-normal">v8.0.0->latest</span>
-        </li>
-        <li><span class="li-required">pkg_footer_localinpolicy6</span> - available versions:
-        <span class="li-normal">v8.0.0->latest</span>
-        </li>
         <li><span class="li-required">pkg_footer_policy</span> - available versions:
         <span class="li-normal">v6.0.0->latest</span>
         </li>
@@ -1531,12 +1516,6 @@ Parameters
         </li>
         <li><span class="li-required">pkg_header_consolidated_policy</span> - available versions:
         <span class="li-normal">v6.0.0->v7.6.2</span>
-        </li>
-        <li><span class="li-required">pkg_header_localinpolicy</span> - available versions:
-        <span class="li-normal">v8.0.0->latest</span>
-        </li>
-        <li><span class="li-required">pkg_header_localinpolicy6</span> - available versions:
-        <span class="li-normal">v8.0.0->latest</span>
         </li>
         <li><span class="li-required">pkg_header_policy</span> - available versions:
         <span class="li-normal">v6.0.0->latest</span>
@@ -4530,17 +4509,6 @@ Parameters
             <li><span class="li-normal">dynamic_mapping</span></li>
             <li><span class="li-normal">variable</span></li>
         </ul>
-        <li><span class="li-normal">params for fsp_override:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">override</span></li>
-        </ul>
-        <li><span class="li-normal">params for fsp_override_attrs:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">attrs</span></li>
-            <li><span class="li-normal">override</span></li>
-        </ul>
         <li><span class="li-normal">params for fsp_vlan:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -5123,11 +5091,6 @@ Parameters
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">nac-profile</span></li>
         </ul>
-        <li><span class="li-normal">params for pfcp_messagefilter:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">adom</span></li>
-            <li><span class="li-normal">message-filter</span></li>
-        </ul>
         <li><span class="li-normal">params for pkg_authentication_rule:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -5336,16 +5299,6 @@ Parameters
             <li><span class="li-normal">pkg</span></li>
             <li><span class="li-normal">policy</span></li>
         </ul>
-        <li><span class="li-normal">params for pkg_footer_localinpolicy:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">local-in-policy</span></li>
-            <li><span class="li-normal">pkg</span></li>
-        </ul>
-        <li><span class="li-normal">params for pkg_footer_localinpolicy6:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">local-in-policy6</span></li>
-            <li><span class="li-normal">pkg</span></li>
-        </ul>
         <li><span class="li-normal">params for pkg_footer_policy:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">pkg</span></li>
@@ -5377,16 +5330,6 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">pkg</span></li>
             <li><span class="li-normal">policy</span></li>
-        </ul>
-        <li><span class="li-normal">params for pkg_header_localinpolicy:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">local-in-policy</span></li>
-            <li><span class="li-normal">pkg</span></li>
-        </ul>
-        <li><span class="li-normal">params for pkg_header_localinpolicy6:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">local-in-policy6</span></li>
-            <li><span class="li-normal">pkg</span></li>
         </ul>
         <li><span class="li-normal">params for pkg_header_policy:</span></li>
         <ul class="ul-self">
@@ -9030,15 +8973,6 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_fmg_variable_dynamicmapping.html#parameters">fmgr_fmg_variable_dynamicmapping</a> </span></li>
         </ul>
-        <li><span class="li-normal">params for fsp_override:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_fsp_override.html#parameters">fmgr_fsp_override</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for fsp_override_attrs:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_fsp_override_attrs.html#parameters">fmgr_fsp_override_attrs</a> </span></li>
-        </ul>
         <li><span class="li-normal">params for fsp_vlan:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
@@ -9526,11 +9460,6 @@ Parameters
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_nacprofile.html#parameters">fmgr_nacprofile</a> </span></li>
         </ul>
-        <li><span class="li-normal">params for pfcp_messagefilter:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_pfcp_messagefilter.html#parameters">fmgr_pfcp_messagefilter</a> </span></li>
-        </ul>
         <li><span class="li-normal">params for pkg_authentication_rule:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
@@ -9701,16 +9630,6 @@ Parameters
             <li><span class="li-normal">required primary key: <b>policyid</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_pkg_footer_consolidated_policy.html#parameters">fmgr_pkg_footer_consolidated_policy</a> </span></li>
         </ul>
-        <li><span class="li-normal">params for pkg_footer_localinpolicy:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>policyid</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_pkg_footer_localinpolicy.html#parameters">fmgr_pkg_footer_localinpolicy</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for pkg_footer_localinpolicy6:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>policyid</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_pkg_footer_localinpolicy6.html#parameters">fmgr_pkg_footer_localinpolicy6</a> </span></li>
-        </ul>
         <li><span class="li-normal">params for pkg_footer_policy:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">required primary key: <b>policyid</b> </span></li>
@@ -9740,16 +9659,6 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">required primary key: <b>policyid</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_pkg_header_consolidated_policy.html#parameters">fmgr_pkg_header_consolidated_policy</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for pkg_header_localinpolicy:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>policyid</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_pkg_header_localinpolicy.html#parameters">fmgr_pkg_header_localinpolicy</a> </span></li>
-        </ul>
-        <li><span class="li-normal">params for pkg_header_localinpolicy6:</span></li>
-        <ul class="ul-self">
-            <li><span class="li-normal">required primary key: <b>policyid</b> </span></li>
-            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_pkg_header_localinpolicy6.html#parameters">fmgr_pkg_header_localinpolicy6</a> </span></li>
         </ul>
         <li><span class="li-normal">params for pkg_header_policy:</span></li>
         <ul class="ul-self">

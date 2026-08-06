@@ -88,18 +88,29 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - name: Example playbook (generated based on argument schema)
+  - name: Test CSF trusted-list ADOM settings
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: Cli system csf trusted list adom
+      - name: Create the parent CSF trusted-list entry
+        fortinet.fortimanager.fmgr_system_csf_trustedlist:
+          enable_log: true
+          state: present
+          system_csf_trustedlist:
+            name: "1"
+            action: accept
+            adom_access: specify
+            authorization_type: serial
+            serial: test_device
+
+      - name: Configure a CSF trusted-list ADOM
         fortinet.fortimanager.fmgr_system_csf_trustedlist_adom:
-          # workspace_locking_adom: <global or your adom name>
-          trusted_list: <your own value>
-          state: present # <value in [present, absent]>
+          enable_log: true
+          trusted_list: "1"
+          state: present
           system_csf_trustedlist_adom:
-            # adom_name: <string>
+            adom_name: root
 
 
 Return Values

@@ -143,29 +143,26 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - name: Example playbook (generated based on argument schema)
+  - name: Test antivirus profile WebSocket settings
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
     tasks:
-      - name: Configure WEBSOCKET AntiVirus options.
+      - name: Create the parent antivirus profile
+        fortinet.fortimanager.fmgr_antivirus_profile:
+          enable_log: true
+          adom: root
+          state: present
+          antivirus_profile:
+            name: test_profile
+
+      - name: Configure antivirus profile WebSocket settings
         fortinet.fortimanager.fmgr_antivirus_profile_websocket:
-          # workspace_locking_adom: <global or your adom name>
-          adom: <your own value>
-          profile: <your own value>
+          enable_log: true
+          adom: root
+          profile: test_profile
           antivirus_profile_websocket:
-            # archive_block: ["encrypted", "corrupted", "multipart", "nested", "mailbomb",
-            #                 "unhandled", "partiallycorrupted", "timeout"]
-            # archive_log: ["encrypted", "corrupted", "multipart", "nested", "mailbomb",
-            #               "unhandled", "partiallycorrupted", "timeout"]
-            # av_scan: <value in [disable, block, monitor]>
-            # emulator: <value in [disable, enable]>
-            # external_blocklist: <value in [disable, block, monitor]>
-            # fortindr: <value in [disable, block, monitor]>
-            # fortisandbox: <value in [disable, block, monitor]>
-            # malware_stream: <value in [disable, block, monitor]>
-            # outbreak_prevention: <value in [disable, block, monitor]>
-            # quarantine: <value in [disable, enable]>
+            av_scan: disable
 
 
 Return Values
